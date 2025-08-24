@@ -1,8 +1,0 @@
-2025-08-24 11:19:41,227 - INFO - --- Starting On-Demand Log Processor ---
-2025-08-24 11:19:41,228 - INFO - Found 2 new log file(s): SESSION_LOG_2025-08-24_10-30-25.json, SESSION_LOG_2025-08-24_10-30-31.json
-2025-08-24 11:19:41,228 - INFO - 
---- Processing: SESSION_LOG_2025-08-24_10-30-25.json ---
-2025-08-24 11:19:41,228 - INFO - Running calculation for SESSION_LOG_2025-08-24_10-30-25.json...
-2025-08-24 11:19:41,372 - INFO -  - Calculation finished successfully.
-2025-08-24 11:19:41,373 - INFO - Uploading SESSION_LOG_2025-08-24_10-30-25.json to configured repository...
-2025-08-24 11:19:41,998 - INFO -  - Upload successful.
