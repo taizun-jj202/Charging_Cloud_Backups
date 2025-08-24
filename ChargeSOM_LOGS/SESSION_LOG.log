@@ -8,3 +8,8 @@
 2025-08-24 13:40:39,925 - INFO - Uploading Logs folder to configured repository...
 2025-08-24 13:40:40,604 - INFO -  - Upload successful.
 2025-08-24 13:40:42,030 - INFO - --- Script finished. ---
+2025-08-24 13:44:04,727 - INFO - --- Starting On-Demand Log Processor ---
+2025-08-24 13:44:04,728 - INFO - No new log files found to process.
+2025-08-24 13:44:04,728 - INFO - Uploading Logs folder to configured repository...
+2025-08-24 13:44:05,334 - INFO -  - Upload successful.
+2025-08-24 13:44:06,649 - INFO - --- Script finished. ---
