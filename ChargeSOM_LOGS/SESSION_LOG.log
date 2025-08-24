@@ -6,3 +6,10 @@
 2025-08-24 12:12:28,205 - INFO -  - Calculation finished successfully.
 2025-08-24 12:12:28,207 - INFO - Uploading SESSION_LOG_2025-08-24_12-05-07.json to configured repository...
 2025-08-24 12:12:28,867 - INFO -  - Upload successful.
+2025-08-24 12:12:30,220 - INFO -  - Successfully processed and logged SESSION_LOG_2025-08-24_12-05-07.json.
+2025-08-24 12:12:30,220 - INFO - 
+--- Processing: SESSION_LOG_2025-08-24_12-05-40.json ---
+2025-08-24 12:12:30,220 - INFO - Running calculation for SESSION_LOG_2025-08-24_12-05-40.json...
+2025-08-24 12:12:30,369 - INFO -  - Calculation finished successfully.
+2025-08-24 12:12:30,369 - INFO - Uploading SESSION_LOG_2025-08-24_12-05-40.json to configured repository...
+2025-08-24 12:12:30,957 - INFO -  - Upload successful.
