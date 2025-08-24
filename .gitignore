@@ -2,7 +2,6 @@
 LOCAL_TO_CLOUD
 NodeRED_Backup 
 luna_py_env
-ChargeSOM_LOGS\EVerest_Restart_Logs
 
 *.yml
 *.bat
