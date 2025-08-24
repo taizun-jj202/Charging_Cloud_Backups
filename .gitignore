@@ -6,3 +6,5 @@ ChargeSOM_LOGS\EVerest_Restart_Logs
 
 *.yml
 *.bat
+*.py
+*.env
