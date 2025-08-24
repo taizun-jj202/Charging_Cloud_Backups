@@ -1,5 +1,6 @@
 
-LOCAL_TO_CLOUD 
+LOCAL_TO_CLOUD
+NodeRED_Backup 
 luna_py_env
 *.yml
 *.bat
