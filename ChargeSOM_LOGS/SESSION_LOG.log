@@ -20,3 +20,14 @@
 2025-08-24 16:56:53,238 - INFO - Uploading Logs folder to configured repository...
 2025-08-24 16:56:53,796 - INFO -  - Upload successful.
 2025-08-24 16:56:55,316 - INFO - --- Script finished. ---
+2025-09-27 11:35:17,656 - INFO - 
+		--- Starting On-Demand Log Processor ---
+2025-09-27 11:35:17,657 - INFO - Found 1 new log file(s): SESSION_LOG_2025-09-27_11-29-05.json
+2025-09-27 11:35:17,657 - INFO - 
+--- Processing: SESSION_LOG_2025-09-27_11-29-05.json ---
+2025-09-27 11:35:17,657 - INFO - Running calculation for SESSION_LOG_2025-09-27_11-29-05.json...
+2025-09-27 11:35:17,892 - INFO -  - Calculation finished successfully.
+2025-09-27 11:35:17,892 - INFO -  - Successfully processed and logged SESSION_LOG_2025-09-27_11-29-05.json.
+2025-09-27 11:35:17,892 - INFO - Uploading Logs folder to configured repository...
+2025-09-27 11:35:19,220 - INFO -  - Upload successful.
+2025-09-27 11:35:20,853 - INFO - --- Script finished. ---
