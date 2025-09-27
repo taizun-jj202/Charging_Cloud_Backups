@@ -1,0 +1,4 @@
+MySQL password : mySQL_EVChargingProject
+
+MySQL database : charging
+user : charging_user 
