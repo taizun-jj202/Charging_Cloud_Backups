@@ -1,0 +1,450 @@
+2025-12-05T22:07:34.850448+0100 chargesom manager[234696]: [INFO] manager          ::
+2025-12-05T22:07:34.850448+0100 chargesom manager[234696]: [INFO] manager          :: everest-framework 0.23.0 main@v0.23.0
+2025-12-05T22:07:34.850448+0100 chargesom manager[234696]: [INFO] manager          :: everest-core 2025.8.0 feature/json-rpc-api-2025.8.0@2025.8.0-351-g14709eef-dirty
+2025-12-05T22:07:34.850448+0100 chargesom manager[234696]: [INFO] manager          ::
+2025-12-05T22:07:34.850448+0100 chargesom manager[234696]: [INFO] manager          :: Using MQTT broker localhost:1883
+2025-12-05T22:07:34.865980+0100 chargesom manager[234697]: [INFO] everest_ctrl     :: Launching controller service on port 8849
+2025-12-05T22:07:34.881775+0100 chargesom manager[234696]: [INFO] manager          :: Boot mode is set to YamlFile, loading module configs from YAML file
+2025-12-05T22:07:34.882131+0100 chargesom manager[234696]: [INFO] manager          :: Loading config file at: /etc/everest/config.yaml
+2025-12-05T22:07:34.998405+0100 chargesom manager[234696]: [INFO] manager          :: Config loading completed in 146ms
+2025-12-05T22:07:35.001888+0100 chargesom manager[234696]: [INFO] manager          :: Starting 14 modules
+2025-12-05T22:07:36.783865+0100 chargesom manager[234728]: [INFO] evse_security:E  :: Module evse_security initialized [1643ms]
+2025-12-05T22:07:36.823798+0100 chargesom manager[234719]: [INFO] connector:EvseM  :: Module connector initialized [1758ms]
+2025-12-05T22:07:36.842941+0100 chargesom manager[234716]: [CRIT] api:API          :: Please configure an evse mapping in your configuration file for the connected r_evse_energy_sink with module_id: grid_connection_point
+2025-12-05T22:07:36.849943+0100 chargesom manager[234716]: [CRIT] api:API          :: Caught top level std::exception:
+2025-12-05T22:07:36.849943+0100 chargesom manager[234716]: Dynamic exception type: std::runtime_error
+2025-12-05T22:07:36.849943+0100 chargesom manager[234716]: std::exception::what: At least one connected evse_energy_sink misses a mapping to an evse.
+2025-12-05T22:07:36.857199+0100 chargesom manager[234724]: [INFO] error_history:E  :: Using database at "/tmp/error_history.db"
+2025-12-05T22:07:36.857199+0100 chargesom manager[234724]: [INFO] error_history:E  :: Checking database
+2025-12-05T22:07:36.864658+0100 chargesom manager[234724]: [INFO] error_history:E  :: Module error_history initialized [1762ms]
+2025-12-05T22:07:36.865617+0100 chargesom manager[234696]: [CRIT] manager          :: Module api (pid: 234716) exited with status: 0. Terminating all modules.
+2025-12-05T22:07:36.869350+0100 chargesom manager[234696]: [ERRO] manager          :: The module connector is not in `modules_ready`: _Map_base::at
+2025-12-05T22:07:36.881184+0100 chargesom manager[234721]: [INFO] energy_manager:  :: Module energy_manager initialized [1755ms]
+2025-12-05T22:07:36.882277+0100 chargesom manager[234696]: [INFO] manager          :: SIGTERM of child: auth (pid: 234717) succeeded.
+2025-12-05T22:07:36.883121+0100 chargesom manager[234696]: [INFO] manager          :: SIGTERM of child: bsp (pid: 234718) succeeded.
+2025-12-05T22:07:36.883480+0100 chargesom manager[234696]: [INFO] manager          :: SIGTERM of child: connector (pid: 234719) succeeded.
+2025-12-05T22:07:36.883480+0100 chargesom manager[234696]: [INFO] manager          :: SIGTERM of child: energy_manager (pid: 234721) succeeded.
+2025-12-05T22:07:36.883480+0100 chargesom manager[234696]: [INFO] manager          :: SIGTERM of child: error_history (pid: 234724) succeeded.
+2025-12-05T22:07:36.884106+0100 chargesom manager[234696]: [INFO] manager          :: SIGTERM of child: evse_security (pid: 234728) succeeded.
+2025-12-05T22:07:36.884106+0100 chargesom manager[234696]: [INFO] manager          :: SIGTERM of child: evse_slac (pid: 234730) succeeded.
+2025-12-05T22:07:36.884106+0100 chargesom manager[234696]: [INFO] manager          :: SIGTERM of child: grid_connection_point (pid: 234735) succeeded.
+2025-12-05T22:07:36.884106+0100 chargesom manager[234696]: [INFO] manager          :: SIGTERM of child: imd (pid: 234741) succeeded.
+2025-12-05T22:07:36.884106+0100 chargesom manager[234696]: [INFO] manager          :: SIGTERM of child: iso15118_charger (pid: 234747) succeeded.
+2025-12-05T22:07:36.884106+0100 chargesom manager[234696]: [INFO] manager          :: SIGTERM of child: powersupply_dc (pid: 234756) succeeded.
+2025-12-05T22:07:36.884106+0100 chargesom manager[234696]: [INFO] manager          :: SIGTERM of child: token_provider (pid: 234757) succeeded.
+2025-12-05T22:07:36.884106+0100 chargesom manager[234696]: [INFO] manager          :: SIGTERM of child: token_validator (pid: 234763) succeeded.
+2025-12-05T22:07:36.885073+0100 chargesom manager[234696]: [CRIT] manager          :: Exiting manager.
+2025-12-05T22:07:36.909926+0100 chargesom systemd[1]: everest.service: Main process exited, code=exited, status=1/FAILURE
+2025-12-05T22:07:36.910359+0100 chargesom systemd[1]: everest.service: Killing process 234698 (controller) with signal SIGKILL.
+2025-12-05T22:07:36.914583+0100 chargesom systemd[1]: everest.service: Failed with result 'exit-code'.
+2025-12-05T22:07:37.028487+0100 chargesom systemd[1]: everest.service: Scheduled restart job, restart counter is at 79.
+2025-12-05T22:07:37.029290+0100 chargesom systemd[1]: Stopped EVerest.
+2025-12-05T22:07:37.051910+0100 chargesom systemd[1]: Starting EVerest...
+2025-12-05T22:07:37.057624+0100 chargesom sh[235333]: Starting to migrate EVerest configurations
+2025-12-05T22:07:37.074392+0100 chargesom sh[235333]: EVerest configurations migrated successfully
+2025-12-05T22:07:37.077782+0100 chargesom systemd[1]: Started EVerest.
+2025-12-05T22:07:37.100079+0100 chargesom manager[235337]: [INFO] manager          ::   ________      __                _
+2025-12-05T22:07:37.100079+0100 chargesom manager[235337]: [INFO] manager          ::  |  ____\ \    / /               | |
+2025-12-05T22:07:37.101292+0100 chargesom manager[235337]: [INFO] manager          ::  | |__   \ \  / /__ _ __ ___  ___| |_
+2025-12-05T22:07:37.101292+0100 chargesom manager[235337]: [INFO] manager          ::  |  __|   \ \/ / _ \ '__/ _ \/ __| __|
+2025-12-05T22:07:37.101292+0100 chargesom manager[235337]: [INFO] manager          ::  | |____   \  /  __/ | |  __/\__ \ |_
+2025-12-05T22:07:37.101292+0100 chargesom manager[235337]: [INFO] manager          ::  |______|   \/ \___|_|  \___||___/\__|
+2025-12-05T22:07:37.101292+0100 chargesom manager[235337]: [INFO] manager          ::
+2025-12-05T22:07:37.101292+0100 chargesom manager[235337]: [INFO] manager          :: everest-framework 0.23.0 main@v0.23.0
+2025-12-05T22:07:37.101292+0100 chargesom manager[235337]: [INFO] manager          :: everest-core 2025.8.0 feature/json-rpc-api-2025.8.0@2025.8.0-351-g14709eef-dirty
+2025-12-05T22:07:37.101292+0100 chargesom manager[235337]: [INFO] manager          ::
+2025-12-05T22:07:37.101292+0100 chargesom manager[235337]: [INFO] manager          :: Using MQTT broker localhost:1883
+2025-12-05T22:07:37.117376+0100 chargesom manager[235338]: [INFO] everest_ctrl     :: Launching controller service on port 8849
+2025-12-05T22:07:37.132725+0100 chargesom manager[235337]: [INFO] manager          :: Boot mode is set to YamlFile, loading module configs from YAML file
+2025-12-05T22:07:37.133064+0100 chargesom manager[235337]: [INFO] manager          :: Loading config file at: /etc/everest/config.yaml
+2025-12-05T22:07:37.248913+0100 chargesom manager[235337]: [INFO] manager          :: Config loading completed in 146ms
+2025-12-05T22:07:37.252334+0100 chargesom manager[235337]: [INFO] manager          :: Starting 14 modules
+2025-12-05T22:07:38.846229+0100 chargesom systemd[1]: Stopping EVerest...
+2025-12-05T22:07:38.868562+0100 chargesom systemd[1]: everest.service: Deactivated successfully.
+2025-12-05T22:07:38.869377+0100 chargesom systemd[1]: Stopped EVerest.
+2025-12-05T22:07:38.888483+0100 chargesom systemd[1]: Starting EVerest...
+2025-12-05T22:07:38.894533+0100 chargesom sh[235853]: Starting to migrate EVerest configurations
+2025-12-05T22:07:38.912081+0100 chargesom sh[235853]: EVerest configurations migrated successfully
+2025-12-05T22:07:38.915288+0100 chargesom systemd[1]: Started EVerest.
+2025-12-05T22:07:38.939124+0100 chargesom manager[235857]: [INFO] manager          ::   ________      __                _
+2025-12-05T22:07:38.940201+0100 chargesom manager[235857]: [INFO] manager          ::  |  ____\ \    / /               | |
+2025-12-05T22:07:38.940201+0100 chargesom manager[235857]: [INFO] manager          ::  | |__   \ \  / /__ _ __ ___  ___| |_
+2025-12-05T22:07:38.940201+0100 chargesom manager[235857]: [INFO] manager          ::  |  __|   \ \/ / _ \ '__/ _ \/ __| __|
+2025-12-05T22:07:38.940201+0100 chargesom manager[235857]: [INFO] manager          ::  | |____   \  /  __/ | |  __/\__ \ |_
+2025-12-05T22:07:38.940201+0100 chargesom manager[235857]: [INFO] manager          ::  |______|   \/ \___|_|  \___||___/\__|
+2025-12-05T22:07:38.940201+0100 chargesom manager[235857]: [INFO] manager          ::
+2025-12-05T22:07:38.940201+0100 chargesom manager[235857]: [INFO] manager          :: everest-framework 0.23.0 main@v0.23.0
+2025-12-05T22:07:38.941275+0100 chargesom manager[235857]: [INFO] manager          :: everest-core 2025.8.0 feature/json-rpc-api-2025.8.0@2025.8.0-351-g14709eef-dirty
+2025-12-05T22:07:38.941275+0100 chargesom manager[235857]: [INFO] manager          ::
+2025-12-05T22:07:38.941275+0100 chargesom manager[235857]: [INFO] manager          :: Using MQTT broker localhost:1883
+2025-12-05T22:07:38.956769+0100 chargesom manager[235858]: [INFO] everest_ctrl     :: Launching controller service on port 8849
+2025-12-05T22:07:38.972032+0100 chargesom manager[235857]: [INFO] manager          :: Boot mode is set to YamlFile, loading module configs from YAML file
+2025-12-05T22:07:38.972646+0100 chargesom manager[235857]: [INFO] manager          :: Loading config file at: /etc/everest/config.yaml
+2025-12-05T22:07:39.089388+0100 chargesom manager[235857]: [INFO] manager          :: Config loading completed in 147ms
+2025-12-05T22:07:39.092855+0100 chargesom manager[235857]: [INFO] manager          :: Starting 14 modules
+2025-12-05T22:07:40.874670+0100 chargesom manager[235877]: [CRIT] api:API          :: Please configure an evse mapping in your configuration file for the connected r_evse_energy_sink with module_id: grid_connection_point
+2025-12-05T22:07:40.896610+0100 chargesom manager[235877]: [CRIT] api:API          :: Caught top level std::exception:
+2025-12-05T22:07:40.896610+0100 chargesom manager[235877]: Dynamic exception type: std::runtime_error
+2025-12-05T22:07:40.896610+0100 chargesom manager[235877]: std::exception::what: At least one connected evse_energy_sink misses a mapping to an evse.
+2025-12-05T22:07:40.911080+0100 chargesom manager[235884]: [INFO] error_history:E  :: Using database at "/tmp/error_history.db"
+2025-12-05T22:07:40.911080+0100 chargesom manager[235884]: [INFO] error_history:E  :: Checking database
+2025-12-05T22:07:40.930018+0100 chargesom manager[235884]: [INFO] error_history:E  :: Module error_history initialized [1714ms]
+2025-12-05T22:07:40.930402+0100 chargesom manager[235881]: [INFO] energy_manager:  :: Module energy_manager initialized [1746ms]
+2025-12-05T22:07:40.953013+0100 chargesom manager[235878]: [INFO] auth:Auth        :: Module auth initialized [1802ms]
+2025-12-05T22:07:40.959412+0100 chargesom manager[235880]: [INFO] connector:EvseM  :: Module connector initialized [1765ms]
+2025-12-05T22:07:40.961680+0100 chargesom manager[235879]: [INFO] bsp:CbChargeSOM  :: chargebyte's Charge SOM EVerest module (version: 0.24.0)
+2025-12-05T22:07:40.978783+0100 chargesom manager[235888]: [INFO] evse_security:E  :: Module evse_security initialized [1771ms]
+2025-12-05T22:07:40.984855+0100 chargesom manager[235857]: [CRIT] manager          :: Module api (pid: 235877) exited with status: 0. Terminating all modules.
+2025-12-05T22:07:40.989827+0100 chargesom manager[235857]: [ERRO] manager          :: The module evse_security is not in `modules_ready`: _Map_base::at
+2025-12-05T22:07:41.003704+0100 chargesom manager[235892]: [INFO] evse_slac:EvseS  :: Module evse_slac initialized [1768ms]
+2025-12-05T22:07:41.007184+0100 chargesom manager[235857]: [INFO] manager          :: SIGTERM of child: auth (pid: 235878) succeeded.
+2025-12-05T22:07:41.007593+0100 chargesom manager[235897]: [INFO] grid_connection  :: Module grid_connection_point initialized [1783ms]
+2025-12-05T22:07:41.011785+0100 chargesom manager[235857]: [INFO] manager          :: SIGTERM of child: bsp (pid: 235879) succeeded.
+2025-12-05T22:07:41.011785+0100 chargesom manager[235857]: [INFO] manager          :: SIGTERM of child: connector (pid: 235880) succeeded.
+2025-12-05T22:07:41.011785+0100 chargesom manager[235857]: [INFO] manager          :: SIGTERM of child: energy_manager (pid: 235881) succeeded.
+2025-12-05T22:07:41.013346+0100 chargesom manager[235857]: [INFO] manager          :: SIGTERM of child: error_history (pid: 235884) succeeded.
+2025-12-05T22:07:41.013346+0100 chargesom manager[235857]: [INFO] manager          :: SIGTERM of child: evse_security (pid: 235888) succeeded.
+2025-12-05T22:07:41.013346+0100 chargesom manager[235857]: [INFO] manager          :: SIGTERM of child: evse_slac (pid: 235892) succeeded.
+2025-12-05T22:07:41.021767+0100 chargesom manager[235857]: [INFO] manager          :: SIGTERM of child: grid_connection_point (pid: 235897) succeeded.
+2025-12-05T22:07:41.021767+0100 chargesom manager[235857]: [INFO] manager          :: SIGTERM of child: imd (pid: 235899) succeeded.
+2025-12-05T22:07:41.021767+0100 chargesom manager[235857]: [INFO] manager          :: SIGTERM of child: iso15118_charger (pid: 235912) succeeded.
+2025-12-05T22:07:41.021767+0100 chargesom manager[235857]: [INFO] manager          :: SIGTERM of child: powersupply_dc (pid: 235917) succeeded.
+2025-12-05T22:07:41.021767+0100 chargesom manager[235857]: [INFO] manager          :: SIGTERM of child: token_provider (pid: 235918) succeeded.
+2025-12-05T22:07:41.021767+0100 chargesom manager[235857]: [INFO] manager          :: SIGTERM of child: token_validator (pid: 235920) succeeded.
+2025-12-05T22:07:41.021767+0100 chargesom manager[235857]: [CRIT] manager          :: Exiting manager.
+2025-12-05T22:07:41.039863+0100 chargesom systemd[1]: everest.service: Main process exited, code=exited, status=1/FAILURE
+2025-12-05T22:07:41.045165+0100 chargesom systemd[1]: everest.service: Failed with result 'exit-code'.
+2025-12-05T22:07:41.279967+0100 chargesom systemd[1]: everest.service: Scheduled restart job, restart counter is at 1.
+2025-12-05T22:07:41.280807+0100 chargesom systemd[1]: Stopped EVerest.
+2025-12-05T22:07:41.299960+0100 chargesom systemd[1]: Starting EVerest...
+2025-12-05T22:07:41.305575+0100 chargesom sh[236521]: Starting to migrate EVerest configurations
+2025-12-05T22:07:41.322784+0100 chargesom sh[236521]: EVerest configurations migrated successfully
+2025-12-05T22:07:41.326000+0100 chargesom systemd[1]: Started EVerest.
+2025-12-05T22:07:41.349779+0100 chargesom manager[236525]: [INFO] manager          ::   ________      __                _
+2025-12-05T22:07:41.349779+0100 chargesom manager[236525]: [INFO] manager          ::  |  ____\ \    / /               | |
+2025-12-05T22:07:41.351109+0100 chargesom manager[236525]: [INFO] manager          ::  | |__   \ \  / /__ _ __ ___  ___| |_
+2025-12-05T22:07:41.351109+0100 chargesom manager[236525]: [INFO] manager          ::  |  __|   \ \/ / _ \ '__/ _ \/ __| __|
+2025-12-05T22:07:41.351109+0100 chargesom manager[236525]: [INFO] manager          ::  | |____   \  /  __/ | |  __/\__ \ |_
+2025-12-05T22:07:41.351109+0100 chargesom manager[236525]: [INFO] manager          ::  |______|   \/ \___|_|  \___||___/\__|
+2025-12-05T22:07:41.351109+0100 chargesom manager[236525]: [INFO] manager          ::
+2025-12-05T22:07:41.351109+0100 chargesom manager[236525]: [INFO] manager          :: everest-framework 0.23.0 main@v0.23.0
+2025-12-05T22:07:41.351109+0100 chargesom manager[236525]: [INFO] manager          :: everest-core 2025.8.0 feature/json-rpc-api-2025.8.0@2025.8.0-351-g14709eef-dirty
+2025-12-05T22:07:41.351109+0100 chargesom manager[236525]: [INFO] manager          ::
+2025-12-05T22:07:41.351109+0100 chargesom manager[236525]: [INFO] manager          :: Using MQTT broker localhost:1883
+2025-12-05T22:07:41.367595+0100 chargesom manager[236526]: [INFO] everest_ctrl     :: Launching controller service on port 8849
+2025-12-05T22:07:41.381590+0100 chargesom manager[236525]: [INFO] manager          :: Boot mode is set to YamlFile, loading module configs from YAML file
+2025-12-05T22:07:41.381932+0100 chargesom manager[236525]: [INFO] manager          :: Loading config file at: /etc/everest/config.yaml
+2025-12-05T22:07:41.498252+0100 chargesom manager[236525]: [INFO] manager          :: Config loading completed in 145ms
+2025-12-05T22:07:41.501688+0100 chargesom manager[236525]: [INFO] manager          :: Starting 14 modules
+2025-12-05T22:07:43.268774+0100 chargesom manager[236545]: [CRIT] api:API          :: Please configure an evse mapping in your configuration file for the connected r_evse_energy_sink with module_id: grid_connection_point
+2025-12-05T22:07:43.275899+0100 chargesom manager[236545]: [CRIT] api:API          :: Caught top level std::exception:
+2025-12-05T22:07:43.275899+0100 chargesom manager[236545]: Dynamic exception type: std::runtime_error
+2025-12-05T22:07:43.275899+0100 chargesom manager[236545]: std::exception::what: At least one connected evse_energy_sink misses a mapping to an evse.
+2025-12-05T22:07:43.288232+0100 chargesom manager[236525]: [CRIT] manager          :: Module api (pid: 236545) exited with status: 0. Terminating all modules.
+2025-12-05T22:07:43.298437+0100 chargesom manager[236525]: [INFO] manager          :: SIGTERM of child: auth (pid: 236546) succeeded.
+2025-12-05T22:07:43.298437+0100 chargesom manager[236525]: [INFO] manager          :: SIGTERM of child: bsp (pid: 236547) succeeded.
+2025-12-05T22:07:43.298437+0100 chargesom manager[236525]: [INFO] manager          :: SIGTERM of child: connector (pid: 236548) succeeded.
+2025-12-05T22:07:43.298437+0100 chargesom manager[236525]: [INFO] manager          :: SIGTERM of child: energy_manager (pid: 236549) succeeded.
+2025-12-05T22:07:43.298437+0100 chargesom manager[236525]: [INFO] manager          :: SIGTERM of child: error_history (pid: 236553) succeeded.
+2025-12-05T22:07:43.298437+0100 chargesom manager[236525]: [INFO] manager          :: SIGTERM of child: evse_security (pid: 236558) succeeded.
+2025-12-05T22:07:43.299935+0100 chargesom manager[236525]: [INFO] manager          :: SIGTERM of child: evse_slac (pid: 236559) succeeded.
+2025-12-05T22:07:43.305205+0100 chargesom manager[236525]: [INFO] manager          :: SIGTERM of child: grid_connection_point (pid: 236562) succeeded.
+2025-12-05T22:07:43.305205+0100 chargesom manager[236525]: [INFO] manager          :: SIGTERM of child: imd (pid: 236568) succeeded.
+2025-12-05T22:07:43.305205+0100 chargesom manager[236525]: [INFO] manager          :: SIGTERM of child: iso15118_charger (pid: 236575) succeeded.
+2025-12-05T22:07:43.305205+0100 chargesom manager[236525]: [INFO] manager          :: SIGTERM of child: powersupply_dc (pid: 236580) succeeded.
+2025-12-05T22:07:43.305205+0100 chargesom manager[236525]: [INFO] manager          :: SIGTERM of child: token_provider (pid: 236581) succeeded.
+2025-12-05T22:07:43.307705+0100 chargesom manager[236525]: [INFO] manager          :: SIGTERM of child: token_validator (pid: 236587) succeeded.
+2025-12-05T22:07:43.310326+0100 chargesom manager[236525]: [CRIT] manager          :: Exiting manager.
+2025-12-05T22:07:43.324971+0100 chargesom systemd[1]: everest.service: Main process exited, code=exited, status=1/FAILURE
+2025-12-05T22:07:43.329258+0100 chargesom systemd[1]: everest.service: Failed with result 'exit-code'.
+2025-12-05T22:07:43.528464+0100 chargesom systemd[1]: everest.service: Scheduled restart job, restart counter is at 2.
+2025-12-05T22:07:43.530183+0100 chargesom systemd[1]: Stopped EVerest.
+2025-12-05T22:07:43.551871+0100 chargesom systemd[1]: Starting EVerest...
+2025-12-05T22:07:43.556799+0100 chargesom sh[237106]: Starting to migrate EVerest configurations
+2025-12-05T22:07:43.574091+0100 chargesom sh[237106]: EVerest configurations migrated successfully
+2025-12-05T22:07:43.577538+0100 chargesom systemd[1]: Started EVerest.
+2025-12-05T22:07:43.599990+0100 chargesom manager[237110]: [INFO] manager          ::   ________      __                _
+2025-12-05T22:07:43.599990+0100 chargesom manager[237110]: [INFO] manager          ::  |  ____\ \    / /               | |
+2025-12-05T22:07:43.601275+0100 chargesom manager[237110]: [INFO] manager          ::  | |__   \ \  / /__ _ __ ___  ___| |_
+2025-12-05T22:07:43.601275+0100 chargesom manager[237110]: [INFO] manager          ::  |  __|   \ \/ / _ \ '__/ _ \/ __| __|
+2025-12-05T22:07:43.601275+0100 chargesom manager[237110]: [INFO] manager          ::  | |____   \  /  __/ | |  __/\__ \ |_
+2025-12-05T22:07:43.601275+0100 chargesom manager[237110]: [INFO] manager          ::  |______|   \/ \___|_|  \___||___/\__|
+2025-12-05T22:07:43.601275+0100 chargesom manager[237110]: [INFO] manager          ::
+2025-12-05T22:07:43.601275+0100 chargesom manager[237110]: [INFO] manager          :: everest-framework 0.23.0 main@v0.23.0
+2025-12-05T22:07:43.601275+0100 chargesom manager[237110]: [INFO] manager          :: everest-core 2025.8.0 feature/json-rpc-api-2025.8.0@2025.8.0-351-g14709eef-dirty
+2025-12-05T22:07:43.601275+0100 chargesom manager[237110]: [INFO] manager          ::
+2025-12-05T22:07:43.601275+0100 chargesom manager[237110]: [INFO] manager          :: Using MQTT broker localhost:1883
+2025-12-05T22:07:43.617003+0100 chargesom manager[237111]: [INFO] everest_ctrl     :: Launching controller service on port 8849
+2025-12-05T22:07:43.632656+0100 chargesom manager[237110]: [INFO] manager          :: Boot mode is set to YamlFile, loading module configs from YAML file
+2025-12-05T22:07:43.632999+0100 chargesom manager[237110]: [INFO] manager          :: Loading config file at: /etc/everest/config.yaml
+2025-12-05T22:07:43.748750+0100 chargesom manager[237110]: [INFO] manager          :: Config loading completed in 146ms
+2025-12-05T22:07:43.752225+0100 chargesom manager[237110]: [INFO] manager          :: Starting 14 modules
+2025-12-05T22:07:45.680050+0100 chargesom manager[237139]: [INFO] error_history:E  :: Using database at "/tmp/error_history.db"
+2025-12-05T22:07:45.680050+0100 chargesom manager[237139]: [INFO] error_history:E  :: Checking database
+2025-12-05T22:07:45.683529+0100 chargesom manager[237139]: [INFO] error_history:E  :: Module error_history initialized [1820ms]
+2025-12-05T22:07:45.710925+0100 chargesom manager[237130]: [CRIT] api:API          :: Please configure an evse mapping in your configuration file for the connected r_evse_energy_sink with module_id: grid_connection_point
+2025-12-05T22:07:45.721976+0100 chargesom manager[237130]: [CRIT] api:API          :: Caught top level std::exception:
+2025-12-05T22:07:45.721976+0100 chargesom manager[237130]: Dynamic exception type: std::runtime_error
+2025-12-05T22:07:45.721976+0100 chargesom manager[237130]: std::exception::what: At least one connected evse_energy_sink misses a mapping to an evse.
+2025-12-05T22:07:45.739300+0100 chargesom manager[237110]: [CRIT] manager          :: Module api (pid: 237130) exited with status: 0. Terminating all modules.
+2025-12-05T22:07:45.747816+0100 chargesom manager[237110]: [INFO] manager          :: SIGTERM of child: auth (pid: 237131) succeeded.
+2025-12-05T22:07:45.748338+0100 chargesom manager[237110]: [INFO] manager          :: SIGTERM of child: bsp (pid: 237132) succeeded.
+2025-12-05T22:07:45.748338+0100 chargesom manager[237110]: [INFO] manager          :: SIGTERM of child: connector (pid: 237133) succeeded.
+2025-12-05T22:07:45.748338+0100 chargesom manager[237110]: [INFO] manager          :: SIGTERM of child: energy_manager (pid: 237134) succeeded.
+2025-12-05T22:07:45.753000+0100 chargesom manager[237110]: [INFO] manager          :: SIGTERM of child: error_history (pid: 237139) succeeded.
+2025-12-05T22:07:45.753000+0100 chargesom manager[237110]: [INFO] manager          :: SIGTERM of child: evse_security (pid: 237142) succeeded.
+2025-12-05T22:07:45.753000+0100 chargesom manager[237110]: [INFO] manager          :: SIGTERM of child: evse_slac (pid: 237143) succeeded.
+2025-12-05T22:07:45.753000+0100 chargesom manager[237110]: [INFO] manager          :: SIGTERM of child: grid_connection_point (pid: 237145) succeeded.
+2025-12-05T22:07:45.753000+0100 chargesom manager[237110]: [INFO] manager          :: SIGTERM of child: imd (pid: 237148) succeeded.
+2025-12-05T22:07:45.753000+0100 chargesom manager[237110]: [INFO] manager          :: SIGTERM of child: iso15118_charger (pid: 237153) succeeded.
+2025-12-05T22:07:45.753000+0100 chargesom manager[237110]: [INFO] manager          :: SIGTERM of child: powersupply_dc (pid: 237162) succeeded.
+2025-12-05T22:07:45.753000+0100 chargesom manager[237110]: [INFO] manager          :: SIGTERM of child: token_provider (pid: 237163) succeeded.
+2025-12-05T22:07:45.753000+0100 chargesom manager[237110]: [INFO] manager          :: SIGTERM of child: token_validator (pid: 237169) succeeded.
+2025-12-05T22:07:45.753000+0100 chargesom manager[237110]: [CRIT] manager          :: Exiting manager.
+2025-12-05T22:07:45.776631+0100 chargesom systemd[1]: everest.service: Main process exited, code=exited, status=1/FAILURE
+2025-12-05T22:07:45.780969+0100 chargesom systemd[1]: everest.service: Failed with result 'exit-code'.
+2025-12-05T22:07:46.028479+0100 chargesom systemd[1]: everest.service: Scheduled restart job, restart counter is at 3.
+2025-12-05T22:07:46.029222+0100 chargesom systemd[1]: Stopped EVerest.
+2025-12-05T22:07:46.056713+0100 chargesom systemd[1]: Starting EVerest...
+2025-12-05T22:07:46.060945+0100 chargesom sh[237716]: Starting to migrate EVerest configurations
+2025-12-05T22:07:46.078201+0100 chargesom sh[237716]: EVerest configurations migrated successfully
+2025-12-05T22:07:46.081744+0100 chargesom systemd[1]: Started EVerest.
+2025-12-05T22:07:46.104467+0100 chargesom manager[237720]: [INFO] manager          ::   ________      __                _
+2025-12-05T22:07:46.104467+0100 chargesom manager[237720]: [INFO] manager          ::  |  ____\ \    / /               | |
+2025-12-05T22:07:46.105629+0100 chargesom manager[237720]: [INFO] manager          ::  | |__   \ \  / /__ _ __ ___  ___| |_
+2025-12-05T22:07:46.105629+0100 chargesom manager[237720]: [INFO] manager          ::  |  __|   \ \/ / _ \ '__/ _ \/ __| __|
+2025-12-05T22:07:46.105629+0100 chargesom manager[237720]: [INFO] manager          ::  | |____   \  /  __/ | |  __/\__ \ |_
+2025-12-05T22:07:46.105629+0100 chargesom manager[237720]: [INFO] manager          ::  |______|   \/ \___|_|  \___||___/\__|
+2025-12-05T22:07:46.105629+0100 chargesom manager[237720]: [INFO] manager          ::
+2025-12-05T22:07:46.105629+0100 chargesom manager[237720]: [INFO] manager          :: everest-framework 0.23.0 main@v0.23.0
+2025-12-05T22:07:46.105629+0100 chargesom manager[237720]: [INFO] manager          :: everest-core 2025.8.0 feature/json-rpc-api-2025.8.0@2025.8.0-351-g14709eef-dirty
+2025-12-05T22:07:46.105629+0100 chargesom manager[237720]: [INFO] manager          ::
+2025-12-05T22:07:46.105629+0100 chargesom manager[237720]: [INFO] manager          :: Using MQTT broker localhost:1883
+2025-12-05T22:07:46.121230+0100 chargesom manager[237721]: [INFO] everest_ctrl     :: Launching controller service on port 8849
+2025-12-05T22:07:46.137043+0100 chargesom manager[237720]: [INFO] manager          :: Boot mode is set to YamlFile, loading module configs from YAML file
+2025-12-05T22:07:46.137378+0100 chargesom manager[237720]: [INFO] manager          :: Loading config file at: /etc/everest/config.yaml
+2025-12-05T22:07:46.253974+0100 chargesom manager[237720]: [INFO] manager          :: Config loading completed in 146ms
+2025-12-05T22:07:46.257411+0100 chargesom manager[237720]: [INFO] manager          :: Starting 14 modules
+2025-12-05T22:07:48.038952+0100 chargesom manager[237740]: [CRIT] api:API          :: Please configure an evse mapping in your configuration file for the connected r_evse_energy_sink with module_id: grid_connection_point
+2025-12-05T22:07:48.043510+0100 chargesom manager[237740]: [CRIT] api:API          :: Caught top level std::exception:
+2025-12-05T22:07:48.043510+0100 chargesom manager[237740]: Dynamic exception type: std::runtime_error
+2025-12-05T22:07:48.043510+0100 chargesom manager[237740]: std::exception::what: At least one connected evse_energy_sink misses a mapping to an evse.
+2025-12-05T22:07:48.076012+0100 chargesom manager[237752]: [INFO] evse_security:E  :: Module evse_security initialized [1697ms]
+2025-12-05T22:07:48.081147+0100 chargesom manager[237756]: [INFO] evse_slac:EvseS  :: Module evse_slac initialized [1695ms]
+2025-12-05T22:07:48.083522+0100 chargesom manager[237720]: [CRIT] manager          :: Module api (pid: 237740) exited with status: 0. Terminating all modules.
+2025-12-05T22:07:48.095295+0100 chargesom manager[237720]: [INFO] manager          :: SIGTERM of child: auth (pid: 237741) succeeded.
+2025-12-05T22:07:48.097746+0100 chargesom manager[237720]: [INFO] manager          :: SIGTERM of child: bsp (pid: 237742) succeeded.
+2025-12-05T22:07:48.102003+0100 chargesom manager[237720]: [INFO] manager          :: SIGTERM of child: connector (pid: 237743) succeeded.
+2025-12-05T22:07:48.102363+0100 chargesom manager[237720]: [INFO] manager          :: SIGTERM of child: energy_manager (pid: 237745) succeeded.
+2025-12-05T22:07:48.102363+0100 chargesom manager[237720]: [INFO] manager          :: SIGTERM of child: error_history (pid: 237748) succeeded.
+2025-12-05T22:07:48.105008+0100 chargesom manager[237720]: [INFO] manager          :: SIGTERM of child: evse_security (pid: 237752) succeeded.
+2025-12-05T22:07:48.105359+0100 chargesom manager[237720]: [INFO] manager          :: SIGTERM of child: evse_slac (pid: 237756) succeeded.
+2025-12-05T22:07:48.105692+0100 chargesom manager[237720]: [INFO] manager          :: SIGTERM of child: grid_connection_point (pid: 237758) succeeded.
+2025-12-05T22:07:48.109119+0100 chargesom manager[237720]: [INFO] manager          :: SIGTERM of child: imd (pid: 237760) succeeded.
+2025-12-05T22:07:48.109119+0100 chargesom manager[237720]: [INFO] manager          :: SIGTERM of child: iso15118_charger (pid: 237764) succeeded.
+2025-12-05T22:07:48.109119+0100 chargesom manager[237720]: [INFO] manager          :: SIGTERM of child: powersupply_dc (pid: 237766) succeeded.
+2025-12-05T22:07:48.112651+0100 chargesom manager[237720]: [INFO] manager          :: SIGTERM of child: token_provider (pid: 237776) succeeded.
+2025-12-05T22:07:48.113026+0100 chargesom manager[237720]: [INFO] manager          :: SIGTERM of child: token_validator (pid: 237779) succeeded.
+2025-12-05T22:07:48.113026+0100 chargesom manager[237720]: [CRIT] manager          :: Exiting manager.
+2025-12-05T22:07:48.129067+0100 chargesom systemd[1]: everest.service: Main process exited, code=exited, status=1/FAILURE
+2025-12-05T22:07:48.129471+0100 chargesom systemd[1]: everest.service: Killing process 237722 (controller) with signal SIGKILL.
+2025-12-05T22:07:48.133891+0100 chargesom systemd[1]: everest.service: Failed with result 'exit-code'.
+2025-12-05T22:07:48.278463+0100 chargesom systemd[1]: everest.service: Scheduled restart job, restart counter is at 4.
+2025-12-05T22:07:48.279736+0100 chargesom systemd[1]: Stopped EVerest.
+2025-12-05T22:07:48.299944+0100 chargesom systemd[1]: Starting EVerest...
+2025-12-05T22:07:48.305707+0100 chargesom sh[238317]: Starting to migrate EVerest configurations
+2025-12-05T22:07:48.323194+0100 chargesom sh[238317]: EVerest configurations migrated successfully
+2025-12-05T22:07:48.326339+0100 chargesom systemd[1]: Started EVerest.
+2025-12-05T22:07:48.349895+0100 chargesom manager[238321]: [INFO] manager          ::   ________      __                _
+2025-12-05T22:07:48.349895+0100 chargesom manager[238321]: [INFO] manager          ::  |  ____\ \    / /               | |
+2025-12-05T22:07:48.351113+0100 chargesom manager[238321]: [INFO] manager          ::  | |__   \ \  / /__ _ __ ___  ___| |_
+2025-12-05T22:07:48.351113+0100 chargesom manager[238321]: [INFO] manager          ::  |  __|   \ \/ / _ \ '__/ _ \/ __| __|
+2025-12-05T22:07:48.351113+0100 chargesom manager[238321]: [INFO] manager          ::  | |____   \  /  __/ | |  __/\__ \ |_
+2025-12-05T22:07:48.351113+0100 chargesom manager[238321]: [INFO] manager          ::  |______|   \/ \___|_|  \___||___/\__|
+2025-12-05T22:07:48.351113+0100 chargesom manager[238321]: [INFO] manager          ::
+2025-12-05T22:07:48.351113+0100 chargesom manager[238321]: [INFO] manager          :: everest-framework 0.23.0 main@v0.23.0
+2025-12-05T22:07:48.351113+0100 chargesom manager[238321]: [INFO] manager          :: everest-core 2025.8.0 feature/json-rpc-api-2025.8.0@2025.8.0-351-g14709eef-dirty
+2025-12-05T22:07:48.351113+0100 chargesom manager[238321]: [INFO] manager          ::
+2025-12-05T22:07:48.351113+0100 chargesom manager[238321]: [INFO] manager          :: Using MQTT broker localhost:1883
+2025-12-05T22:07:48.366928+0100 chargesom manager[238322]: [INFO] everest_ctrl     :: Launching controller service on port 8849
+2025-12-05T22:07:48.381741+0100 chargesom manager[238321]: [INFO] manager          :: Boot mode is set to YamlFile, loading module configs from YAML file
+2025-12-05T22:07:48.382147+0100 chargesom manager[238321]: [INFO] manager          :: Loading config file at: /etc/everest/config.yaml
+2025-12-05T22:07:48.498767+0100 chargesom manager[238321]: [INFO] manager          :: Config loading completed in 145ms
+2025-12-05T22:07:48.502202+0100 chargesom manager[238321]: [INFO] manager          :: Starting 14 modules
+2025-12-05T22:07:50.324009+0100 chargesom manager[238344]: [INFO] connector:EvseM  :: Module connector initialized [1731ms]
+2025-12-05T22:07:50.325057+0100 chargesom manager[238341]: [CRIT] api:API          :: Please configure an evse mapping in your configuration file for the connected r_evse_energy_sink with module_id: grid_connection_point
+2025-12-05T22:07:50.359220+0100 chargesom manager[238341]: [CRIT] api:API          :: Caught top level std::exception:
+2025-12-05T22:07:50.359220+0100 chargesom manager[238341]: Dynamic exception type: std::runtime_error
+2025-12-05T22:07:50.359220+0100 chargesom manager[238341]: std::exception::what: At least one connected evse_energy_sink misses a mapping to an evse.
+2025-12-05T22:07:50.380745+0100 chargesom manager[238350]: [INFO] evse_security:E  :: Module evse_security initialized [1753ms]
+2025-12-05T22:07:50.383911+0100 chargesom manager[238345]: [INFO] energy_manager:  :: Module energy_manager initialized [1780ms]
+2025-12-05T22:07:50.397275+0100 chargesom manager[238366]: [INFO] imd:IMDSimulato  :: Module imd initialized [1722ms]
+2025-12-05T22:07:50.405363+0100 chargesom manager[238349]: [INFO] error_history:E  :: Using database at "/tmp/error_history.db"
+2025-12-05T22:07:50.406418+0100 chargesom manager[238349]: [INFO] error_history:E  :: Checking database
+2025-12-05T22:07:50.421386+0100 chargesom manager[238343]: [INFO] bsp:CbChargeSOM  :: chargebyte's Charge SOM EVerest module (version: 0.24.0)
+2025-12-05T22:07:50.422476+0100 chargesom manager[238349]: [INFO] error_history:E  :: Module error_history initialized [1834ms]
+2025-12-05T22:07:50.440689+0100 chargesom manager[238321]: [CRIT] manager          :: Module api (pid: 238341) exited with status: 0. Terminating all modules.
+2025-12-05T22:07:50.444653+0100 chargesom manager[238321]: [ERRO] manager          :: The module imd is not in `modules_ready`: _Map_base::at
+2025-12-05T22:07:50.449211+0100 chargesom manager[238375]: [INFO] powersupply_dc:  :: Infy: Setting config values: CAN device: can0
+2025-12-05T22:07:50.451793+0100 chargesom manager[238375]: [INFO] powersupply_dc:  :: Infy: Operating with controller address: 0xf0
+2025-12-05T22:07:50.451793+0100 chargesom manager[238375]: [INFO] powersupply_dc:  :: Starting CAN RX thread
+2025-12-05T22:07:50.451793+0100 chargesom manager[238375]: [INFO] powersupply_dc:  :: CAN error cleared: Success
+2025-12-05T22:07:50.453194+0100 chargesom manager[238375]: [INFO] powersupply_dc:  :: Infy: Operating in FIXED_ADDRESS mode with 1 addresses: 0
+2025-12-05T22:07:50.453194+0100 chargesom manager[238375]: [INFO] powersupply_dc:  :: Infy: module communication timeout: 15s
+2025-12-05T22:07:50.453194+0100 chargesom manager[238375]: [INFO] powersupply_dc:  :: Infy: Operating in FIXED_ADDRESS mode. No need to ping.
+2025-12-05T22:07:50.453194+0100 chargesom manager[238375]: [INFO] powersupply_dc:  :: Infy: switch_on_off(false) - active modules: 1
+2025-12-05T22:07:50.454910+0100 chargesom manager[238375]: [INFO] powersupply_dc:  :: Module powersupply_dc initialized [1746ms]
+2025-12-05T22:07:50.459778+0100 chargesom manager[238361]: [INFO] grid_connection  :: Module grid_connection_point initialized [1810ms]
+2025-12-05T22:07:50.463852+0100 chargesom manager[238342]: [INFO] auth:Auth        :: Module auth initialized [1871ms]
+2025-12-05T22:07:50.474531+0100 chargesom manager[238380]: [INFO] token_provider:  :: Module token_provider initialized [1752ms]
+2025-12-05T22:07:50.482358+0100 chargesom manager[238351]: [INFO] evse_slac:EvseS  :: Module evse_slac initialized [1820ms]
+2025-12-05T22:07:50.485128+0100 chargesom manager[238321]: [INFO] manager          :: SIGTERM of child: auth (pid: 238342) succeeded.
+2025-12-05T22:07:50.488257+0100 chargesom manager[238321]: [INFO] manager          :: SIGTERM of child: bsp (pid: 238343) succeeded.
+2025-12-05T22:07:50.491094+0100 chargesom manager[238321]: [INFO] manager          :: SIGTERM of child: connector (pid: 238344) succeeded.
+2025-12-05T22:07:50.492194+0100 chargesom manager[238384]: [INFO] token_validator  :: Module token_validator initialized [1764ms]
+2025-12-05T22:07:50.495117+0100 chargesom manager[238368]: [INFO] iso15118_charge  :: Module iso15118_charger initialized [1778ms]
+2025-12-05T22:07:50.496162+0100 chargesom manager[238321]: [INFO] manager          :: SIGTERM of child: energy_manager (pid: 238345) succeeded.
+2025-12-05T22:07:50.496618+0100 chargesom manager[238321]: [INFO] manager          :: SIGTERM of child: error_history (pid: 238349) succeeded.
+2025-12-05T22:07:50.498423+0100 chargesom manager[238321]: [INFO] manager          :: SIGTERM of child: evse_security (pid: 238350) succeeded.
+2025-12-05T22:07:50.498423+0100 chargesom manager[238321]: [INFO] manager          :: SIGTERM of child: evse_slac (pid: 238351) succeeded.
+2025-12-05T22:07:50.499012+0100 chargesom manager[238321]: [INFO] manager          :: SIGTERM of child: grid_connection_point (pid: 238361) succeeded.
+2025-12-05T22:07:50.499012+0100 chargesom manager[238321]: [INFO] manager          :: SIGTERM of child: imd (pid: 238366) succeeded.
+2025-12-05T22:07:50.499581+0100 chargesom manager[238321]: [INFO] manager          :: SIGTERM of child: iso15118_charger (pid: 238368) succeeded.
+2025-12-05T22:07:50.499852+0100 chargesom manager[238321]: [INFO] manager          :: SIGTERM of child: powersupply_dc (pid: 238375) succeeded.
+2025-12-05T22:07:50.500620+0100 chargesom manager[238321]: [INFO] manager          :: SIGTERM of child: token_provider (pid: 238380) succeeded.
+2025-12-05T22:07:50.500620+0100 chargesom manager[238321]: [INFO] manager          :: SIGTERM of child: token_validator (pid: 238384) succeeded.
+2025-12-05T22:07:50.503341+0100 chargesom manager[238321]: [CRIT] manager          :: Exiting manager.
+2025-12-05T22:07:50.514078+0100 chargesom systemd[1]: everest.service: Main process exited, code=exited, status=1/FAILURE
+2025-12-05T22:07:50.525339+0100 chargesom systemd[1]: everest.service: Failed with result 'exit-code'.
+2025-12-05T22:07:50.778462+0100 chargesom systemd[1]: everest.service: Scheduled restart job, restart counter is at 5.
+2025-12-05T22:07:50.779335+0100 chargesom systemd[1]: Stopped EVerest.
+2025-12-05T22:07:50.799997+0100 chargesom systemd[1]: Starting EVerest...
+2025-12-05T22:07:50.805850+0100 chargesom sh[239001]: Starting to migrate EVerest configurations
+2025-12-05T22:07:50.823193+0100 chargesom sh[239001]: EVerest configurations migrated successfully
+2025-12-05T22:07:50.826392+0100 chargesom systemd[1]: Started EVerest.
+2025-12-05T22:07:50.849726+0100 chargesom manager[239005]: [INFO] manager          ::   ________      __                _
+2025-12-05T22:07:50.849726+0100 chargesom manager[239005]: [INFO] manager          ::  |  ____\ \    / /               | |
+2025-12-05T22:07:50.851049+0100 chargesom manager[239005]: [INFO] manager          ::  | |__   \ \  / /__ _ __ ___  ___| |_
+2025-12-05T22:07:50.851049+0100 chargesom manager[239005]: [INFO] manager          ::  |  __|   \ \/ / _ \ '__/ _ \/ __| __|
+2025-12-05T22:07:50.851049+0100 chargesom manager[239005]: [INFO] manager          ::  | |____   \  /  __/ | |  __/\__ \ |_
+2025-12-05T22:07:50.851049+0100 chargesom manager[239005]: [INFO] manager          ::  |______|   \/ \___|_|  \___||___/\__|
+2025-12-05T22:07:50.851049+0100 chargesom manager[239005]: [INFO] manager          ::
+2025-12-05T22:07:50.851049+0100 chargesom manager[239005]: [INFO] manager          :: everest-framework 0.23.0 main@v0.23.0
+2025-12-05T22:07:50.851049+0100 chargesom manager[239005]: [INFO] manager          :: everest-core 2025.8.0 feature/json-rpc-api-2025.8.0@2025.8.0-351-g14709eef-dirty
+2025-12-05T22:07:50.851049+0100 chargesom manager[239005]: [INFO] manager          ::
+2025-12-05T22:07:50.851049+0100 chargesom manager[239005]: [INFO] manager          :: Using MQTT broker localhost:1883
+2025-12-05T22:07:50.867813+0100 chargesom manager[239006]: [INFO] everest_ctrl     :: Launching controller service on port 8849
+2025-12-05T22:07:50.881683+0100 chargesom manager[239005]: [INFO] manager          :: Boot mode is set to YamlFile, loading module configs from YAML file
+2025-12-05T22:07:50.882010+0100 chargesom manager[239005]: [INFO] manager          :: Loading config file at: /etc/everest/config.yaml
+2025-12-05T22:07:50.998453+0100 chargesom manager[239005]: [INFO] manager          :: Config loading completed in 145ms
+2025-12-05T22:07:51.001844+0100 chargesom manager[239005]: [INFO] manager          :: Starting 14 modules
+2025-12-05T22:07:52.814918+0100 chargesom manager[239027]: [INFO] bsp:CbChargeSOM  :: chargebyte's Charge SOM EVerest module (version: 0.24.0)
+2025-12-05T22:07:52.818375+0100 chargesom manager[239025]: [CRIT] api:API          :: Please configure an evse mapping in your configuration file for the connected r_evse_energy_sink with module_id: grid_connection_point
+2025-12-05T22:07:52.829250+0100 chargesom manager[239029]: [INFO] energy_manager:  :: Module energy_manager initialized [1743ms]
+2025-12-05T22:07:52.833734+0100 chargesom manager[239025]: [CRIT] api:API          :: Caught top level std::exception:
+2025-12-05T22:07:52.833734+0100 chargesom manager[239025]: Dynamic exception type: std::runtime_error
+2025-12-05T22:07:52.833734+0100 chargesom manager[239025]: std::exception::what: At least one connected evse_energy_sink misses a mapping to an evse.
+2025-12-05T22:07:52.866922+0100 chargesom manager[239031]: [INFO] error_history:E  :: Using database at "/tmp/error_history.db"
+2025-12-05T22:07:52.866922+0100 chargesom manager[239031]: [INFO] error_history:E  :: Checking database
+2025-12-05T22:07:52.870367+0100 chargesom manager[239031]: [INFO] error_history:E  :: Module error_history initialized [1745ms]
+2025-12-05T22:07:52.871580+0100 chargesom manager[239005]: [CRIT] manager          :: Module api (pid: 239025) exited with status: 0. Terminating all modules.
+2025-12-05T22:07:52.873832+0100 chargesom manager[239026]: [INFO] auth:Auth        :: Module auth initialized [1808ms]
+2025-12-05T22:07:52.887248+0100 chargesom manager[239045]: [INFO] grid_connection  :: Module grid_connection_point initialized [1730ms]
+2025-12-05T22:07:52.898650+0100 chargesom manager[239046]: [INFO] imd:IMDSimulato  :: Module imd initialized [1742ms]
+2025-12-05T22:07:52.901663+0100 chargesom manager[239005]: [INFO] manager          :: SIGTERM of child: auth (pid: 239026) succeeded.
+2025-12-05T22:07:52.902160+0100 chargesom manager[239005]: [INFO] manager          :: SIGTERM of child: bsp (pid: 239027) succeeded.
+2025-12-05T22:07:52.908204+0100 chargesom manager[239005]: [INFO] manager          :: SIGTERM of child: connector (pid: 239028) succeeded.
+2025-12-05T22:07:52.908204+0100 chargesom manager[239005]: [INFO] manager          :: SIGTERM of child: energy_manager (pid: 239029) succeeded.
+2025-12-05T22:07:52.908204+0100 chargesom manager[239005]: [INFO] manager          :: SIGTERM of child: error_history (pid: 239031) succeeded.
+2025-12-05T22:07:52.908204+0100 chargesom manager[239005]: [INFO] manager          :: SIGTERM of child: evse_security (pid: 239034) succeeded.
+2025-12-05T22:07:52.908204+0100 chargesom manager[239005]: [INFO] manager          :: SIGTERM of child: evse_slac (pid: 239037) succeeded.
+2025-12-05T22:07:52.908204+0100 chargesom manager[239005]: [INFO] manager          :: SIGTERM of child: grid_connection_point (pid: 239045) succeeded.
+2025-12-05T22:07:52.908204+0100 chargesom manager[239005]: [INFO] manager          :: SIGTERM of child: imd (pid: 239046) succeeded.
+2025-12-05T22:07:52.908204+0100 chargesom manager[239005]: [INFO] manager          :: SIGTERM of child: iso15118_charger (pid: 239050) succeeded.
+2025-12-05T22:07:52.911415+0100 chargesom manager[239005]: [INFO] manager          :: SIGTERM of child: powersupply_dc (pid: 239058) succeeded.
+2025-12-05T22:07:52.911415+0100 chargesom manager[239005]: [INFO] manager          :: SIGTERM of child: token_provider (pid: 239066) succeeded.
+2025-12-05T22:07:52.911415+0100 chargesom manager[239005]: [INFO] manager          :: SIGTERM of child: token_validator (pid: 239069) succeeded.
+2025-12-05T22:07:52.911415+0100 chargesom manager[239005]: [CRIT] manager          :: Exiting manager.
+2025-12-05T22:07:52.928745+0100 chargesom systemd[1]: everest.service: Main process exited, code=exited, status=1/FAILURE
+2025-12-05T22:07:52.937144+0100 chargesom systemd[1]: everest.service: Failed with result 'exit-code'.
+2025-12-05T22:07:53.278452+0100 chargesom systemd[1]: everest.service: Scheduled restart job, restart counter is at 6.
+2025-12-05T22:07:53.279788+0100 chargesom systemd[1]: Stopped EVerest.
+2025-12-05T22:07:53.303951+0100 chargesom systemd[1]: Starting EVerest...
+2025-12-05T22:07:53.309233+0100 chargesom sh[239647]: Starting to migrate EVerest configurations
+2025-12-05T22:07:53.326436+0100 chargesom sh[239647]: EVerest configurations migrated successfully
+2025-12-05T22:07:53.329759+0100 chargesom systemd[1]: Started EVerest.
+2025-12-05T22:07:53.352456+0100 chargesom manager[239651]: [INFO] manager          ::   ________      __                _
+2025-12-05T22:07:53.352456+0100 chargesom manager[239651]: [INFO] manager          ::  |  ____\ \    / /               | |
+2025-12-05T22:07:53.353583+0100 chargesom manager[239651]: [INFO] manager          ::  | |__   \ \  / /__ _ __ ___  ___| |_
+2025-12-05T22:07:53.353583+0100 chargesom manager[239651]: [INFO] manager          ::  |  __|   \ \/ / _ \ '__/ _ \/ __| __|
+2025-12-05T22:07:53.353583+0100 chargesom manager[239651]: [INFO] manager          ::  | |____   \  /  __/ | |  __/\__ \ |_
+2025-12-05T22:07:53.353583+0100 chargesom manager[239651]: [INFO] manager          ::  |______|   \/ \___|_|  \___||___/\__|
+2025-12-05T22:07:53.353583+0100 chargesom manager[239651]: [INFO] manager          ::
+2025-12-05T22:07:53.353583+0100 chargesom manager[239651]: [INFO] manager          :: everest-framework 0.23.0 main@v0.23.0
+2025-12-05T22:07:53.353583+0100 chargesom manager[239651]: [INFO] manager          :: everest-core 2025.8.0 feature/json-rpc-api-2025.8.0@2025.8.0-351-g14709eef-dirty
+2025-12-05T22:07:53.353583+0100 chargesom manager[239651]: [INFO] manager          ::
+2025-12-05T22:07:53.353583+0100 chargesom manager[239651]: [INFO] manager          :: Using MQTT broker localhost:1883
+2025-12-05T22:07:53.369000+0100 chargesom manager[239652]: [INFO] everest_ctrl     :: Launching controller service on port 8849
+2025-12-05T22:07:53.388685+0100 chargesom manager[239651]: [INFO] manager          :: Boot mode is set to YamlFile, loading module configs from YAML file
+2025-12-05T22:07:53.389017+0100 chargesom manager[239651]: [INFO] manager          :: Loading config file at: /etc/everest/config.yaml
+2025-12-05T22:07:53.505253+0100 chargesom manager[239651]: [INFO] manager          :: Config loading completed in 146ms
+2025-12-05T22:07:53.508691+0100 chargesom manager[239651]: [INFO] manager          :: Starting 14 modules
+2025-12-05T22:07:55.310937+0100 chargesom manager[239679]: [INFO] error_history:E  :: Using database at "/tmp/error_history.db"
+2025-12-05T22:07:55.310937+0100 chargesom manager[239679]: [INFO] error_history:E  :: Checking database
+2025-12-05T22:07:55.312542+0100 chargesom manager[239679]: [INFO] error_history:E  :: Module error_history initialized [1711ms]
+2025-12-05T22:07:55.373930+0100 chargesom manager[239673]: [INFO] bsp:CbChargeSOM  :: chargebyte's Charge SOM EVerest module (version: 0.24.0)
+2025-12-05T22:07:55.382051+0100 chargesom manager[239671]: [CRIT] api:API          :: Please configure an evse mapping in your configuration file for the connected r_evse_energy_sink with module_id: grid_connection_point
+2025-12-05T22:07:55.389633+0100 chargesom manager[239672]: [INFO] auth:Auth        :: Module auth initialized [1819ms]
+2025-12-05T22:07:55.393077+0100 chargesom manager[239671]: [CRIT] api:API          :: Caught top level std::exception:
+2025-12-05T22:07:55.393077+0100 chargesom manager[239671]: Dynamic exception type: std::runtime_error
+2025-12-05T22:07:55.393077+0100 chargesom manager[239671]: std::exception::what: At least one connected evse_energy_sink misses a mapping to an evse.
+2025-12-05T22:07:55.403629+0100 chargesom manager[239651]: [CRIT] manager          :: Module api (pid: 239671) exited with status: 0. Terminating all modules.
+2025-12-05T22:07:55.417900+0100 chargesom manager[239685]: [INFO] evse_slac:EvseS  :: Module evse_slac initialized [1797ms]
+2025-12-05T22:07:55.432693+0100 chargesom manager[239693]: [INFO] iso15118_charge  :: Module iso15118_charger initialized [1748ms]
+2025-12-05T22:07:55.449174+0100 chargesom manager[239651]: [INFO] manager          :: SIGTERM of child: auth (pid: 239672) succeeded.
+2025-12-05T22:07:55.454172+0100 chargesom manager[239651]: [INFO] manager          :: SIGTERM of child: bsp (pid: 239673) succeeded.
+2025-12-05T22:07:55.455188+0100 chargesom manager[239651]: [INFO] manager          :: SIGTERM of child: connector (pid: 239674) succeeded.
+2025-12-05T22:07:55.459657+0100 chargesom manager[239651]: [INFO] manager          :: SIGTERM of child: energy_manager (pid: 239676) succeeded.
+2025-12-05T22:07:55.459657+0100 chargesom manager[239651]: [INFO] manager          :: SIGTERM of child: error_history (pid: 239679) succeeded.
+2025-12-05T22:07:55.464861+0100 chargesom manager[239699]: [INFO] powersupply_dc:  :: Infy: Setting config values: CAN device: can0
+2025-12-05T22:07:55.464861+0100 chargesom manager[239699]: [INFO] powersupply_dc:  :: Infy: Operating with controller address: 0xf0
+2025-12-05T22:07:55.464861+0100 chargesom manager[239699]: [INFO] powersupply_dc:  :: Infy: Operating in FIXED_ADDRESS mode with 1 addresses: 0
+2025-12-05T22:07:55.464861+0100 chargesom manager[239699]: [INFO] powersupply_dc:  :: Infy: module communication timeout: 15s
+2025-12-05T22:07:55.464861+0100 chargesom manager[239699]: [INFO] powersupply_dc:  :: Infy: Operating in FIXED_ADDRESS mode. No need to ping.
+2025-12-05T22:07:55.464861+0100 chargesom manager[239699]: [INFO] powersupply_dc:  :: Infy: switch_on_off(false) - active modules: 1
+2025-12-05T22:07:55.466818+0100 chargesom manager[239699]: [INFO] powersupply_dc:  :: Module powersupply_dc initialized [1746ms]
+2025-12-05T22:07:55.469680+0100 chargesom manager[239651]: [INFO] manager          :: SIGTERM of child: evse_security (pid: 239680) succeeded.
+2025-12-05T22:07:55.469680+0100 chargesom manager[239651]: [INFO] manager          :: SIGTERM of child: evse_slac (pid: 239685) succeeded.
+2025-12-05T22:07:55.469680+0100 chargesom manager[239651]: [INFO] manager          :: SIGTERM of child: grid_connection_point (pid: 239687) succeeded.
+2025-12-05T22:07:55.471344+0100 chargesom manager[239651]: [INFO] manager          :: SIGTERM of child: imd (pid: 239692) succeeded.
+2025-12-05T22:07:55.471611+0100 chargesom manager[239699]: [INFO] powersupply_dc:  :: Starting CAN RX thread
+2025-12-05T22:07:55.471611+0100 chargesom manager[239699]: [INFO] powersupply_dc:  :: CAN error cleared: Success
+2025-12-05T22:07:55.471921+0100 chargesom manager[239651]: [INFO] manager          :: SIGTERM of child: iso15118_charger (pid: 239693) succeeded.
+2025-12-05T22:07:55.471921+0100 chargesom manager[239651]: [INFO] manager          :: SIGTERM of child: powersupply_dc (pid: 239699) succeeded.
+2025-12-05T22:07:55.471921+0100 chargesom manager[239651]: [INFO] manager          :: SIGTERM of child: token_provider (pid: 239704) succeeded.
+2025-12-05T22:07:55.475316+0100 chargesom manager[239651]: [INFO] manager          :: SIGTERM of child: token_validator (pid: 239714) succeeded.
+2025-12-05T22:07:55.482350+0100 chargesom manager[239651]: [CRIT] manager          :: Exiting manager.
+2025-12-05T22:07:55.494721+0100 chargesom systemd[1]: everest.service: Main process exited, code=exited, status=1/FAILURE
+2025-12-05T22:07:55.496184+0100 chargesom systemd[1]: everest.service: Failed with result 'exit-code'.
+2025-12-05T22:07:55.778475+0100 chargesom systemd[1]: everest.service: Scheduled restart job, restart counter is at 7.
+2025-12-05T22:07:55.780880+0100 chargesom systemd[1]: Stopped EVerest.
+2025-12-05T22:07:55.800024+0100 chargesom systemd[1]: Starting EVerest...
+2025-12-05T22:07:55.804866+0100 chargesom sh[240299]: Starting to migrate EVerest configurations
+2025-12-05T22:07:55.822107+0100 chargesom sh[240299]: EVerest configurations migrated successfully
+2025-12-05T22:07:55.825468+0100 chargesom systemd[1]: Started EVerest.
+2025-12-05T22:07:55.848083+0100 chargesom manager[240303]: [INFO] manager          ::   ________      __                _
+2025-12-05T22:07:55.848083+0100 chargesom manager[240303]: [INFO] manager          ::  |  ____\ \    / /               | |
+2025-12-05T22:07:55.850083+0100 chargesom manager[240303]: [INFO] manager          ::  | |__   \ \  / /__ _ __ ___  ___| |_
+2025-12-05T22:07:55.850083+0100 chargesom manager[240303]: [INFO] manager          ::  |  __|   \ \/ / _ \ '__/ _ \/ __| __|
+2025-12-05T22:07:55.850083+0100 chargesom manager[240303]: [INFO] manager          ::  | |____   \  /  __/ | |  __/\__ \ |_
+2025-12-05T22:07:55.850083+0100 chargesom manager[240303]: [INFO] manager          ::  |______|   \/ \___|_|  \___||___/\__|
+2025-12-05T22:07:55.850083+0100 chargesom manager[240303]: [INFO] manager          ::
+2025-12-05T22:07:55.850083+0100 chargesom manager[240303]: [INFO] manager          :: everest-framework 0.23.0 main@v0.23.0
+2025-12-05T22:07:55.850083+0100 chargesom manager[240303]: [INFO] manager          :: everest-core 2025.8.0 feature/json-rpc-api-2025.8.0@2025.8.0-351-g14709eef-dirty
+2025-12-05T22:07:55.850083+0100 chargesom manager[240303]: [INFO] manager          ::
+2025-12-05T22:07:55.850083+0100 chargesom manager[240303]: [INFO] manager          :: Using MQTT broker localhost:1883
+2025-12-05T22:07:55.866340+0100 chargesom manager[240304]: [INFO] everest_ctrl     :: Launching controller service on port 8849
+2025-12-05T22:07:55.879775+0100 chargesom manager[240303]: [INFO] manager          :: Boot mode is set to YamlFile, loading module configs from YAML file
+2025-12-05T22:07:55.880120+0100 chargesom manager[240303]: [INFO] manager          :: Loading config file at: /etc/everest/config.yaml
+2025-12-05T22:07:55.996104+0100 chargesom manager[240303]: [INFO] manager          :: Config loading completed in 144ms
+2025-12-05T22:07:55.999575+0100 chargesom manager[240303]: [INFO] manager          :: Starting 14 modules

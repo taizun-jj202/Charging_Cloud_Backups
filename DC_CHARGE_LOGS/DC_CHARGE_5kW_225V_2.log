@@ -1,0 +1,1097 @@
+2025-12-16T18:18:07.164607+0100 chargesom manager[855873]: [INFO] manager          ::
+2025-12-16T18:18:07.164607+0100 chargesom manager[855873]: [INFO] manager          :: everest-framework 0.23.0 main@v0.23.0
+2025-12-16T18:18:07.164607+0100 chargesom manager[855873]: [INFO] manager          :: everest-core 2025.8.0 feature/json-rpc-api-2025.8.0@2025.8.0-351-g14709eef-dirty
+2025-12-16T18:18:07.164607+0100 chargesom manager[855873]: [INFO] manager          ::
+2025-12-16T18:18:07.164607+0100 chargesom manager[855873]: [INFO] manager          :: Using MQTT broker localhost:1883
+2025-12-16T18:18:07.180760+0100 chargesom manager[855874]: [INFO] everest_ctrl     :: Launching controller service on port 8849
+2025-12-16T18:18:07.194970+0100 chargesom manager[855873]: [INFO] manager          :: Boot mode is set to YamlFile, loading module configs from YAML file
+2025-12-16T18:18:07.195358+0100 chargesom manager[855873]: [INFO] manager          :: Loading config file at: /etc/everest/config.yaml
+2025-12-16T18:18:07.313096+0100 chargesom manager[855873]: [INFO] manager          :: Config loading completed in 146ms
+2025-12-16T18:18:07.316768+0100 chargesom manager[855873]: [INFO] manager          :: Starting 14 modules
+2025-12-16T18:18:09.117867+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: Module connector initialized [1730ms]
+2025-12-16T18:18:09.144253+0100 chargesom manager[855905]: [INFO] evse_security:E  :: Module evse_security initialized [1731ms]
+2025-12-16T18:18:09.167510+0100 chargesom manager[855895]: [INFO] bsp:CbChargeSOM  :: chargebyte's Charge SOM EVerest module (version: 0.24.0)
+2025-12-16T18:18:09.176412+0100 chargesom manager[855894]: [INFO] auth:Auth        :: Module auth initialized [1804ms]
+2025-12-16T18:18:09.194121+0100 chargesom manager[855893]: [WARN] api:API          :: No evse energy sink configured for evse_id: 1. API module does therefore not allow control of amps or power limits for this EVSE
+2025-12-16T18:18:09.196224+0100 chargesom manager[855893]: [INFO] api:API          :: Module api initialized [1840ms]
+2025-12-16T18:18:09.215924+0100 chargesom manager[855897]: [INFO] energy_manager:  :: Module energy_manager initialized [1792ms]
+2025-12-16T18:18:09.226861+0100 chargesom manager[855911]: [INFO] grid_connection  :: Module grid_connection_point initialized [1746ms]
+2025-12-16T18:18:09.237882+0100 chargesom manager[855932]: [INFO] token_validator  :: Module token_validator initialized [1693ms]
+2025-12-16T18:18:09.242320+0100 chargesom manager[855926]: [INFO] token_provider:  :: Module token_provider initialized [1711ms]
+2025-12-16T18:18:09.243514+0100 chargesom manager[855907]: [INFO] evse_slac:EvseS  :: Module evse_slac initialized [1781ms]
+2025-12-16T18:18:09.256746+0100 chargesom manager[855915]: [INFO] imd:IMDSimulato  :: Module imd initialized [1749ms]
+2025-12-16T18:18:09.259761+0100 chargesom manager[855899]: [INFO] error_history:E  :: Using database at "/tmp/error_history.db"
+2025-12-16T18:18:09.259761+0100 chargesom manager[855922]: [INFO] powersupply_dc:  :: Infy: Setting config values: CAN device: can0
+2025-12-16T18:18:09.262948+0100 chargesom manager[855922]: [INFO] powersupply_dc:  :: Infy: Operating with controller address: 0xf0
+2025-12-16T18:18:09.263245+0100 chargesom manager[855922]: [INFO] powersupply_dc:  :: Starting CAN RX thread
+2025-12-16T18:18:09.263449+0100 chargesom manager[855899]: [INFO] error_history:E  :: Checking database
+2025-12-16T18:18:09.263650+0100 chargesom manager[855922]: [INFO] powersupply_dc:  :: CAN error cleared: Success
+2025-12-16T18:18:09.263650+0100 chargesom manager[855922]: [INFO] powersupply_dc:  :: Infy: Operating in FIXED_ADDRESS mode with 1 addresses: 0
+2025-12-16T18:18:09.263650+0100 chargesom manager[855922]: [INFO] powersupply_dc:  :: Infy: module communication timeout: 15s
+2025-12-16T18:18:09.263650+0100 chargesom manager[855922]: [INFO] powersupply_dc:  :: Infy: Operating in FIXED_ADDRESS mode. No need to ping.
+2025-12-16T18:18:09.263650+0100 chargesom manager[855922]: [INFO] powersupply_dc:  :: Infy: switch_on_off(false) - active modules: 1
+2025-12-16T18:18:09.263650+0100 chargesom manager[855922]: [INFO] powersupply_dc:  :: Module powersupply_dc initialized [1734ms]
+2025-12-16T18:18:09.265328+0100 chargesom manager[855899]: [INFO] error_history:E  :: Module error_history initialized [1816ms]
+2025-12-16T18:18:09.280011+0100 chargesom manager[855919]: [INFO] iso15118_charge  :: Module iso15118_charger initialized [1780ms]
+2025-12-16T18:18:09.544281+0100 chargesom manager[855895]: [INFO] bsp:CbChargeSOM  :: Safety Controller Firmware: 0.2.5 (gde7345017c7932bc, Charge SOM, firmware)
+2025-12-16T18:18:09.544945+0100 chargesom manager[855895]: [INFO] bsp:CbChargeSOM  :: Module bsp initialized [2140ms]
+2025-12-16T18:18:09.545749+0100 chargesom manager[855873]: [INFO] manager          :: Clearing retained topics published by manager during startup
+2025-12-16T18:18:09.546594+0100 chargesom manager[855873]: [INFO] manager          :: 🚙🚙🚙 All modules are initialized. EVerest up and running [2387ms] 🚙🚙🚙
+2025-12-16T18:18:09.556000+0100 chargesom manager[855919]: [INFO] iso15118_charge  :: TCP server on eth1 is listening on port [fe80::201:87ff:fe00:3035%3]:61341
+2025-12-16T18:18:09.556000+0100 chargesom manager[855919]: [INFO] iso15118_charge  :: SDP socket setup succeeded
+2025-12-16T18:18:09.569115+0100 chargesom manager[855907]: [INFO] evse_slac:EvseS  :: Starting the SLAC state machine
+2025-12-16T18:18:09.687425+0100 chargesom manager[855894]: [WARN] auth:Auth        :: Can not load reservations because no storage was configured.
+2025-12-16T18:18:09.769707+0100 chargesom manager[855907]: [INFO] evse_slac:EvseS  :: Entered Reset state
+2025-12-16T18:18:09.770126+0100 chargesom manager[855907]: [INFO] evse_slac:EvseS  :: New NMK key: 4B:4D:38:37:31:4D:4C:36:43:44:47:32:30:30:48:37
+2025-12-16T18:18:09.771284+0100 chargesom manager[855907]: [INFO] evse_slac:EvseS  :: Received CM_SET_KEY_CNF
+2025-12-16T18:18:09.771677+0100 chargesom manager[855907]: [INFO] evse_slac:EvseS  :: Entered Idle state
+2025-12-16T18:18:13.142533+0100 chargesom manager[855922]: [INFO] powersupply_dc:  :: Infy[0x00]: capabilities: 1000V / 50V, 102A, power 30000W
+2025-12-16T18:18:13.164954+0100 chargesom manager[855922]: [INFO] powersupply_dc:  :: Infy: Capabilities updated: 1000V / 50V, 102A, power 30000W
+2025-12-16T18:18:13.164954+0100 chargesom manager[855922]: [INFO] powersupply_dc:  :: Infy: Hot plug detected - module count increased from 0 to 1 modules, redistributing 0A from 0 to 1 modules
+2025-12-16T18:18:13.164954+0100 chargesom manager[855922]: [INFO] powersupply_dc:  :: Infy: Restoring last settings: voltage=0V, current=0A, mode=Off, phase=CableCheck
+2025-12-16T18:18:13.164954+0100 chargesom manager[855922]: [INFO] powersupply_dc:  :: Infy: Updating voltage/current via CAN: 50V / 1A total → 1A per module - active modules: 1
+2025-12-16T18:18:13.164954+0100 chargesom manager[855922]: [INFO] powersupply_dc:  :: Infy: set_voltage_current(50V, 1A) - active modules: 1
+2025-12-16T18:18:13.164954+0100 chargesom manager[855922]: [INFO] powersupply_dc:  :: Set mode via CAN: Off with phase CableCheck
+2025-12-16T18:18:13.164954+0100 chargesom manager[855922]: [INFO] powersupply_dc:  :: Infy: switch_on_off(false) - active modules: 1
+2025-12-16T18:18:13.164954+0100 chargesom manager[855922]: [INFO] powersupply_dc:  :: Infy[0x00]: serial number: SN_2818a396c70776_V
+2025-12-16T18:18:13.263207+0100 chargesom manager[855922]: [WARN] powersupply_dc: size_t InfyCanDevice::remove_expired_telemetry_entries() :: Infy[0x00/SN_2818a396c70776_V]: module communication expired (timeout: 15s). Removing from active modules.
+2025-12-16T18:18:13.263207+0100 chargesom manager[855922]: [INFO] powersupply_dc:  :: Infy: Communication fault detected - all 1 modules unresponsive, forcing system OFF for safety
+2025-12-16T18:18:13.263207+0100 chargesom manager[855922]: [ERRO] powersupply_dc: module::main::power_supply_DCImpl::init()::<lambda(uint8_t, InfyCanDevice::Error, bool)> :: Infy[0xFF]: communication fault detected
+2025-12-16T18:18:13.270891+0100 chargesom manager[855922]: [ERRO] powersupply_dc:  :: Error raised, type: power_supply_DC/CommunicationFault, sub_type: , message: Infy[0xFF]: communication fault detected
+2025-12-16T18:18:13.271510+0100 chargesom manager[855922]: [INFO] powersupply_dc:  :: Infy: Removed 1 expired modules. Active modules remaining: 0
+2025-12-16T18:18:13.271936+0100 chargesom manager[855922]: [INFO] powersupply_dc:  :: Infy: No telemetries received, setting default capabilities
+2025-12-16T18:18:13.289809+0100 chargesom manager[855896]: [ERRO] connector:EvseM  :: Error raised, type: evse_manager/Inoperative, sub_type: , message: power_supply_DC/CommunicationFault
+2025-12-16T18:18:15.183550+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: Cleaning up any other transaction on start up
+2025-12-16T18:18:15.230738+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: 🌀🌀🌀 Ready to start charging 🌀🌀🌀
+2025-12-16T18:18:15.230738+0100 chargesom manager[855896]: [WARN] connector:EvseM void module::EvseManager::ready_to_start_charging() :: No powermeter value received yet!
+2025-12-16T18:18:15.544648+0100 chargesom manager[855895]: [INFO] bsp:CbChargeSOM  :: handle_enable: Setting new duty cycle of 100.0%
+2025-12-16T18:18:15.658075+0100 chargesom manager[855895]: [INFO] bsp:CbChargeSOM  :: CP state change from PowerOn to B, PWM: 100.0%
+2025-12-16T18:18:15.701141+0100 chargesom manager[855895]: [INFO] bsp:CbChargeSOM  :: handle_allow_power_on: request to OPEN the contactor
+2025-12-16T18:18:15.750454+0100 chargesom manager[855895]: [INFO] bsp:CbChargeSOM  :: handle_pwm_off: Setting new duty cycle of 100.0%
+2025-12-16T18:18:15.795113+0100 chargesom manager[855907]: [INFO] evse_slac:EvseS  :: Entered Matching state, waiting for CM_SLAC_PARM_REQ
+2025-12-16T18:18:15.885774+0100 chargesom manager[855895]: [INFO] bsp:CbChargeSOM  :: handle_allow_power_on: request to OPEN the contactor
+2025-12-16T18:18:16.018112+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: SYS  Session logging started.
+2025-12-16T18:18:16.018537+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE IEC Session Started: EVConnected
+2025-12-16T18:18:16.020671+0100 chargesom manager[855926]: [INFO] token_provider:  :: Publishing new dummy token: {
+2025-12-16T18:18:16.020671+0100 chargesom manager[855926]:     "authorization_type": "RFID",
+2025-12-16T18:18:16.020671+0100 chargesom manager[855926]:     "id_token": {
+2025-12-16T18:18:16.020671+0100 chargesom manager[855926]:         "type": "ISO14443",
+2025-12-16T18:18:16.020671+0100 chargesom manager[855926]:         "value": "[redacted] hash: 29F2679CA504908"
+2025-12-16T18:18:16.020671+0100 chargesom manager[855926]:     },
+2025-12-16T18:18:16.020671+0100 chargesom manager[855926]:     "parent_id_token": {
+2025-12-16T18:18:16.020671+0100 chargesom manager[855926]:         "type": "ISO14443",
+2025-12-16T18:18:16.020671+0100 chargesom manager[855926]:         "value": "[redacted] hash: 29F2679CA504908"
+2025-12-16T18:18:16.020671+0100 chargesom manager[855926]:     }
+2025-12-16T18:18:16.020671+0100 chargesom manager[855926]: }
+2025-12-16T18:18:16.024790+0100 chargesom manager[855894]: [INFO] auth:Auth        :: Plug In event for evse#1, starting auth
+2025-12-16T18:18:16.024790+0100 chargesom manager[855894]: [INFO] auth:Auth        :: Received new token: {
+2025-12-16T18:18:16.024790+0100 chargesom manager[855894]:     "authorization_type": "RFID",
+2025-12-16T18:18:16.024790+0100 chargesom manager[855894]:     "id_token": {
+2025-12-16T18:18:16.024790+0100 chargesom manager[855894]:         "type": "ISO14443",
+2025-12-16T18:18:16.024790+0100 chargesom manager[855894]:         "value": "[redacted] hash: 29F2679CA504908"
+2025-12-16T18:18:16.024790+0100 chargesom manager[855894]:     },
+2025-12-16T18:18:16.024790+0100 chargesom manager[855894]:     "parent_id_token": {
+2025-12-16T18:18:16.024790+0100 chargesom manager[855894]:         "type": "ISO14443",
+2025-12-16T18:18:16.024790+0100 chargesom manager[855894]:         "value": "[redacted] hash: 29F2679CA504908"
+2025-12-16T18:18:16.024790+0100 chargesom manager[855894]:     }
+2025-12-16T18:18:16.024790+0100 chargesom manager[855894]: }
+2025-12-16T18:18:16.024790+0100 chargesom manager[855894]: [INFO] auth:Auth        :: Result for token: [redacted] hash: 29F2679CA504908: NO_CONNECTOR_AVAILABLE
+2025-12-16T18:18:16.520037+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE IEC Set PWM On (5.0%) took 0 ms
+2025-12-16T18:18:16.522188+0100 chargesom manager[855895]: [INFO] bsp:CbChargeSOM  :: handle_pwm_on: Setting new duty cycle of 5.0%
+2025-12-16T18:18:16.648138+0100 chargesom manager[855896]: [WARN] connector:EvseM void module::Charger::run_state_machine() :: No energy available, still retrying... Some EVs dont like 0W and/or 0A in ChargingParameterDiscoveryRes message
+2025-12-16T18:18:22.324292+0100 chargesom manager[855907]: [INFO] evse_slac:EvseS  :: Session (run_id=E43E1FB3DE2391C8, ev_mac=F0:7F:0C:11:12:F1): initialized, waiting for CM_START_ATTEN_CHAR_IND
+2025-12-16T18:18:22.563013+0100 chargesom manager[855907]: [INFO] evse_slac:EvseS  :: Session (run_id=E43E1FB3DE2391C8, ev_mac=F0:7F:0C:11:12:F1): received CM_START_ATTEN_CHAR_IND, going to substate SOUNDING
+2025-12-16T18:18:22.603775+0100 chargesom manager[855907]: [INFO] evse_slac:EvseS  :: Session (run_id=E43E1FB3DE2391C8, ev_mac=F0:7F:0C:11:12:F1): needs to be in state WAIT_FOR_START_ATTEN_CHAR for CM_START_ATTEN_CHAR_IND
+2025-12-16T18:18:22.642866+0100 chargesom manager[855907]: [INFO] evse_slac:EvseS  :: Session (run_id=E43E1FB3DE2391C8, ev_mac=F0:7F:0C:11:12:F1): needs to be in state WAIT_FOR_START_ATTEN_CHAR for CM_START_ATTEN_CHAR_IND
+2025-12-16T18:18:22.682878+0100 chargesom manager[855907]: [INFO] evse_slac:EvseS  :: Session (run_id=E43E1FB3DE2391C8, ev_mac=F0:7F:0C:11:12:F1): received CM_MNBC_SOUND_IND
+2025-12-16T18:18:22.690743+0100 chargesom manager[855907]: [INFO] evse_slac:EvseS  :: Session (run_id=E43E1FB3DE2391C8, ev_mac=F0:7F:0C:11:12:F1): received CM_ATTEN_PROFILE_IND
+2025-12-16T18:18:22.722892+0100 chargesom manager[855907]: [INFO] evse_slac:EvseS  :: Session (run_id=E43E1FB3DE2391C8, ev_mac=F0:7F:0C:11:12:F1): received CM_MNBC_SOUND_IND
+2025-12-16T18:18:22.730338+0100 chargesom manager[855907]: [INFO] evse_slac:EvseS  :: Session (run_id=E43E1FB3DE2391C8, ev_mac=F0:7F:0C:11:12:F1): received CM_ATTEN_PROFILE_IND
+2025-12-16T18:18:22.762929+0100 chargesom manager[855907]: [INFO] evse_slac:EvseS  :: Session (run_id=E43E1FB3DE2391C8, ev_mac=F0:7F:0C:11:12:F1): received CM_MNBC_SOUND_IND
+2025-12-16T18:18:22.770226+0100 chargesom manager[855907]: [INFO] evse_slac:EvseS  :: Session (run_id=E43E1FB3DE2391C8, ev_mac=F0:7F:0C:11:12:F1): received CM_ATTEN_PROFILE_IND
+2025-12-16T18:18:22.802868+0100 chargesom manager[855907]: [INFO] evse_slac:EvseS  :: Session (run_id=E43E1FB3DE2391C8, ev_mac=F0:7F:0C:11:12:F1): received CM_MNBC_SOUND_IND
+2025-12-16T18:18:22.810363+0100 chargesom manager[855907]: [INFO] evse_slac:EvseS  :: Session (run_id=E43E1FB3DE2391C8, ev_mac=F0:7F:0C:11:12:F1): received CM_ATTEN_PROFILE_IND
+2025-12-16T18:18:22.842844+0100 chargesom manager[855907]: [INFO] evse_slac:EvseS  :: Session (run_id=E43E1FB3DE2391C8, ev_mac=F0:7F:0C:11:12:F1): received CM_MNBC_SOUND_IND
+2025-12-16T18:18:22.850278+0100 chargesom manager[855907]: [INFO] evse_slac:EvseS  :: Session (run_id=E43E1FB3DE2391C8, ev_mac=F0:7F:0C:11:12:F1): received CM_ATTEN_PROFILE_IND
+2025-12-16T18:18:22.882929+0100 chargesom manager[855907]: [INFO] evse_slac:EvseS  :: Session (run_id=E43E1FB3DE2391C8, ev_mac=F0:7F:0C:11:12:F1): received CM_MNBC_SOUND_IND
+2025-12-16T18:18:22.890380+0100 chargesom manager[855907]: [INFO] evse_slac:EvseS  :: Session (run_id=E43E1FB3DE2391C8, ev_mac=F0:7F:0C:11:12:F1): received CM_ATTEN_PROFILE_IND
+2025-12-16T18:18:22.922930+0100 chargesom manager[855907]: [INFO] evse_slac:EvseS  :: Session (run_id=E43E1FB3DE2391C8, ev_mac=F0:7F:0C:11:12:F1): received CM_MNBC_SOUND_IND
+2025-12-16T18:18:22.930385+0100 chargesom manager[855907]: [INFO] evse_slac:EvseS  :: Session (run_id=E43E1FB3DE2391C8, ev_mac=F0:7F:0C:11:12:F1): received CM_ATTEN_PROFILE_IND
+2025-12-16T18:18:22.962812+0100 chargesom manager[855907]: [INFO] evse_slac:EvseS  :: Session (run_id=E43E1FB3DE2391C8, ev_mac=F0:7F:0C:11:12:F1): received CM_MNBC_SOUND_IND
+2025-12-16T18:18:22.970177+0100 chargesom manager[855907]: [INFO] evse_slac:EvseS  :: Session (run_id=E43E1FB3DE2391C8, ev_mac=F0:7F:0C:11:12:F1): received CM_ATTEN_PROFILE_IND
+2025-12-16T18:18:23.002811+0100 chargesom manager[855907]: [INFO] evse_slac:EvseS  :: Session (run_id=E43E1FB3DE2391C8, ev_mac=F0:7F:0C:11:12:F1): received CM_MNBC_SOUND_IND
+2025-12-16T18:18:23.010287+0100 chargesom manager[855907]: [INFO] evse_slac:EvseS  :: Session (run_id=E43E1FB3DE2391C8, ev_mac=F0:7F:0C:11:12:F1): received CM_ATTEN_PROFILE_IND
+2025-12-16T18:18:23.042815+0100 chargesom manager[855907]: [INFO] evse_slac:EvseS  :: Session (run_id=E43E1FB3DE2391C8, ev_mac=F0:7F:0C:11:12:F1): received CM_MNBC_SOUND_IND
+2025-12-16T18:18:23.050354+0100 chargesom manager[855907]: [INFO] evse_slac:EvseS  :: Session (run_id=E43E1FB3DE2391C8, ev_mac=F0:7F:0C:11:12:F1): received CM_ATTEN_PROFILE_IND
+2025-12-16T18:18:23.050643+0100 chargesom manager[855907]: [INFO] evse_slac:EvseS  :: Session (run_id=E43E1FB3DE2391C8, ev_mac=F0:7F:0C:11:12:F1): received all sounds, going to substate FINALIZE_SOUNDING
+2025-12-16T18:18:23.094683+0100 chargesom manager[855907]: [INFO] evse_slac:EvseS  :: Session (run_id=E43E1FB3DE2391C8, ev_mac=F0:7F:0C:11:12:F1): Finalize sounding, sending CM_ATTEN_CHAR_IND
+2025-12-16T18:18:23.100891+0100 chargesom manager[855907]: [INFO] evse_slac:EvseS  :: Session (run_id=E43E1FB3DE2391C8, ev_mac=F0:7F:0C:11:12:F1): received CM_ATTEN_CHAR_RSP, going to substate WAIT_FOR_SLAC_MATCH
+2025-12-16T18:18:23.773120+0100 chargesom manager[855907]: [INFO] evse_slac:EvseS  :: Session (run_id=E43E1FB3DE2391C8, ev_mac=F0:7F:0C:11:12:F1): Received CM_SLAC_MATCH_REQ, sending CM_SLAC_MATCH_CNF -> session complete
+2025-12-16T18:18:23.774357+0100 chargesom manager[855907]: [INFO] evse_slac:EvseS  :: Entered Matched state
+2025-12-16T18:18:23.789515+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO SLAC MATCHED
+2025-12-16T18:18:23.833589+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO D-LINK_READY (true)
+2025-12-16T18:18:25.552873+0100 chargesom manager[855919]: [INFO] iso15118_charge  :: Received packet from [fe80::f27f:cff:fe11:12f1]:49152 with security 0x10 and protocol 0x00
+2025-12-16T18:18:25.552873+0100 chargesom manager[855919]: [INFO] iso15118_charge  :: SDP requested NO-TLS, announcing NO-TLS
+2025-12-16T18:18:25.552873+0100 chargesom manager[855919]: [INFO] iso15118_charge  :: sendto([fe80::f27f:cff:fe11:12f1]:49152) succeeded
+2025-12-16T18:18:26.022513+0100 chargesom manager[855894]: [INFO] auth:Auth        :: Plug In timeout for evse#1. Replug required for this EVSE
+2025-12-16T18:18:26.573581+0100 chargesom manager[855919]: [INFO] iso15118_charge  :: Incoming connection on eth1 from [a00:c000:0:0:fe80::]:49152
+2025-12-16T18:18:26.573581+0100 chargesom manager[855919]: [INFO] iso15118_charge  :: Started new TCP connection thread
+2025-12-16T18:18:26.603416+0100 chargesom manager[855919]: [INFO] iso15118_charge  :: Handling SupportedAppProtocolReq
+2025-12-16T18:18:26.604810+0100 chargesom manager[855919]: [INFO] iso15118_charge  :: Protocol negotiation was successful. Selected protocol is ISO15118
+2025-12-16T18:18:26.606286+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G SupportedAppProtocolReq
+2025-12-16T18:18:26.643025+0100 chargesom manager[855919]: [INFO] iso15118_charge  :: SessionSetupReq.EVCCID: F0:7F:0C:11:12:F1
+2025-12-16T18:18:26.643422+0100 chargesom manager[855919]: [INFO] iso15118_charge  :: No session_id found or not equal to the id from the preceding v2g session. Generating random session id.
+2025-12-16T18:18:26.643422+0100 chargesom manager[855919]: [INFO] iso15118_charge  :: Created new session with id 0x3446517876278654138
+2025-12-16T18:18:26.649420+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G SupportedAppProtocolRes
+2025-12-16T18:18:26.693330+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G SessionSetupReq
+2025-12-16T18:18:26.742689+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G SessionSetupRes
+2025-12-16T18:18:26.783197+0100 chargesom manager[855919]: [WARN] iso15118_charge  :: PnC is not allowed without TLS-communication. Correcting value to '1' (ExternalPayment)
+2025-12-16T18:18:26.784442+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G ServiceDiscoveryReq
+2025-12-16T18:18:26.882892+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G ServiceDiscoveryRes
+2025-12-16T18:18:26.923097+0100 chargesom manager[855919]: [INFO] iso15118_charge  :: SelectedPaymentOption: ExternalPayment
+2025-12-16T18:18:26.924727+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G PaymentServiceSelectionReq
+2025-12-16T18:18:27.022676+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G PaymentServiceSelectionRes
+2025-12-16T18:18:27.074738+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:18:27.209667+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:18:27.297646+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:18:27.392282+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:18:27.513861+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:18:27.612040+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:18:27.733756+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:18:27.832453+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:18:27.953822+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:18:28.052277+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:18:28.173730+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:18:28.289153+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:18:28.433763+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:18:28.521638+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:18:28.613780+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:18:28.712863+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:18:28.833820+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:18:28.932374+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:18:29.054020+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:18:29.152308+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:18:29.293159+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:18:29.372358+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:18:29.493605+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:18:29.621363+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:18:29.713637+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:18:29.811121+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:18:29.933675+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:18:30.031460+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:18:30.153873+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:18:30.293338+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:18:30.373707+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:18:30.472090+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:18:30.594124+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:18:30.717777+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:18:30.813711+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:18:30.911251+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:18:31.033558+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:18:31.130953+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:18:31.293190+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:18:31.352331+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:18:31.473524+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:18:31.571068+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:18:31.693569+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:18:31.791096+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:18:31.945424+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:18:32.011019+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:18:32.133600+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:18:32.231177+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:18:32.353583+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:18:32.451003+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:18:32.573913+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:18:32.670973+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:18:32.793370+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:18:32.891962+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:18:33.041729+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:18:33.129358+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:18:33.233458+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:18:33.331067+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:18:33.453525+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:18:33.551109+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:18:33.673513+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:18:33.770951+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:18:33.893708+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:18:33.990842+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:18:34.113411+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:18:34.226141+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:18:34.333495+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:18:34.430896+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:18:34.553399+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:18:34.651609+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:18:34.773316+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:18:34.871913+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:18:34.993268+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:18:35.091798+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:18:35.213442+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:18:35.310994+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:18:35.453385+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:18:35.541993+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:18:35.653304+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:18:35.751643+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:18:35.873520+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:18:35.971734+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:18:36.093353+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:18:36.191752+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:18:36.319266+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:18:36.416821+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:18:36.549561+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:18:36.681167+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:18:36.763294+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:18:36.861923+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:18:36.983627+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:18:37.081085+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:18:37.203228+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:18:37.301763+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:18:37.423145+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:18:37.522339+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:18:37.643735+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:18:37.777452+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:18:38.933259+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:18:39.031709+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:18:39.153254+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:18:39.251965+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:18:39.373152+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:18:39.471471+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:18:39.593399+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:18:39.691544+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:18:39.813233+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:18:39.933725+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:18:40.033023+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:18:40.131476+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:18:40.253695+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:18:40.351500+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:18:40.473153+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:18:40.571614+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:18:40.693367+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:18:40.791708+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:18:40.913186+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:18:41.025538+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:18:41.141188+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:18:41.231658+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:18:41.353223+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:18:41.451471+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:18:41.573207+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:18:41.671368+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:18:41.793069+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:18:41.892170+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:18:42.012958+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:18:42.149453+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:18:42.241206+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:18:42.331765+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:18:42.453057+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:18:42.551422+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:18:42.672894+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:18:42.771674+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:18:42.893151+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:18:42.991494+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:18:43.113083+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:18:43.249511+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:18:43.342330+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:18:43.431615+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:18:43.553004+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:18:43.651260+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:18:43.773343+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:18:43.871382+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:18:43.992795+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:18:44.091311+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:18:44.212876+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:18:44.311279+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:18:44.433381+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:18:44.531306+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:18:44.652790+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:18:44.751452+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:18:44.872999+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:18:44.971357+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:18:45.093819+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:18:45.191405+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:18:45.313058+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:18:45.411400+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:18:45.577698+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:18:45.665527+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:18:45.752884+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:18:45.851284+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:18:45.972864+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:18:46.070131+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:18:46.192683+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:18:46.305333+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:18:46.412763+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:18:46.510122+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:18:46.673639+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:18:46.731423+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:18:46.852698+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:18:46.950213+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:18:47.072719+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:18:47.170166+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:18:47.305350+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:18:47.391481+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:18:47.512783+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:18:47.611244+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:18:47.733657+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:18:47.861492+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:18:47.952506+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:18:48.050038+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:18:48.172888+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:18:48.305474+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:18:48.392572+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:18:48.490646+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:18:48.612518+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:18:48.709934+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:18:48.870148+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:18:48.961294+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:18:49.052521+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:18:49.150242+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:18:49.305244+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:18:49.370081+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:18:49.492890+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:18:49.591315+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:18:49.712599+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:18:49.810224+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:18:49.969705+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:18:50.061406+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:18:50.152476+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:18:50.249970+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:18:50.372805+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:18:50.469979+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:18:50.592667+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:18:50.689912+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:18:50.812569+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:18:50.910151+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:18:51.070418+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:18:51.161305+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:18:51.252668+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:18:51.351915+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:18:51.472523+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:18:51.570918+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:18:51.692735+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:18:51.790100+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:18:51.912410+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:18:52.010992+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:18:52.173607+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:18:52.266003+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:18:52.352524+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:18:52.449989+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:18:52.572609+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:18:52.670849+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:18:52.792226+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:18:52.890872+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:18:53.012301+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:18:53.110724+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:18:53.273933+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:18:53.365297+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:18:53.452298+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:18:53.550922+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:18:53.672307+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:18:53.770642+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:18:53.892807+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:18:53.990025+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:18:54.112264+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:18:54.210674+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:18:54.373394+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:18:54.461875+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:18:54.552240+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:18:54.650622+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:18:54.772494+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:18:54.870675+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:18:54.992270+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:18:55.090844+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:18:55.212292+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:18:55.313194+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:18:55.432587+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:18:55.557663+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:18:55.652248+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:18:55.751254+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:18:55.872214+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:18:55.970605+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:18:56.092603+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:18:56.190770+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:18:56.315390+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:18:56.412692+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:18:56.532207+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:18:56.630587+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:18:56.785382+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:18:56.850718+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:18:56.972137+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:18:57.070956+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:18:57.192074+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:18:57.313229+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:18:57.412400+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:18:57.510629+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:18:57.632047+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:18:57.730521+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:18:57.882074+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:18:57.969309+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:18:58.072488+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:18:58.170583+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:18:58.317269+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:18:58.390838+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:18:58.512123+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:18:58.610478+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:18:58.731954+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:18:58.830694+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:18:58.977441+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:18:59.082329+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:18:59.171944+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:18:59.270365+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:18:59.392076+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:18:59.490369+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:18:59.612032+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:18:59.710471+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:18:59.832340+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:18:59.929899+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:19:00.052167+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:19:00.177322+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:19:00.272052+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:19:00.370638+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:19:00.492258+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:19:00.590693+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:19:00.712020+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:19:00.811679+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:19:00.932585+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:19:01.030636+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:19:01.151884+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:19:01.273409+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:19:01.405529+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:19:01.470335+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:19:01.591817+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:19:01.690407+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:19:01.812028+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:19:01.910422+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:19:02.031900+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:19:02.129214+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:19:02.251945+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:19:02.350535+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:19:02.501445+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:19:02.570177+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:19:02.693722+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:19:02.791119+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:19:02.911743+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:19:03.009353+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:19:03.131914+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:19:03.230455+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:19:03.352368+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:19:03.449304+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:19:03.605526+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:19:03.670313+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:19:03.791720+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:19:03.889623+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:19:04.011842+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:19:04.110295+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:19:04.232157+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:19:04.330589+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:19:04.451866+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:19:04.549383+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:19:04.701869+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:19:04.789822+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:19:04.892179+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:19:04.990454+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:19:05.111801+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:19:05.209413+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:19:05.331911+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:19:05.430400+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:19:05.552438+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:19:05.649236+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:19:05.771863+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:19:05.886203+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:19:05.991767+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:19:06.089298+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:19:06.211852+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:19:06.322291+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:19:06.361684+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G SessionStopReq
+2025-12-16T18:19:06.458377+0100 chargesom manager[855919]: [INFO] iso15118_charge  :: Closing TCP connection
+2025-12-16T18:19:06.459923+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G SessionStopRes
+2025-12-16T18:19:11.459495+0100 chargesom manager[855919]: [INFO] iso15118_charge  :: TCP connection closed gracefully
+2025-12-16T18:19:11.461834+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO D-LINK_TERMINATE.req
+2025-12-16T18:19:11.462914+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE IEC Set PWM Off
+2025-12-16T18:19:11.506722+0100 chargesom manager[855895]: [INFO] bsp:CbChargeSOM  :: handle_pwm_off: Setting new duty cycle of 100.0%
+2025-12-16T18:19:11.595742+0100 chargesom manager[855907]: [INFO] evse_slac:EvseS  :: D-LINK_TERMINATE.request received, leaving network.
+2025-12-16T18:19:11.598230+0100 chargesom manager[855907]: [INFO] evse_slac:EvseS  :: Entered Reset state
+2025-12-16T18:19:11.598230+0100 chargesom manager[855907]: [INFO] evse_slac:EvseS  :: New NMK key: 33:37:30:43:4D:46:4F:45:31:41:57:41:48:46:45:52
+2025-12-16T18:19:11.598230+0100 chargesom manager[855907]: [INFO] evse_slac:EvseS  :: Received CM_SET_KEY_CNF
+2025-12-16T18:19:11.600073+0100 chargesom manager[855907]: [INFO] evse_slac:EvseS  :: Entered Idle state
+2025-12-16T18:19:11.600302+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO D-LINK_READY (false)
+2025-12-16T18:19:11.692001+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO SLAC UNMATCHED
+2025-12-16T18:19:13.310629+0100 chargesom manager[855895]: [INFO] bsp:CbChargeSOM  :: CP state change from B to A, PWM: 100.0%
+2025-12-16T18:19:13.353112+0100 chargesom manager[855895]: [INFO] bsp:CbChargeSOM  :: handle_pwm_off: Setting new duty cycle of 100.0%
+2025-12-16T18:19:13.409116+0100 chargesom manager[855895]: [INFO] bsp:CbChargeSOM  :: handle_allow_power_on: request to OPEN the contactor
+2025-12-16T18:19:13.505996+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR IEC Event CarUnplugged
+2025-12-16T18:19:13.507041+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE IEC Charger state: Wait for Auth->Finished
+2025-12-16T18:19:13.554060+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE IEC Session Finished
+2025-12-16T18:19:13.554502+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: SYS  Session logging stopped.
+2025-12-16T18:19:13.646005+0100 chargesom manager[855895]: [INFO] bsp:CbChargeSOM  :: handle_pwm_off: Setting new duty cycle of 100.0%
+2025-12-16T18:19:17.016262+0100 chargesom manager[855895]: [INFO] bsp:CbChargeSOM  :: CP state change from A to B, PWM: 100.0%
+2025-12-16T18:19:17.020007+0100 chargesom manager[855907]: [INFO] evse_slac:EvseS  :: Entered Matching state, waiting for CM_SLAC_PARM_REQ
+2025-12-16T18:19:17.110258+0100 chargesom manager[855895]: [INFO] bsp:CbChargeSOM  :: handle_allow_power_on: request to OPEN the contactor
+2025-12-16T18:19:17.242414+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: SYS  Session logging started.
+2025-12-16T18:19:17.243422+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE IEC Session Started: EVConnected
+2025-12-16T18:19:17.246043+0100 chargesom manager[855926]: [INFO] token_provider:  :: Publishing new dummy token: {
+2025-12-16T18:19:17.246043+0100 chargesom manager[855926]:     "authorization_type": "RFID",
+2025-12-16T18:19:17.246043+0100 chargesom manager[855926]:     "id_token": {
+2025-12-16T18:19:17.246043+0100 chargesom manager[855926]:         "type": "ISO14443",
+2025-12-16T18:19:17.246043+0100 chargesom manager[855926]:         "value": "[redacted] hash: 29F2679CA504908"
+2025-12-16T18:19:17.246043+0100 chargesom manager[855926]:     },
+2025-12-16T18:19:17.246043+0100 chargesom manager[855926]:     "parent_id_token": {
+2025-12-16T18:19:17.246043+0100 chargesom manager[855926]:         "type": "ISO14443",
+2025-12-16T18:19:17.246043+0100 chargesom manager[855926]:         "value": "[redacted] hash: 29F2679CA504908"
+2025-12-16T18:19:17.246043+0100 chargesom manager[855926]:     }
+2025-12-16T18:19:17.246043+0100 chargesom manager[855926]: }
+2025-12-16T18:19:17.250085+0100 chargesom manager[855894]: [INFO] auth:Auth        :: Plug In event for evse#1, starting auth
+2025-12-16T18:19:17.250085+0100 chargesom manager[855894]: [INFO] auth:Auth        :: Received new token: {
+2025-12-16T18:19:17.250085+0100 chargesom manager[855894]:     "authorization_type": "RFID",
+2025-12-16T18:19:17.250085+0100 chargesom manager[855894]:     "id_token": {
+2025-12-16T18:19:17.250085+0100 chargesom manager[855894]:         "type": "ISO14443",
+2025-12-16T18:19:17.250085+0100 chargesom manager[855894]:         "value": "[redacted] hash: 29F2679CA504908"
+2025-12-16T18:19:17.250085+0100 chargesom manager[855894]:     },
+2025-12-16T18:19:17.250085+0100 chargesom manager[855894]:     "parent_id_token": {
+2025-12-16T18:19:17.250085+0100 chargesom manager[855894]:         "type": "ISO14443",
+2025-12-16T18:19:17.250085+0100 chargesom manager[855894]:         "value": "[redacted] hash: 29F2679CA504908"
+2025-12-16T18:19:17.250085+0100 chargesom manager[855894]:     }
+2025-12-16T18:19:17.250085+0100 chargesom manager[855894]: }
+2025-12-16T18:19:17.250085+0100 chargesom manager[855894]: [INFO] auth:Auth        :: Result for token: [redacted] hash: 29F2679CA504908: NO_CONNECTOR_AVAILABLE
+2025-12-16T18:19:17.743840+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE IEC Set PWM On (5.0%) took 0 ms
+2025-12-16T18:19:17.745858+0100 chargesom manager[855895]: [INFO] bsp:CbChargeSOM  :: handle_pwm_on: Setting new duty cycle of 5.0%
+2025-12-16T18:19:17.789798+0100 chargesom manager[855896]: [WARN] connector:EvseM void module::Charger::run_state_machine() :: No energy available, still retrying... Some EVs dont like 0W and/or 0A in ChargingParameterDiscoveryRes message
+2025-12-16T18:19:23.880740+0100 chargesom manager[855907]: [INFO] evse_slac:EvseS  :: Session (run_id=7D8F47A38FDB4BF6, ev_mac=F0:7F:0C:11:12:F1): initialized, waiting for CM_START_ATTEN_CHAR_IND
+2025-12-16T18:19:24.119291+0100 chargesom manager[855907]: [INFO] evse_slac:EvseS  :: Session (run_id=7D8F47A38FDB4BF6, ev_mac=F0:7F:0C:11:12:F1): received CM_START_ATTEN_CHAR_IND, going to substate SOUNDING
+2025-12-16T18:19:24.159295+0100 chargesom manager[855907]: [INFO] evse_slac:EvseS  :: Session (run_id=7D8F47A38FDB4BF6, ev_mac=F0:7F:0C:11:12:F1): needs to be in state WAIT_FOR_START_ATTEN_CHAR for CM_START_ATTEN_CHAR_IND
+2025-12-16T18:19:24.199320+0100 chargesom manager[855907]: [INFO] evse_slac:EvseS  :: Session (run_id=7D8F47A38FDB4BF6, ev_mac=F0:7F:0C:11:12:F1): needs to be in state WAIT_FOR_START_ATTEN_CHAR for CM_START_ATTEN_CHAR_IND
+2025-12-16T18:19:24.239216+0100 chargesom manager[855907]: [INFO] evse_slac:EvseS  :: Session (run_id=7D8F47A38FDB4BF6, ev_mac=F0:7F:0C:11:12:F1): received CM_MNBC_SOUND_IND
+2025-12-16T18:19:24.246598+0100 chargesom manager[855907]: [INFO] evse_slac:EvseS  :: Session (run_id=7D8F47A38FDB4BF6, ev_mac=F0:7F:0C:11:12:F1): received CM_ATTEN_PROFILE_IND
+2025-12-16T18:19:24.279145+0100 chargesom manager[855907]: [INFO] evse_slac:EvseS  :: Session (run_id=7D8F47A38FDB4BF6, ev_mac=F0:7F:0C:11:12:F1): received CM_MNBC_SOUND_IND
+2025-12-16T18:19:24.286630+0100 chargesom manager[855907]: [INFO] evse_slac:EvseS  :: Session (run_id=7D8F47A38FDB4BF6, ev_mac=F0:7F:0C:11:12:F1): received CM_ATTEN_PROFILE_IND
+2025-12-16T18:19:24.319229+0100 chargesom manager[855907]: [INFO] evse_slac:EvseS  :: Session (run_id=7D8F47A38FDB4BF6, ev_mac=F0:7F:0C:11:12:F1): received CM_MNBC_SOUND_IND
+2025-12-16T18:19:24.326697+0100 chargesom manager[855907]: [INFO] evse_slac:EvseS  :: Session (run_id=7D8F47A38FDB4BF6, ev_mac=F0:7F:0C:11:12:F1): received CM_ATTEN_PROFILE_IND
+2025-12-16T18:19:24.359209+0100 chargesom manager[855907]: [INFO] evse_slac:EvseS  :: Session (run_id=7D8F47A38FDB4BF6, ev_mac=F0:7F:0C:11:12:F1): received CM_MNBC_SOUND_IND
+2025-12-16T18:19:24.366562+0100 chargesom manager[855907]: [INFO] evse_slac:EvseS  :: Session (run_id=7D8F47A38FDB4BF6, ev_mac=F0:7F:0C:11:12:F1): received CM_ATTEN_PROFILE_IND
+2025-12-16T18:19:24.399062+0100 chargesom manager[855907]: [INFO] evse_slac:EvseS  :: Session (run_id=7D8F47A38FDB4BF6, ev_mac=F0:7F:0C:11:12:F1): received CM_MNBC_SOUND_IND
+2025-12-16T18:19:24.406495+0100 chargesom manager[855907]: [INFO] evse_slac:EvseS  :: Session (run_id=7D8F47A38FDB4BF6, ev_mac=F0:7F:0C:11:12:F1): received CM_ATTEN_PROFILE_IND
+2025-12-16T18:19:24.439220+0100 chargesom manager[855907]: [INFO] evse_slac:EvseS  :: Session (run_id=7D8F47A38FDB4BF6, ev_mac=F0:7F:0C:11:12:F1): received CM_MNBC_SOUND_IND
+2025-12-16T18:19:24.446515+0100 chargesom manager[855907]: [INFO] evse_slac:EvseS  :: Session (run_id=7D8F47A38FDB4BF6, ev_mac=F0:7F:0C:11:12:F1): received CM_ATTEN_PROFILE_IND
+2025-12-16T18:19:24.479121+0100 chargesom manager[855907]: [INFO] evse_slac:EvseS  :: Session (run_id=7D8F47A38FDB4BF6, ev_mac=F0:7F:0C:11:12:F1): received CM_MNBC_SOUND_IND
+2025-12-16T18:19:24.486520+0100 chargesom manager[855907]: [INFO] evse_slac:EvseS  :: Session (run_id=7D8F47A38FDB4BF6, ev_mac=F0:7F:0C:11:12:F1): received CM_ATTEN_PROFILE_IND
+2025-12-16T18:19:24.519108+0100 chargesom manager[855907]: [INFO] evse_slac:EvseS  :: Session (run_id=7D8F47A38FDB4BF6, ev_mac=F0:7F:0C:11:12:F1): received CM_MNBC_SOUND_IND
+2025-12-16T18:19:24.526525+0100 chargesom manager[855907]: [INFO] evse_slac:EvseS  :: Session (run_id=7D8F47A38FDB4BF6, ev_mac=F0:7F:0C:11:12:F1): received CM_ATTEN_PROFILE_IND
+2025-12-16T18:19:24.559873+0100 chargesom manager[855907]: [INFO] evse_slac:EvseS  :: Session (run_id=7D8F47A38FDB4BF6, ev_mac=F0:7F:0C:11:12:F1): received CM_MNBC_SOUND_IND
+2025-12-16T18:19:24.566872+0100 chargesom manager[855907]: [INFO] evse_slac:EvseS  :: Session (run_id=7D8F47A38FDB4BF6, ev_mac=F0:7F:0C:11:12:F1): received CM_ATTEN_PROFILE_IND
+2025-12-16T18:19:24.599255+0100 chargesom manager[855907]: [INFO] evse_slac:EvseS  :: Session (run_id=7D8F47A38FDB4BF6, ev_mac=F0:7F:0C:11:12:F1): received CM_MNBC_SOUND_IND
+2025-12-16T18:19:24.606729+0100 chargesom manager[855907]: [INFO] evse_slac:EvseS  :: Session (run_id=7D8F47A38FDB4BF6, ev_mac=F0:7F:0C:11:12:F1): received CM_ATTEN_PROFILE_IND
+2025-12-16T18:19:24.607080+0100 chargesom manager[855907]: [INFO] evse_slac:EvseS  :: Session (run_id=7D8F47A38FDB4BF6, ev_mac=F0:7F:0C:11:12:F1): received all sounds, going to substate FINALIZE_SOUNDING
+2025-12-16T18:19:24.651087+0100 chargesom manager[855907]: [INFO] evse_slac:EvseS  :: Session (run_id=7D8F47A38FDB4BF6, ev_mac=F0:7F:0C:11:12:F1): Finalize sounding, sending CM_ATTEN_CHAR_IND
+2025-12-16T18:19:24.657270+0100 chargesom manager[855907]: [INFO] evse_slac:EvseS  :: Session (run_id=7D8F47A38FDB4BF6, ev_mac=F0:7F:0C:11:12:F1): received CM_ATTEN_CHAR_RSP, going to substate WAIT_FOR_SLAC_MATCH
+2025-12-16T18:19:25.329464+0100 chargesom manager[855907]: [INFO] evse_slac:EvseS  :: Session (run_id=7D8F47A38FDB4BF6, ev_mac=F0:7F:0C:11:12:F1): Received CM_SLAC_MATCH_REQ, sending CM_SLAC_MATCH_CNF -> session complete
+2025-12-16T18:19:25.330680+0100 chargesom manager[855907]: [INFO] evse_slac:EvseS  :: Entered Matched state
+2025-12-16T18:19:25.337493+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO SLAC MATCHED
+2025-12-16T18:19:25.373435+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO D-LINK_READY (true)
+2025-12-16T18:19:27.108581+0100 chargesom manager[855919]: [INFO] iso15118_charge  :: Received packet from [fe80::f27f:cff:fe11:12f1]:49152 with security 0x10 and protocol 0x00
+2025-12-16T18:19:27.109645+0100 chargesom manager[855919]: [INFO] iso15118_charge  :: SDP requested NO-TLS, announcing NO-TLS
+2025-12-16T18:19:27.109645+0100 chargesom manager[855919]: [INFO] iso15118_charge  :: sendto([fe80::f27f:cff:fe11:12f1]:49152) succeeded
+2025-12-16T18:19:27.247693+0100 chargesom manager[855894]: [INFO] auth:Auth        :: Plug In timeout for evse#1. Replug required for this EVSE
+2025-12-16T18:19:28.129725+0100 chargesom manager[855919]: [INFO] iso15118_charge  :: Incoming connection on eth1 from [a00:c000:0:0:fe80::]:49152
+2025-12-16T18:19:28.129725+0100 chargesom manager[855919]: [INFO] iso15118_charge  :: Started new TCP connection thread
+2025-12-16T18:19:28.159691+0100 chargesom manager[855919]: [INFO] iso15118_charge  :: Handling SupportedAppProtocolReq
+2025-12-16T18:19:28.160939+0100 chargesom manager[855919]: [INFO] iso15118_charge  :: Protocol negotiation was successful. Selected protocol is ISO15118
+2025-12-16T18:19:28.162738+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G SupportedAppProtocolReq
+2025-12-16T18:19:28.199493+0100 chargesom manager[855919]: [INFO] iso15118_charge  :: SessionSetupReq.EVCCID: F0:7F:0C:11:12:F1
+2025-12-16T18:19:28.199894+0100 chargesom manager[855919]: [INFO] iso15118_charge  :: No session_id found or not equal to the id from the preceding v2g session. Generating random session id.
+2025-12-16T18:19:28.199894+0100 chargesom manager[855919]: [INFO] iso15118_charge  :: Created new session with id 0x9200624101936320600
+2025-12-16T18:19:28.206337+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G SupportedAppProtocolRes
+2025-12-16T18:19:28.251885+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G SessionSetupReq
+2025-12-16T18:19:28.339362+0100 chargesom manager[855919]: [WARN] iso15118_charge  :: PnC is not allowed without TLS-communication. Correcting value to '1' (ExternalPayment)
+2025-12-16T18:19:28.341849+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G SessionSetupRes
+2025-12-16T18:19:28.341849+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G ServiceDiscoveryReq
+2025-12-16T18:19:28.445752+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G ServiceDiscoveryRes
+2025-12-16T18:19:28.479417+0100 chargesom manager[855919]: [INFO] iso15118_charge  :: SelectedPaymentOption: ExternalPayment
+2025-12-16T18:19:28.489630+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G PaymentServiceSelectionReq
+2025-12-16T18:19:28.578268+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G PaymentServiceSelectionRes
+2025-12-16T18:19:28.630839+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:19:28.729140+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:19:28.850351+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:19:28.948999+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:19:29.070764+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:19:29.168785+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:19:29.290345+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:19:29.389410+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:19:29.546034+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:19:29.633694+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:19:29.730439+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:19:29.828971+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:19:29.950439+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:19:30.049039+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:19:30.170414+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:19:30.268884+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:19:30.390866+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:19:30.488726+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:19:30.642488+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:19:30.708791+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:19:30.830288+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:19:30.928811+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:19:31.050183+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:19:31.148672+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:19:31.270832+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:19:31.369060+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:19:31.490103+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:19:31.588862+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:19:31.741738+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:19:31.829501+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:19:31.930245+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:19:32.028748+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:19:32.150126+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:19:32.248766+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:19:32.370177+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:19:32.468530+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:19:32.590897+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:19:32.688525+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:19:32.837385+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:19:32.945537+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:19:33.030207+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:19:33.128686+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:19:33.250298+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:19:33.348357+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:19:33.470015+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:19:33.568578+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:19:33.690176+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:19:33.788706+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:19:33.912458+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:19:34.009538+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:19:34.130037+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:19:34.228328+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:19:34.350131+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:19:34.448661+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:19:34.570221+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:19:34.668310+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:19:34.789799+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:19:34.888505+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:19:35.013684+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:19:35.141657+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:19:35.230107+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:19:35.345637+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:19:35.449990+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:19:35.548448+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:19:35.669938+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:19:35.767547+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:19:35.890024+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:19:35.988672+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:19:36.150447+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:19:36.245942+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:19:36.349714+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:19:36.428800+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:19:36.550080+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:19:36.648316+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:19:36.770165+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:19:36.868496+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:19:36.989944+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:19:37.087406+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:19:37.209904+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:19:37.310229+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:19:37.429922+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:19:37.527349+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:19:37.649957+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:19:37.747631+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:19:37.869938+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:19:37.967322+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:19:38.090094+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:19:38.187525+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:19:38.349619+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:19:38.408515+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:19:38.534275+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:19:38.665956+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:19:38.749722+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:19:38.847367+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:19:38.969850+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:19:39.067280+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:19:39.189912+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:19:39.287415+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:19:39.410053+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:19:39.507375+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:19:39.630406+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:19:39.761633+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:19:39.850116+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:19:39.947477+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:19:40.069723+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:19:40.167000+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:19:40.290891+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:19:40.387263+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:19:40.509946+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:19:40.607524+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:19:40.729708+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:19:40.857354+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:19:40.961580+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:19:41.048146+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:19:41.169586+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:19:41.268239+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:19:41.389656+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:19:41.488198+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:19:41.610163+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:19:41.707251+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:19:41.829789+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:19:41.927396+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:19:42.058964+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:19:42.148117+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:19:42.269953+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:19:42.367290+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:19:42.489580+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:19:42.588879+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:19:42.709738+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:19:42.807190+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:19:42.929674+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:19:43.027876+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:19:43.153630+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:19:43.281461+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:19:43.369301+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:19:43.467737+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:19:43.589440+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:19:43.687699+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:19:43.809302+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:19:43.908318+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:19:44.029291+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:19:44.127726+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:19:44.289679+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:19:44.385600+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:19:44.469273+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:19:44.567834+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:19:44.689296+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:19:44.787760+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:19:44.909668+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:19:45.007780+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:19:45.129384+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:19:45.227867+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:19:45.353096+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:19:45.489799+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:19:45.569259+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:19:45.667722+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:19:45.789434+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:19:45.887588+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:19:46.009132+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:19:46.107774+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:19:46.229119+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:19:46.357205+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:19:46.449178+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:19:46.547676+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:19:46.669373+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:19:46.768308+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:19:46.889204+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:19:46.987519+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:19:47.109255+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:19:47.207626+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:19:47.357127+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:19:47.427663+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:19:47.549252+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:19:47.647703+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:19:47.809646+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:19:47.897225+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:19:47.989196+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:19:48.087799+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:19:48.209223+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:19:48.307722+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:19:48.429349+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:19:48.527589+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:19:48.649183+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:19:48.747847+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:19:48.906407+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:19:48.967417+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:19:49.089144+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:19:49.187435+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:19:49.309032+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:19:49.407597+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:19:49.529007+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:19:49.627374+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:19:49.748913+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:19:49.847394+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:19:50.005535+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:19:50.101283+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:19:50.188893+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:19:50.287565+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:19:50.408884+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:19:50.507342+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:19:50.629142+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:19:50.727426+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:19:50.848879+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:19:50.947349+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:19:51.109550+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:19:51.197547+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:19:51.288914+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:19:51.387339+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:19:51.508980+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:19:51.607268+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:19:51.729051+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:19:51.827629+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:19:51.948794+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:19:52.046300+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:19:52.205589+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:19:52.297262+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:19:52.388959+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:19:52.487502+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:19:52.609047+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:19:52.706238+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:19:52.829296+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:19:52.926246+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:19:53.048793+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:19:53.146368+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:19:53.305202+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:19:53.401532+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:19:53.488793+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:19:53.586149+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:19:53.708797+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:19:53.806386+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:19:53.928785+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:19:54.026393+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:19:54.148731+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:19:54.246173+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:19:54.370504+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:19:54.505285+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:19:54.588744+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:19:54.686152+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:19:54.808875+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:19:54.906535+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:19:55.029038+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:19:55.126186+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:19:55.248918+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:19:55.361426+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:19:55.470969+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:19:55.601277+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:19:55.688689+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:19:55.786095+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:19:55.908887+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:19:56.006314+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:19:56.128571+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:19:56.226029+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:19:56.369391+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:19:56.446195+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:19:56.568748+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:19:56.693662+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:19:56.825284+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:19:56.886022+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:19:57.009101+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:19:57.106927+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:19:57.228522+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:19:57.365357+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:19:57.448575+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:19:57.546064+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:19:57.668658+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:19:57.766935+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:19:57.921625+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:19:57.987000+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:19:58.108420+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:19:58.207503+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:19:58.365136+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:19:58.426002+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:19:58.548752+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:19:58.646093+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:19:58.768473+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:19:58.867044+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:19:59.021646+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:19:59.086991+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:19:59.208584+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:19:59.306346+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:19:59.428439+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:19:59.527001+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:19:59.648615+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:19:59.746002+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:19:59.868467+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:19:59.966907+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:20:00.117630+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:20:00.205717+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:20:00.308528+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:20:00.406998+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:20:00.528492+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:20:00.626858+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:20:00.748181+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:20:00.846943+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:20:00.968405+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:20:01.066918+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:20:01.209542+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:20:01.322231+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:20:01.408513+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:20:01.506986+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:20:01.628444+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:20:01.726910+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:20:01.848903+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:20:01.946738+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:20:02.068138+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:20:02.166772+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:20:02.288248+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:20:02.417668+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:20:02.517312+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:20:02.606813+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:20:02.728210+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:20:02.826788+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:20:02.948121+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:20:03.046818+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:20:03.168270+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:20:03.266785+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:20:03.388363+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:20:03.525438+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:20:03.617277+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:20:03.706805+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:20:03.828183+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:20:03.926577+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:20:04.048323+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:20:04.146648+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:20:04.268061+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:20:04.369318+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:20:04.488040+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:20:04.625624+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:20:04.717277+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:20:04.806789+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:20:04.928340+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:20:05.026786+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:20:05.148196+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:20:05.247470+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:20:05.369151+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:20:05.466711+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:20:05.588394+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:20:05.725446+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:20:05.817701+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:20:05.906863+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:20:06.028050+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:20:06.126524+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:20:06.248038+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:20:06.373219+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:20:06.468061+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:20:06.566778+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:20:06.688308+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:20:06.786593+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:20:06.913773+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:20:07.006426+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:20:07.128002+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:20:07.226413+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:20:07.373174+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:20:07.446523+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:20:07.568111+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:20:07.666481+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:20:07.787926+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:20:07.886710+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:20:08.009978+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:20:08.106586+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:20:08.228082+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:20:08.326720+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:20:08.447863+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:20:08.545732+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:20:08.667808+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:20:08.765370+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:20:08.887947+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:20:08.985276+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:20:09.150029+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:20:09.238175+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:20:09.327798+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:20:09.426344+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:20:09.547811+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:20:09.645350+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:20:09.767935+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:20:09.865451+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:20:09.987747+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:20:10.085588+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:20:10.207957+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:20:10.330064+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:20:10.427945+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:20:10.526435+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:20:10.647732+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:20:10.745555+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:20:10.867895+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:20:10.965429+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:20:11.088432+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:20:11.186366+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:20:11.308842+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:20:11.433412+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:20:11.537269+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:20:11.626480+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:20:11.747818+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:20:11.845332+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:20:11.967753+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:20:12.065384+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:20:12.187653+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:20:12.285307+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:20:12.407885+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:20:12.545623+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:20:12.633316+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:20:12.725340+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:20:12.847693+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:20:12.945273+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:20:13.068330+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:20:13.165347+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:20:13.287652+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:20:13.385335+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:20:13.507692+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:20:13.605334+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:20:13.729292+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:20:13.825207+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:20:13.947471+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:20:14.046168+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:20:14.167688+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:20:14.266011+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:20:14.387779+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:20:14.485194+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:20:14.607759+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:20:14.705108+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:20:14.869516+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:20:14.961451+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:20:15.047969+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:20:15.145421+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:20:15.267748+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:20:15.381199+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:20:15.487568+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:20:15.586226+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:20:15.707445+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:20:15.806190+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:20:15.969432+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:20:16.061582+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:20:16.147627+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:20:16.245381+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:20:16.381183+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:20:16.466038+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:20:16.587722+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:20:16.686046+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:20:16.807625+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:20:16.905447+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:20:17.027532+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:20:17.158286+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:20:17.247409+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:20:17.381217+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:20:17.467615+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:20:17.566091+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:20:17.687387+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:20:17.786109+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:20:17.907548+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:20:18.005811+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:20:18.127888+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:20:18.226177+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:20:18.381404+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:20:18.445973+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:20:18.567482+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:20:18.666618+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:20:18.787367+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:20:18.885829+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:20:19.007455+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:20:19.105846+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:20:19.227502+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:20:19.326604+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:20:19.485802+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:20:19.545781+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:20:19.667508+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T18:20:19.765913+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T18:20:19.797166+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR ISO V2G SessionStopReq
+2025-12-16T18:20:19.896013+0100 chargesom manager[855919]: [INFO] iso15118_charge  :: Closing TCP connection
+2025-12-16T18:20:19.896441+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO V2G SessionStopRes
+2025-12-16T18:20:20.551941+0100 chargesom manager[855895]: [INFO] bsp:CbChargeSOM  :: CP state change from B to A, PWM: 5.0%
+2025-12-16T18:20:20.597101+0100 chargesom manager[855895]: [INFO] bsp:CbChargeSOM  :: handle_pwm_off: Setting new duty cycle of 100.0%
+2025-12-16T18:20:20.705099+0100 chargesom manager[855895]: [INFO] bsp:CbChargeSOM  :: handle_allow_power_on: request to OPEN the contactor
+2025-12-16T18:20:20.759022+0100 chargesom manager[855907]: [INFO] evse_slac:EvseS  :: Entered Reset state
+2025-12-16T18:20:20.760101+0100 chargesom manager[855907]: [INFO] evse_slac:EvseS  :: New NMK key: 47:34:32:30:59:55:56:48:47:4D:4F:35:44:4F:45:59
+2025-12-16T18:20:20.761235+0100 chargesom manager[855907]: [INFO] evse_slac:EvseS  :: Received CM_SET_KEY_CNF
+2025-12-16T18:20:20.761663+0100 chargesom manager[855907]: [INFO] evse_slac:EvseS  :: Entered Idle state
+2025-12-16T18:20:20.801679+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO D-LINK_READY (false)
+2025-12-16T18:20:20.803000+0100 chargesom manager[855896]: [INFO] connector:EvseM  ::                                     CAR IEC Event CarUnplugged
+2025-12-16T18:20:20.803596+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE IEC Charger state: Wait for Auth->Finished
+2025-12-16T18:20:20.849389+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE ISO SLAC UNMATCHED
+2025-12-16T18:20:20.858645+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: EVSE IEC Session Finished
+2025-12-16T18:20:20.859085+0100 chargesom manager[855896]: [INFO] connector:EvseM  :: SYS  Session logging stopped.
+2025-12-16T18:20:20.993489+0100 chargesom manager[855895]: [INFO] bsp:CbChargeSOM  :: handle_pwm_off: Setting new duty cycle of 100.0%
+2025-12-16T18:20:24.896189+0100 chargesom manager[855919]: [INFO] iso15118_charge  :: TCP connection closed gracefully
+2025-12-16T18:20:24.898924+0100 chargesom manager[855895]: [INFO] bsp:CbChargeSOM  :: handle_pwm_off: Setting new duty cycle of 100.0%
+2025-12-16T18:20:24.943478+0100 chargesom manager[855907]: [INFO] evse_slac:EvseS  :: D-LINK_TERMINATE.request received, leaving network.
+2025-12-16T18:20:24.943478+0100 chargesom manager[855907]: [INFO] evse_slac:EvseS  :: Entered Reset state
+2025-12-16T18:20:24.943478+0100 chargesom manager[855907]: [INFO] evse_slac:EvseS  :: New NMK key: 5A:54:4D:52:36:34:48:32:53:42:41:42:38:59:47:58
+2025-12-16T18:20:24.946160+0100 chargesom manager[855907]: [INFO] evse_slac:EvseS  :: Received CM_SET_KEY_CNF
+2025-12-16T18:20:24.946160+0100 chargesom manager[855907]: [INFO] evse_slac:EvseS  :: Entered Idle state

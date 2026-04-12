@@ -24,14 +24,6 @@ active_modules:
         - implementation_id: main
           module_id: SerialCommHub0
     module: Bender_isoCHA425HV
-  CbSystem0:
-    config_module:
-      default_retries: 1
-      default_retry_interval: 1
-      min_time_deviation: 1000
-      reset_delay: 3
-    connections: {}
-    module: CbSystem
   GenericPowermeter0:
     config_implementation:
       main:
@@ -43,37 +35,6 @@ active_modules:
         - implementation_id: main
           module_id: SerialCommHub0
     module: GenericPowermeter
-  OCPP2010:
-    config_module:
-      CompositeScheduleIntervalS: 30
-      CoreDatabasePath: /tmp/ocpp201
-      DelayOcppStart: 0
-      DeviceModelConfigPath: component_config
-      DeviceModelDatabaseMigrationPath: device_model_migrations
-      DeviceModelDatabasePath: device_model_storage.db
-      EnableExternalWebsocketControl: false
-      EverestDeviceModelDatabasePath: everest_device_model_storage.db
-      MessageLogPath: /tmp/everest_ocpp_logs
-      MessageQueueResumeDelay: 0
-      RequestCompositeScheduleDurationS: 600
-      RequestCompositeScheduleUnit: A
-    connections:
-      auth:
-        - implementation_id: main
-          module_id: auth
-      data_transfer:
-        - implementation_id: data_transfer
-          module_id: OCPP2010
-      evse_manager:
-        - implementation_id: evse
-          module_id: connector
-      security:
-        - implementation_id: main
-          module_id: evse_security
-      system:
-        - implementation_id: main
-          module_id: CbSystem0
-    module: OCPP201
   SerialCommHub0:
     config_implementation:
       main:
@@ -137,9 +98,6 @@ active_modules:
       evse_manager:
         - implementation_id: evse
           module_id: connector
-      ocpp:
-        - implementation_id: ocpp_generic
-          module_id: OCPP2010
     module: API
   auth:
     config_module:
@@ -155,13 +113,9 @@ active_modules:
       token_provider:
         - implementation_id: main
           module_id: token_provider
-        - implementation_id: auth_provider
-          module_id: OCPP2010
       token_validator:
         - implementation_id: main
           module_id: token_validator
-        - implementation_id: auth_validator
-          module_id: OCPP2010
     module: Auth
   bsp:
     config_module:
@@ -397,18 +351,6 @@ active_modules:
           interface: isolation_monitor
           type: provide
       top: []
-  CbSystem0:
-    position:
-      x: -13
-      y: 22
-    terminals:
-      bottom: []
-      left: []
-      right:
-        - id: main
-          interface: system
-          type: provide
-      top: []
   GenericPowermeter0:
     position:
       x: -43
@@ -422,57 +364,6 @@ active_modules:
       right:
         - id: main
           interface: powermeter
-          type: provide
-      top: []
-  OCPP2010:
-    position:
-      x: 5
-      y: 13
-    terminals:
-      bottom: []
-      left:
-        - id: auth
-          interface: auth
-          type: requirement
-        - id: data_transfer
-          interface: ocpp_data_transfer
-          type: requirement
-        - id: display_message
-          interface: display_message
-          type: requirement
-        - id: evse_energy_sink
-          interface: external_energy_limits
-          type: requirement
-        - id: evse_manager
-          interface: evse_manager
-          type: requirement
-        - id: extensions_15118
-          interface: iso15118_extensions
-          type: requirement
-        - id: reservation
-          interface: reservation
-          type: requirement
-        - id: security
-          interface: evse_security
-          type: requirement
-        - id: system
-          interface: system
-          type: requirement
-      right:
-        - id: auth_provider
-          interface: auth_token_provider
-          type: provide
-        - id: auth_validator
-          interface: auth_token_validator
-          type: provide
-        - id: data_transfer
-          interface: ocpp_data_transfer
-          type: provide
-        - id: ocpp_generic
-          interface: ocpp
-          type: provide
-        - id: session_cost
-          interface: session_cost
           type: provide
       top: []
   SerialCommHub0:

@@ -399,8 +399,8 @@ active_modules:
       top: []
   CbSystem0:
     position:
-      x: -13
-      y: 22
+      x: -10
+      y: 24
     terminals:
       bottom: []
       left: []
@@ -426,8 +426,8 @@ active_modules:
       top: []
   OCPP2010:
     position:
-      x: 5
-      y: 13
+      x: 9
+      y: 15
     terminals:
       bottom: []
       left:

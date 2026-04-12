@@ -1,96 +1,4 @@
 active_modules:
-  Bender_isoCHA425HV0:
-    config_implementation:
-      main:
-        alarm_memory_enable: false
-        always_publish_measurements: false
-        chademo_mode: false
-        delay_startup_device: 5
-        delay_t_off_k1_k2: 5
-        delay_t_on_k1_k2: 5
-        imd_device_id: 3
-        overvoltage_alarm_enable: false
-        overvoltage_alarm_threshold_V: 1050
-        r1_prealarm_kohm: 250
-        r2_alarm_kohm: 100
-        relais_r1_mode: false
-        relais_r2_mode: false
-        selftest_enable_at_start: true
-        selftest_enable_gridconnection: false
-        undervoltage_alarm_enable: false
-        undervoltage_alarm_threshold_V: 30
-    connections:
-      serial_comm_hub:
-        - implementation_id: main
-          module_id: SerialCommHub0
-    module: Bender_isoCHA425HV
-  CbSystem0:
-    config_module:
-      default_retries: 1
-      default_retry_interval: 1
-      min_time_deviation: 1000
-      reset_delay: 3
-    connections: {}
-    module: CbSystem
-  GenericPowermeter0:
-    config_implementation:
-      main:
-        modbus_base_address: 30001
-        model: acudc240
-        powermeter_device_id: 4
-    connections:
-      serial_comm_hub:
-        - implementation_id: main
-          module_id: SerialCommHub0
-    module: GenericPowermeter
-  OCPP2010:
-    config_module:
-      CompositeScheduleIntervalS: 30
-      CoreDatabasePath: /tmp/ocpp201
-      DelayOcppStart: 0
-      DeviceModelConfigPath: component_config
-      DeviceModelDatabaseMigrationPath: device_model_migrations
-      DeviceModelDatabasePath: device_model_storage.db
-      EnableExternalWebsocketControl: false
-      EverestDeviceModelDatabasePath: everest_device_model_storage.db
-      MessageLogPath: /tmp/everest_ocpp_logs
-      MessageQueueResumeDelay: 0
-      RequestCompositeScheduleDurationS: 600
-      RequestCompositeScheduleUnit: A
-    connections:
-      auth:
-        - implementation_id: main
-          module_id: auth
-      data_transfer:
-        - implementation_id: data_transfer
-          module_id: OCPP2010
-      evse_manager:
-        - implementation_id: evse
-          module_id: connector
-      security:
-        - implementation_id: main
-          module_id: evse_security
-      system:
-        - implementation_id: main
-          module_id: CbSystem0
-    module: OCPP201
-  SerialCommHub0:
-    config_implementation:
-      main:
-        baudrate: 9600
-        ignore_echo: false
-        initial_timeout_ms: 500
-        max_packet_size: 256
-        parity: 2
-        retries: 5
-        rtscts: false
-        rxtx_gpio_chip: ''
-        rxtx_gpio_line: 0
-        rxtx_gpio_tx_high: false
-        serial_port: /dev/ttyLP3
-        within_message_timeout_ms: 100
-    connections: {}
-    module: SerialCommHub
   api:
     config_module:
       charger_information_file: ''
@@ -137,9 +45,6 @@ active_modules:
       evse_manager:
         - implementation_id: evse
           module_id: connector
-      ocpp:
-        - implementation_id: ocpp_generic
-          module_id: OCPP2010
     module: API
   auth:
     config_module:
@@ -155,13 +60,9 @@ active_modules:
       token_provider:
         - implementation_id: main
           module_id: token_provider
-        - implementation_id: auth_provider
-          module_id: OCPP2010
       token_validator:
         - implementation_id: main
           module_id: token_validator
-        - implementation_id: auth_validator
-          module_id: OCPP2010
     module: Auth
   bsp:
     config_module:
@@ -250,10 +151,7 @@ active_modules:
           module_id: iso15118_charger
       imd:
         - implementation_id: main
-          module_id: Bender_isoCHA425HV0
-      powermeter_grid_side:
-        - implementation_id: main
-          module_id: GenericPowermeter0
+          module_id: imd
       powersupply_DC:
         - implementation_id: main
           module_id: powersupply_dc
@@ -332,6 +230,14 @@ active_modules:
         - implementation_id: energy_grid
           module_id: connector
     module: EnergyNode
+  imd:
+    config_implementation:
+      main:
+        interval: 1000
+        resistance_F_Ohm: 900000
+        selftest_success: true
+    connections: {}
+    module: IMDSimulator
   iso15118_charger:
     config_module:
       auth_timeout_eim: 300
@@ -382,111 +288,6 @@ active_modules:
     connections: {}
     module: DummyTokenValidator
 'x-module-layout':
-  Bender_isoCHA425HV0:
-    position:
-      x: -43
-      y: -1
-    terminals:
-      bottom: []
-      left:
-        - id: serial_comm_hub
-          interface: serial_communication_hub
-          type: requirement
-      right:
-        - id: main
-          interface: isolation_monitor
-          type: provide
-      top: []
-  CbSystem0:
-    position:
-      x: -13
-      y: 22
-    terminals:
-      bottom: []
-      left: []
-      right:
-        - id: main
-          interface: system
-          type: provide
-      top: []
-  GenericPowermeter0:
-    position:
-      x: -43
-      y: 6
-    terminals:
-      bottom: []
-      left:
-        - id: serial_comm_hub
-          interface: serial_communication_hub
-          type: requirement
-      right:
-        - id: main
-          interface: powermeter
-          type: provide
-      top: []
-  OCPP2010:
-    position:
-      x: 5
-      y: 13
-    terminals:
-      bottom: []
-      left:
-        - id: auth
-          interface: auth
-          type: requirement
-        - id: data_transfer
-          interface: ocpp_data_transfer
-          type: requirement
-        - id: display_message
-          interface: display_message
-          type: requirement
-        - id: evse_energy_sink
-          interface: external_energy_limits
-          type: requirement
-        - id: evse_manager
-          interface: evse_manager
-          type: requirement
-        - id: extensions_15118
-          interface: iso15118_extensions
-          type: requirement
-        - id: reservation
-          interface: reservation
-          type: requirement
-        - id: security
-          interface: evse_security
-          type: requirement
-        - id: system
-          interface: system
-          type: requirement
-      right:
-        - id: auth_provider
-          interface: auth_token_provider
-          type: provide
-        - id: auth_validator
-          interface: auth_token_validator
-          type: provide
-        - id: data_transfer
-          interface: ocpp_data_transfer
-          type: provide
-        - id: ocpp_generic
-          interface: ocpp
-          type: provide
-        - id: session_cost
-          interface: session_cost
-          type: provide
-      top: []
-  SerialCommHub0:
-    position:
-      x: -66
-      y: 1
-    terminals:
-      bottom: []
-      left: []
-      right:
-        - id: main
-          interface: serial_communication_hub
-          type: provide
-      top: []
   api:
     position:
       x: 27
@@ -516,8 +317,8 @@ active_modules:
       top: []
   auth:
     position:
-      x: 46
-      y: -4
+      x: 74
+      y: -7
     terminals:
       bottom: []
       left:
@@ -606,8 +407,8 @@ active_modules:
       top: []
   energy_manager:
     position:
-      x: 45
-      y: -18
+      x: 46
+      y: -41
     terminals:
       bottom: []
       left:
@@ -646,7 +447,7 @@ active_modules:
   evse_slac:
     position:
       x: -43
-      y: 20
+      y: 13
     terminals:
       bottom: []
       left: []
@@ -657,8 +458,8 @@ active_modules:
       top: []
   grid_connection_point:
     position:
-      x: 27
-      y: -18
+      x: 26
+      y: -33
     terminals:
       bottom: []
       left:
@@ -679,6 +480,18 @@ active_modules:
           interface: external_energy_limits
           type: provide
       top: []
+  imd:
+    position:
+      x: -43
+      y: -1
+    terminals:
+      bottom: []
+      left: []
+      right:
+        - id: main
+          interface: isolation_monitor
+          type: provide
+      top: []
   iso15118_charger:
     position:
       x: -43
@@ -697,7 +510,7 @@ active_modules:
   powersupply_dc:
     position:
       x: -43
-      y: 13
+      y: 6
     terminals:
       bottom: []
       left: []
@@ -708,8 +521,8 @@ active_modules:
       top: []
   token_provider:
     position:
-      x: 27
-      y: -4
+      x: 54
+      y: -6
     terminals:
       bottom: []
       left:
@@ -723,8 +536,8 @@ active_modules:
       top: []
   token_validator:
     position:
-      x: 27
-      y: 3
+      x: 54
+      y: 1
     terminals:
       bottom: []
       left: []

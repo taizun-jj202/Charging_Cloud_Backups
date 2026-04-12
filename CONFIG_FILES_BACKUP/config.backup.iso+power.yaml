@@ -21,59 +21,19 @@ active_modules:
         undervoltage_alarm_threshold_V: 30
     connections:
       serial_comm_hub:
-        - implementation_id: main
-          module_id: SerialCommHub0
+      - implementation_id: main
+        module_id: SerialCommHub0
     module: Bender_isoCHA425HV
-  CbSystem0:
-    config_module:
-      default_retries: 1
-      default_retry_interval: 1
-      min_time_deviation: 1000
-      reset_delay: 3
-    connections: {}
-    module: CbSystem
   GenericPowermeter0:
     config_implementation:
       main:
-        modbus_base_address: 30001
         model: acudc240
         powermeter_device_id: 4
     connections:
       serial_comm_hub:
-        - implementation_id: main
-          module_id: SerialCommHub0
+      - implementation_id: main
+        module_id: SerialCommHub0
     module: GenericPowermeter
-  OCPP2010:
-    config_module:
-      CompositeScheduleIntervalS: 30
-      CoreDatabasePath: /tmp/ocpp201
-      DelayOcppStart: 0
-      DeviceModelConfigPath: component_config
-      DeviceModelDatabaseMigrationPath: device_model_migrations
-      DeviceModelDatabasePath: device_model_storage.db
-      EnableExternalWebsocketControl: false
-      EverestDeviceModelDatabasePath: everest_device_model_storage.db
-      MessageLogPath: /tmp/everest_ocpp_logs
-      MessageQueueResumeDelay: 0
-      RequestCompositeScheduleDurationS: 600
-      RequestCompositeScheduleUnit: A
-    connections:
-      auth:
-        - implementation_id: main
-          module_id: auth
-      data_transfer:
-        - implementation_id: data_transfer
-          module_id: OCPP2010
-      evse_manager:
-        - implementation_id: evse
-          module_id: connector
-      security:
-        - implementation_id: main
-          module_id: evse_security
-      system:
-        - implementation_id: main
-          module_id: CbSystem0
-    module: OCPP201
   SerialCommHub0:
     config_implementation:
       main:
@@ -132,14 +92,11 @@ active_modules:
       telemetry_supply_voltage_minus_12V_round_to: 0
     connections:
       error_history:
-        - implementation_id: error_history
-          module_id: error_history
+      - implementation_id: error_history
+        module_id: error_history
       evse_manager:
-        - implementation_id: evse
-          module_id: connector
-      ocpp:
-        - implementation_id: ocpp_generic
-          module_id: OCPP2010
+      - implementation_id: evse
+        module_id: connector
     module: API
   auth:
     config_module:
@@ -150,18 +107,14 @@ active_modules:
       selection_algorithm: PlugEvents
     connections:
       evse_manager:
-        - implementation_id: evse
-          module_id: connector
+      - implementation_id: evse
+        module_id: connector
       token_provider:
-        - implementation_id: main
-          module_id: token_provider
-        - implementation_id: auth_provider
-          module_id: OCPP2010
+      - implementation_id: main
+        module_id: token_provider
       token_validator:
-        - implementation_id: main
-          module_id: token_validator
-        - implementation_id: auth_validator
-          module_id: OCPP2010
+      - implementation_id: main
+        module_id: token_validator
     module: Auth
   bsp:
     config_module:
@@ -243,23 +196,23 @@ active_modules:
       zero_power_ignore_pause: false
     connections:
       bsp:
-        - implementation_id: evse_board_support
-          module_id: bsp
+      - implementation_id: evse_board_support
+        module_id: bsp
       hlc:
-        - implementation_id: charger
-          module_id: iso15118_charger
+      - implementation_id: charger
+        module_id: iso15118_charger
       imd:
-        - implementation_id: main
-          module_id: Bender_isoCHA425HV0
+      - implementation_id: main
+        module_id: Bender_isoCHA425HV0
       powermeter_grid_side:
-        - implementation_id: main
-          module_id: GenericPowermeter0
+      - implementation_id: main
+        module_id: GenericPowermeter0
       powersupply_DC:
-        - implementation_id: main
-          module_id: powersupply_dc
+      - implementation_id: main
+        module_id: powersupply_dc
       slac:
-        - implementation_id: main
-          module_id: evse_slac
+      - implementation_id: main
+        module_id: evse_slac
     mapping:
       module:
         connector: 1
@@ -281,8 +234,8 @@ active_modules:
       update_interval: 1
     connections:
       energy_trunk:
-        - implementation_id: energy_grid
-          module_id: grid_connection_point
+      - implementation_id: energy_grid
+        module_id: grid_connection_point
     module: EnergyManager
   error_history:
     config_implementation:
@@ -329,8 +282,8 @@ active_modules:
       phase_count: 3
     connections:
       energy_consumer:
-        - implementation_id: energy_grid
-          module_id: connector
+      - implementation_id: energy_grid
+        module_id: connector
     module: EnergyNode
   iso15118_charger:
     config_module:
@@ -348,8 +301,8 @@ active_modules:
       verify_contract_cert_chain: false
     connections:
       security:
-        - implementation_id: main
-          module_id: evse_security
+      - implementation_id: main
+        module_id: evse_security
     module: EvseV2G
   powersupply_dc:
     config_module:
@@ -370,8 +323,8 @@ active_modules:
         type: RFID
     connections:
       evse:
-        - implementation_id: evse
-          module_id: connector
+      - implementation_id: evse
+        module_id: connector
     module: DummyTokenProvider
   token_validator:
     config_implementation:
@@ -389,91 +342,28 @@ active_modules:
     terminals:
       bottom: []
       left:
-        - id: serial_comm_hub
-          interface: serial_communication_hub
-          type: requirement
+      - id: serial_comm_hub
+        interface: serial_communication_hub
+        type: requirement
       right:
-        - id: main
-          interface: isolation_monitor
-          type: provide
-      top: []
-  CbSystem0:
-    position:
-      x: -13
-      y: 22
-    terminals:
-      bottom: []
-      left: []
-      right:
-        - id: main
-          interface: system
-          type: provide
+      - id: main
+        interface: isolation_monitor
+        type: provide
       top: []
   GenericPowermeter0:
     position:
-      x: -43
-      y: 6
+      x: -42
+      y: -32
     terminals:
       bottom: []
       left:
-        - id: serial_comm_hub
-          interface: serial_communication_hub
-          type: requirement
+      - id: serial_comm_hub
+        interface: serial_communication_hub
+        type: requirement
       right:
-        - id: main
-          interface: powermeter
-          type: provide
-      top: []
-  OCPP2010:
-    position:
-      x: 5
-      y: 13
-    terminals:
-      bottom: []
-      left:
-        - id: auth
-          interface: auth
-          type: requirement
-        - id: data_transfer
-          interface: ocpp_data_transfer
-          type: requirement
-        - id: display_message
-          interface: display_message
-          type: requirement
-        - id: evse_energy_sink
-          interface: external_energy_limits
-          type: requirement
-        - id: evse_manager
-          interface: evse_manager
-          type: requirement
-        - id: extensions_15118
-          interface: iso15118_extensions
-          type: requirement
-        - id: reservation
-          interface: reservation
-          type: requirement
-        - id: security
-          interface: evse_security
-          type: requirement
-        - id: system
-          interface: system
-          type: requirement
-      right:
-        - id: auth_provider
-          interface: auth_token_provider
-          type: provide
-        - id: auth_validator
-          interface: auth_token_validator
-          type: provide
-        - id: data_transfer
-          interface: ocpp_data_transfer
-          type: provide
-        - id: ocpp_generic
-          interface: ocpp
-          type: provide
-        - id: session_cost
-          interface: session_cost
-          type: provide
+      - id: main
+        interface: powermeter
+        type: provide
       top: []
   SerialCommHub0:
     position:
@@ -483,9 +373,9 @@ active_modules:
       bottom: []
       left: []
       right:
-        - id: main
-          interface: serial_communication_hub
-          type: provide
+      - id: main
+        interface: serial_communication_hub
+        type: provide
       top: []
   api:
     position:
@@ -494,52 +384,52 @@ active_modules:
     terminals:
       bottom: []
       left:
-        - id: error_history
-          interface: error_history
-          type: requirement
-        - id: evse_energy_sink
-          interface: external_energy_limits
-          type: requirement
-        - id: evse_manager
-          interface: evse_manager
-          type: requirement
-        - id: ocpp
-          interface: ocpp
-          type: requirement
-        - id: random_delay
-          interface: uk_random_delay
-          type: requirement
+      - id: error_history
+        interface: error_history
+        type: requirement
+      - id: evse_energy_sink
+        interface: external_energy_limits
+        type: requirement
+      - id: evse_manager
+        interface: evse_manager
+        type: requirement
+      - id: ocpp
+        interface: ocpp
+        type: requirement
+      - id: random_delay
+        interface: uk_random_delay
+        type: requirement
       right:
-        - id: main
-          interface: empty
-          type: provide
+      - id: main
+        interface: empty
+        type: provide
       top: []
   auth:
     position:
-      x: 46
-      y: -4
+      x: 74
+      y: -7
     terminals:
       bottom: []
       left:
-        - id: evse_manager
-          interface: evse_manager
-          type: requirement
-        - id: kvs
-          interface: kvs
-          type: requirement
-        - id: token_provider
-          interface: auth_token_provider
-          type: requirement
-        - id: token_validator
-          interface: auth_token_validator
-          type: requirement
+      - id: evse_manager
+        interface: evse_manager
+        type: requirement
+      - id: kvs
+        interface: kvs
+        type: requirement
+      - id: token_provider
+        interface: auth_token_provider
+        type: requirement
+      - id: token_validator
+        interface: auth_token_validator
+        type: requirement
       right:
-        - id: main
-          interface: auth
-          type: provide
-        - id: reservation
-          interface: reservation
-          type: provide
+      - id: main
+        interface: auth
+        type: provide
+      - id: reservation
+        interface: reservation
+        type: provide
       top: []
   bsp:
     position:
@@ -549,9 +439,9 @@ active_modules:
       bottom: []
       left: []
       right:
-        - id: evse_board_support
-          interface: evse_board_support
-          type: provide
+      - id: evse_board_support
+        interface: evse_board_support
+        type: provide
       top: []
   connector:
     position:
@@ -560,64 +450,64 @@ active_modules:
     terminals:
       bottom: []
       left:
-        - id: ac_rcd
-          interface: ac_rcd
-          type: requirement
-        - id: bsp
-          interface: evse_board_support
-          type: requirement
-        - id: connector_lock
-          interface: connector_lock
-          type: requirement
-        - id: hlc
-          interface: ISO15118_charger
-          type: requirement
-        - id: imd
-          interface: isolation_monitor
-          type: requirement
-        - id: powermeter_car_side
-          interface: powermeter
-          type: requirement
-        - id: powermeter_grid_side
-          interface: powermeter
-          type: requirement
-        - id: powersupply_DC
-          interface: power_supply_DC
-          type: requirement
-        - id: slac
-          interface: slac
-          type: requirement
-        - id: store
-          interface: kvs
-          type: requirement
+      - id: ac_rcd
+        interface: ac_rcd
+        type: requirement
+      - id: bsp
+        interface: evse_board_support
+        type: requirement
+      - id: connector_lock
+        interface: connector_lock
+        type: requirement
+      - id: hlc
+        interface: ISO15118_charger
+        type: requirement
+      - id: imd
+        interface: isolation_monitor
+        type: requirement
+      - id: powermeter_car_side
+        interface: powermeter
+        type: requirement
+      - id: powermeter_grid_side
+        interface: powermeter
+        type: requirement
+      - id: powersupply_DC
+        interface: power_supply_DC
+        type: requirement
+      - id: slac
+        interface: slac
+        type: requirement
+      - id: store
+        interface: kvs
+        type: requirement
       right:
-        - id: energy_grid
-          interface: energy
-          type: provide
-        - id: evse
-          interface: evse_manager
-          type: provide
-        - id: random_delay
-          interface: uk_random_delay
-          type: provide
-        - id: token_provider
-          interface: auth_token_provider
-          type: provide
+      - id: energy_grid
+        interface: energy
+        type: provide
+      - id: evse
+        interface: evse_manager
+        type: provide
+      - id: random_delay
+        interface: uk_random_delay
+        type: provide
+      - id: token_provider
+        interface: auth_token_provider
+        type: provide
       top: []
   energy_manager:
     position:
-      x: 45
-      y: -18
+      x: 46
+      y: -41
     terminals:
       bottom: []
       left:
-        - id: energy_trunk
-          interface: energy
-          type: requirement
+      - id: energy_trunk
+        interface: energy
+        type: requirement
       right:
-        - id: main
-          interface: energy_manager
-          type: provide
+      - id: main
+        interface: energy_manager
+        type: provide
       top: []
   error_history:
     position:
@@ -627,9 +517,9 @@ active_modules:
       bottom: []
       left: []
       right:
-        - id: error_history
-          interface: error_history
-          type: provide
+      - id: error_history
+        interface: error_history
+        type: provide
       top: []
   evse_security:
     position:
@@ -639,45 +529,45 @@ active_modules:
       bottom: []
       left: []
       right:
-        - id: main
-          interface: evse_security
-          type: provide
+      - id: main
+        interface: evse_security
+        type: provide
       top: []
   evse_slac:
     position:
       x: -43
-      y: 20
+      y: 13
     terminals:
       bottom: []
       left: []
       right:
-        - id: main
-          interface: slac
-          type: provide
+      - id: main
+        interface: slac
+        type: provide
       top: []
   grid_connection_point:
     position:
-      x: 27
-      y: -18
+      x: 26
+      y: -33
     terminals:
       bottom: []
       left:
-        - id: energy_consumer
-          interface: energy
-          type: requirement
-        - id: powermeter
-          interface: powermeter
-          type: requirement
-        - id: price_information
-          interface: energy_price_information
-          type: requirement
+      - id: energy_consumer
+        interface: energy
+        type: requirement
+      - id: powermeter
+        interface: powermeter
+        type: requirement
+      - id: price_information
+        interface: energy_price_information
+        type: requirement
       right:
-        - id: energy_grid
-          interface: energy
-          type: provide
-        - id: external_limits
-          interface: external_energy_limits
-          type: provide
+      - id: energy_grid
+        interface: energy
+        type: provide
+      - id: external_limits
+        interface: external_energy_limits
+        type: provide
       top: []
   iso15118_charger:
     position:
@@ -686,50 +576,51 @@ active_modules:
     terminals:
       bottom: []
       left:
-        - id: security
-          interface: evse_security
-          type: requirement
+      - id: security
+        interface: evse_security
+        type: requirement
       right:
-        - id: charger
-          interface: ISO1S118_charger
-          type: provide
+      - id: charger
+        interface: ISO1S118_charger
+        type: provide
       top: []
   powersupply_dc:
     position:
       x: -43
-      y: 13
+      y: 6
     terminals:
       bottom: []
       left: []
       right:
-        - id: main
-          interface: power_supply_DC
-          type: provide
+      - id: main
+        interface: power_supply_DC
+        type: provide
       top: []
   token_provider:
     position:
-      x: 27
-      y: -4
+      x: 54
+      y: -6
     terminals:
       bottom: []
       left:
-        - id: evse
-          interface: evse_manager
-          type: requirement
+      - id: evse
+        interface: evse_manager
+        type: requirement
       right:
-        - id: main
-          interface: auth_token_provider
-          type: provide
+      - id: main
+        interface: auth_token_provider
+        type: provide
       top: []
   token_validator:
     position:
-      x: 27
-      y: 3
+      x: 54
+      y: 1
     terminals:
       bottom: []
       left: []
       right:
-        - id: main
-          interface: auth_token_validator
-          type: provide
+      - id: main
+        interface: auth_token_validator
+        type: provide
       top: []
+

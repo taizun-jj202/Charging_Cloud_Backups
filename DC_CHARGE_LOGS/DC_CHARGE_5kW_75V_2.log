@@ -1,0 +1,866 @@
+2025-12-16T19:14:22.899551+0100 chargesom manager[877861]: [INFO] evse_slac:EvseS  :: D-LINK_TERMINATE.request received, leaving network.
+2025-12-16T19:14:22.900692+0100 chargesom manager[877861]: [INFO] evse_slac:EvseS  :: Entered Reset state
+2025-12-16T19:14:22.900692+0100 chargesom manager[877861]: [INFO] evse_slac:EvseS  :: New NMK key: 46:59:57:35:46:5A:4E:4A:44:37:4C:31:50:5A:49:54
+2025-12-16T19:14:22.902036+0100 chargesom manager[877861]: [INFO] evse_slac:EvseS  :: Received CM_SET_KEY_CNF
+2025-12-16T19:14:22.903188+0100 chargesom manager[877861]: [INFO] evse_slac:EvseS  :: Entered Idle state
+2025-12-16T19:14:22.906230+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO D-LINK_READY (false)
+2025-12-16T19:14:22.953944+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO SLAC UNMATCHED
+2025-12-16T19:14:26.131667+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO Change HLC Limits: 1350W/102A, target_voltage 0, actual_voltage 2.9, hack_bpt false
+2025-12-16T19:14:45.770537+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO Change HLC Limits: 1350W/102A, target_voltage 0, actual_voltage 1.8000001, hack_bpt false
+2025-12-16T19:15:07.665939+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO Change HLC Limits: 1350W/102A, target_voltage 0, actual_voltage 0.7, hack_bpt false
+2025-12-16T19:16:03.866356+0100 chargesom manager[877852]: [INFO] bsp:CbChargeSOM  :: CP state change from B to A, PWM: 100.0%
+2025-12-16T19:16:03.945740+0100 chargesom manager[877852]: [INFO] bsp:CbChargeSOM  :: handle_pwm_off: Setting new duty cycle of 100.0%
+2025-12-16T19:16:04.001117+0100 chargesom manager[877852]: [INFO] bsp:CbChargeSOM  :: handle_allow_power_on: request to OPEN the contactor
+2025-12-16T19:16:04.077582+0100 chargesom manager[877853]: [INFO] connector:EvseM  ::                                     CAR IEC Event CarUnplugged
+2025-12-16T19:16:04.078654+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE IEC Charger state: StoppingCharging->Finished
+2025-12-16T19:16:04.078654+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE IEC Transaction Finished: EVDisconnected (0 kWh)
+2025-12-16T19:16:04.206892+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE IEC Session Finished
+2025-12-16T19:16:04.207313+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: SYS  Session logging stopped.
+2025-12-16T19:16:04.345653+0100 chargesom manager[877852]: [INFO] bsp:CbChargeSOM  :: handle_pwm_off: Setting new duty cycle of 100.0%
+2025-12-16T19:16:04.389686+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: All errors cleared
+2025-12-16T19:16:04.433540+0100 chargesom manager[877852]: [INFO] bsp:CbChargeSOM  :: handle_pwm_off: Setting new duty cycle of 100.0%
+2025-12-16T19:16:04.477952+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: All errors cleared
+2025-12-16T19:16:05.724718+0100 chargesom manager[877852]: [INFO] bsp:CbChargeSOM  :: CP state change from A to B, PWM: 100.0%
+2025-12-16T19:16:05.797640+0100 chargesom manager[877861]: [INFO] evse_slac:EvseS  :: Entered Matching state, waiting for CM_SLAC_PARM_REQ
+2025-12-16T19:16:05.845777+0100 chargesom manager[877852]: [INFO] bsp:CbChargeSOM  :: handle_allow_power_on: request to OPEN the contactor
+2025-12-16T19:16:05.937965+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: SYS  Session logging started.
+2025-12-16T19:16:05.938954+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE IEC Session Started: EVConnected
+2025-12-16T19:16:05.941269+0100 chargesom manager[877851]: [INFO] auth:Auth        :: Plug In event for evse#1, starting auth
+2025-12-16T19:16:05.942329+0100 chargesom manager[877885]: [INFO] token_provider:  :: Publishing new dummy token: {
+2025-12-16T19:16:05.942329+0100 chargesom manager[877885]:     "authorization_type": "RFID",
+2025-12-16T19:16:05.942329+0100 chargesom manager[877885]:     "id_token": {
+2025-12-16T19:16:05.942329+0100 chargesom manager[877885]:         "type": "ISO14443",
+2025-12-16T19:16:05.942329+0100 chargesom manager[877885]:         "value": "[redacted] hash: 29F2679CA504908"
+2025-12-16T19:16:05.942329+0100 chargesom manager[877885]:     },
+2025-12-16T19:16:05.942329+0100 chargesom manager[877885]:     "parent_id_token": {
+2025-12-16T19:16:05.942329+0100 chargesom manager[877885]:         "type": "ISO14443",
+2025-12-16T19:16:05.942329+0100 chargesom manager[877885]:         "value": "[redacted] hash: 29F2679CA504908"
+2025-12-16T19:16:05.942329+0100 chargesom manager[877885]:     }
+2025-12-16T19:16:05.942329+0100 chargesom manager[877885]: }
+2025-12-16T19:16:05.946252+0100 chargesom manager[877851]: [INFO] auth:Auth        :: Received new token: {
+2025-12-16T19:16:05.946252+0100 chargesom manager[877851]:     "authorization_type": "RFID",
+2025-12-16T19:16:05.946252+0100 chargesom manager[877851]:     "id_token": {
+2025-12-16T19:16:05.946252+0100 chargesom manager[877851]:         "type": "ISO14443",
+2025-12-16T19:16:05.946252+0100 chargesom manager[877851]:         "value": "[redacted] hash: 29F2679CA504908"
+2025-12-16T19:16:05.946252+0100 chargesom manager[877851]:     },
+2025-12-16T19:16:05.946252+0100 chargesom manager[877851]:     "parent_id_token": {
+2025-12-16T19:16:05.946252+0100 chargesom manager[877851]:         "type": "ISO14443",
+2025-12-16T19:16:05.946252+0100 chargesom manager[877851]:         "value": "[redacted] hash: 29F2679CA504908"
+2025-12-16T19:16:05.946252+0100 chargesom manager[877851]:     }
+2025-12-16T19:16:05.946252+0100 chargesom manager[877851]: }
+2025-12-16T19:16:05.948324+0100 chargesom manager[877889]: [INFO] token_validator  :: Got validation request for token: [redacted] hash: 29F2679CA504908
+2025-12-16T19:16:06.197969+0100 chargesom manager[877889]: [INFO] token_validator  :: Returning validation status: Accepted
+2025-12-16T19:16:06.200102+0100 chargesom manager[877851]: [INFO] auth:Auth        :: Providing authorization to evse#1
+2025-12-16T19:16:06.439109+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE IEC Set PWM On (5.0%) took 0 ms
+2025-12-16T19:16:06.441086+0100 chargesom manager[877852]: [INFO] bsp:CbChargeSOM  :: handle_pwm_on: Setting new duty cycle of 5.0%
+2025-12-16T19:16:06.575264+0100 chargesom manager[877851]: [INFO] auth:Auth        :: Result for token: [redacted] hash: 29F2679CA504908: ACCEPTED
+2025-12-16T19:16:06.586020+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE IEC EIM Authorization received
+2025-12-16T19:16:06.586399+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE IEC Transaction Started (0 kWh)
+2025-12-16T19:16:06.587005+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE IEC DC mode. We are in 5percent mode so we can continue without further action.
+2025-12-16T19:16:06.589049+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE IEC Charger state: Wait for Auth->PrepareCharging
+2025-12-16T19:16:12.555755+0100 chargesom manager[877861]: [INFO] evse_slac:EvseS  :: Session (run_id=7E4C853B0884782E, ev_mac=F0:7F:0C:11:12:F1): initialized, waiting for CM_START_ATTEN_CHAR_IND
+2025-12-16T19:16:12.794114+0100 chargesom manager[877861]: [INFO] evse_slac:EvseS  :: Session (run_id=7E4C853B0884782E, ev_mac=F0:7F:0C:11:12:F1): received CM_START_ATTEN_CHAR_IND, going to substate SOUNDING
+2025-12-16T19:16:12.834221+0100 chargesom manager[877861]: [INFO] evse_slac:EvseS  :: Session (run_id=7E4C853B0884782E, ev_mac=F0:7F:0C:11:12:F1): needs to be in state WAIT_FOR_START_ATTEN_CHAR for CM_START_ATTEN_CHAR_IND
+2025-12-16T19:16:12.874075+0100 chargesom manager[877861]: [INFO] evse_slac:EvseS  :: Session (run_id=7E4C853B0884782E, ev_mac=F0:7F:0C:11:12:F1): needs to be in state WAIT_FOR_START_ATTEN_CHAR for CM_START_ATTEN_CHAR_IND
+2025-12-16T19:16:12.914077+0100 chargesom manager[877861]: [INFO] evse_slac:EvseS  :: Session (run_id=7E4C853B0884782E, ev_mac=F0:7F:0C:11:12:F1): received CM_MNBC_SOUND_IND
+2025-12-16T19:16:12.921527+0100 chargesom manager[877861]: [INFO] evse_slac:EvseS  :: Session (run_id=7E4C853B0884782E, ev_mac=F0:7F:0C:11:12:F1): received CM_ATTEN_PROFILE_IND
+2025-12-16T19:16:12.954073+0100 chargesom manager[877861]: [INFO] evse_slac:EvseS  :: Session (run_id=7E4C853B0884782E, ev_mac=F0:7F:0C:11:12:F1): received CM_MNBC_SOUND_IND
+2025-12-16T19:16:12.961536+0100 chargesom manager[877861]: [INFO] evse_slac:EvseS  :: Session (run_id=7E4C853B0884782E, ev_mac=F0:7F:0C:11:12:F1): received CM_ATTEN_PROFILE_IND
+2025-12-16T19:16:12.994053+0100 chargesom manager[877861]: [INFO] evse_slac:EvseS  :: Session (run_id=7E4C853B0884782E, ev_mac=F0:7F:0C:11:12:F1): received CM_MNBC_SOUND_IND
+2025-12-16T19:16:13.001545+0100 chargesom manager[877861]: [INFO] evse_slac:EvseS  :: Session (run_id=7E4C853B0884782E, ev_mac=F0:7F:0C:11:12:F1): received CM_ATTEN_PROFILE_IND
+2025-12-16T19:16:13.034126+0100 chargesom manager[877861]: [INFO] evse_slac:EvseS  :: Session (run_id=7E4C853B0884782E, ev_mac=F0:7F:0C:11:12:F1): received CM_MNBC_SOUND_IND
+2025-12-16T19:16:13.041396+0100 chargesom manager[877861]: [INFO] evse_slac:EvseS  :: Session (run_id=7E4C853B0884782E, ev_mac=F0:7F:0C:11:12:F1): received CM_ATTEN_PROFILE_IND
+2025-12-16T19:16:13.074068+0100 chargesom manager[877861]: [INFO] evse_slac:EvseS  :: Session (run_id=7E4C853B0884782E, ev_mac=F0:7F:0C:11:12:F1): received CM_MNBC_SOUND_IND
+2025-12-16T19:16:13.081515+0100 chargesom manager[877861]: [INFO] evse_slac:EvseS  :: Session (run_id=7E4C853B0884782E, ev_mac=F0:7F:0C:11:12:F1): received CM_ATTEN_PROFILE_IND
+2025-12-16T19:16:13.114199+0100 chargesom manager[877861]: [INFO] evse_slac:EvseS  :: Session (run_id=7E4C853B0884782E, ev_mac=F0:7F:0C:11:12:F1): received CM_MNBC_SOUND_IND
+2025-12-16T19:16:13.121675+0100 chargesom manager[877861]: [INFO] evse_slac:EvseS  :: Session (run_id=7E4C853B0884782E, ev_mac=F0:7F:0C:11:12:F1): received CM_ATTEN_PROFILE_IND
+2025-12-16T19:16:13.154073+0100 chargesom manager[877861]: [INFO] evse_slac:EvseS  :: Session (run_id=7E4C853B0884782E, ev_mac=F0:7F:0C:11:12:F1): received CM_MNBC_SOUND_IND
+2025-12-16T19:16:13.161513+0100 chargesom manager[877861]: [INFO] evse_slac:EvseS  :: Session (run_id=7E4C853B0884782E, ev_mac=F0:7F:0C:11:12:F1): received CM_ATTEN_PROFILE_IND
+2025-12-16T19:16:13.194038+0100 chargesom manager[877861]: [INFO] evse_slac:EvseS  :: Session (run_id=7E4C853B0884782E, ev_mac=F0:7F:0C:11:12:F1): received CM_MNBC_SOUND_IND
+2025-12-16T19:16:13.201654+0100 chargesom manager[877861]: [INFO] evse_slac:EvseS  :: Session (run_id=7E4C853B0884782E, ev_mac=F0:7F:0C:11:12:F1): received CM_ATTEN_PROFILE_IND
+2025-12-16T19:16:13.234080+0100 chargesom manager[877861]: [INFO] evse_slac:EvseS  :: Session (run_id=7E4C853B0884782E, ev_mac=F0:7F:0C:11:12:F1): received CM_MNBC_SOUND_IND
+2025-12-16T19:16:13.242778+0100 chargesom manager[877861]: [INFO] evse_slac:EvseS  :: Session (run_id=7E4C853B0884782E, ev_mac=F0:7F:0C:11:12:F1): received CM_ATTEN_PROFILE_IND
+2025-12-16T19:16:13.274106+0100 chargesom manager[877861]: [INFO] evse_slac:EvseS  :: Session (run_id=7E4C853B0884782E, ev_mac=F0:7F:0C:11:12:F1): received CM_MNBC_SOUND_IND
+2025-12-16T19:16:13.281383+0100 chargesom manager[877861]: [INFO] evse_slac:EvseS  :: Session (run_id=7E4C853B0884782E, ev_mac=F0:7F:0C:11:12:F1): received CM_ATTEN_PROFILE_IND
+2025-12-16T19:16:13.281695+0100 chargesom manager[877861]: [INFO] evse_slac:EvseS  :: Session (run_id=7E4C853B0884782E, ev_mac=F0:7F:0C:11:12:F1): received all sounds, going to substate FINALIZE_SOUNDING
+2025-12-16T19:16:13.325718+0100 chargesom manager[877861]: [INFO] evse_slac:EvseS  :: Session (run_id=7E4C853B0884782E, ev_mac=F0:7F:0C:11:12:F1): Finalize sounding, sending CM_ATTEN_CHAR_IND
+2025-12-16T19:16:13.331881+0100 chargesom manager[877861]: [INFO] evse_slac:EvseS  :: Session (run_id=7E4C853B0884782E, ev_mac=F0:7F:0C:11:12:F1): received CM_ATTEN_CHAR_RSP, going to substate WAIT_FOR_SLAC_MATCH
+2025-12-16T19:16:14.004226+0100 chargesom manager[877861]: [INFO] evse_slac:EvseS  :: Session (run_id=7E4C853B0884782E, ev_mac=F0:7F:0C:11:12:F1): Received CM_SLAC_MATCH_REQ, sending CM_SLAC_MATCH_CNF -> session complete
+2025-12-16T19:16:14.005551+0100 chargesom manager[877861]: [INFO] evse_slac:EvseS  :: Entered Matched state
+2025-12-16T19:16:14.006806+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO SLAC MATCHED
+2025-12-16T19:16:14.049350+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO D-LINK_READY (true)
+2025-12-16T19:16:15.784292+0100 chargesom manager[877880]: [INFO] iso15118_charge  :: Received packet from [fe80::f27f:cff:fe11:12f1]:49152 with security 0x10 and protocol 0x00
+2025-12-16T19:16:15.784292+0100 chargesom manager[877880]: [INFO] iso15118_charge  :: SDP requested NO-TLS, announcing NO-TLS
+2025-12-16T19:16:15.784292+0100 chargesom manager[877880]: [INFO] iso15118_charge  :: sendto([fe80::f27f:cff:fe11:12f1]:49152) succeeded
+2025-12-16T19:16:15.854069+0100 chargesom manager[877880]: [INFO] iso15118_charge  :: Incoming connection on eth1 from [a00:c000:0:0:fe80::]:49152
+2025-12-16T19:16:15.854429+0100 chargesom manager[877880]: [INFO] iso15118_charge  :: Started new TCP connection thread
+2025-12-16T19:16:15.884904+0100 chargesom manager[877880]: [INFO] iso15118_charge  :: Handling SupportedAppProtocolReq
+2025-12-16T19:16:15.885446+0100 chargesom manager[877880]: [INFO] iso15118_charge  :: Protocol negotiation was successful. Selected protocol is ISO15118
+2025-12-16T19:16:15.887596+0100 chargesom manager[877853]: [INFO] connector:EvseM  ::                                     CAR ISO V2G SupportedAppProtocolReq
+2025-12-16T19:16:15.924469+0100 chargesom manager[877880]: [INFO] iso15118_charge  :: SessionSetupReq.EVCCID: F0:7F:0C:11:12:F1
+2025-12-16T19:16:15.924850+0100 chargesom manager[877880]: [INFO] iso15118_charge  :: No session_id found or not equal to the id from the preceding v2g session. Generating random session id.
+2025-12-16T19:16:15.924850+0100 chargesom manager[877880]: [INFO] iso15118_charge  :: Created new session with id 0x6916930331672756918
+2025-12-16T19:16:15.930122+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO V2G SupportedAppProtocolRes
+2025-12-16T19:16:15.975005+0100 chargesom manager[877853]: [INFO] connector:EvseM  ::                                     CAR ISO V2G SessionSetupReq
+2025-12-16T19:16:16.061402+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO V2G SessionSetupRes
+2025-12-16T19:16:16.064333+0100 chargesom manager[877880]: [WARN] iso15118_charge  :: PnC is not allowed without TLS-communication. Correcting value to '1' (ExternalPayment)
+2025-12-16T19:16:16.065777+0100 chargesom manager[877853]: [INFO] connector:EvseM  ::                                     CAR ISO V2G ServiceDiscoveryReq
+2025-12-16T19:16:16.163139+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO V2G ServiceDiscoveryRes
+2025-12-16T19:16:16.204699+0100 chargesom manager[877880]: [INFO] iso15118_charge  :: SelectedPaymentOption: ExternalPayment
+2025-12-16T19:16:16.206243+0100 chargesom manager[877853]: [INFO] connector:EvseM  ::                                     CAR ISO V2G PaymentServiceSelectionReq
+2025-12-16T19:16:16.303191+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO V2G PaymentServiceSelectionRes
+2025-12-16T19:16:16.399276+0100 chargesom manager[877853]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T19:16:16.453833+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T19:16:16.575839+0100 chargesom manager[877853]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T19:16:16.673317+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T19:16:16.714165+0100 chargesom manager[877880]: [INFO] iso15118_charge  :: Parameter-phase started
+2025-12-16T19:16:16.714851+0100 chargesom manager[877880]: [INFO] iso15118_charge  :: Selected energy transfer mode: DC_extended
+2025-12-16T19:16:16.762140+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: Received EV maximum limits: {
+2025-12-16T19:16:16.762140+0100 chargesom manager[877853]:     "dc_ev_maximum_current_limit": 350.0,
+2025-12-16T19:16:16.762140+0100 chargesom manager[877853]:     "dc_ev_maximum_voltage_limit": 464.0
+2025-12-16T19:16:16.762140+0100 chargesom manager[877853]: }
+2025-12-16T19:16:16.854239+0100 chargesom manager[877853]: [INFO] connector:EvseM  ::                                     CAR ISO V2G ChargeParameterDiscoveryReq
+2025-12-16T19:16:16.854239+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO V2G ChargeParameterDiscoveryRes
+2025-12-16T19:16:18.173848+0100 chargesom manager[877852]: [INFO] bsp:CbChargeSOM  :: CP state change from B to C, PWM: 5.0%
+2025-12-16T19:16:18.184251+0100 chargesom manager[877853]: [INFO] connector:EvseM  ::                                     CAR IEC Event CarRequestedPower
+2025-12-16T19:16:18.243024+0100 chargesom manager[877853]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CableCheckReq
+2025-12-16T19:16:18.243024+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO Start cable check...
+2025-12-16T19:16:18.243700+0100 chargesom manager[877853]: [INFO] connector:EvseM  ::                                     CAR ISO DC HLC Close contactor (in CableCheck)
+2025-12-16T19:16:18.302424+0100 chargesom manager[877852]: [INFO] bsp:CbChargeSOM  :: handle_allow_power_on: request to CLOSE the contactor
+2025-12-16T19:16:18.345438+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO V2G CableCheckRes
+2025-12-16T19:16:18.393674+0100 chargesom manager[877852]: [INFO] bsp:CbChargeSOM  :: Contactor 1 state change detected: now Closed
+2025-12-16T19:16:18.394072+0100 chargesom manager[877852]: [INFO] bsp:CbChargeSOM  :: Contactor 2 state change detected: now Closed
+2025-12-16T19:16:18.395135+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE IEC Event PowerOn
+2025-12-16T19:16:18.441794+0100 chargesom manager[877853]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CableCheckReq
+2025-12-16T19:16:18.443991+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EV reports 464 V as maximum voltage
+2025-12-16T19:16:18.444379+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE IEC DC power supply set: 500.00V/2.00A, requested was 500.00V/2.00A.
+2025-12-16T19:16:18.489707+0100 chargesom manager[877881]: [INFO] powersupply_dc:  :: Infy: Updating voltage/current via CAN: 500V / 2A total → 2A per module - active modules: 1
+2025-12-16T19:16:18.490851+0100 chargesom manager[877881]: [INFO] powersupply_dc:  :: Infy: set_voltage_current(500V, 2A) - active modules: 1
+2025-12-16T19:16:18.534659+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: CableCheck: Using 500 V
+2025-12-16T19:16:18.535064+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE IEC DC power supply: switch ON called, ChargingPhase: CableCheck
+2025-12-16T19:16:18.536209+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO V2G CableCheckRes
+2025-12-16T19:16:18.577568+0100 chargesom manager[877881]: [INFO] powersupply_dc:  :: Set mode via CAN: Export with phase CableCheck
+2025-12-16T19:16:18.577568+0100 chargesom manager[877881]: [INFO] powersupply_dc:  :: Infy: switch_on_off(true) - active modules: 1
+2025-12-16T19:16:18.665524+0100 chargesom manager[877853]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CableCheckReq
+2025-12-16T19:16:18.754713+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO V2G CableCheckRes
+2025-12-16T19:16:18.875191+0100 chargesom manager[877853]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CableCheckReq
+2025-12-16T19:16:18.973707+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO V2G CableCheckRes
+2025-12-16T19:16:19.095691+0100 chargesom manager[877853]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CableCheckReq
+2025-12-16T19:16:19.221773+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO V2G CableCheckRes
+2025-12-16T19:16:19.315386+0100 chargesom manager[877853]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CableCheckReq
+2025-12-16T19:16:19.414249+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO V2G CableCheckRes
+2025-12-16T19:16:19.535305+0100 chargesom manager[877853]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CableCheckReq
+2025-12-16T19:16:19.633740+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO V2G CableCheckRes
+2025-12-16T19:16:19.755416+0100 chargesom manager[877853]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CableCheckReq
+2025-12-16T19:16:19.853811+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO V2G CableCheckRes
+2025-12-16T19:16:19.975287+0100 chargesom manager[877853]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CableCheckReq
+2025-12-16T19:16:20.073923+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO V2G CableCheckRes
+2025-12-16T19:16:20.195620+0100 chargesom manager[877853]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CableCheckReq
+2025-12-16T19:16:20.305940+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO V2G CableCheckRes
+2025-12-16T19:16:20.354561+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO Change HLC Limits: 1350W/102A, target_voltage 0, actual_voltage 41.100002, hack_bpt false
+2025-12-16T19:16:20.441821+0100 chargesom manager[877853]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CableCheckReq
+2025-12-16T19:16:20.529782+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO V2G CableCheckRes
+2025-12-16T19:16:20.635964+0100 chargesom manager[877853]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CableCheckReq
+2025-12-16T19:16:20.733591+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO V2G CableCheckRes
+2025-12-16T19:16:20.855127+0100 chargesom manager[877853]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CableCheckReq
+2025-12-16T19:16:20.953789+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO V2G CableCheckRes
+2025-12-16T19:16:21.075078+0100 chargesom manager[877853]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CableCheckReq
+2025-12-16T19:16:21.173620+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO V2G CableCheckRes
+2025-12-16T19:16:21.295219+0100 chargesom manager[877853]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CableCheckReq
+2025-12-16T19:16:21.393557+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO V2G CableCheckRes
+2025-12-16T19:16:21.537898+0100 chargesom manager[877853]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CableCheckReq
+2025-12-16T19:16:21.645933+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO V2G CableCheckRes
+2025-12-16T19:16:21.735070+0100 chargesom manager[877853]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CableCheckReq
+2025-12-16T19:16:21.833616+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO V2G CableCheckRes
+2025-12-16T19:16:21.955060+0100 chargesom manager[877853]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CableCheckReq
+2025-12-16T19:16:22.053511+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO V2G CableCheckRes
+2025-12-16T19:16:22.174955+0100 chargesom manager[877853]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CableCheckReq
+2025-12-16T19:16:22.273635+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO V2G CableCheckRes
+2025-12-16T19:16:22.394963+0100 chargesom manager[877853]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CableCheckReq
+2025-12-16T19:16:22.493475+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO V2G CableCheckRes
+2025-12-16T19:16:22.654457+0100 chargesom manager[877853]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CableCheckReq
+2025-12-16T19:16:22.749304+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO V2G CableCheckRes
+2025-12-16T19:16:22.834963+0100 chargesom manager[877853]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CableCheckReq
+2025-12-16T19:16:22.933541+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO V2G CableCheckRes
+2025-12-16T19:16:23.054975+0100 chargesom manager[877853]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CableCheckReq
+2025-12-16T19:16:23.153526+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO V2G CableCheckRes
+2025-12-16T19:16:23.203816+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: CableCheck: IMD self test started.
+2025-12-16T19:16:23.309277+0100 chargesom manager[877853]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CableCheckReq
+2025-12-16T19:16:23.373446+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO V2G CableCheckRes
+2025-12-16T19:16:23.495092+0100 chargesom manager[877853]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CableCheckReq
+2025-12-16T19:16:23.593512+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO V2G CableCheckRes
+2025-12-16T19:16:23.757734+0100 chargesom manager[877853]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CableCheckReq
+2025-12-16T19:16:23.763382+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO Change HLC Limits: 1350W/102A, target_voltage 0, actual_voltage 502.30002, hack_bpt false
+2025-12-16T19:16:23.813699+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO V2G CableCheckRes
+2025-12-16T19:16:23.934902+0100 chargesom manager[877853]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CableCheckReq
+2025-12-16T19:16:24.034132+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO V2G CableCheckRes
+2025-12-16T19:16:24.155192+0100 chargesom manager[877853]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CableCheckReq
+2025-12-16T19:16:24.265364+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO V2G CableCheckRes
+2025-12-16T19:16:24.375241+0100 chargesom manager[877853]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CableCheckReq
+2025-12-16T19:16:24.473539+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO V2G CableCheckRes
+2025-12-16T19:16:24.594894+0100 chargesom manager[877853]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CableCheckReq
+2025-12-16T19:16:24.692378+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO V2G CableCheckRes
+2025-12-16T19:16:24.815271+0100 chargesom manager[877853]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CableCheckReq
+2025-12-16T19:16:24.914728+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO V2G CableCheckRes
+2025-12-16T19:16:25.045471+0100 chargesom manager[877853]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CableCheckReq
+2025-12-16T19:16:25.132358+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO V2G CableCheckRes
+2025-12-16T19:16:25.289441+0100 chargesom manager[877853]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CableCheckReq
+2025-12-16T19:16:25.352939+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO V2G CableCheckRes
+2025-12-16T19:16:25.474790+0100 chargesom manager[877853]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CableCheckReq
+2025-12-16T19:16:25.572262+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO V2G CableCheckRes
+2025-12-16T19:16:25.694911+0100 chargesom manager[877853]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CableCheckReq
+2025-12-16T19:16:25.792315+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO V2G CableCheckRes
+2025-12-16T19:16:25.914799+0100 chargesom manager[877853]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CableCheckReq
+2025-12-16T19:16:26.013655+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO V2G CableCheckRes
+2025-12-16T19:16:26.141368+0100 chargesom manager[877853]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CableCheckReq
+2025-12-16T19:16:26.207241+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE IEC Isolation monitor self test result: true
+2025-12-16T19:16:26.249634+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO V2G CableCheckRes
+2025-12-16T19:16:26.250260+0100 chargesom manager[877876]: [INFO] imd:IMDSimulato  :: Started simulated isolation monitoring with 1000 ms interval
+2025-12-16T19:16:26.255184+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: CableCheck: Waiting for 1 isolation measurement sample(s)
+2025-12-16T19:16:26.297881+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE IEC Isolation measurement Ok R_F 900000.
+2025-12-16T19:16:26.385357+0100 chargesom manager[877853]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CableCheckReq
+2025-12-16T19:16:26.386810+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE IEC DC power supply OFF
+2025-12-16T19:16:26.429792+0100 chargesom manager[877881]: [INFO] powersupply_dc:  :: Set mode via CAN: Off with phase CableCheck
+2025-12-16T19:16:26.429792+0100 chargesom manager[877881]: [INFO] powersupply_dc:  :: Infy: switch_on_off(false) - active modules: 1
+2025-12-16T19:16:26.473949+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO V2G CableCheckRes
+2025-12-16T19:16:26.576622+0100 chargesom manager[877853]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CableCheckReq
+2025-12-16T19:16:26.672434+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO V2G CableCheckRes
+2025-12-16T19:16:26.794837+0100 chargesom manager[877853]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CableCheckReq
+2025-12-16T19:16:26.892372+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO V2G CableCheckRes
+2025-12-16T19:16:27.015046+0100 chargesom manager[877853]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CableCheckReq
+2025-12-16T19:16:27.150018+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO V2G CableCheckRes
+2025-12-16T19:16:27.265296+0100 chargesom manager[877853]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CableCheckReq
+2025-12-16T19:16:27.332094+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO V2G CableCheckRes
+2025-12-16T19:16:27.454871+0100 chargesom manager[877853]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CableCheckReq
+2025-12-16T19:16:27.552362+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO V2G CableCheckRes
+2025-12-16T19:16:27.674728+0100 chargesom manager[877853]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CableCheckReq
+2025-12-16T19:16:27.772314+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO V2G CableCheckRes
+2025-12-16T19:16:27.894784+0100 chargesom manager[877853]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CableCheckReq
+2025-12-16T19:16:27.992272+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO V2G CableCheckRes
+2025-12-16T19:16:28.115349+0100 chargesom manager[877853]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CableCheckReq
+2025-12-16T19:16:28.205754+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: CableCheck done, output is below 60V
+2025-12-16T19:16:28.253796+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO V2G CableCheckRes
+2025-12-16T19:16:28.334734+0100 chargesom manager[877853]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CableCheckReq
+2025-12-16T19:16:28.432239+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO V2G CableCheckRes
+2025-12-16T19:16:28.623674+0100 chargesom manager[877880]: [INFO] iso15118_charge  :: Precharge-phase started
+2025-12-16T19:16:28.626055+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE IEC DC power supply set: 447.00V/1.00A, requested was 447.00V/1.00A.
+2025-12-16T19:16:28.669788+0100 chargesom manager[877881]: [INFO] powersupply_dc:  :: Infy: Updating voltage/current via CAN: 447V / 1A total → 1A per module - active modules: 1
+2025-12-16T19:16:28.669788+0100 chargesom manager[877881]: [INFO] powersupply_dc:  :: Infy: set_voltage_current(447V, 1A) - active modules: 1
+2025-12-16T19:16:28.672724+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE IEC DC power supply: switch ON called, ChargingPhase: PreCharge
+2025-12-16T19:16:28.722181+0100 chargesom manager[877881]: [INFO] powersupply_dc:  :: Set mode via CAN: Export with phase PreCharge
+2025-12-16T19:16:28.722181+0100 chargesom manager[877881]: [INFO] powersupply_dc:  :: Infy: switch_on_off(true) - active modules: 1
+2025-12-16T19:16:28.766501+0100 chargesom manager[877853]: [INFO] connector:EvseM  ::                                     CAR ISO V2G PreChargeReq
+2025-12-16T19:16:28.767708+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO V2G PreChargeRes
+2025-12-16T19:16:28.844880+0100 chargesom manager[877853]: [INFO] connector:EvseM  ::                                     CAR ISO V2G PreChargeReq
+2025-12-16T19:16:28.942393+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO V2G PreChargeRes
+2025-12-16T19:16:29.064922+0100 chargesom manager[877853]: [INFO] connector:EvseM  ::                                     CAR ISO V2G PreChargeReq
+2025-12-16T19:16:29.162222+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO V2G PreChargeRes
+2025-12-16T19:16:29.284831+0100 chargesom manager[877853]: [INFO] connector:EvseM  ::                                     CAR ISO V2G PreChargeReq
+2025-12-16T19:16:29.397959+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO V2G PreChargeRes
+2025-12-16T19:16:29.399875+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO Change HLC Limits: 1350W/3.0201342A, target_voltage 447, actual_voltage 0, hack_bpt false
+2025-12-16T19:16:29.486083+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE IEC DC power supply set: 447.00V/1.00A, requested was 447.00V/1.00A.
+2025-12-16T19:16:29.530014+0100 chargesom manager[877853]: [INFO] connector:EvseM  ::                                     CAR ISO V2G PreChargeReq
+2025-12-16T19:16:29.530381+0100 chargesom manager[877881]: [INFO] powersupply_dc:  :: Infy: Updating voltage/current via CAN: 447V / 1A total → 1A per module - active modules: 1
+2025-12-16T19:16:29.530381+0100 chargesom manager[877881]: [INFO] powersupply_dc:  :: Infy: set_voltage_current(447V, 1A) - active modules: 1
+2025-12-16T19:16:29.621337+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO V2G PreChargeRes
+2025-12-16T19:16:29.724900+0100 chargesom manager[877853]: [INFO] connector:EvseM  ::                                     CAR ISO V2G PreChargeReq
+2025-12-16T19:16:29.822179+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO V2G PreChargeRes
+2025-12-16T19:16:29.944790+0100 chargesom manager[877853]: [INFO] connector:EvseM  ::                                     CAR ISO V2G PreChargeReq
+2025-12-16T19:16:30.042449+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO V2G PreChargeRes
+2025-12-16T19:16:30.164704+0100 chargesom manager[877853]: [INFO] connector:EvseM  ::                                     CAR ISO V2G PreChargeReq
+2025-12-16T19:16:30.290007+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO V2G PreChargeRes
+2025-12-16T19:16:30.384982+0100 chargesom manager[877853]: [INFO] connector:EvseM  ::                                     CAR ISO V2G PreChargeReq
+2025-12-16T19:16:30.483060+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO V2G PreChargeRes
+2025-12-16T19:16:30.629502+0100 chargesom manager[877853]: [INFO] connector:EvseM  ::                                     CAR ISO V2G PreChargeReq
+2025-12-16T19:16:30.647953+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO Change HLC Limits: 1350W/3.0201342A, target_voltage 447, actual_voltage 2.3, hack_bpt false
+2025-12-16T19:16:30.737491+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO V2G PreChargeRes
+2025-12-16T19:16:30.738620+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE IEC DC power supply set: 447.00V/1.00A, requested was 447.00V/1.00A.
+2025-12-16T19:16:30.741010+0100 chargesom manager[877881]: [INFO] powersupply_dc:  :: Infy: Updating voltage/current via CAN: 447V / 1A total → 1A per module - active modules: 1
+2025-12-16T19:16:30.742278+0100 chargesom manager[877881]: [INFO] powersupply_dc:  :: Infy: set_voltage_current(447V, 1A) - active modules: 1
+2025-12-16T19:16:30.829450+0100 chargesom manager[877853]: [INFO] connector:EvseM  ::                                     CAR ISO V2G PreChargeReq
+2025-12-16T19:16:30.923189+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO V2G PreChargeRes
+2025-12-16T19:16:31.044868+0100 chargesom manager[877853]: [INFO] connector:EvseM  ::                                     CAR ISO V2G PreChargeReq
+2025-12-16T19:16:31.142215+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO V2G PreChargeRes
+2025-12-16T19:16:31.269758+0100 chargesom manager[877853]: [INFO] connector:EvseM  ::                                     CAR ISO V2G PreChargeReq
+2025-12-16T19:16:31.362220+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO V2G PreChargeRes
+2025-12-16T19:16:31.484582+0100 chargesom manager[877853]: [INFO] connector:EvseM  ::                                     CAR ISO V2G PreChargeReq
+2025-12-16T19:16:31.583663+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO V2G PreChargeRes
+2025-12-16T19:16:31.704781+0100 chargesom manager[877853]: [INFO] connector:EvseM  ::                                     CAR ISO V2G PreChargeReq
+2025-12-16T19:16:31.841455+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO V2G PreChargeRes
+2025-12-16T19:16:31.933553+0100 chargesom manager[877853]: [INFO] connector:EvseM  ::                                     CAR ISO V2G PreChargeReq
+2025-12-16T19:16:32.022966+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO V2G PreChargeRes
+2025-12-16T19:16:32.144904+0100 chargesom manager[877853]: [INFO] connector:EvseM  ::                                     CAR ISO V2G PreChargeReq
+2025-12-16T19:16:32.273784+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO V2G PreChargeRes
+2025-12-16T19:16:32.364681+0100 chargesom manager[877853]: [INFO] connector:EvseM  ::                                     CAR ISO V2G PreChargeReq
+2025-12-16T19:16:32.463088+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO V2G PreChargeRes
+2025-12-16T19:16:32.537666+0100 chargesom manager[877853]: [INFO] connector:EvseM  ::                                     CAR ISO V2G PowerDeliveryReq
+2025-12-16T19:16:32.593202+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO V2G PowerDeliveryRes
+2025-12-16T19:16:32.635112+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE IEC DC power supply: switch ON in export mode
+2025-12-16T19:16:32.637345+0100 chargesom manager[877881]: [INFO] powersupply_dc:  :: Set mode via CAN: Export with phase Charging
+2025-12-16T19:16:32.637345+0100 chargesom manager[877881]: [INFO] powersupply_dc:  :: Infy: switch_on_off(true) - active modules: 1
+2025-12-16T19:16:32.681861+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE IEC DC power supply set: 447.00V/1.00A, requested was 447.00V/1.00A.
+2025-12-16T19:16:32.684589+0100 chargesom manager[877881]: [INFO] powersupply_dc:  :: Infy: Updating voltage/current via CAN: 447V / 1A total → 1A per module - active modules: 1
+2025-12-16T19:16:32.684938+0100 chargesom manager[877881]: [INFO] powersupply_dc:  :: Infy: set_voltage_current(447V, 1A) - active modules: 1
+2025-12-16T19:16:32.728523+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE IEC DC power supply set: 459.00V/1.00A, requested was 459.00V/0.00A.
+2025-12-16T19:16:32.732371+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE IEC Charger state: PrepareCharging->Charging
+2025-12-16T19:16:32.732371+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: Timing statistics (Plugin to CurrentDemand)
+2025-12-16T19:16:32.732371+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: -------------------------------------------
+2025-12-16T19:16:32.732371+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: ConnSetup | HLC_PWM_5%_ON: 685 ms | D-LINK_READY: 7655 ms | Auth EIM Done: 2257 ms | Total: 12443 ms
+2025-12-16T19:16:32.732371+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: CableCheck | <60V: 0 ms | Relay On: 200 ms | EVInfo: 0 ms | VRampUp: 4754 ms | Self test: 3009 ms | Measure: 89 ms | VRampDown: 1908 ms | Total: 10011 ms
+2025-12-16T19:16:32.732371+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: PrepareCharging | Charging started: 4476 ms | Total: 4476 ms
+2025-12-16T19:16:32.732371+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: Total duration all phases: 26931 ms
+2025-12-16T19:16:32.735063+0100 chargesom manager[877881]: [INFO] powersupply_dc:  :: Infy: Updating voltage/current via CAN: 459V / 1A total → 1A per module - active modules: 1
+2025-12-16T19:16:32.735472+0100 chargesom manager[877881]: [INFO] powersupply_dc:  :: Infy: set_voltage_current(459V, 1A) - active modules: 1
+2025-12-16T19:16:32.778378+0100 chargesom manager[877853]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CurrentDemandReq
+2025-12-16T19:16:32.779524+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO V2G CurrentDemandRes
+2025-12-16T19:16:32.855307+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE IEC DC power supply set: 459.00V/3.00A, requested was 459.00V/3.00A.
+2025-12-16T19:16:32.902804+0100 chargesom manager[877881]: [INFO] powersupply_dc:  :: Infy: Updating voltage/current via CAN: 459V / 3A total → 3A per module - active modules: 1
+2025-12-16T19:16:32.902804+0100 chargesom manager[877881]: [INFO] powersupply_dc:  :: Infy: set_voltage_current(459V, 3A) - active modules: 1
+2025-12-16T19:16:32.909046+0100 chargesom manager[877853]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CurrentDemandReq
+2025-12-16T19:16:32.952816+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO Change HLC Limits: 1350W/2.9411764A, target_voltage 459, actual_voltage 2.3, hack_bpt false
+2025-12-16T19:16:32.956697+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO V2G CurrentDemandRes
+2025-12-16T19:16:32.999262+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE IEC DC power supply set: 459.00V/3.00A, requested was 459.00V/3.00A.
+2025-12-16T19:16:33.042234+0100 chargesom manager[877881]: [INFO] powersupply_dc:  :: Infy: Updating voltage/current via CAN: 459V / 3A total → 3A per module - active modules: 1
+2025-12-16T19:16:33.042234+0100 chargesom manager[877881]: [INFO] powersupply_dc:  :: Infy: set_voltage_current(459V, 3A) - active modules: 1
+2025-12-16T19:16:33.085550+0100 chargesom manager[877853]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CurrentDemandReq
+2025-12-16T19:16:33.173192+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO V2G CurrentDemandRes
+2025-12-16T19:16:33.273634+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE IEC Isolation measurement Ok R_F 900000.
+2025-12-16T19:16:33.318146+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE IEC DC power supply set: 459.00V/2.00A, requested was 459.00V/2.00A.
+2025-12-16T19:16:33.362751+0100 chargesom manager[877881]: [INFO] powersupply_dc:  :: Infy: Updating voltage/current via CAN: 459V / 2A total → 2A per module - active modules: 1
+2025-12-16T19:16:33.362751+0100 chargesom manager[877881]: [INFO] powersupply_dc:  :: Infy: set_voltage_current(459V, 2A) - active modules: 1
+2025-12-16T19:16:33.365105+0100 chargesom manager[877853]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CurrentDemandReq
+2025-12-16T19:16:33.409326+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO V2G CurrentDemandRes
+2025-12-16T19:16:33.514505+0100 chargesom manager[877853]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CurrentDemandReq
+2025-12-16T19:16:33.613282+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO V2G CurrentDemandRes
+2025-12-16T19:16:33.734606+0100 chargesom manager[877853]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CurrentDemandReq
+2025-12-16T19:16:33.833123+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO V2G CurrentDemandRes
+2025-12-16T19:16:33.954557+0100 chargesom manager[877853]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CurrentDemandReq
+2025-12-16T19:16:34.053055+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO V2G CurrentDemandRes
+2025-12-16T19:16:34.186026+0100 chargesom manager[877853]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CurrentDemandReq
+2025-12-16T19:16:34.187104+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO Change HLC Limits: 1350W/3.0181086A, target_voltage 459, actual_voltage 447.30002, hack_bpt false
+2025-12-16T19:16:34.274088+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE IEC Isolation measurement Ok R_F 900000.
+2025-12-16T19:16:34.274088+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO V2G CurrentDemandRes
+2025-12-16T19:16:34.314807+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE IEC DC power supply set: 459.00V/2.00A, requested was 459.00V/2.00A.
+2025-12-16T19:16:34.317168+0100 chargesom manager[877881]: [INFO] powersupply_dc:  :: Infy: Updating voltage/current via CAN: 459V / 2A total → 2A per module - active modules: 1
+2025-12-16T19:16:34.318105+0100 chargesom manager[877881]: [INFO] powersupply_dc:  :: Infy: set_voltage_current(459V, 2A) - active modules: 1
+2025-12-16T19:16:34.405240+0100 chargesom manager[877853]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CurrentDemandReq
+2025-12-16T19:16:34.492868+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO V2G CurrentDemandRes
+2025-12-16T19:16:34.615543+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE IEC DC power supply set: 459.00V/3.00A, requested was 459.00V/3.00A.
+2025-12-16T19:16:34.657465+0100 chargesom manager[877881]: [INFO] powersupply_dc:  :: Infy: Updating voltage/current via CAN: 459V / 3A total → 3A per module - active modules: 1
+2025-12-16T19:16:34.658054+0100 chargesom manager[877881]: [INFO] powersupply_dc:  :: Infy: set_voltage_current(459V, 3A) - active modules: 1
+2025-12-16T19:16:34.702430+0100 chargesom manager[877853]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CurrentDemandReq
+2025-12-16T19:16:34.712262+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO V2G CurrentDemandRes
+2025-12-16T19:16:34.835658+0100 chargesom manager[877853]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CurrentDemandReq
+2025-12-16T19:16:34.932915+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO V2G CurrentDemandRes
+2025-12-16T19:16:35.054457+0100 chargesom manager[877853]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CurrentDemandReq
+2025-12-16T19:16:35.153025+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO V2G CurrentDemandRes
+2025-12-16T19:16:35.289853+0100 chargesom manager[877853]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CurrentDemandReq
+2025-12-16T19:16:35.289853+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE IEC Isolation measurement Ok R_F 900000.
+2025-12-16T19:16:35.377646+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO V2G CurrentDemandRes
+2025-12-16T19:16:35.466293+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO Change HLC Limits: 1350W/3.0107048A, target_voltage 459, actual_voltage 448.4, hack_bpt false
+2025-12-16T19:16:35.509322+0100 chargesom manager[877853]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CurrentDemandReq
+2025-12-16T19:16:35.538864+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE IEC DC power supply set: 459.00V/3.00A, requested was 459.00V/3.00A.
+2025-12-16T19:16:35.581731+0100 chargesom manager[877881]: [INFO] powersupply_dc:  :: Infy: Updating voltage/current via CAN: 459V / 3A total → 3A per module - active modules: 1
+2025-12-16T19:16:35.581731+0100 chargesom manager[877881]: [INFO] powersupply_dc:  :: Infy: set_voltage_current(459V, 3A) - active modules: 1
+2025-12-16T19:16:35.625913+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO V2G CurrentDemandRes
+2025-12-16T19:16:35.714226+0100 chargesom manager[877853]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CurrentDemandReq
+2025-12-16T19:16:35.812987+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO V2G CurrentDemandRes
+2025-12-16T19:16:35.934987+0100 chargesom manager[877853]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CurrentDemandReq
+2025-12-16T19:16:36.033000+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO V2G CurrentDemandRes
+2025-12-16T19:16:36.154475+0100 chargesom manager[877853]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CurrentDemandReq
+2025-12-16T19:16:36.273683+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE IEC Isolation measurement Ok R_F 900000.
+2025-12-16T19:16:36.273683+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO V2G CurrentDemandRes
+2025-12-16T19:16:36.405123+0100 chargesom manager[877853]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CurrentDemandReq
+2025-12-16T19:16:36.472883+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO V2G CurrentDemandRes
+2025-12-16T19:16:36.594334+0100 chargesom manager[877853]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CurrentDemandReq
+2025-12-16T19:16:36.725499+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO V2G CurrentDemandRes
+2025-12-16T19:16:36.815185+0100 chargesom manager[877853]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CurrentDemandReq
+2025-12-16T19:16:36.912227+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO V2G CurrentDemandRes
+2025-12-16T19:16:37.034161+0100 chargesom manager[877853]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CurrentDemandReq
+2025-12-16T19:16:37.132699+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO V2G CurrentDemandRes
+2025-12-16T19:16:37.273294+0100 chargesom manager[877853]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CurrentDemandReq
+2025-12-16T19:16:37.273294+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE IEC Isolation measurement Ok R_F 900000.
+2025-12-16T19:16:37.361274+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO V2G CurrentDemandRes
+2025-12-16T19:16:37.474062+0100 chargesom manager[877853]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CurrentDemandReq
+2025-12-16T19:16:37.573648+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO V2G CurrentDemandRes
+2025-12-16T19:16:37.696176+0100 chargesom manager[877853]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CurrentDemandReq
+2025-12-16T19:16:37.821398+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO V2G CurrentDemandRes
+2025-12-16T19:16:37.914846+0100 chargesom manager[877853]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CurrentDemandReq
+2025-12-16T19:16:38.012846+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO V2G CurrentDemandRes
+2025-12-16T19:16:38.134288+0100 chargesom manager[877853]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CurrentDemandReq
+2025-12-16T19:16:38.241642+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO V2G CurrentDemandRes
+2025-12-16T19:16:38.271110+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE IEC Isolation measurement Ok R_F 900000.
+2025-12-16T19:16:38.357116+0100 chargesom manager[877853]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CurrentDemandReq
+2025-12-16T19:16:38.452764+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO V2G CurrentDemandRes
+2025-12-16T19:16:38.575735+0100 chargesom manager[877853]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CurrentDemandReq
+2025-12-16T19:16:38.672090+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO V2G CurrentDemandRes
+2025-12-16T19:16:38.794649+0100 chargesom manager[877853]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CurrentDemandReq
+2025-12-16T19:16:38.925681+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO V2G CurrentDemandRes
+2025-12-16T19:16:39.014543+0100 chargesom manager[877853]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CurrentDemandReq
+2025-12-16T19:16:39.112123+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO V2G CurrentDemandRes
+2025-12-16T19:16:39.234845+0100 chargesom manager[877853]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CurrentDemandReq
+2025-12-16T19:16:39.271337+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE IEC Isolation measurement Ok R_F 900000.
+2025-12-16T19:16:39.357570+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO V2G CurrentDemandRes
+2025-12-16T19:16:39.454106+0100 chargesom manager[877853]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CurrentDemandReq
+2025-12-16T19:16:39.552811+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO V2G CurrentDemandRes
+2025-12-16T19:16:39.674006+0100 chargesom manager[877853]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CurrentDemandReq
+2025-12-16T19:16:39.772569+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO V2G CurrentDemandRes
+2025-12-16T19:16:39.894978+0100 chargesom manager[877853]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CurrentDemandReq
+2025-12-16T19:16:40.021931+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO V2G CurrentDemandRes
+2025-12-16T19:16:40.114339+0100 chargesom manager[877853]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CurrentDemandReq
+2025-12-16T19:16:40.235840+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO V2G CurrentDemandRes
+2025-12-16T19:16:40.271597+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE IEC Isolation measurement Ok R_F 900000.
+2025-12-16T19:16:40.357357+0100 chargesom manager[877853]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CurrentDemandReq
+2025-12-16T19:16:40.432738+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO V2G CurrentDemandRes
+2025-12-16T19:16:40.554464+0100 chargesom manager[877853]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CurrentDemandReq
+2025-12-16T19:16:40.652897+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO V2G CurrentDemandRes
+2025-12-16T19:16:40.774803+0100 chargesom manager[877853]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CurrentDemandReq
+2025-12-16T19:16:40.872834+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO V2G CurrentDemandRes
+2025-12-16T19:16:40.994029+0100 chargesom manager[877853]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CurrentDemandReq
+2025-12-16T19:16:41.126121+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO V2G CurrentDemandRes
+2025-12-16T19:16:41.214146+0100 chargesom manager[877853]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CurrentDemandReq
+2025-12-16T19:16:41.277106+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE IEC Isolation measurement Ok R_F 900000.
+2025-12-16T19:16:41.326730+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO V2G CurrentDemandRes
+2025-12-16T19:16:41.434005+0100 chargesom manager[877853]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CurrentDemandReq
+2025-12-16T19:16:41.533122+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO V2G CurrentDemandRes
+2025-12-16T19:16:41.653942+0100 chargesom manager[877853]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CurrentDemandReq
+2025-12-16T19:16:41.752802+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO V2G CurrentDemandRes
+2025-12-16T19:16:41.874898+0100 chargesom manager[877853]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CurrentDemandReq
+2025-12-16T19:16:41.972608+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO V2G CurrentDemandRes
+2025-12-16T19:16:42.094524+0100 chargesom manager[877853]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CurrentDemandReq
+2025-12-16T19:16:42.225639+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO V2G CurrentDemandRes
+2025-12-16T19:16:42.313949+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE IEC Isolation measurement Ok R_F 900000.
+2025-12-16T19:16:42.315578+0100 chargesom manager[877853]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CurrentDemandReq
+2025-12-16T19:16:42.412791+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO V2G CurrentDemandRes
+2025-12-16T19:16:42.533951+0100 chargesom manager[877853]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CurrentDemandReq
+2025-12-16T19:16:42.632399+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO V2G CurrentDemandRes
+2025-12-16T19:16:42.753959+0100 chargesom manager[877853]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CurrentDemandReq
+2025-12-16T19:16:42.852505+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO V2G CurrentDemandRes
+2025-12-16T19:16:42.975011+0100 chargesom manager[877853]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CurrentDemandReq
+2025-12-16T19:16:43.072881+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO V2G CurrentDemandRes
+2025-12-16T19:16:43.194164+0100 chargesom manager[877853]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CurrentDemandReq
+2025-12-16T19:16:43.282178+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE IEC Isolation measurement Ok R_F 900000.
+2025-12-16T19:16:43.326687+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO V2G CurrentDemandRes
+2025-12-16T19:16:43.416118+0100 chargesom manager[877853]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CurrentDemandReq
+2025-12-16T19:16:43.512454+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO V2G CurrentDemandRes
+2025-12-16T19:16:43.634007+0100 chargesom manager[877853]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CurrentDemandReq
+2025-12-16T19:16:43.731454+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO V2G CurrentDemandRes
+2025-12-16T19:16:43.854482+0100 chargesom manager[877853]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CurrentDemandReq
+2025-12-16T19:16:43.951470+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO V2G CurrentDemandRes
+2025-12-16T19:16:44.073980+0100 chargesom manager[877853]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CurrentDemandReq
+2025-12-16T19:16:44.171374+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO V2G CurrentDemandRes
+2025-12-16T19:16:44.281442+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE IEC Isolation measurement Ok R_F 900000.
+2025-12-16T19:16:44.325443+0100 chargesom manager[877853]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CurrentDemandReq
+2025-12-16T19:16:44.391410+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO V2G CurrentDemandRes
+2025-12-16T19:16:44.521597+0100 chargesom manager[877853]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CurrentDemandReq
+2025-12-16T19:16:44.611622+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO V2G CurrentDemandRes
+2025-12-16T19:16:44.733941+0100 chargesom manager[877853]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CurrentDemandReq
+2025-12-16T19:16:44.831343+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO V2G CurrentDemandRes
+2025-12-16T19:16:44.954821+0100 chargesom manager[877853]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CurrentDemandReq
+2025-12-16T19:16:45.052833+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO V2G CurrentDemandRes
+2025-12-16T19:16:45.173666+0100 chargesom manager[877853]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CurrentDemandReq
+2025-12-16T19:16:45.290015+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO V2G CurrentDemandRes
+2025-12-16T19:16:45.290015+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE IEC Isolation measurement Ok R_F 900000.
+2025-12-16T19:16:45.393715+0100 chargesom manager[877853]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CurrentDemandReq
+2025-12-16T19:16:45.491325+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO V2G CurrentDemandRes
+2025-12-16T19:16:45.617995+0100 chargesom manager[877853]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CurrentDemandReq
+2025-12-16T19:16:45.749220+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO V2G CurrentDemandRes
+2025-12-16T19:16:45.834337+0100 chargesom manager[877853]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CurrentDemandReq
+2025-12-16T19:16:45.931429+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO V2G CurrentDemandRes
+2025-12-16T19:16:46.053658+0100 chargesom manager[877853]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CurrentDemandReq
+2025-12-16T19:16:46.151234+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO V2G CurrentDemandRes
+2025-12-16T19:16:46.281935+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE IEC Isolation measurement Ok R_F 900000.
+2025-12-16T19:16:46.281935+0100 chargesom manager[877853]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CurrentDemandReq
+2025-12-16T19:16:46.413147+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO V2G CurrentDemandRes
+2025-12-16T19:16:46.493792+0100 chargesom manager[877853]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CurrentDemandReq
+2025-12-16T19:16:46.591452+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO V2G CurrentDemandRes
+2025-12-16T19:16:46.753171+0100 chargesom manager[877853]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CurrentDemandReq
+2025-12-16T19:16:46.846258+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO V2G CurrentDemandRes
+2025-12-16T19:16:46.934605+0100 chargesom manager[877853]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CurrentDemandReq
+2025-12-16T19:16:47.031351+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO V2G CurrentDemandRes
+2025-12-16T19:16:47.153838+0100 chargesom manager[877853]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CurrentDemandReq
+2025-12-16T19:16:47.281164+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE IEC Isolation measurement Ok R_F 900000.
+2025-12-16T19:16:47.281762+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO V2G CurrentDemandRes
+2025-12-16T19:16:47.373720+0100 chargesom manager[877853]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CurrentDemandReq
+2025-12-16T19:16:47.471327+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO V2G CurrentDemandRes
+2025-12-16T19:16:47.593663+0100 chargesom manager[877853]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CurrentDemandReq
+2025-12-16T19:16:47.691171+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO V2G CurrentDemandRes
+2025-12-16T19:16:47.814800+0100 chargesom manager[877853]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CurrentDemandReq
+2025-12-16T19:16:47.937330+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO V2G CurrentDemandRes
+2025-12-16T19:16:48.041260+0100 chargesom manager[877853]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CurrentDemandReq
+2025-12-16T19:16:48.132379+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO V2G CurrentDemandRes
+2025-12-16T19:16:48.285590+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE IEC Isolation measurement Ok R_F 900000.
+2025-12-16T19:16:48.286658+0100 chargesom manager[877853]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CurrentDemandReq
+2025-12-16T19:16:48.351074+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO V2G CurrentDemandRes
+2025-12-16T19:16:48.473536+0100 chargesom manager[877853]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CurrentDemandReq
+2025-12-16T19:16:48.571948+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO V2G CurrentDemandRes
+2025-12-16T19:16:48.693598+0100 chargesom manager[877853]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CurrentDemandReq
+2025-12-16T19:16:48.792601+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO V2G CurrentDemandRes
+2025-12-16T19:16:48.914599+0100 chargesom manager[877853]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CurrentDemandReq
+2025-12-16T19:16:49.049677+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO V2G CurrentDemandRes
+2025-12-16T19:16:49.141694+0100 chargesom manager[877853]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CurrentDemandReq
+2025-12-16T19:16:49.232031+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO V2G CurrentDemandRes
+2025-12-16T19:16:49.285125+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE IEC Isolation measurement Ok R_F 900000.
+2025-12-16T19:16:49.373469+0100 chargesom manager[877853]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CurrentDemandReq
+2025-12-16T19:16:49.451365+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO V2G CurrentDemandRes
+2025-12-16T19:16:49.574232+0100 chargesom manager[877853]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CurrentDemandReq
+2025-12-16T19:16:49.672644+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO V2G CurrentDemandRes
+2025-12-16T19:16:49.794615+0100 chargesom manager[877853]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CurrentDemandReq
+2025-12-16T19:16:49.891741+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO V2G CurrentDemandRes
+2025-12-16T19:16:50.013992+0100 chargesom manager[877853]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CurrentDemandReq
+2025-12-16T19:16:50.111413+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO V2G CurrentDemandRes
+2025-12-16T19:16:50.237934+0100 chargesom manager[877853]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CurrentDemandReq
+2025-12-16T19:16:50.281725+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE IEC Isolation measurement Ok R_F 900000.
+2025-12-16T19:16:50.369155+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO V2G CurrentDemandRes
+2025-12-16T19:16:50.453649+0100 chargesom manager[877853]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CurrentDemandReq
+2025-12-16T19:16:50.552291+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO V2G CurrentDemandRes
+2025-12-16T19:16:50.673482+0100 chargesom manager[877853]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CurrentDemandReq
+2025-12-16T19:16:50.771995+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO V2G CurrentDemandRes
+2025-12-16T19:16:50.895953+0100 chargesom manager[877853]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CurrentDemandReq
+2025-12-16T19:16:50.991717+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO V2G CurrentDemandRes
+2025-12-16T19:16:51.113415+0100 chargesom manager[877853]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CurrentDemandReq
+2025-12-16T19:16:51.211942+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO V2G CurrentDemandRes
+2025-12-16T19:16:51.285117+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE IEC Isolation measurement Ok R_F 900000.
+2025-12-16T19:16:51.373909+0100 chargesom manager[877853]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CurrentDemandReq
+2025-12-16T19:16:51.465972+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO V2G CurrentDemandRes
+2025-12-16T19:16:51.553400+0100 chargesom manager[877853]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CurrentDemandReq
+2025-12-16T19:16:51.652005+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO V2G CurrentDemandRes
+2025-12-16T19:16:51.775783+0100 chargesom manager[877853]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CurrentDemandReq
+2025-12-16T19:16:51.871678+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO V2G CurrentDemandRes
+2025-12-16T19:16:51.993357+0100 chargesom manager[877853]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CurrentDemandReq
+2025-12-16T19:16:52.092741+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO V2G CurrentDemandRes
+2025-12-16T19:16:52.213656+0100 chargesom manager[877853]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CurrentDemandReq
+2025-12-16T19:16:52.289104+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE IEC Isolation measurement Ok R_F 900000.
+2025-12-16T19:16:52.333677+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO V2G CurrentDemandRes
+2025-12-16T19:16:52.433744+0100 chargesom manager[877853]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CurrentDemandReq
+2025-12-16T19:16:52.565882+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO V2G CurrentDemandRes
+2025-12-16T19:16:52.654157+0100 chargesom manager[877853]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CurrentDemandReq
+2025-12-16T19:16:52.752608+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO V2G CurrentDemandRes
+2025-12-16T19:16:52.874315+0100 chargesom manager[877853]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CurrentDemandReq
+2025-12-16T19:16:52.972034+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO V2G CurrentDemandRes
+2025-12-16T19:16:53.093732+0100 chargesom manager[877853]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CurrentDemandReq
+2025-12-16T19:16:53.191947+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO V2G CurrentDemandRes
+2025-12-16T19:16:53.289152+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE IEC Isolation measurement Ok R_F 900000.
+2025-12-16T19:16:53.333373+0100 chargesom manager[877853]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CurrentDemandReq
+2025-12-16T19:16:53.412105+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO V2G CurrentDemandRes
+2025-12-16T19:16:53.533451+0100 chargesom manager[877853]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CurrentDemandReq
+2025-12-16T19:16:53.632029+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO V2G CurrentDemandRes
+2025-12-16T19:16:53.793568+0100 chargesom manager[877853]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CurrentDemandReq
+2025-12-16T19:16:53.851421+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO V2G CurrentDemandRes
+2025-12-16T19:16:53.974100+0100 chargesom manager[877853]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CurrentDemandReq
+2025-12-16T19:16:54.072332+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO V2G CurrentDemandRes
+2025-12-16T19:16:54.193328+0100 chargesom manager[877853]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CurrentDemandReq
+2025-12-16T19:16:54.289167+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE IEC Isolation measurement Ok R_F 900000.
+2025-12-16T19:16:54.333339+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO V2G CurrentDemandRes
+2025-12-16T19:16:54.413608+0100 chargesom manager[877853]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CurrentDemandReq
+2025-12-16T19:16:54.512188+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO V2G CurrentDemandRes
+2025-12-16T19:16:54.633347+0100 chargesom manager[877853]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CurrentDemandReq
+2025-12-16T19:16:54.732114+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO V2G CurrentDemandRes
+2025-12-16T19:16:54.890412+0100 chargesom manager[877853]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CurrentDemandReq
+2025-12-16T19:16:54.977354+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO V2G CurrentDemandRes
+2025-12-16T19:16:55.073337+0100 chargesom manager[877853]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CurrentDemandReq
+2025-12-16T19:16:55.172219+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO V2G CurrentDemandRes
+2025-12-16T19:16:55.293371+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE IEC Isolation measurement Ok R_F 900000.
+2025-12-16T19:16:55.293778+0100 chargesom manager[877853]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CurrentDemandReq
+2025-12-16T19:16:55.391722+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO V2G CurrentDemandRes
+2025-12-16T19:16:55.513481+0100 chargesom manager[877853]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CurrentDemandReq
+2025-12-16T19:16:55.611689+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO V2G CurrentDemandRes
+2025-12-16T19:16:55.733366+0100 chargesom manager[877853]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CurrentDemandReq
+2025-12-16T19:16:55.832046+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO V2G CurrentDemandRes
+2025-12-16T19:16:55.990345+0100 chargesom manager[877853]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CurrentDemandReq
+2025-12-16T19:16:56.077625+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO V2G CurrentDemandRes
+2025-12-16T19:16:56.173406+0100 chargesom manager[877853]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CurrentDemandReq
+2025-12-16T19:16:56.289609+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE IEC Isolation measurement Ok R_F 900000.
+2025-12-16T19:16:56.289609+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO V2G CurrentDemandRes
+2025-12-16T19:16:56.421198+0100 chargesom manager[877853]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CurrentDemandReq
+2025-12-16T19:16:56.492467+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO V2G CurrentDemandRes
+2025-12-16T19:16:56.613653+0100 chargesom manager[877853]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CurrentDemandReq
+2025-12-16T19:16:56.712060+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO V2G CurrentDemandRes
+2025-12-16T19:16:56.834777+0100 chargesom manager[877853]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CurrentDemandReq
+2025-12-16T19:16:56.932116+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO V2G CurrentDemandRes
+2025-12-16T19:16:57.053190+0100 chargesom manager[877853]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CurrentDemandReq
+2025-12-16T19:16:57.177652+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO V2G CurrentDemandRes
+2025-12-16T19:16:57.293652+0100 chargesom manager[877853]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CurrentDemandReq
+2025-12-16T19:16:57.293652+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE IEC Isolation measurement Ok R_F 900000.
+2025-12-16T19:16:57.381796+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO V2G CurrentDemandRes
+2025-12-16T19:16:57.493259+0100 chargesom manager[877853]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CurrentDemandReq
+2025-12-16T19:16:57.591726+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO V2G CurrentDemandRes
+2025-12-16T19:16:57.713452+0100 chargesom manager[877853]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CurrentDemandReq
+2025-12-16T19:16:57.811985+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO V2G CurrentDemandRes
+2025-12-16T19:16:57.934387+0100 chargesom manager[877853]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CurrentDemandReq
+2025-12-16T19:16:58.031878+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO V2G CurrentDemandRes
+2025-12-16T19:16:58.154049+0100 chargesom manager[877853]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CurrentDemandReq
+2025-12-16T19:16:58.293976+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO V2G CurrentDemandRes
+2025-12-16T19:16:58.294691+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE IEC Isolation measurement Ok R_F 900000.
+2025-12-16T19:16:58.381498+0100 chargesom manager[877853]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CurrentDemandReq
+2025-12-16T19:16:58.471723+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO V2G CurrentDemandRes
+2025-12-16T19:16:58.593169+0100 chargesom manager[877853]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CurrentDemandReq
+2025-12-16T19:16:58.691681+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO V2G CurrentDemandRes
+2025-12-16T19:16:58.814700+0100 chargesom manager[877853]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CurrentDemandReq
+2025-12-16T19:16:58.912013+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO V2G CurrentDemandRes
+2025-12-16T19:16:59.033110+0100 chargesom manager[877853]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CurrentDemandReq
+2025-12-16T19:16:59.141008+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO V2G CurrentDemandRes
+2025-12-16T19:16:59.293631+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE IEC Isolation measurement Ok R_F 900000.
+2025-12-16T19:16:59.293631+0100 chargesom manager[877853]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CurrentDemandReq
+2025-12-16T19:16:59.382256+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO V2G CurrentDemandRes
+2025-12-16T19:16:59.513592+0100 chargesom manager[877853]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CurrentDemandReq
+2025-12-16T19:16:59.572749+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO V2G CurrentDemandRes
+2025-12-16T19:16:59.692945+0100 chargesom manager[877853]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CurrentDemandReq
+2025-12-16T19:16:59.790699+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO V2G CurrentDemandRes
+2025-12-16T19:16:59.914138+0100 chargesom manager[877853]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CurrentDemandReq
+2025-12-16T19:17:00.010552+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO V2G CurrentDemandRes
+2025-12-16T19:17:00.133503+0100 chargesom manager[877853]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CurrentDemandReq
+2025-12-16T19:17:00.245384+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO V2G CurrentDemandRes
+2025-12-16T19:17:00.293453+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE IEC Isolation measurement Ok R_F 900000.
+2025-12-16T19:17:00.381213+0100 chargesom manager[877853]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CurrentDemandReq
+2025-12-16T19:17:00.450512+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO V2G CurrentDemandRes
+2025-12-16T19:17:00.613564+0100 chargesom manager[877853]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CurrentDemandReq
+2025-12-16T19:17:00.672138+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO V2G CurrentDemandRes
+2025-12-16T19:17:00.794592+0100 chargesom manager[877853]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CurrentDemandReq
+2025-12-16T19:17:00.890651+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO V2G CurrentDemandRes
+2025-12-16T19:17:01.013267+0100 chargesom manager[877853]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CurrentDemandReq
+2025-12-16T19:17:01.112243+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO V2G CurrentDemandRes
+2025-12-16T19:17:01.233292+0100 chargesom manager[877853]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CurrentDemandReq
+2025-12-16T19:17:01.293136+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE IEC Isolation measurement Ok R_F 900000.
+2025-12-16T19:17:01.337773+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO V2G CurrentDemandRes
+2025-12-16T19:17:01.453063+0100 chargesom manager[877853]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CurrentDemandReq
+2025-12-16T19:17:01.550579+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO V2G CurrentDemandRes
+2025-12-16T19:17:01.713773+0100 chargesom manager[877853]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CurrentDemandReq
+2025-12-16T19:17:01.772266+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO V2G CurrentDemandRes
+2025-12-16T19:17:01.893677+0100 chargesom manager[877853]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CurrentDemandReq
+2025-12-16T19:17:01.990804+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO V2G CurrentDemandRes
+2025-12-16T19:17:02.113117+0100 chargesom manager[877853]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CurrentDemandReq
+2025-12-16T19:17:02.210865+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO V2G CurrentDemandRes
+2025-12-16T19:17:02.297356+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE IEC Isolation measurement Ok R_F 900000.
+2025-12-16T19:17:02.341316+0100 chargesom manager[877853]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CurrentDemandReq
+2025-12-16T19:17:02.430447+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO V2G CurrentDemandRes
+2025-12-16T19:17:02.553640+0100 chargesom manager[877853]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CurrentDemandReq
+2025-12-16T19:17:02.651679+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO V2G CurrentDemandRes
+2025-12-16T19:17:02.815235+0100 chargesom manager[877853]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CurrentDemandReq
+2025-12-16T19:17:02.905247+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO V2G CurrentDemandRes
+2025-12-16T19:17:02.992916+0100 chargesom manager[877853]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CurrentDemandReq
+2025-12-16T19:17:03.090588+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO V2G CurrentDemandRes
+2025-12-16T19:17:03.241552+0100 chargesom manager[877853]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CurrentDemandReq
+2025-12-16T19:17:03.297417+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE IEC Isolation measurement Ok R_F 900000.
+2025-12-16T19:17:03.341755+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO V2G CurrentDemandRes
+2025-12-16T19:17:03.432854+0100 chargesom manager[877853]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CurrentDemandReq
+2025-12-16T19:17:03.530573+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO V2G CurrentDemandRes
+2025-12-16T19:17:03.653399+0100 chargesom manager[877853]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CurrentDemandReq
+2025-12-16T19:17:03.750338+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO V2G CurrentDemandRes
+2025-12-16T19:17:03.873921+0100 chargesom manager[877853]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CurrentDemandReq
+2025-12-16T19:17:04.001260+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO V2G CurrentDemandRes
+2025-12-16T19:17:04.092916+0100 chargesom manager[877853]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CurrentDemandReq
+2025-12-16T19:17:04.190300+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO V2G CurrentDemandRes
+2025-12-16T19:17:04.297341+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE IEC Isolation measurement Ok R_F 900000.
+2025-12-16T19:17:04.341693+0100 chargesom manager[877853]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CurrentDemandReq
+2025-12-16T19:17:04.410323+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO V2G CurrentDemandRes
+2025-12-16T19:17:04.532985+0100 chargesom manager[877853]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CurrentDemandReq
+2025-12-16T19:17:04.631813+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO V2G CurrentDemandRes
+2025-12-16T19:17:04.752794+0100 chargesom manager[877853]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CurrentDemandReq
+2025-12-16T19:17:04.851300+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO V2G CurrentDemandRes
+2025-12-16T19:17:04.974181+0100 chargesom manager[877853]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CurrentDemandReq
+2025-12-16T19:17:05.097509+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO V2G CurrentDemandRes
+2025-12-16T19:17:05.192987+0100 chargesom manager[877853]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CurrentDemandReq
+2025-12-16T19:17:05.297694+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE IEC Isolation measurement Ok R_F 900000.
+2025-12-16T19:17:05.298148+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO V2G CurrentDemandRes
+2025-12-16T19:17:05.429177+0100 chargesom manager[877853]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CurrentDemandReq
+2025-12-16T19:17:05.510545+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO V2G CurrentDemandRes
+2025-12-16T19:17:05.633148+0100 chargesom manager[877853]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CurrentDemandReq
+2025-12-16T19:17:05.730466+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO V2G CurrentDemandRes
+2025-12-16T19:17:05.853961+0100 chargesom manager[877853]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CurrentDemandReq
+2025-12-16T19:17:05.950535+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO V2G CurrentDemandRes
+2025-12-16T19:17:06.072858+0100 chargesom manager[877853]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CurrentDemandReq
+2025-12-16T19:17:06.197462+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO V2G CurrentDemandRes
+2025-12-16T19:17:06.297905+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE IEC Isolation measurement Ok R_F 900000.
+2025-12-16T19:17:06.298855+0100 chargesom manager[877853]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CurrentDemandReq
+2025-12-16T19:17:06.390361+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO V2G CurrentDemandRes
+2025-12-16T19:17:06.512729+0100 chargesom manager[877853]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CurrentDemandReq
+2025-12-16T19:17:06.611936+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO V2G CurrentDemandRes
+2025-12-16T19:17:06.732756+0100 chargesom manager[877853]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CurrentDemandReq
+2025-12-16T19:17:06.831283+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO V2G CurrentDemandRes
+2025-12-16T19:17:06.954128+0100 chargesom manager[877853]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CurrentDemandReq
+2025-12-16T19:17:07.050931+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO V2G CurrentDemandRes
+2025-12-16T19:17:07.172588+0100 chargesom manager[877853]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CurrentDemandReq
+2025-12-16T19:17:07.301853+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO V2G CurrentDemandRes
+2025-12-16T19:17:07.301853+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE IEC Isolation measurement Ok R_F 900000.
+2025-12-16T19:17:07.397210+0100 chargesom manager[877853]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CurrentDemandReq
+2025-12-16T19:17:07.491247+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO V2G CurrentDemandRes
+2025-12-16T19:17:07.613407+0100 chargesom manager[877853]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CurrentDemandReq
+2025-12-16T19:17:07.710326+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO V2G CurrentDemandRes
+2025-12-16T19:17:07.834014+0100 chargesom manager[877853]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CurrentDemandReq
+2025-12-16T19:17:07.930407+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO V2G CurrentDemandRes
+2025-12-16T19:17:08.052592+0100 chargesom manager[877853]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CurrentDemandReq
+2025-12-16T19:17:08.151115+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO V2G CurrentDemandRes
+2025-12-16T19:17:08.301731+0100 chargesom manager[877853]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CurrentDemandReq
+2025-12-16T19:17:08.302121+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE IEC Isolation measurement Ok R_F 900000.
+2025-12-16T19:17:08.390058+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO V2G CurrentDemandRes
+2025-12-16T19:17:08.501349+0100 chargesom manager[877853]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CurrentDemandReq
+2025-12-16T19:17:08.591715+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO V2G CurrentDemandRes
+2025-12-16T19:17:08.712709+0100 chargesom manager[877853]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CurrentDemandReq
+2025-12-16T19:17:08.811154+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO V2G CurrentDemandRes
+2025-12-16T19:17:08.933796+0100 chargesom manager[877853]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CurrentDemandReq
+2025-12-16T19:17:09.031253+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO V2G CurrentDemandRes
+2025-12-16T19:17:09.152681+0100 chargesom manager[877853]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CurrentDemandReq
+2025-12-16T19:17:09.251947+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO V2G CurrentDemandRes
+2025-12-16T19:17:09.301158+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE IEC Isolation measurement Ok R_F 900000.
+2025-12-16T19:17:09.389614+0100 chargesom manager[877853]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CurrentDemandReq
+2025-12-16T19:17:09.509806+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO V2G CurrentDemandRes
+2025-12-16T19:17:09.605427+0100 chargesom manager[877853]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CurrentDemandReq
+2025-12-16T19:17:09.691205+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO V2G CurrentDemandRes
+2025-12-16T19:17:09.815002+0100 chargesom manager[877853]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CurrentDemandReq
+2025-12-16T19:17:09.911047+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO V2G CurrentDemandRes
+2025-12-16T19:17:10.032678+0100 chargesom manager[877853]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CurrentDemandReq
+2025-12-16T19:17:10.131336+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO V2G CurrentDemandRes
+2025-12-16T19:17:10.261051+0100 chargesom manager[877853]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CurrentDemandReq
+2025-12-16T19:17:10.281016+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE IEC Isolation measurement Ok R_F 900000.
+2025-12-16T19:17:10.369661+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO V2G CurrentDemandRes
+2025-12-16T19:17:10.472782+0100 chargesom manager[877853]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CurrentDemandReq
+2025-12-16T19:17:10.613643+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO V2G CurrentDemandRes
+2025-12-16T19:17:10.705340+0100 chargesom manager[877853]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CurrentDemandReq
+2025-12-16T19:17:10.791694+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO V2G CurrentDemandRes
+2025-12-16T19:17:10.914206+0100 chargesom manager[877853]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CurrentDemandReq
+2025-12-16T19:17:11.010905+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO V2G CurrentDemandRes
+2025-12-16T19:17:11.132645+0100 chargesom manager[877853]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CurrentDemandReq
+2025-12-16T19:17:11.230997+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO V2G CurrentDemandRes
+2025-12-16T19:17:11.301232+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE IEC Isolation measurement Ok R_F 900000.
+2025-12-16T19:17:11.393787+0100 chargesom manager[877853]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CurrentDemandReq
+2025-12-16T19:17:11.450341+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO V2G CurrentDemandRes
+2025-12-16T19:17:11.572389+0100 chargesom manager[877853]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CurrentDemandReq
+2025-12-16T19:17:11.673388+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO V2G CurrentDemandRes
+2025-12-16T19:17:11.807041+0100 chargesom manager[877853]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CurrentDemandReq
+2025-12-16T19:17:11.890448+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO V2G CurrentDemandRes
+2025-12-16T19:17:12.012804+0100 chargesom manager[877853]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CurrentDemandReq
+2025-12-16T19:17:12.111513+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO V2G CurrentDemandRes
+2025-12-16T19:17:12.232584+0100 chargesom manager[877853]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CurrentDemandReq
+2025-12-16T19:17:12.306003+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE IEC Isolation measurement Ok R_F 900000.
+2025-12-16T19:17:12.349683+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO V2G CurrentDemandRes
+2025-12-16T19:17:12.452416+0100 chargesom manager[877853]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CurrentDemandReq
+2025-12-16T19:17:12.550933+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO V2G CurrentDemandRes
+2025-12-16T19:17:12.673311+0100 chargesom manager[877853]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CurrentDemandReq
+2025-12-16T19:17:12.770372+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO V2G CurrentDemandRes
+2025-12-16T19:17:12.902096+0100 chargesom manager[877853]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CurrentDemandReq
+2025-12-16T19:17:12.993522+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO V2G CurrentDemandRes
+2025-12-16T19:17:13.112486+0100 chargesom manager[877853]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CurrentDemandReq
+2025-12-16T19:17:13.241304+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO V2G CurrentDemandRes
+2025-12-16T19:17:13.305684+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE IEC Isolation measurement Ok R_F 900000.
+2025-12-16T19:17:13.349525+0100 chargesom manager[877853]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CurrentDemandReq
+2025-12-16T19:17:13.430824+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO V2G CurrentDemandRes
+2025-12-16T19:17:13.552611+0100 chargesom manager[877853]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CurrentDemandReq
+2025-12-16T19:17:13.651931+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO V2G CurrentDemandRes
+2025-12-16T19:17:13.773128+0100 chargesom manager[877853]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CurrentDemandReq
+2025-12-16T19:17:13.870857+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO V2G CurrentDemandRes
+2025-12-16T19:17:14.001848+0100 chargesom manager[877853]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CurrentDemandReq
+2025-12-16T19:17:14.125339+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO V2G CurrentDemandRes
+2025-12-16T19:17:14.212660+0100 chargesom manager[877853]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CurrentDemandReq
+2025-12-16T19:17:14.305940+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE IEC Isolation measurement Ok R_F 900000.
+2025-12-16T19:17:14.349466+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO V2G CurrentDemandRes
+2025-12-16T19:17:14.432569+0100 chargesom manager[877853]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CurrentDemandReq
+2025-12-16T19:17:14.532223+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO V2G CurrentDemandRes
+2025-12-16T19:17:14.652940+0100 chargesom manager[877853]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CurrentDemandReq
+2025-12-16T19:17:14.750886+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO V2G CurrentDemandRes
+2025-12-16T19:17:14.873732+0100 chargesom manager[877853]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CurrentDemandReq
+2025-12-16T19:17:14.971312+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO V2G CurrentDemandRes
+2025-12-16T19:17:15.094612+0100 chargesom manager[877853]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CurrentDemandReq
+2025-12-16T19:17:15.229656+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO V2G CurrentDemandRes
+2025-12-16T19:17:15.305166+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE IEC Isolation measurement Ok R_F 900000.
+2025-12-16T19:17:15.350056+0100 chargesom manager[877853]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CurrentDemandReq
+2025-12-16T19:17:15.411005+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO V2G CurrentDemandRes
+2025-12-16T19:17:15.533926+0100 chargesom manager[877853]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CurrentDemandReq
+2025-12-16T19:17:15.630721+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO V2G CurrentDemandRes
+2025-12-16T19:17:15.752652+0100 chargesom manager[877853]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CurrentDemandReq
+2025-12-16T19:17:15.851315+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO V2G CurrentDemandRes
+2025-12-16T19:17:15.974028+0100 chargesom manager[877853]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CurrentDemandReq
+2025-12-16T19:17:16.069883+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO V2G CurrentDemandRes
+2025-12-16T19:17:16.194245+0100 chargesom manager[877853]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CurrentDemandReq
+2025-12-16T19:17:16.315539+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO V2G CurrentDemandRes
+2025-12-16T19:17:16.315539+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE IEC Isolation measurement Ok R_F 900000.
+2025-12-16T19:17:16.412399+0100 chargesom manager[877853]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CurrentDemandReq
+2025-12-16T19:17:16.511047+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO V2G CurrentDemandRes
+2025-12-16T19:17:16.632626+0100 chargesom manager[877853]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CurrentDemandReq
+2025-12-16T19:17:16.731075+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO V2G CurrentDemandRes
+2025-12-16T19:17:16.853767+0100 chargesom manager[877853]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CurrentDemandReq
+2025-12-16T19:17:16.949876+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO V2G CurrentDemandRes
+2025-12-16T19:17:17.072530+0100 chargesom manager[877853]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CurrentDemandReq
+2025-12-16T19:17:17.171242+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO V2G CurrentDemandRes
+2025-12-16T19:17:17.309299+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE IEC Isolation measurement Ok R_F 900000.
+2025-12-16T19:17:17.310161+0100 chargesom manager[877853]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CurrentDemandReq
+2025-12-16T19:17:17.397272+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO V2G CurrentDemandRes
+2025-12-16T19:17:17.513204+0100 chargesom manager[877853]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CurrentDemandReq
+2025-12-16T19:17:17.611092+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO V2G CurrentDemandRes
+2025-12-16T19:17:17.732149+0100 chargesom manager[877853]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CurrentDemandReq
+2025-12-16T19:17:17.829892+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO V2G CurrentDemandRes
+2025-12-16T19:17:17.953402+0100 chargesom manager[877853]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CurrentDemandReq
+2025-12-16T19:17:18.051150+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO V2G CurrentDemandRes
+2025-12-16T19:17:18.172590+0100 chargesom manager[877853]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CurrentDemandReq
+2025-12-16T19:17:18.200369+0100 chargesom manager[877881]: [ERRO] powersupply_dc: module::main::power_supply_DCImpl::init()::<lambda(uint8_t, InfyCanDevice::Error, bool)> :: Infy[0x0]: undervoltage fault detected
+2025-12-16T19:17:18.206843+0100 chargesom manager[877881]: [ERRO] powersupply_dc:  :: Error raised, type: power_supply_DC/UnderVoltageDC, sub_type: , message: Infy[0x0]: undervoltage fault detected
+2025-12-16T19:17:18.206843+0100 chargesom manager[877881]: [ERRO] powersupply_dc: module::main::power_supply_DCImpl::init()::<lambda(uint8_t, InfyCanDevice::Error, bool)> :: Infy[0x0]: internal fault detected
+2025-12-16T19:17:18.206843+0100 chargesom manager[877881]: [ERRO] powersupply_dc:  :: Error raised, type: power_supply_DC/HardwareFault, sub_type: , message: Infy[0x0]: internal fault detected
+2025-12-16T19:17:18.268746+0100 chargesom manager[877853]: [ERRO] connector:EvseM  :: Error raised, type: evse_manager/Inoperative, sub_type: , message: power_supply_DC/UnderVoltageDC
+2025-12-16T19:17:18.274595+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE IEC Charger state: Charging->Charging
+2025-12-16T19:17:18.275027+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: Timing statistics (Plugin to CurrentDemand)
+2025-12-16T19:17:18.275426+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: -------------------------------------------
+2025-12-16T19:17:18.275426+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: ConnSetup | HLC_PWM_5%_ON: 685 ms | D-LINK_READY: 7655 ms | Auth EIM Done: 2257 ms | Total: 12443 ms
+2025-12-16T19:17:18.275426+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: CableCheck | <60V: 0 ms | Relay On: 200 ms | EVInfo: 0 ms | VRampUp: 4754 ms | Self test: 3009 ms | Measure: 89 ms | VRampDown: 1908 ms | Total: 10011 ms
+2025-12-16T19:17:18.275426+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: PrepareCharging | Charging started: 4476 ms | Total: 4476 ms
+2025-12-16T19:17:18.275426+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: Total duration all phases: 26931 ms
+2025-12-16T19:17:18.275426+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: PrepareCharging | Charging started: 4476 ms | Total: 4476 ms | Charging started: 45543 ms | Total: 50019 ms
+2025-12-16T19:17:18.275426+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: Total duration all phases: 72475 ms
+2025-12-16T19:17:18.275426+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE IEC Set PWM Off
+2025-12-16T19:17:18.278171+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO V2G CurrentDemandRes
+2025-12-16T19:17:18.281498+0100 chargesom manager[877852]: [INFO] bsp:CbChargeSOM  :: handle_pwm_off: Setting new duty cycle of 100.0%
+2025-12-16T19:17:18.347865+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE IEC DC power supply OFF
+2025-12-16T19:17:18.391676+0100 chargesom manager[877880]: [ERRO] iso15118_charge  :: Failed response code detected for message "Current Demand", error: Response FAILED
+2025-12-16T19:17:18.393788+0100 chargesom manager[877853]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CurrentDemandReq
+2025-12-16T19:17:18.394721+0100 chargesom manager[877881]: [INFO] powersupply_dc:  :: Set mode via CAN: Off with phase Charging
+2025-12-16T19:17:18.394721+0100 chargesom manager[877881]: [INFO] powersupply_dc:  :: Infy: switch_on_off(false) - active modules: 1
+2025-12-16T19:17:18.398333+0100 chargesom manager[877876]: [INFO] imd:IMDSimulato  :: Stopped simulated isolation monitoring
+2025-12-16T19:17:18.445532+0100 chargesom manager[877852]: [INFO] bsp:CbChargeSOM  :: handle_allow_power_on: request to OPEN the contactor
+2025-12-16T19:17:18.455982+0100 chargesom manager[877852]: [INFO] bsp:CbChargeSOM  :: Contactor 1 state change detected: now Open
+2025-12-16T19:17:18.456412+0100 chargesom manager[877852]: [INFO] bsp:CbChargeSOM  :: Contactor 2 state change detected: now Open
+2025-12-16T19:17:18.489936+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE IEC Event PowerOff
+2025-12-16T19:17:18.492266+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE IEC Isolation measurement Ok R_F 900000.
+2025-12-16T19:17:18.495011+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO V2G CurrentDemandRes
+2025-12-16T19:17:18.523383+0100 chargesom manager[877880]: [ERRO] iso15118_charge  :: Failed response code detected for message "Power Delivery", error: Response FAILED
+2025-12-16T19:17:18.568045+0100 chargesom manager[877852]: [INFO] bsp:CbChargeSOM  :: CP state change from C to B, PWM: 100.0%
+2025-12-16T19:17:18.614459+0100 chargesom manager[877853]: [INFO] connector:EvseM  ::                                     CAR ISO V2G PowerDeliveryReq
+2025-12-16T19:17:18.622217+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO V2G PowerDeliveryRes
+2025-12-16T19:17:18.649113+0100 chargesom manager[877852]: [INFO] bsp:CbChargeSOM  :: handle_allow_power_on: request to OPEN the contactor
+2025-12-16T19:17:18.848374+0100 chargesom manager[877853]: [INFO] connector:EvseM  ::                                     CAR IEC Event CarRequestedStopPower
+2025-12-16T19:17:18.893993+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE IEC CP state transition C->B at this stage violates ISO15118-2
+2025-12-16T19:17:18.894446+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE IEC Charger state: Charging->Car Paused
+2025-12-16T19:17:18.896817+0100 chargesom manager[877852]: [INFO] bsp:CbChargeSOM  :: handle_allow_power_on: request to OPEN the contactor
+2025-12-16T19:17:20.814478+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO Change HLC Limits: 1350W/2.9411764A, target_voltage 459, actual_voltage 1, hack_bpt false
+2025-12-16T19:17:21.521028+0100 chargesom manager[877880]: [INFO] iso15118_charge  :: Welding-phase started
+2025-12-16T19:17:21.521028+0100 chargesom manager[877880]: [ERRO] iso15118_charge  :: Failed response code detected for message "Welding Detection", error: Response FAILED
+2025-12-16T19:17:21.522578+0100 chargesom manager[877853]: [INFO] connector:EvseM  ::                                     CAR ISO V2G WeldingDetectionReq
+2025-12-16T19:17:21.619648+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO V2G WeldingDetectionRes
+2025-12-16T19:17:24.326765+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO Change HLC Limits: 1350W/2.9411764A, target_voltage 459, actual_voltage 2.6000001, hack_bpt false
+2025-12-16T19:17:25.519816+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO Change HLC Limits: 1350W/2.9411764A, target_voltage 459, actual_voltage 3.7, hack_bpt false
+2025-12-16T19:17:41.069660+0100 chargesom manager[877852]: [INFO] bsp:CbChargeSOM  :: CP state change from B to A, PWM: 100.0%
+2025-12-16T19:17:41.113199+0100 chargesom manager[877852]: [INFO] bsp:CbChargeSOM  :: handle_pwm_off: Setting new duty cycle of 100.0%
+2025-12-16T19:17:41.169293+0100 chargesom manager[877852]: [INFO] bsp:CbChargeSOM  :: handle_allow_power_on: request to OPEN the contactor
+2025-12-16T19:17:41.219754+0100 chargesom manager[877861]: [INFO] evse_slac:EvseS  :: Entered Reset state
+2025-12-16T19:17:41.221128+0100 chargesom manager[877861]: [INFO] evse_slac:EvseS  :: New NMK key: 34:30:31:4A:44:4E:46:48:51:47:30:41:41:4A:51:4E
+2025-12-16T19:17:41.221985+0100 chargesom manager[877861]: [INFO] evse_slac:EvseS  :: Received CM_SET_KEY_CNF
+2025-12-16T19:17:41.221985+0100 chargesom manager[877861]: [INFO] evse_slac:EvseS  :: Entered Idle state
+2025-12-16T19:17:41.261942+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO D-LINK_READY (false)
+2025-12-16T19:17:41.263548+0100 chargesom manager[877853]: [INFO] connector:EvseM  ::                                     CAR IEC Event CarUnplugged
+2025-12-16T19:17:41.263956+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE IEC Charger state: Car Paused->Finished
+2025-12-16T19:17:41.265074+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE IEC Transaction Finished: EVDisconnected (0 kWh)
+2025-12-16T19:17:41.276646+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE ISO SLAC UNMATCHED
+2025-12-16T19:17:41.332855+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: EVSE IEC Session Finished
+2025-12-16T19:17:41.332855+0100 chargesom manager[877853]: [INFO] connector:EvseM  :: SYS  Session logging stopped.
+2025-12-16T19:17:41.429870+0100 chargesom manager[877852]: [INFO] bsp:CbChargeSOM  :: handle_pwm_off: Setting new duty cycle of 100.0%
+2025-12-16T19:17:41.639090+0100 chargesom manager[877880]: [ERRO] iso15118_charge  :: Reading from tcp-socket aborted
+2025-12-16T19:17:41.639090+0100 chargesom manager[877880]: [ERRO] iso15118_charge  :: connection_read(header) failed: connection terminated
+2025-12-16T19:17:41.640349+0100 chargesom manager[877880]: [ERRO] iso15118_charge  :: v2g_incoming_v2gtp() (previous message "Welding Detection") failed
+2025-12-16T19:17:41.640349+0100 chargesom manager[877880]: [INFO] iso15118_charge  :: v2g_handle_connection exited with -1
+2025-12-16T19:17:41.640349+0100 chargesom manager[877880]: [INFO] iso15118_charge  :: Closing TCP connection
+2025-12-16T19:17:46.640341+0100 chargesom manager[877880]: [INFO] iso15118_charge  :: TCP connection closed gracefully
+2025-12-16T19:18:03.194122+0100 chargesom manager[877881]: [WARN] powersupply_dc: size_t InfyCanDevice::remove_expired_telemetry_entries() :: Infy[0x00/SN_2818a396c70776_V]: module communication expired (timeout: 15s). Removing from active modules.
+2025-12-16T19:18:03.194122+0100 chargesom manager[877881]: [INFO] powersupply_dc:  :: Infy: Communication fault detected - all 1 modules unresponsive, forcing system OFF for safety
+2025-12-16T19:18:03.195362+0100 chargesom manager[877881]: [ERRO] powersupply_dc: module::main::power_supply_DCImpl::init()::<lambda(uint8_t, InfyCanDevice::Error, bool)> :: Infy[0xFF]: communication fault detected
+2025-12-16T19:18:03.195362+0100 chargesom manager[877881]: [ERRO] powersupply_dc:  :: Error raised, type: power_supply_DC/CommunicationFault, sub_type: , message: Infy[0xFF]: communication fault detected
+2025-12-16T19:18:03.195362+0100 chargesom manager[877881]: [INFO] powersupply_dc:  :: Infy: Removed 1 expired modules. Active modules remaining: 0
+2025-12-16T19:18:03.195362+0100 chargesom manager[877881]: [INFO] powersupply_dc:  :: Infy: No telemetries received, setting default capabilities

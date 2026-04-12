@@ -1,0 +1,540 @@
+2025-12-05T22:21:13.825027+0100 chargesom systemd[1]: Starting EVerest...
+2025-12-05T22:21:13.829871+0100 chargesom sh[451226]: Starting to migrate EVerest configurations
+2025-12-05T22:21:13.847459+0100 chargesom sh[451226]: EVerest configurations migrated successfully
+2025-12-05T22:21:13.850567+0100 chargesom systemd[1]: Started EVerest.
+2025-12-05T22:21:13.876168+0100 chargesom manager[451230]: [INFO] manager          ::   ________      __                _
+2025-12-05T22:21:13.876168+0100 chargesom manager[451230]: [INFO] manager          ::  |  ____\ \    / /               | |
+2025-12-05T22:21:13.877336+0100 chargesom manager[451230]: [INFO] manager          ::  | |__   \ \  / /__ _ __ ___  ___| |_
+2025-12-05T22:21:13.877336+0100 chargesom manager[451230]: [INFO] manager          ::  |  __|   \ \/ / _ \ '__/ _ \/ __| __|
+2025-12-05T22:21:13.877336+0100 chargesom manager[451230]: [INFO] manager          ::  | |____   \  /  __/ | |  __/\__ \ |_
+2025-12-05T22:21:13.877336+0100 chargesom manager[451230]: [INFO] manager          ::  |______|   \/ \___|_|  \___||___/\__|
+2025-12-05T22:21:13.877336+0100 chargesom manager[451230]: [INFO] manager          ::
+2025-12-05T22:21:13.877336+0100 chargesom manager[451230]: [INFO] manager          :: everest-framework 0.23.0 main@v0.23.0
+2025-12-05T22:21:13.877336+0100 chargesom manager[451230]: [INFO] manager          :: everest-core 2025.8.0 feature/json-rpc-api-2025.8.0@2025.8.0-351-g14709eef-dirty
+2025-12-05T22:21:13.877336+0100 chargesom manager[451230]: [INFO] manager          ::
+2025-12-05T22:21:13.877336+0100 chargesom manager[451230]: [INFO] manager          :: Using MQTT broker localhost:1883
+2025-12-05T22:21:13.893320+0100 chargesom manager[451231]: [INFO] everest_ctrl     :: Launching controller service on port 8849
+2025-12-05T22:21:13.908597+0100 chargesom manager[451230]: [INFO] manager          :: Boot mode is set to YamlFile, loading module configs from YAML file
+2025-12-05T22:21:13.909016+0100 chargesom manager[451230]: [INFO] manager          :: Loading config file at: /etc/everest/config.yaml        
+2025-12-05T22:21:14.024907+0100 chargesom manager[451230]: [INFO] manager          :: Config loading completed in 145ms
+2025-12-05T22:21:14.028380+0100 chargesom manager[451230]: [INFO] manager          :: Starting 14 modules
+2025-12-05T22:21:15.809209+0100 chargesom manager[451258]: [INFO] error_history:E  :: Using database at "/tmp/error_history.db"
+2025-12-05T22:21:15.810979+0100 chargesom manager[451258]: [INFO] error_history:E  :: Checking database
+2025-12-05T22:21:15.813553+0100 chargesom manager[451258]: [INFO] error_history:E  :: Module error_history initialized [1700ms]
+2025-12-05T22:21:15.861729+0100 chargesom manager[451250]: [CRIT] api:API          :: Please configure an evse mapping in your configuration file for the connected r_evse_energy_sink with module_id: grid_connection_point
+2025-12-05T22:21:15.877507+0100 chargesom manager[451254]: [INFO] energy_manager:  :: Module energy_manager initialized [1753ms]
+2025-12-05T22:21:15.888157+0100 chargesom manager[451253]: [INFO] connector:EvseM  :: Module connector initialized [1784ms]
+2025-12-05T22:21:15.890112+0100 chargesom manager[451267]: [INFO] grid_connection  :: Module grid_connection_point initialized [1706ms]       
+2025-12-05T22:21:15.899018+0100 chargesom manager[451250]: [CRIT] api:API          :: Caught top level std::exception:
+2025-12-05T22:21:15.899018+0100 chargesom manager[451250]: Dynamic exception type: std::runtime_error
+2025-12-05T22:21:15.899018+0100 chargesom manager[451250]: std::exception::what: At least one connected evse_energy_sink misses a mapping to an evse.
+2025-12-05T22:21:15.913899+0100 chargesom manager[451251]: [INFO] auth:Auth        :: Module auth initialized [1792ms]
+2025-12-05T22:21:15.924679+0100 chargesom manager[451230]: [CRIT] manager          :: Module api (pid: 451250) exited with status: 0. Terminating all modules.
+2025-12-05T22:21:15.930943+0100 chargesom manager[451230]: [ERRO] manager          :: The module connector is not in `modules_ready`: _Map_base::at
+2025-12-05T22:21:15.933457+0100 chargesom manager[451259]: [INFO] evse_security:E  :: Module evse_security initialized [1778ms]
+2025-12-05T22:21:15.938939+0100 chargesom manager[451252]: [INFO] bsp:CbChargeSOM  :: chargebyte's Charge SOM EVerest module (version: 0.24.0)
+2025-12-05T22:21:15.958035+0100 chargesom manager[451278]: [INFO] iso15118_charge  :: Module iso15118_charger initialized [1756ms]
+2025-12-05T22:21:15.960166+0100 chargesom manager[451230]: [INFO] manager          :: SIGTERM of child: auth (pid: 451251) succeeded.
+2025-12-05T22:21:15.960558+0100 chargesom manager[451230]: [INFO] manager          :: SIGTERM of child: bsp (pid: 451252) succeeded.
+2025-12-05T22:21:15.960558+0100 chargesom manager[451230]: [INFO] manager          :: SIGTERM of child: connector (pid: 451253) succeeded.    
+2025-12-05T22:21:15.962286+0100 chargesom manager[451230]: [INFO] manager          :: SIGTERM of child: energy_manager (pid: 451254) succeeded.
+2025-12-05T22:21:15.978978+0100 chargesom manager[451230]: [INFO] manager          :: SIGTERM of child: error_history (pid: 451258) succeeded.
+2025-12-05T22:21:15.978978+0100 chargesom manager[451230]: [INFO] manager          :: SIGTERM of child: evse_security (pid: 451259) succeeded.
+2025-12-05T22:21:15.978978+0100 chargesom manager[451230]: [INFO] manager          :: SIGTERM of child: evse_slac (pid: 451261) succeeded.    
+2025-12-05T22:21:15.978978+0100 chargesom manager[451230]: [INFO] manager          :: SIGTERM of child: grid_connection_point (pid: 451267) succeeded.
+2025-12-05T22:21:15.978978+0100 chargesom manager[451230]: [INFO] manager          :: SIGTERM of child: imd (pid: 451275) succeeded.
+2025-12-05T22:21:15.978978+0100 chargesom manager[451230]: [INFO] manager          :: SIGTERM of child: iso15118_charger (pid: 451278) succeeded.
+2025-12-05T22:21:15.978978+0100 chargesom manager[451230]: [INFO] manager          :: SIGTERM of child: powersupply_dc (pid: 451281) succeeded.
+2025-12-05T22:21:15.978978+0100 chargesom manager[451230]: [INFO] manager          :: SIGTERM of child: token_provider (pid: 451291) succeeded.
+2025-12-05T22:21:15.978978+0100 chargesom manager[451230]: [INFO] manager          :: SIGTERM of child: token_validator (pid: 451294) succeeded.
+2025-12-05T22:21:15.978978+0100 chargesom manager[451230]: [CRIT] manager          :: Exiting manager.
+2025-12-05T22:21:16.000944+0100 chargesom systemd[1]: everest.service: Main process exited, code=exited, status=1/FAILURE
+2025-12-05T22:21:16.006250+0100 chargesom systemd[1]: everest.service: Failed with result 'exit-code'.
+2025-12-05T22:21:16.278464+0100 chargesom systemd[1]: everest.service: Scheduled restart job, restart counter is at 344.
+2025-12-05T22:21:16.279582+0100 chargesom systemd[1]: Stopped EVerest.
+2025-12-05T22:21:16.299960+0100 chargesom systemd[1]: Starting EVerest...
+2025-12-05T22:21:16.304816+0100 chargesom sh[451897]: Starting to migrate EVerest configurations
+2025-12-05T22:21:16.322391+0100 chargesom sh[451897]: EVerest configurations migrated successfully
+2025-12-05T22:21:16.325715+0100 chargesom systemd[1]: Started EVerest.
+2025-12-05T22:21:16.348911+0100 chargesom manager[451901]: [INFO] manager          ::   ________      __                _
+2025-12-05T22:21:16.349910+0100 chargesom manager[451901]: [INFO] manager          ::  |  ____\ \    / /               | |
+2025-12-05T22:21:16.349910+0100 chargesom manager[451901]: [INFO] manager          ::  | |__   \ \  / /__ _ __ ___  ___| |_
+2025-12-05T22:21:16.349910+0100 chargesom manager[451901]: [INFO] manager          ::  |  __|   \ \/ / _ \ '__/ _ \/ __| __|
+2025-12-05T22:21:16.349910+0100 chargesom manager[451901]: [INFO] manager          ::  | |____   \  /  __/ | |  __/\__ \ |_
+2025-12-05T22:21:16.349910+0100 chargesom manager[451901]: [INFO] manager          ::  |______|   \/ \___|_|  \___||___/\__|
+2025-12-05T22:21:16.349910+0100 chargesom manager[451901]: [INFO] manager          ::
+2025-12-05T22:21:16.349910+0100 chargesom manager[451901]: [INFO] manager          :: everest-framework 0.23.0 main@v0.23.0
+2025-12-05T22:21:16.351140+0100 chargesom manager[451901]: [INFO] manager          :: everest-core 2025.8.0 feature/json-rpc-api-2025.8.0@2025.8.0-351-g14709eef-dirty
+2025-12-05T22:21:16.351140+0100 chargesom manager[451901]: [INFO] manager          ::
+2025-12-05T22:21:16.351140+0100 chargesom manager[451901]: [INFO] manager          :: Using MQTT broker localhost:1883
+2025-12-05T22:21:16.366607+0100 chargesom manager[451902]: [INFO] everest_ctrl     :: Launching controller service on port 8849
+2025-12-05T22:21:16.380924+0100 chargesom manager[451901]: [INFO] manager          :: Boot mode is set to YamlFile, loading module configs from YAML file
+2025-12-05T22:21:16.381281+0100 chargesom manager[451901]: [INFO] manager          :: Loading config file at: /etc/everest/config.yaml        
+2025-12-05T22:21:16.497876+0100 chargesom manager[451901]: [INFO] manager          :: Config loading completed in 145ms
+2025-12-05T22:21:16.501280+0100 chargesom manager[451901]: [INFO] manager          :: Starting 14 modules
+2025-12-05T22:21:18.254940+0100 chargesom manager[451921]: [CRIT] api:API          :: Please configure an evse mapping in your configuration file for the connected r_evse_energy_sink with module_id: grid_connection_point
+2025-12-05T22:21:18.259679+0100 chargesom manager[451921]: [CRIT] api:API          :: Caught top level std::exception:
+2025-12-05T22:21:18.259679+0100 chargesom manager[451921]: Dynamic exception type: std::runtime_error
+2025-12-05T22:21:18.259679+0100 chargesom manager[451921]: std::exception::what: At least one connected evse_energy_sink misses a mapping to an evse.
+2025-12-05T22:21:18.267199+0100 chargesom manager[451901]: [CRIT] manager          :: Module api (pid: 451921) exited with status: 0. Terminating all modules.
+2025-12-05T22:21:18.271557+0100 chargesom manager[451901]: [INFO] manager          :: SIGTERM of child: auth (pid: 451922) succeeded.
+2025-12-05T22:21:18.271557+0100 chargesom manager[451901]: [INFO] manager          :: SIGTERM of child: bsp (pid: 451923) succeeded.
+2025-12-05T22:21:18.273425+0100 chargesom manager[451901]: [INFO] manager          :: SIGTERM of child: connector (pid: 451924) succeeded.    
+2025-12-05T22:21:18.273425+0100 chargesom manager[451901]: [INFO] manager          :: SIGTERM of child: energy_manager (pid: 451925) succeeded.
+2025-12-05T22:21:18.273425+0100 chargesom manager[451901]: [INFO] manager          :: SIGTERM of child: error_history (pid: 451929) succeeded.
+2025-12-05T22:21:18.273425+0100 chargesom manager[451901]: [INFO] manager          :: SIGTERM of child: evse_security (pid: 451934) succeeded.
+2025-12-05T22:21:18.273425+0100 chargesom manager[451901]: [INFO] manager          :: SIGTERM of child: evse_slac (pid: 451937) succeeded.    
+2025-12-05T22:21:18.273425+0100 chargesom manager[451901]: [INFO] manager          :: SIGTERM of child: grid_connection_point (pid: 451939) succeeded.
+2025-12-05T22:21:18.273425+0100 chargesom manager[451901]: [INFO] manager          :: SIGTERM of child: imd (pid: 451942) succeeded.
+2025-12-05T22:21:18.273425+0100 chargesom manager[451901]: [INFO] manager          :: SIGTERM of child: iso15118_charger (pid: 451947) succeeded.
+2025-12-05T22:21:18.273425+0100 chargesom manager[451901]: [INFO] manager          :: SIGTERM of child: powersupply_dc (pid: 451956) succeeded.
+2025-12-05T22:21:18.273425+0100 chargesom manager[451901]: [INFO] manager          :: SIGTERM of child: token_provider (pid: 451961) succeeded.
+2025-12-05T22:21:18.273425+0100 chargesom manager[451901]: [INFO] manager          :: SIGTERM of child: token_validator (pid: 451964) succeeded.
+2025-12-05T22:21:18.273425+0100 chargesom manager[451901]: [CRIT] manager          :: Exiting manager.
+2025-12-05T22:21:18.298719+0100 chargesom systemd[1]: everest.service: Main process exited, code=exited, status=1/FAILURE
+2025-12-05T22:21:18.303850+0100 chargesom systemd[1]: everest.service: Failed with result 'exit-code'.
+2025-12-05T22:21:18.528461+0100 chargesom systemd[1]: everest.service: Scheduled restart job, restart counter is at 345.
+2025-12-05T22:21:18.530570+0100 chargesom systemd[1]: Stopped EVerest.
+2025-12-05T22:21:18.556706+0100 chargesom systemd[1]: Starting EVerest...
+2025-12-05T22:21:18.560874+0100 chargesom sh[452467]: Starting to migrate EVerest configurations
+2025-12-05T22:21:18.578055+0100 chargesom sh[452467]: EVerest configurations migrated successfully
+2025-12-05T22:21:18.581347+0100 chargesom systemd[1]: Started EVerest.
+2025-12-05T22:21:18.605111+0100 chargesom manager[452471]: [INFO] manager          ::   ________      __                _
+2025-12-05T22:21:18.605111+0100 chargesom manager[452471]: [INFO] manager          ::  |  ____\ \    / /               | |
+2025-12-05T22:21:18.606297+0100 chargesom manager[452471]: [INFO] manager          ::  | |__   \ \  / /__ _ __ ___  ___| |_
+2025-12-05T22:21:18.606297+0100 chargesom manager[452471]: [INFO] manager          ::  |  __|   \ \/ / _ \ '__/ _ \/ __| __|
+2025-12-05T22:21:18.606297+0100 chargesom manager[452471]: [INFO] manager          ::  | |____   \  /  __/ | |  __/\__ \ |_
+2025-12-05T22:21:18.606297+0100 chargesom manager[452471]: [INFO] manager          ::  |______|   \/ \___|_|  \___||___/\__|
+2025-12-05T22:21:18.606297+0100 chargesom manager[452471]: [INFO] manager          ::
+2025-12-05T22:21:18.606297+0100 chargesom manager[452471]: [INFO] manager          :: everest-framework 0.23.0 main@v0.23.0
+2025-12-05T22:21:18.606297+0100 chargesom manager[452471]: [INFO] manager          :: everest-core 2025.8.0 feature/json-rpc-api-2025.8.0@2025.8.0-351-g14709eef-dirty
+2025-12-05T22:21:18.606297+0100 chargesom manager[452471]: [INFO] manager          ::
+2025-12-05T22:21:18.606297+0100 chargesom manager[452471]: [INFO] manager          :: Using MQTT broker localhost:1883
+2025-12-05T22:21:18.621865+0100 chargesom manager[452472]: [INFO] everest_ctrl     :: Launching controller service on port 8849
+2025-12-05T22:21:18.637724+0100 chargesom manager[452471]: [INFO] manager          :: Boot mode is set to YamlFile, loading module configs from YAML file
+2025-12-05T22:21:18.638066+0100 chargesom manager[452471]: [INFO] manager          :: Loading config file at: /etc/everest/config.yaml        
+2025-12-05T22:21:18.754182+0100 chargesom manager[452471]: [INFO] manager          :: Config loading completed in 146ms
+2025-12-05T22:21:18.757639+0100 chargesom manager[452471]: [INFO] manager          :: Starting 14 modules
+2025-12-05T22:21:20.643147+0100 chargesom manager[452491]: [CRIT] api:API          :: Please configure an evse mapping in your configuration file for the connected r_evse_energy_sink with module_id: grid_connection_point
+2025-12-05T22:21:20.653103+0100 chargesom manager[452491]: [CRIT] api:API          :: Caught top level std::exception:
+2025-12-05T22:21:20.653103+0100 chargesom manager[452491]: Dynamic exception type: std::runtime_error
+2025-12-05T22:21:20.653103+0100 chargesom manager[452491]: std::exception::what: At least one connected evse_energy_sink misses a mapping to an evse.
+2025-12-05T22:21:20.663735+0100 chargesom manager[452511]: [INFO] grid_connection  :: Module grid_connection_point initialized [1758ms]       
+2025-12-05T22:21:20.683373+0100 chargesom manager[452471]: [CRIT] manager          :: Module api (pid: 452491) exited with status: 0. Terminating all modules.
+2025-12-05T22:21:20.685094+0100 chargesom manager[452504]: [INFO] evse_security:E  :: Module evse_security initialized [1815ms]
+2025-12-05T22:21:20.691974+0100 chargesom manager[452471]: [ERRO] manager          :: The module evse_security is not in `modules_ready`: _Map_base::at
+2025-12-05T22:21:20.705996+0100 chargesom manager[452493]: [INFO] bsp:CbChargeSOM  :: chargebyte's Charge SOM EVerest module (version: 0.24.0)
+2025-12-05T22:21:20.708141+0100 chargesom manager[452471]: [INFO] manager          :: SIGTERM of child: auth (pid: 452492) succeeded.
+2025-12-05T22:21:20.710958+0100 chargesom manager[452471]: [INFO] manager          :: SIGTERM of child: bsp (pid: 452493) succeeded.
+2025-12-05T22:21:20.710958+0100 chargesom manager[452471]: [INFO] manager          :: SIGTERM of child: connector (pid: 452494) succeeded.    
+2025-12-05T22:21:20.714667+0100 chargesom manager[452471]: [INFO] manager          :: SIGTERM of child: energy_manager (pid: 452495) succeeded.
+2025-12-05T22:21:20.716879+0100 chargesom manager[452471]: [INFO] manager          :: SIGTERM of child: error_history (pid: 452500) succeeded.
+2025-12-05T22:21:20.717262+0100 chargesom manager[452507]: [INFO] evse_slac:EvseS  :: Module evse_slac initialized [1813ms]
+2025-12-05T22:21:20.722050+0100 chargesom manager[452471]: [INFO] manager          :: SIGTERM of child: evse_security (pid: 452504) succeeded.
+2025-12-05T22:21:20.724457+0100 chargesom manager[452471]: [INFO] manager          :: SIGTERM of child: evse_slac (pid: 452507) succeeded.    
+2025-12-05T22:21:20.725550+0100 chargesom manager[452471]: [INFO] manager          :: SIGTERM of child: grid_connection_point (pid: 452511) succeeded.
+2025-12-05T22:21:20.725550+0100 chargesom manager[452471]: [INFO] manager          :: SIGTERM of child: imd (pid: 452515) succeeded.
+2025-12-05T22:21:20.725550+0100 chargesom manager[452471]: [INFO] manager          :: SIGTERM of child: iso15118_charger (pid: 452520) succeeded.
+2025-12-05T22:21:20.725550+0100 chargesom manager[452471]: [INFO] manager          :: SIGTERM of child: powersupply_dc (pid: 452523) succeeded.
+2025-12-05T22:21:20.729810+0100 chargesom manager[452471]: [INFO] manager          :: SIGTERM of child: token_provider (pid: 452525) succeeded.
+2025-12-05T22:21:20.729810+0100 chargesom manager[452471]: [INFO] manager          :: SIGTERM of child: token_validator (pid: 452534) succeeded.
+2025-12-05T22:21:20.729810+0100 chargesom manager[452471]: [CRIT] manager          :: Exiting manager.
+2025-12-05T22:21:20.746295+0100 chargesom systemd[1]: everest.service: Main process exited, code=exited, status=1/FAILURE
+2025-12-05T22:21:20.746715+0100 chargesom systemd[1]: everest.service: Killing process 452473 (controller) with signal SIGKILL.
+2025-12-05T22:21:20.751712+0100 chargesom systemd[1]: everest.service: Failed with result 'exit-code'.
+2025-12-05T22:21:21.028488+0100 chargesom systemd[1]: everest.service: Scheduled restart job, restart counter is at 346.
+2025-12-05T22:21:21.029229+0100 chargesom systemd[1]: Stopped EVerest.
+2025-12-05T22:21:21.051986+0100 chargesom systemd[1]: Starting EVerest...
+2025-12-05T22:21:21.056847+0100 chargesom sh[453078]: Starting to migrate EVerest configurations
+2025-12-05T22:21:21.074060+0100 chargesom sh[453078]: EVerest configurations migrated successfully
+2025-12-05T22:21:21.077471+0100 chargesom systemd[1]: Started EVerest.
+2025-12-05T22:21:21.101335+0100 chargesom manager[453082]: [INFO] manager          ::   ________      __                _
+2025-12-05T22:21:21.101335+0100 chargesom manager[453082]: [INFO] manager          ::  |  ____\ \    / /               | |
+2025-12-05T22:21:21.102653+0100 chargesom manager[453082]: [INFO] manager          ::  | |__   \ \  / /__ _ __ ___  ___| |_
+2025-12-05T22:21:21.102653+0100 chargesom manager[453082]: [INFO] manager          ::  |  __|   \ \/ / _ \ '__/ _ \/ __| __|
+2025-12-05T22:21:21.102653+0100 chargesom manager[453082]: [INFO] manager          ::  | |____   \  /  __/ | |  __/\__ \ |_
+2025-12-05T22:21:21.102653+0100 chargesom manager[453082]: [INFO] manager          ::  |______|   \/ \___|_|  \___||___/\__|
+2025-12-05T22:21:21.102653+0100 chargesom manager[453082]: [INFO] manager          ::
+2025-12-05T22:21:21.102653+0100 chargesom manager[453082]: [INFO] manager          :: everest-framework 0.23.0 main@v0.23.0
+2025-12-05T22:21:21.102653+0100 chargesom manager[453082]: [INFO] manager          :: everest-core 2025.8.0 feature/json-rpc-api-2025.8.0@2025.8.0-351-g14709eef-dirty
+2025-12-05T22:21:21.102653+0100 chargesom manager[453082]: [INFO] manager          ::
+2025-12-05T22:21:21.102653+0100 chargesom manager[453082]: [INFO] manager          :: Using MQTT broker localhost:1883
+2025-12-05T22:21:21.118406+0100 chargesom manager[453083]: [INFO] everest_ctrl     :: Launching controller service on port 8849
+2025-12-05T22:21:21.134307+0100 chargesom manager[453082]: [INFO] manager          :: Boot mode is set to YamlFile, loading module configs from YAML file
+2025-12-05T22:21:21.134708+0100 chargesom manager[453082]: [INFO] manager          :: Loading config file at: /etc/everest/config.yaml        
+2025-12-05T22:21:21.250718+0100 chargesom manager[453082]: [INFO] manager          :: Config loading completed in 146ms
+2025-12-05T22:21:21.254227+0100 chargesom manager[453082]: [INFO] manager          :: Starting 14 modules
+2025-12-05T22:21:23.042935+0100 chargesom manager[453102]: [CRIT] api:API          :: Please configure an evse mapping in your configuration file for the connected r_evse_energy_sink with module_id: grid_connection_point
+2025-12-05T22:21:23.047589+0100 chargesom manager[453102]: [CRIT] api:API          :: Caught top level std::exception:
+2025-12-05T22:21:23.047589+0100 chargesom manager[453102]: Dynamic exception type: std::runtime_error
+2025-12-05T22:21:23.047589+0100 chargesom manager[453102]: std::exception::what: At least one connected evse_energy_sink misses a mapping to an evse.
+2025-12-05T22:21:23.086331+0100 chargesom manager[453082]: [CRIT] manager          :: Module api (pid: 453102) exited with status: 0. Terminating all modules.
+2025-12-05T22:21:23.094955+0100 chargesom manager[453110]: [INFO] error_history:E  :: Using database at "/tmp/error_history.db"
+2025-12-05T22:21:23.094955+0100 chargesom manager[453110]: [INFO] error_history:E  :: Checking database
+2025-12-05T22:21:23.104232+0100 chargesom manager[453110]: [INFO] error_history:E  :: Module error_history initialized [1728ms]
+2025-12-05T22:21:23.109988+0100 chargesom manager[453082]: [INFO] manager          :: SIGTERM of child: auth (pid: 453103) succeeded.
+2025-12-05T22:21:23.110423+0100 chargesom manager[453082]: [INFO] manager          :: SIGTERM of child: bsp (pid: 453104) succeeded.
+2025-12-05T22:21:23.110423+0100 chargesom manager[453082]: [INFO] manager          :: SIGTERM of child: connector (pid: 453105) succeeded.    
+2025-12-05T22:21:23.110423+0100 chargesom manager[453082]: [INFO] manager          :: SIGTERM of child: energy_manager (pid: 453106) succeeded.
+2025-12-05T22:21:23.112154+0100 chargesom manager[453082]: [INFO] manager          :: SIGTERM of child: error_history (pid: 453110) succeeded.
+2025-12-05T22:21:23.112154+0100 chargesom manager[453082]: [INFO] manager          :: SIGTERM of child: evse_security (pid: 453117) succeeded.
+2025-12-05T22:21:23.112154+0100 chargesom manager[453082]: [INFO] manager          :: SIGTERM of child: evse_slac (pid: 453118) succeeded.    
+2025-12-05T22:21:23.112154+0100 chargesom manager[453082]: [INFO] manager          :: SIGTERM of child: grid_connection_point (pid: 453122) succeeded.
+2025-12-05T22:21:23.112154+0100 chargesom manager[453082]: [INFO] manager          :: SIGTERM of child: imd (pid: 453123) succeeded.
+2025-12-05T22:21:23.123251+0100 chargesom manager[453082]: [INFO] manager          :: SIGTERM of child: iso15118_charger (pid: 453127) succeeded.
+2025-12-05T22:21:23.123251+0100 chargesom manager[453082]: [INFO] manager          :: SIGTERM of child: powersupply_dc (pid: 453138) succeeded.
+2025-12-05T22:21:23.123251+0100 chargesom manager[453082]: [INFO] manager          :: SIGTERM of child: token_provider (pid: 453139) succeeded.
+2025-12-05T22:21:23.123251+0100 chargesom manager[453082]: [INFO] manager          :: SIGTERM of child: token_validator (pid: 453141) succeeded.
+2025-12-05T22:21:23.123251+0100 chargesom manager[453082]: [CRIT] manager          :: Exiting manager.
+2025-12-05T22:21:23.140044+0100 chargesom systemd[1]: everest.service: Main process exited, code=exited, status=1/FAILURE
+2025-12-05T22:21:23.140456+0100 chargesom systemd[1]: everest.service: Killing process 453084 (controller) with signal SIGKILL.
+2025-12-05T22:21:23.145557+0100 chargesom systemd[1]: everest.service: Failed with result 'exit-code'.
+2025-12-05T22:21:23.278470+0100 chargesom systemd[1]: everest.service: Scheduled restart job, restart counter is at 347.
+2025-12-05T22:21:23.279363+0100 chargesom systemd[1]: Stopped EVerest.
+2025-12-05T22:21:23.299978+0100 chargesom systemd[1]: Starting EVerest...
+^[2025-12-05T22:21:23.305275+0100 chargesom sh[453692]: Starting to migrate EVerest configurations
+2025-12-05T22:21:23.322423+0100 chargesom sh[453692]: EVerest configurations migrated successfully
+2025-12-05T22:21:23.325820+0100 chargesom systemd[1]: Started EVerest.
+2025-12-05T22:21:23.348432+0100 chargesom manager[453696]: [INFO] manager          ::   ________      __                _
+2025-12-05T22:21:23.348432+0100 chargesom manager[453696]: [INFO] manager          ::  |  ____\ \    / /               | |
+2025-12-05T22:21:23.349688+0100 chargesom manager[453696]: [INFO] manager          ::  | |__   \ \  / /__ _ __ ___  ___| |_
+2025-12-05T22:21:23.349688+0100 chargesom manager[453696]: [INFO] manager          ::  |  __|   \ \/ / _ \ '__/ _ \/ __| __|
+2025-12-05T22:21:23.349688+0100 chargesom manager[453696]: [INFO] manager          ::  | |____   \  /  __/ | |  __/\__ \ |_
+2025-12-05T22:21:23.349688+0100 chargesom manager[453696]: [INFO] manager          ::  |______|   \/ \___|_|  \___||___/\__|
+2025-12-05T22:21:23.349688+0100 chargesom manager[453696]: [INFO] manager          ::
+2025-12-05T22:21:23.349688+0100 chargesom manager[453696]: [INFO] manager          :: everest-framework 0.23.0 main@v0.23.0
+2025-12-05T22:21:23.349688+0100 chargesom manager[453696]: [INFO] manager          :: everest-core 2025.8.0 feature/json-rpc-api-2025.8.0@2025.8.0-351-g14709eef-dirty
+2025-12-05T22:21:23.349688+0100 chargesom manager[453696]: [INFO] manager          ::
+2025-12-05T22:21:23.349688+0100 chargesom manager[453696]: [INFO] manager          :: Using MQTT broker localhost:1883
+2025-12-05T22:21:23.365389+0100 chargesom manager[453697]: [INFO] everest_ctrl     :: Launching controller service on port 8849
+2025-12-05T22:21:23.380910+0100 chargesom manager[453696]: [INFO] manager          :: Boot mode is set to YamlFile, loading module configs from YAML file
+2025-12-05T22:21:23.381252+0100 chargesom manager[453696]: [INFO] manager          :: Loading config file at: /etc/everest/config.yaml        
+2025-12-05T22:21:23.497656+0100 chargesom manager[453696]: [INFO] manager          :: Config loading completed in 146ms
+2025-12-05T22:21:23.501124+0100 chargesom manager[453696]: [INFO] manager          :: Starting 14 modules
+:2025-12-05T22:21:25.227585+0100 chargesom manager[453718]: [INFO] bsp:CbChargeSOM  :: chargebyte's Charge SOM EVerest module (version: 0.24.0)
+2025-12-05T22:21:25.278661+0100 chargesom manager[453730]: [INFO] evse_slac:EvseS  :: Module evse_slac initialized [1664ms]
+2025-12-05T22:21:25.302958+0100 chargesom manager[453716]: [CRIT] api:API          :: Please configure an evse mapping in your configuration file for the connected r_evse_energy_sink with module_id: grid_connection_point
+2025-12-05T22:21:25.314097+0100 chargesom manager[453716]: [CRIT] api:API          :: Caught top level std::exception:
+2025-12-05T22:21:25.314097+0100 chargesom manager[453716]: Dynamic exception type: std::runtime_error
+2025-12-05T22:21:25.314097+0100 chargesom manager[453716]: std::exception::what: At least one connected evse_energy_sink misses a mapping to an evse.
+2025-12-05T22:21:25.347782+0100 chargesom manager[453696]: [CRIT] manager          :: Module api (pid: 453716) exited with status: 0. Terminating all modules.
+2025-12-05T22:21:25.371268+0100 chargesom manager[453724]: [INFO] error_history:E  :: Using database at "/tmp/error_history.db"
+2025-12-05T22:21:25.371268+0100 chargesom manager[453724]: [INFO] error_history:E  :: Checking database
+2025-12-05T22:21:25.375426+0100 chargesom manager[453696]: [INFO] manager          :: SIGTERM of child: auth (pid: 453717) succeeded.
+2025-12-05T22:21:25.375826+0100 chargesom manager[453724]: [INFO] error_history:E  :: Module error_history initialized [1783ms]
+2025-12-05T22:21:25.382046+0100 chargesom manager[453696]: [INFO] manager          :: SIGTERM of child: bsp (pid: 453718) succeeded.
+2025-12-05T22:21:25.383586+0100 chargesom manager[453696]: [INFO] manager          :: SIGTERM of child: connector (pid: 453719) succeeded.    
+2025-12-05T22:21:25.385213+0100 chargesom manager[453696]: [INFO] manager          :: SIGTERM of child: energy_manager (pid: 453720) succeeded.
+2025-12-05T22:21:25.385686+0100 chargesom manager[453696]: [INFO] manager          :: SIGTERM of child: error_history (pid: 453724) succeeded.
+2025-12-05T22:21:25.386007+0100 chargesom manager[453696]: [INFO] manager          :: SIGTERM of child: evse_security (pid: 453726) succeeded.
+2025-12-05T22:21:25.386302+0100 chargesom manager[453696]: [INFO] manager          :: SIGTERM of child: evse_slac (pid: 453730) succeeded.    
+2025-12-05T22:21:25.387041+0100 chargesom manager[453696]: [INFO] manager          :: SIGTERM of child: grid_connection_point (pid: 453733) succeeded.
+2025-12-05T22:21:25.387041+0100 chargesom manager[453696]: [INFO] manager          :: SIGTERM of child: imd (pid: 453737) succeeded.
+2025-12-05T22:21:25.391230+0100 chargesom manager[453696]: [INFO] manager          :: SIGTERM of child: iso15118_charger (pid: 453747) succeeded.
+2025-12-05T22:21:25.391230+0100 chargesom manager[453696]: [INFO] manager          :: SIGTERM of child: powersupply_dc (pid: 453751) succeeded.
+2025-12-05T22:21:25.391230+0100 chargesom manager[453696]: [INFO] manager          :: SIGTERM of child: token_provider (pid: 453753) succeeded.
+2025-12-05T22:21:25.391230+0100 chargesom manager[453696]: [INFO] manager          :: SIGTERM of child: token_validator (pid: 453757) succeeded.
+2025-12-05T22:21:25.392209+0100 chargesom manager[453696]: [CRIT] manager          :: Exiting manager.
+2025-12-05T22:21:25.411411+0100 chargesom systemd[1]: everest.service: Main process exited, code=exited, status=1/FAILURE
+2025-12-05T22:21:25.411801+0100 chargesom systemd[1]: everest.service: Killing process 453698 (controller) with signal SIGKILL.
+2025-12-05T22:21:25.416572+0100 chargesom systemd[1]: everest.service: Failed with result 'exit-code'.
+2025-12-05T22:21:25.528479+0100 chargesom systemd[1]: everest.service: Scheduled restart job, restart counter is at 348.
+2025-12-05T22:21:25.529708+0100 chargesom systemd[1]: Stopped EVerest.
+2025-12-05T22:21:25.551933+0100 chargesom systemd[1]: Starting EVerest...
+2025-12-05T22:21:25.556809+0100 chargesom sh[454329]: Starting to migrate EVerest configurations
+2025-12-05T22:21:25.574035+0100 chargesom sh[454329]: EVerest configurations migrated successfully
+2025-12-05T22:21:25.577675+0100 chargesom systemd[1]: Started EVerest.
+2025-12-05T22:21:25.600633+0100 chargesom manager[454333]: [INFO] manager          ::   ________      __                _
+2025-12-05T22:21:25.600633+0100 chargesom manager[454333]: [INFO] manager          ::  |  ____\ \    / /               | |
+2025-12-05T22:21:25.601897+0100 chargesom manager[454333]: [INFO] manager          ::  | |__   \ \  / /__ _ __ ___  ___| |_
+2025-12-05T22:21:25.601897+0100 chargesom manager[454333]: [INFO] manager          ::  |  __|   \ \/ / _ \ '__/ _ \/ __| __|
+2025-12-05T22:21:25.601897+0100 chargesom manager[454333]: [INFO] manager          ::  | |____   \  /  __/ | |  __/\__ \ |_
+2025-12-05T22:21:25.601897+0100 chargesom manager[454333]: [INFO] manager          ::  |______|   \/ \___|_|  \___||___/\__|
+2025-12-05T22:21:25.601897+0100 chargesom manager[454333]: [INFO] manager          ::
+2025-12-05T22:21:25.601897+0100 chargesom manager[454333]: [INFO] manager          :: everest-framework 0.23.0 main@v0.23.0
+2025-12-05T22:21:25.601897+0100 chargesom manager[454333]: [INFO] manager          :: everest-core 2025.8.0 feature/json-rpc-api-2025.8.0@2025.8.0-351-g14709eef-dirty
+2025-12-05T22:21:25.601897+0100 chargesom manager[454333]: [INFO] manager          ::
+2025-12-05T22:21:25.601897+0100 chargesom manager[454333]: [INFO] manager          :: Using MQTT broker localhost:1883
+2025-12-05T22:21:25.618552+0100 chargesom manager[454334]: [INFO] everest_ctrl     :: Launching controller service on port 8849
+2025-12-05T22:21:25.632687+0100 chargesom manager[454333]: [INFO] manager          :: Boot mode is set to YamlFile, loading module configs from YAML file
+2025-12-05T22:21:25.633061+0100 chargesom manager[454333]: [INFO] manager          :: Loading config file at: /etc/everest/config.yaml        
+2025-12-05T22:21:25.750041+0100 chargesom manager[454333]: [INFO] manager          :: Config loading completed in 146ms
+2025-12-05T22:21:25.753863+0100 chargesom manager[454333]: [INFO] manager          :: Starting 14 modules
+^[2025-12-05T22:21:27.520404+0100 chargesom manager[454358]: [INFO] energy_manager:  :: Module energy_manager initialized [1685ms]
+2025-12-05T22:21:27.569423+0100 chargesom manager[454353]: [CRIT] api:API          :: Please configure an evse mapping in your configuration file for the connected r_evse_energy_sink with module_id: grid_connection_point
+2025-12-05T22:21:27.574946+0100 chargesom manager[454355]: [INFO] bsp:CbChargeSOM  :: chargebyte's Charge SOM EVerest module (version: 0.24.0)
+2025-12-05T22:21:27.590146+0100 chargesom manager[454353]: [CRIT] api:API          :: Caught top level std::exception:
+2025-12-05T22:21:27.590146+0100 chargesom manager[454353]: Dynamic exception type: std::runtime_error
+2025-12-05T22:21:27.590146+0100 chargesom manager[454353]: std::exception::what: At least one connected evse_energy_sink misses a mapping to an evse.
+2025-12-05T22:21:27.639065+0100 chargesom manager[454354]: [INFO] auth:Auth        :: Module auth initialized [1806ms]
+2025-12-05T22:21:27.641959+0100 chargesom manager[454356]: [INFO] connector:EvseM  :: Module connector initialized [1809ms]
+2025-12-05T22:21:27.643994+0100 chargesom manager[454333]: [CRIT] manager          :: Module api (pid: 454353) exited with status: 0. Terminating all modules.
+2025-12-05T22:21:27.652633+0100 chargesom manager[454368]: [INFO] evse_slac:EvseS  :: Module evse_slac initialized [1745ms]
+2025-12-05T22:21:27.659492+0100 chargesom manager[454376]: [INFO] grid_connection  :: Module grid_connection_point initialized [1772ms]       
+2025-12-05T22:21:27.671875+0100 chargesom manager[454333]: [INFO] manager          :: SIGTERM of child: auth (pid: 454354) succeeded.
+2025-12-05T22:21:27.676957+0100 chargesom manager[454333]: [INFO] manager          :: SIGTERM of child: bsp (pid: 454355) succeeded.
+2025-12-05T22:21:27.676957+0100 chargesom manager[454333]: [INFO] manager          :: SIGTERM of child: connector (pid: 454356) succeeded.    
+2025-12-05T22:21:27.678062+0100 chargesom manager[454333]: [INFO] manager          :: SIGTERM of child: energy_manager (pid: 454358) succeeded.
+2025-12-05T22:21:27.678437+0100 chargesom manager[454333]: [INFO] manager          :: SIGTERM of child: error_history (pid: 454361) succeeded.
+2025-12-05T22:21:27.685629+0100 chargesom manager[454333]: [INFO] manager          :: SIGTERM of child: evse_security (pid: 454362) succeeded.
+2025-12-05T22:21:27.685629+0100 chargesom manager[454333]: [INFO] manager          :: SIGTERM of child: evse_slac (pid: 454368) succeeded.    
+2025-12-05T22:21:27.689589+0100 chargesom manager[454378]: [INFO] iso15118_charge  :: Module iso15118_charger initialized [1762ms]
+2025-12-05T22:21:27.695325+0100 chargesom manager[454333]: [INFO] manager          :: SIGTERM of child: grid_connection_point (pid: 454376) succeeded.
+2025-12-05T22:21:27.695739+0100 chargesom manager[454333]: [INFO] manager          :: SIGTERM of child: imd (pid: 454377) succeeded.
+2025-12-05T22:21:27.695739+0100 chargesom manager[454333]: [INFO] manager          :: SIGTERM of child: iso15118_charger (pid: 454378) succeeded.
+2025-12-05T22:21:27.695739+0100 chargesom manager[454333]: [INFO] manager          :: SIGTERM of child: powersupply_dc (pid: 454384) succeeded.
+root@chargesom:~# journalctl -fu everest | tee everest_log.txt                                                                                
+2025-12-05T22:21:56.918422+0100 chargesom manager[461842]: [INFO] evse_slac:EvseS  :: Entered Idle state
+2025-12-05T22:21:57.471805+0100 chargesom manager[461860]: [INFO] powersupply_dc:  :: Infy[0x00]: capabilities: 1000V / 50V, 102A, power 30000W
+2025-12-05T22:21:57.474143+0100 chargesom manager[461860]: [INFO] powersupply_dc:  :: Infy: Capabilities updated: 1000V / 50V, 102A, power 30000W
+2025-12-05T22:21:57.474143+0100 chargesom manager[461860]: [INFO] powersupply_dc:  :: Infy: Hot plug detected - module count increased from 0 to 1 modules, redistributing 0A from 0 to 1 modules
+2025-12-05T22:21:57.474143+0100 chargesom manager[461860]: [INFO] powersupply_dc:  :: Infy: Restoring last settings: voltage=0V, current=0A, mode=Off, phase=CableCheck
+2025-12-05T22:21:57.474143+0100 chargesom manager[461860]: [INFO] powersupply_dc:  :: Infy: Updating voltage/current via CAN: 50V / 1A total → 1A per module - active modules: 1
+2025-12-05T22:21:57.474143+0100 chargesom manager[461860]: [INFO] powersupply_dc:  :: Infy: set_voltage_current(50V, 1A) - active modules: 1
+2025-12-05T22:21:57.474143+0100 chargesom manager[461860]: [INFO] powersupply_dc:  :: Set mode via CAN: Off with phase CableCheck
+2025-12-05T22:21:57.474143+0100 chargesom manager[461860]: [INFO] powersupply_dc:  :: Infy: switch_on_off(false) - active modules: 1
+2025-12-05T22:21:57.474143+0100 chargesom manager[461860]: [INFO] powersupply_dc:  :: Infy[0x00]: serial number: SN_2818a396c70776_V
+2025-12-05T22:22:02.389555+0100 chargesom manager[461831]: [INFO] connector:EvseM  :: Cleaning up any other transaction on start up
+2025-12-05T22:22:02.448592+0100 chargesom manager[461831]: [INFO] connector:EvseM  :: 🌀🌀🌀 Ready to start charging 🌀🌀🌀
+2025-12-05T22:22:02.448592+0100 chargesom manager[461831]: [WARN] connector:EvseM  :: No powermeter value received yet!
+2025-12-05T22:22:02.794815+0100 chargesom manager[461830]: [INFO] bsp:CbChargeSOM  :: handle_enable: Setting new duty cycle of 100.0%
+2025-12-05T22:22:02.927697+0100 chargesom manager[461830]: [INFO] bsp:CbChargeSOM  :: CP state change from PowerOn to A, PWM: 100.0%
+2025-12-05T22:22:02.971417+0100 chargesom manager[461830]: [INFO] bsp:CbChargeSOM  :: handle_pwm_off: Setting new duty cycle of 100.0%        
+2025-12-05T22:22:03.027797+0100 chargesom manager[461830]: [INFO] bsp:CbChargeSOM  :: handle_allow_power_on: request to OPEN the contactor
+2025-12-05T22:22:03.071557+0100 chargesom manager[461830]: [INFO] bsp:CbChargeSOM  :: handle_pwm_off: Setting new duty cycle of 100.0%
+2025-12-05T22:22:03.088421+0100 chargesom manager[461831]: [INFO] connector:EvseM  :: All errors cleared
+2025-12-05T22:22:04.406310+0100 chargesom systemd[1]: Stopping EVerest...
+2025-12-05T22:22:04.438135+0100 chargesom systemd[1]: everest.service: Deactivated successfully.                                              
+2025-12-05T22:22:04.439628+0100 chargesom systemd[1]: Stopped EVerest.
+2025-12-05T22:22:04.456341+0100 chargesom systemd[1]: Starting EVerest...
+2025-12-05T22:22:04.461592+0100 chargesom sh[462576]: Starting to migrate EVerest configurations
+2025-12-05T22:22:04.479403+0100 chargesom sh[462576]: EVerest configurations migrated successfully
+2025-12-05T22:22:04.482647+0100 chargesom systemd[1]: Started EVerest.
+2025-12-05T22:22:04.508301+0100 chargesom manager[462580]: [INFO] manager          ::   ________      __                _
+2025-12-05T22:22:04.508301+0100 chargesom manager[462580]: [INFO] manager          ::  |  ____\ \    / /               | |
+2025-12-05T22:22:04.509642+0100 chargesom manager[462580]: [INFO] manager          ::  | |__   \ \  / /__ _ __ ___  ___| |_
+2025-12-05T22:22:04.509642+0100 chargesom manager[462580]: [INFO] manager          ::  |  __|   \ \/ / _ \ '__/ _ \/ __| __|
+2025-12-05T22:22:04.509642+0100 chargesom manager[462580]: [INFO] manager          ::  | |____   \  /  __/ | |  __/\__ \ |_
+2025-12-05T22:22:04.509642+0100 chargesom manager[462580]: [INFO] manager          ::  |______|   \/ \___|_|  \___||___/\__|
+2025-12-05T22:22:04.509642+0100 chargesom manager[462580]: [INFO] manager          ::
+2025-12-05T22:22:04.509642+0100 chargesom manager[462580]: [INFO] manager          :: everest-framework 0.23.0 main@v0.23.0
+2025-12-05T22:22:04.509642+0100 chargesom manager[462580]: [INFO] manager          :: everest-core 2025.8.0 feature/json-rpc-api-2025.8.0@2025.8.0-351-g14709eef-dirty
+2025-12-05T22:22:04.509642+0100 chargesom manager[462580]: [INFO] manager          ::
+2025-12-05T22:22:04.509642+0100 chargesom manager[462580]: [INFO] manager          :: Using MQTT broker localhost:1883
+2025-12-05T22:22:04.525225+0100 chargesom manager[462581]: [INFO] everest_ctrl     :: Launching controller service on port 8849
+2025-12-05T22:22:04.541039+0100 chargesom manager[462580]: [INFO] manager          :: Boot mode is set to YamlFile, loading module configs from YAML file
+2025-12-05T22:22:04.541419+0100 chargesom manager[462580]: [INFO] manager          :: Loading config file at: /etc/everest/config.yaml        
+2025-12-05T22:22:04.657375+0100 chargesom manager[462580]: [INFO] manager          :: Config loading completed in 146ms
+2025-12-05T22:22:04.661030+0100 chargesom manager[462580]: [INFO] manager          :: Starting 14 modules
+2025-12-05T22:22:06.443204+0100 chargesom manager[462600]: [WARN] api:API          :: No evse energy sink configured for evse_id: 1. API module does therefore not allow control of amps or power limits for this EVSE
+2025-12-05T22:22:06.445866+0100 chargesom manager[462600]: [INFO] api:API          :: Module api initialized [1741ms]
+2025-12-05T22:22:06.448916+0100 chargesom manager[462602]: [INFO] bsp:CbChargeSOM  :: chargebyte's Charge SOM EVerest module (version: 0.24.0)
+2025-12-05T22:22:06.528047+0100 chargesom manager[462614]: [INFO] evse_slac:EvseS  :: Module evse_slac initialized [1734ms]
+2025-12-05T22:22:06.542136+0100 chargesom manager[462612]: [INFO] evse_security:E  :: Module evse_security initialized [1764ms]
+2025-12-05T22:22:06.572924+0100 chargesom manager[462637]: [INFO] powersupply_dc:  :: Infy: Setting config values: CAN device: can0
+2025-12-05T22:22:06.572924+0100 chargesom manager[462608]: [INFO] error_history:E  :: Using database at "/tmp/error_history.db"
+2025-12-05T22:22:06.575082+0100 chargesom manager[462608]: [INFO] error_history:E  :: Checking database
+2025-12-05T22:22:06.582535+0100 chargesom manager[462603]: [INFO] connector:EvseM  :: Module connector initialized [1807ms]
+2025-12-05T22:22:06.583779+0100 chargesom manager[462601]: [INFO] auth:Auth        :: Module auth initialized [1850ms]
+2025-12-05T22:22:06.589604+0100 chargesom manager[462608]: [INFO] error_history:E  :: Module error_history initialized [1790ms]
+2025-12-05T22:22:06.590203+0100 chargesom manager[462637]: [INFO] powersupply_dc:  :: Infy: Operating with controller address: 0xf0
+2025-12-05T22:22:06.590488+0100 chargesom manager[462604]: [INFO] energy_manager:  :: Module energy_manager initialized [1815ms]
+2025-12-05T22:22:06.592535+0100 chargesom manager[462637]: [INFO] powersupply_dc:  :: Starting CAN RX thread
+2025-12-05T22:22:06.592535+0100 chargesom manager[462637]: [INFO] powersupply_dc:  :: CAN error cleared: Success
+2025-12-05T22:22:06.592535+0100 chargesom manager[462637]: [INFO] powersupply_dc:  :: Infy: Operating in FIXED_ADDRESS mode with 1 addresses: 0
+2025-12-05T22:22:06.592535+0100 chargesom manager[462637]: [INFO] powersupply_dc:  :: Infy: module communication timeout: 15s
+2025-12-05T22:22:06.592535+0100 chargesom manager[462637]: [INFO] powersupply_dc:  :: Infy: Operating in FIXED_ADDRESS mode. No need to ping. 
+2025-12-05T22:22:06.592535+0100 chargesom manager[462637]: [INFO] powersupply_dc:  :: Infy: switch_on_off(false) - active modules: 1
+2025-12-05T22:22:06.592535+0100 chargesom manager[462637]: [INFO] powersupply_dc:  :: Module powersupply_dc initialized [1734ms]
+2025-12-05T22:22:06.603694+0100 chargesom manager[462617]: [INFO] grid_connection  :: Module grid_connection_point initialized [1783ms]       
+2025-12-05T22:22:06.605987+0100 chargesom manager[462618]: [INFO] imd:IMDSimulato  :: Module imd initialized [1747ms]
+2025-12-05T22:22:06.624689+0100 chargesom manager[462638]: [INFO] token_provider:  :: Module token_provider initialized [1754ms]
+2025-12-05T22:22:06.654230+0100 chargesom manager[462623]: [INFO] iso15118_charge  :: Module iso15118_charger initialized [1774ms]
+2025-12-05T22:22:06.681847+0100 chargesom manager[462642]: [INFO] token_validator  :: Module token_validator initialized [1788ms]
+2025-12-05T22:22:06.798193+0100 chargesom manager[462602]: [INFO] bsp:CbChargeSOM  :: Safety Controller Firmware: 0.2.5 (gde7345017c7932bc, Charge SOM, firmware)
+2025-12-05T22:22:06.798866+0100 chargesom manager[462602]: [INFO] bsp:CbChargeSOM  :: Module bsp initialized [2073ms]
+2025-12-05T22:22:06.799799+0100 chargesom manager[462580]: [INFO] manager          :: Clearing retained topics published by manager during startup
+2025-12-05T22:22:06.801778+0100 chargesom manager[462580]: [INFO] manager          :: 🚙🚙🚙 All modules are initialized. EVerest up and running [2296ms] 🚙🚙🚙
+2025-12-05T22:22:06.806894+0100 chargesom manager[462623]: [INFO] iso15118_charge  :: TCP server on eth1 is listening on port [fe80::201:87ff:fe00:3035%3]:61341
+2025-12-05T22:22:06.806894+0100 chargesom manager[462623]: [INFO] iso15118_charge  :: TLS server on eth1 is listening on port [fe80::201:87ff:fe00:3035%3]:64109
+2025-12-05T22:22:06.831466+0100 chargesom manager[462614]: [INFO] evse_slac:EvseS  :: Starting the SLAC state machine
+2025-12-05T22:22:06.852447+0100 chargesom manager[462612]: [INFO] evse_security:E  :: Requesting leaf certificate info: V2G
+2025-12-05T22:22:06.852821+0100 chargesom manager[462612]: [WARN] evse_security:E  :: Could not find any V2G leaf certificate key pair at path: "/etc/everest/certs/client/cso"
+2025-12-05T22:22:06.856825+0100 chargesom manager[462603]: [WARN] connector:EvseM  :: Evse with id 1: connector type invalid: Provided string IEC62196Type2CCS could not be converted to enum of type ConnectorTypeEnum
+2025-12-05T22:22:06.896895+0100 chargesom manager[462623]: [ERRO] iso15118_charge  :: Failed to read cert_info! Not Accepted
+2025-12-05T22:22:06.898383+0100 chargesom manager[462623]: [WARN] iso15118_charge  :: trusted_ca_keys support disabled
+2025-12-05T22:22:06.898741+0100 chargesom manager[462623]: [INFO] iso15118_charge  :: SDP socket setup succeeded
+root@chargesom:~# journalctl -fu everest                                                                                                      
+2025-12-05T22:25:39.579420+0100 chargesom manager[462637]: [INFO] powersupply_dc:  :: CAN error cleared: Success
+2025-12-05T22:25:45.164955+0100 chargesom manager[462637]: [ERRO] powersupply_dc: CanBus::open_device(const string&)::<lambda(auto:4, auto:5)> [with auto:4 = int; auto:5 = std::__cxx11::basic_string<char>] :: CAN error: 100 - Network is down
+2025-12-05T22:25:45.578121+0100 chargesom manager[462637]: [ERRO] powersupply_dc: CanBus::open_device(const string&)::<lambda(const event_list&)> :: CAN error detected, attempting recovery                                                                                                
+2025-12-05T22:25:45.578542+0100 chargesom manager[462637]: [ERRO] powersupply_dc: bool CanBus::_tx(uint32_t, const std::vector<unsigned char>&) :: CAN error detected, not sending frame
+2025-12-05T22:25:45.578542+0100 chargesom manager[462637]: [WARN] powersupply_dc: bool InfyCanDevice::send_command_impl(uint8_t, uint8_t, const std::vector<unsigned char>&, bool) :: Infy: CAN transmission failed for can_id: 0x828300F0                                                  
+2025-12-05T22:25:45.578542+0100 chargesom manager[462637]: [ERRO] powersupply_dc: bool CanBus::_tx(uint32_t, const std::vector<unsigned char>&) :: CAN error detected, not sending frame                                                                                                    
+2025-12-05T22:25:45.578542+0100 chargesom manager[462637]: [WARN] powersupply_dc: bool InfyCanDevice::send_command_impl(uint8_t, uint8_t, const std::vector<unsigned char>&, bool) :: Infy: CAN transmission failed for can_id: 0x828400F0                                                  
+2025-12-05T22:25:45.578542+0100 chargesom manager[462637]: [ERRO] powersupply_dc: bool CanBus::_tx(uint32_t, const std::vector<unsigned char>&) :: CAN error detected, not sending frame                                                                                                    
+2025-12-05T22:25:45.579324+0100 chargesom manager[462637]: [WARN] powersupply_dc: bool InfyCanDevice::send_command_impl(uint8_t, uint8_t, const std::vector<unsigned char>&, bool) :: Infy: CAN transmission failed for can_id: 0x828C00F0                                                  
+2025-12-05T22:25:45.579324+0100 chargesom manager[462637]: [INFO] powersupply_dc:  :: CAN error cleared: Success
+2025-12-05T22:26:06.971656+0100 chargesom systemd[1]: Stopping EVerest...
+2025-12-05T22:26:07.004055+0100 chargesom systemd[1]: everest.service: Deactivated successfully.
+2025-12-05T22:26:07.004969+0100 chargesom systemd[1]: Stopped EVerest.
+2025-12-05T22:26:07.020544+0100 chargesom systemd[1]: Starting EVerest...
+2025-12-05T22:26:07.026317+0100 chargesom sh[464295]: Starting to migrate EVerest configurations
+2025-12-05T22:26:07.044544+0100 chargesom sh[464295]: EVerest configurations migrated successfully
+2025-12-05T22:26:07.067515+0100 chargesom systemd[1]: Started EVerest.
+2025-12-05T22:26:07.091098+0100 chargesom manager[464300]: [INFO] manager          ::   ________      __                _
+2025-12-05T22:26:07.091098+0100 chargesom manager[464300]: [INFO] manager          ::  |  ____\ \    / /               | |
+2025-12-05T22:26:07.091098+0100 chargesom manager[464300]: [INFO] manager          ::  | |__   \ \  / /__ _ __ ___  ___| |_
+2025-12-05T22:26:07.091098+0100 chargesom manager[464300]: [INFO] manager          ::  |  __|   \ \/ / _ \ '__/ _ \/ __| __|
+2025-12-05T22:26:07.091098+0100 chargesom manager[464300]: [INFO] manager          ::  | |____   \  /  __/ | |  __/\__ \ |_
+2025-12-05T22:26:07.091098+0100 chargesom manager[464300]: [INFO] manager          ::  |______|   \/ \___|_|  \___||___/\__|
+2025-12-05T22:26:07.093497+0100 chargesom manager[464300]: [INFO] manager          ::
+2025-12-05T22:26:07.093497+0100 chargesom manager[464300]: [INFO] manager          :: everest-framework 0.23.0 main@v0.23.0
+2025-12-05T22:26:07.093497+0100 chargesom manager[464300]: [INFO] manager          :: everest-core 2025.8.0 feature/json-rpc-api-2025.8.0@2025.8.0-351-g14709eef-dirty
+2025-12-05T22:26:07.093497+0100 chargesom manager[464300]: [INFO] manager          ::
+2025-12-05T22:26:07.093497+0100 chargesom manager[464300]: [INFO] manager          :: Using MQTT broker localhost:1883
+2025-12-05T22:26:07.109247+0100 chargesom manager[464301]: [INFO] everest_ctrl     :: Launching controller service on port 8849
+2025-12-05T22:26:07.123496+0100 chargesom manager[464300]: [INFO] manager          :: Boot mode is set to YamlFile, loading module configs from YAML file
+2025-12-05T22:26:07.123916+0100 chargesom manager[464300]: [INFO] manager          :: Loading config file at: /etc/everest/config.yaml        
+2025-12-05T22:26:07.240575+0100 chargesom manager[464300]: [INFO] manager          :: Config loading completed in 145ms
+2025-12-05T22:26:07.243794+0100 chargesom manager[464300]: [INFO] manager          :: Starting 14 modules
+2025-12-05T22:26:09.008436+0100 chargesom manager[464323]: [INFO] bsp:CbChargeSOM  :: chargebyte's Charge SOM EVerest module (version: 0.24.0)
+2025-12-05T22:26:09.024493+0100 chargesom manager[464321]: [WARN] api:API          :: No evse energy sink configured for evse_id: 1. API module does therefore not allow control of amps or power limits for this EVSE
+2025-12-05T22:26:09.026535+0100 chargesom manager[464321]: [INFO] api:API          :: Module api initialized [1744ms]
+2025-12-05T22:26:09.057497+0100 chargesom manager[464326]: [INFO] energy_manager:  :: Module energy_manager initialized [1684ms]
+2025-12-05T22:26:09.069458+0100 chargesom manager[464324]: [INFO] connector:EvseM  :: Module connector initialized [1758ms]
+2025-12-05T22:26:09.083030+0100 chargesom manager[464322]: [INFO] auth:Auth        :: Module auth initialized [1747ms]
+2025-12-05T22:26:09.095601+0100 chargesom manager[464339]: [INFO] grid_connection  :: Module grid_connection_point initialized [1685ms]       
+2025-12-05T22:26:09.106797+0100 chargesom manager[464333]: [INFO] evse_security:E  :: Module evse_security initialized [1742ms]
+2025-12-05T22:26:09.116728+0100 chargesom manager[464329]: [INFO] error_history:E  :: Using database at "/tmp/error_history.db"
+2025-12-05T22:26:09.116728+0100 chargesom manager[464329]: [INFO] error_history:E  :: Checking database
+2025-12-05T22:26:09.121048+0100 chargesom manager[464329]: [INFO] error_history:E  :: Module error_history initialized [1742ms]
+2025-12-05T22:26:09.134899+0100 chargesom manager[464354]: [INFO] powersupply_dc:  :: Infy: Setting config values: CAN device: can0
+2025-12-05T22:26:09.134899+0100 chargesom manager[464354]: [INFO] powersupply_dc:  :: Infy: Operating with controller address: 0xf0
+2025-12-05T22:26:09.134899+0100 chargesom manager[464354]: [INFO] powersupply_dc:  :: Infy: Operating in FIXED_ADDRESS mode with 1 addresses: 0
+2025-12-05T22:26:09.134899+0100 chargesom manager[464354]: [INFO] powersupply_dc:  :: Infy: module communication timeout: 15s
+2025-12-05T22:26:09.134899+0100 chargesom manager[464354]: [INFO] powersupply_dc:  :: Infy: Operating in FIXED_ADDRESS mode. No need to ping. 
+2025-12-05T22:26:09.134899+0100 chargesom manager[464354]: [INFO] powersupply_dc:  :: Infy: switch_on_off(false) - active modules: 1
+2025-12-05T22:26:09.136692+0100 chargesom manager[464354]: [INFO] powersupply_dc:  :: Starting CAN RX thread
+2025-12-05T22:26:09.136692+0100 chargesom manager[464354]: [INFO] powersupply_dc:  :: CAN error cleared: Success
+2025-12-05T22:26:09.136692+0100 chargesom manager[464354]: [INFO] powersupply_dc:  :: Module powersupply_dc initialized [1669ms]
+2025-12-05T22:26:09.144985+0100 chargesom manager[464337]: [INFO] evse_slac:EvseS  :: Module evse_slac initialized [1753ms]
+2025-12-05T22:26:09.169309+0100 chargesom manager[464349]: [INFO] iso15118_charge  :: Module iso15118_charger initialized [1706ms]
+2025-12-05T22:26:09.173952+0100 chargesom manager[464343]: [INFO] imd:IMDSimulato  :: Module imd initialized [1759ms]
+2025-12-05T22:26:09.184613+0100 chargesom manager[464361]: [INFO] token_provider:  :: Module token_provider initialized [1708ms]
+2025-12-05T22:26:09.214141+0100 chargesom manager[464367]: [INFO] token_validator  :: Module token_validator initialized [1758ms]
+2025-12-05T22:26:09.383269+0100 chargesom manager[464323]: [INFO] bsp:CbChargeSOM  :: Safety Controller Firmware: 0.2.5 (gde7345017c7932bc, Charge SOM, firmware)
+2025-12-05T22:26:09.383919+0100 chargesom manager[464323]: [INFO] bsp:CbChargeSOM  :: Module bsp initialized [2063ms]
+2025-12-05T22:26:09.384695+0100 chargesom manager[464300]: [INFO] manager          :: Clearing retained topics published by manager during startup
+2025-12-05T22:26:09.385592+0100 chargesom manager[464300]: [INFO] manager          :: 🚙🚙🚙 All modules are initialized. EVerest up and running [2299ms] 🚙🚙🚙
+2025-12-05T22:26:09.392086+0100 chargesom manager[464349]: [INFO] iso15118_charge  :: TCP server on eth1 is listening on port [fe80::201:87ff:fe00:3035%3]:61341
+2025-12-05T22:26:09.392086+0100 chargesom manager[464349]: [INFO] iso15118_charge  :: TLS server on eth1 is listening on port [fe80::201:87ff:fe00:3035%3]:64109
+2025-12-05T22:26:09.407377+0100 chargesom manager[464337]: [INFO] evse_slac:EvseS  :: Starting the SLAC state machine
+2025-12-05T22:26:09.441348+0100 chargesom manager[464333]: [INFO] evse_security:E  :: Requesting leaf certificate info: V2G
+root@chargesom:~# journalctl -fu everest | tee cl1.txt    
+2025-12-05T22:26:10.145308+0100 chargesom manager[464354]: [INFO] powersupply_dc:  :: Infy[0x00]: serial number: SN_2818a396c70776_V
+2025-12-05T22:26:15.781376+0100 chargesom manager[464323]: [INFO] bsp:CbChargeSOM  :: handle_enable: Setting new duty cycle of 100.0%
+2025-12-05T22:26:15.914231+0100 chargesom manager[464323]: [INFO] bsp:CbChargeSOM  :: CP state change from PowerOn to A, PWM: 100.0%
+2025-12-05T22:26:15.959536+0100 chargesom manager[464323]: [INFO] bsp:CbChargeSOM  :: handle_pwm_off: Setting new duty cycle of 100.0%
+2025-12-05T22:26:16.015479+0100 chargesom manager[464323]: [INFO] bsp:CbChargeSOM  :: handle_allow_power_on: request to OPEN the contactor
+2025-12-05T22:26:16.063908+0100 chargesom manager[464323]: [INFO] bsp:CbChargeSOM  :: handle_pwm_off: Setting new duty cycle of 100.0%
+2025-12-05T22:26:16.107792+0100 chargesom manager[464324]: [INFO] connector:EvseM  :: All errors cleared
+2025-12-06T00:21:29.529028+0100 chargesom manager[464323]: [INFO] bsp:CbChargeSOM  :: CP state change from A to B, PWM: 100.0%
+2025-12-06T00:21:29.550399+0100 chargesom manager[464337]: [INFO] evse_slac:EvseS  :: Entered Matching state, waiting for CM_SLAC_PARM_REQ
+2025-12-06T00:21:29.626916+0100 chargesom manager[464323]: [INFO] bsp:CbChargeSOM  :: handle_allow_power_on: request to OPEN the contactor
+2025-12-06T00:21:29.712688+0100 chargesom manager[464324]: [INFO] connector:EvseM  :: SYS  Session logging started.
+2025-12-06T00:21:29.713777+0100 chargesom manager[464324]: [INFO] connector:EvseM  :: EVSE IEC Session Started: EVConnected
+2025-12-06T00:21:29.716088+0100 chargesom manager[464361]: [INFO] token_provider:  :: Publishing new dummy token: {
+2025-12-06T00:21:29.716088+0100 chargesom manager[464361]:     "authorization_type": "RFID",
+2025-12-06T00:21:29.716088+0100 chargesom manager[464361]:     "id_token": {
+2025-12-06T00:21:29.716088+0100 chargesom manager[464361]:         "type": "ISO14443",
+2025-12-06T00:21:29.716088+0100 chargesom manager[464361]:         "value": "[redacted] hash: 29F2679CA504908"
+2025-12-06T00:21:29.716088+0100 chargesom manager[464361]:     },
+2025-12-06T00:21:29.716088+0100 chargesom manager[464361]:     "parent_id_token": {
+2025-12-06T00:21:29.716088+0100 chargesom manager[464361]:         "type": "ISO14443",
+2025-12-06T00:21:29.716088+0100 chargesom manager[464361]:         "value": "[redacted] hash: 29F2679CA504908"
+2025-12-06T00:21:29.716088+0100 chargesom manager[464361]:     }
+2025-12-06T00:21:29.720784+0100 chargesom manager[464361]: }
+2025-12-06T00:21:29.720951+0100 chargesom manager[464322]: [INFO] auth:Auth        :: Plug In event for evse#1, starting auth
+2025-12-06T00:21:29.724597+0100 chargesom manager[464322]: [INFO] auth:Auth        :: Received new token: {
+2025-12-06T00:21:29.724597+0100 chargesom manager[464322]:     "authorization_type": "RFID",
+2025-12-06T00:21:29.724597+0100 chargesom manager[464322]:     "id_token": {
+2025-12-06T00:21:29.724597+0100 chargesom manager[464322]:         "type": "ISO14443",
+2025-12-06T00:21:29.724597+0100 chargesom manager[464322]:         "value": "[redacted] hash: 29F2679CA504908"
+2025-12-06T00:21:29.724597+0100 chargesom manager[464322]:     },
+2025-12-06T00:21:29.724597+0100 chargesom manager[464322]:     "parent_id_token": {
+2025-12-06T00:21:29.724597+0100 chargesom manager[464322]:         "type": "ISO14443",
+2025-12-06T00:21:29.724597+0100 chargesom manager[464322]:         "value": "[redacted] hash: 29F2679CA504908"
+2025-12-06T00:21:29.724597+0100 chargesom manager[464322]:     }
+2025-12-06T00:21:29.724597+0100 chargesom manager[464322]: }
+2025-12-06T00:21:29.768175+0100 chargesom manager[464367]: [INFO] token_validator  :: Got validation request for token: [redacted] hash: 29F2679CA504908
+2025-12-06T00:21:30.018587+0100 chargesom manager[464367]: [INFO] token_validator  :: Returning validation status: Accepted
+2025-12-06T00:21:30.022273+0100 chargesom manager[464322]: [INFO] auth:Auth        :: Providing authorization to evse#1
+2025-12-06T00:21:30.213935+0100 chargesom manager[464324]: [INFO] connector:EvseM  :: EVSE IEC Set PWM On (5.0%) took 0 ms
+2025-12-06T00:21:30.255972+0100 chargesom manager[464323]: [INFO] bsp:CbChargeSOM  :: handle_pwm_on: Setting new duty cycle of 5.0%
+2025-12-06T00:21:30.425268+0100 chargesom manager[464322]: [INFO] auth:Auth        :: Result for token: [redacted] hash: 29F2679CA504908: ACCEPTED
+2025-12-06T00:21:30.479915+0100 chargesom manager[464324]: [INFO] connector:EvseM  :: EVSE IEC EIM Authorization received
+2025-12-06T00:21:30.480388+0100 chargesom manager[464324]: [INFO] connector:EvseM  :: EVSE IEC Transaction Started (0 kWh)
+2025-12-06T00:21:30.481143+0100 chargesom manager[464324]: [INFO] connector:EvseM  :: EVSE IEC DC mode. We are in 5percent mode so we can continue without further action. 
+2025-12-06T00:21:30.483520+0100 chargesom manager[464324]: [INFO] connector:EvseM  :: EVSE IEC Charger state: Wait for Auth->PrepareCharging
+2025-12-06T00:22:09.537486+0100 chargesom manager[464337]: [INFO] evse_slac:EvseS  :: CM_SLAC_PARM_REQ timed out -> FAILED
+2025-12-06T00:22:09.538782+0100 chargesom manager[464337]: [INFO] evse_slac:EvseS  :: Resetting MatchingState. Waiting for the next CM_SLAC_PARAM.REQ message.
+2025-12-06T00:22:49.537713+0100 chargesom manager[464337]: [INFO] evse_slac:EvseS  :: CM_SLAC_PARM_REQ timed out -> FAILED
+2025-12-06T00:22:49.539611+0100 chargesom manager[464337]: [INFO] evse_slac:EvseS  :: Entered Failed state
+2025-12-06T00:22:49.539946+0100 chargesom manager[464324]: [INFO] connector:EvseM  :: Received request error routine from SLAC in evsemanager
+2025-12-06T00:22:49.579353+0100 chargesom manager[464337]: [INFO] evse_slac:EvseS  :: Entered Reset state
+2025-12-06T00:22:49.579957+0100 chargesom manager[464337]: [INFO] evse_slac:EvseS  :: New NMK key: 30:34:4E:50:4C:49:33:30:33:49:42:37:4E:35:55:42
+2025-12-06T00:22:49.581303+0100 chargesom manager[464337]: [INFO] evse_slac:EvseS  :: Received CM_SET_KEY_CNF
+2025-12-06T00:22:49.581661+0100 chargesom manager[464337]: [INFO] evse_slac:EvseS  :: Entered Idle state
+2025-12-06T00:22:49.596140+0100 chargesom manager[464324]: [INFO] connector:EvseM  :: EVSE ISO SLAC UNMATCHED
+2025-12-06T00:22:49.596140+0100 chargesom manager[464324]: [INFO] connector:EvseM  :: EVSE IEC Charger state: PrepareCharging->T_step_EF
+2025-12-06T00:22:49.596839+0100 chargesom manager[464324]: [INFO] connector:EvseM  :: EVSE IEC Enter T_step_EF
+2025-12-06T00:22:49.596839+0100 chargesom manager[464324]: [INFO] connector:EvseM  :: EVSE IEC Set PWM F
+2025-12-06T00:22:49.639825+0100 chargesom manager[464323]: [INFO] bsp:CbChargeSOM  :: handle_pwm_F: Generating CP state F
+2025-12-06T00:22:49.727190+0100 chargesom manager[464323]: [INFO] bsp:CbChargeSOM  :: CP state change from B to F, PWM: 0.0%
+2025-12-06T00:22:49.815673+0100 chargesom manager[464323]: [INFO] bsp:CbChargeSOM  :: handle_allow_power_on: request to OPEN the contactor
+2025-12-06T00:22:49.903979+0100 chargesom manager[464324]: [INFO] connector:EvseM  ::                                     CAR IEC Event BCDtoEF
+2025-12-06T00:22:53.632597+0100 chargesom manager[464324]: [INFO] connector:EvseM  :: EVSE IEC Pause in X1 for EV READY regulations
+2025-12-06T00:22:53.633816+0100 chargesom manager[464324]: [INFO] connector:EvseM  :: EVSE IEC Set PWM Off
+2025-12-06T00:22:53.675924+0100 chargesom manager[464323]: [INFO] bsp:CbChargeSOM  :: handle_pwm_off: Setting new duty cycle of 100.0%
+2025-12-06T00:22:53.760980+0100 chargesom manager[464323]: [INFO] bsp:CbChargeSOM  :: CP state change from F to B, PWM: 100.0%
+2025-12-06T00:22:53.803478+0100 chargesom manager[464323]: [INFO] bsp:CbChargeSOM  :: handle_allow_power_on: request to OPEN the contactor
+2025-12-06T00:22:53.818911+0100 chargesom manager[464324]: [INFO] connector:EvseM  ::                                     CAR IEC Event CarRequestedStopPower
+2025-12-06T00:22:53.863846+0100 chargesom manager[464337]: [INFO] evse_slac:EvseS  :: Entered Matching state, waiting for CM_SLAC_PARM_REQ
+2025-12-06T00:22:53.908365+0100 chargesom manager[464324]: [INFO] connector:EvseM  ::                                     CAR IEC Event EFtoBCD
+2025-12-06T00:22:53.908365+0100 chargesom manager[464324]: [INFO] connector:EvseM  :: EVSE ISO SLAC MATCHING
+2025-12-06T00:22:54.364291+0100 chargesom manager[464324]: [INFO] connector:EvseM  :: EVSE IEC Exit T_step_EF
+2025-12-06T00:22:54.364764+0100 chargesom manager[464324]: [INFO] connector:EvseM  :: EVSE IEC Set PWM On (5.0%) took 0 ms
+2025-12-06T00:22:54.366465+0100 chargesom manager[464323]: [INFO] bsp:CbChargeSOM  :: handle_pwm_on: Setting new duty cycle of 5.0%
+2025-12-06T00:22:54.421275+0100 chargesom manager[464324]: [INFO] connector:EvseM  :: EVSE IEC Charger state: T_step_EF->PrepareCharging
+2025-12-06T00:23:33.864012+0100 chargesom manager[464337]: [INFO] evse_slac:EvseS  :: CM_SLAC_PARM_REQ timed out -> FAILED
+2025-12-06T00:23:33.865290+0100 chargesom manager[464337]: [INFO] evse_slac:EvseS  :: Resetting MatchingState. Waiting for the next CM_SLAC_PARAM.REQ message.
+2025-12-06T00:24:13.864718+0100 chargesom manager[464337]: [INFO] evse_slac:EvseS  :: CM_SLAC_PARM_REQ timed out -> FAILED
+2025-12-06T00:24:13.864718+0100 chargesom manager[464337]: [INFO] evse_slac:EvseS  :: Entered Failed state
+2025-12-06T00:24:13.866639+0100 chargesom manager[464324]: [INFO] connector:EvseM  :: Received request error routine from SLAC in evsemanager
+2025-12-06T00:24:13.907472+0100 chargesom manager[464337]: [INFO] evse_slac:EvseS  :: Entered Reset state
+2025-12-06T00:24:13.907919+0100 chargesom manager[464337]: [INFO] evse_slac:EvseS  :: New NMK key: 44:41:49:37:44:43:47:37:50:52:37:34:35:42:52:5A
+2025-12-06T00:24:13.909439+0100 chargesom manager[464337]: [INFO] evse_slac:EvseS  :: Received CM_SET_KEY_CNF
+2025-12-06T00:24:13.909794+0100 chargesom manager[464337]: [INFO] evse_slac:EvseS  :: Entered Idle state
+2025-12-06T00:24:13.911800+0100 chargesom manager[464324]: [INFO] connector:EvseM  :: EVSE ISO SLAC UNMATCHED
+2025-12-06T00:24:13.912363+0100 chargesom manager[464324]: [INFO] connector:EvseM  :: EVSE IEC Charger state: PrepareCharging->T_step_EF
+2025-12-06T00:24:13.912685+0100 chargesom manager[464324]: [INFO] connector:EvseM  :: EVSE IEC Enter T_step_EF
+2025-12-06T00:24:13.912919+0100 chargesom manager[464324]: [INFO] connector:EvseM  :: EVSE IEC Set PWM F
+2025-12-06T00:24:13.955710+0100 chargesom manager[464323]: [INFO] bsp:CbChargeSOM  :: handle_pwm_F: Generating CP state F
+2025-12-06T00:24:14.017890+0100 chargesom manager[464323]: [INFO] bsp:CbChargeSOM  :: CP state change from B to F, PWM: 0.0%
+2025-12-06T00:24:14.059498+0100 chargesom manager[464323]: [INFO] bsp:CbChargeSOM  :: handle_allow_power_on: request to OPEN the contactor
+2025-12-06T00:24:14.103436+0100 chargesom manager[464323]: [INFO] bsp:CbChargeSOM  :: handle_allow_power_on: request to OPEN the contactor
+2025-12-06T00:24:14.108628+0100 chargesom manager[464324]: [INFO] connector:EvseM  ::                                     CAR IEC Event BCDtoEF
+2025-12-06T00:24:17.923271+0100 chargesom manager[464324]: [INFO] connector:EvseM  :: EVSE IEC Pause in X1 for EV READY regulations
+2025-12-06T00:24:17.924422+0100 chargesom manager[464324]: [INFO] connector:EvseM  :: EVSE IEC Set PWM Off
+2025-12-06T00:24:17.967816+0100 chargesom manager[464323]: [INFO] bsp:CbChargeSOM  :: handle_pwm_off: Setting new duty cycle of 100.0%
+2025-12-06T00:24:18.121985+0100 chargesom manager[464323]: [INFO] bsp:CbChargeSOM  :: CP state change from F to B, PWM: 100.0%
+2025-12-06T00:24:18.187624+0100 chargesom manager[464323]: [INFO] bsp:CbChargeSOM  :: handle_allow_power_on: request to OPEN the contactor
+2025-12-06T00:24:18.564903+0100 chargesom manager[464324]: [INFO] connector:EvseM  ::                                     CAR IEC Event CarRequestedStopPower
+2025-12-06T00:24:18.566509+0100 chargesom manager[464337]: [INFO] evse_slac:EvseS  :: Entered Matching state, waiting for CM_SLAC_PARM_REQ
+2025-12-06T00:24:18.607615+0100 chargesom manager[464324]: [INFO] connector:EvseM  :: EVSE ISO SLAC MATCHING
+2025-12-06T00:24:18.608214+0100 chargesom manager[464324]: [INFO] connector:EvseM  ::                                     CAR IEC Event EFtoBCD
+2025-12-06T00:24:18.724752+0100 chargesom manager[464324]: [INFO] connector:EvseM  :: EVSE IEC Exit T_step_EF
+2025-12-06T00:24:18.725131+0100 chargesom manager[464324]: [INFO] connector:EvseM  :: EVSE IEC Set PWM On (5.0%) took 0 ms
+2025-12-06T00:24:18.726767+0100 chargesom manager[464323]: [INFO] bsp:CbChargeSOM  :: handle_pwm_on: Setting new duty cycle of 5.0%
+2025-12-06T00:24:18.856142+0100 chargesom manager[464324]: [INFO] connector:EvseM  :: EVSE IEC Charger state: T_step_EF->PrepareCharging

@@ -1,0 +1,597 @@
+2025-12-16T18:59:02.124464+0100 chargesom manager[870930]: [INFO] connector:EvseM  :: SYS  Session logging stopped.
+2025-12-16T18:59:02.214951+0100 chargesom manager[870926]: [INFO] bsp:CbChargeSOM  :: handle_pwm_off: Setting new duty cycle of 100.0%
+2025-12-16T18:59:16.397733+0100 chargesom manager[870955]: [INFO] powersupply_dc:  :: Infy[0xFF]: communication fault cleared
+2025-12-16T18:59:16.399305+0100 chargesom manager[870955]: [INFO] powersupply_dc:  :: Cleared error of type power_supply_DC/CommunicationFault with sub_type
+2025-12-16T18:59:31.397698+0100 chargesom manager[870955]: [WARN] powersupply_dc: size_t InfyCanDevice::remove_expired_telemetry_entries() :: Infy[0x00]: module communication expired (timeout: 15s). Removing from active modules.
+2025-12-16T18:59:31.416328+0100 chargesom manager[870955]: [INFO] powersupply_dc:  :: Infy: Communication fault detected - all 1 modules unresponsive, forcing system OFF for safety
+2025-12-16T18:59:31.416328+0100 chargesom manager[870955]: [ERRO] powersupply_dc: module::main::power_supply_DCImpl::init()::<lambda(uint8_t, InfyCanDevice::Error, bool)> :: Infy[0xFF]: communication fault detected
+2025-12-16T18:59:31.416328+0100 chargesom manager[870955]: [ERRO] powersupply_dc:  :: Error raised, type: power_supply_DC/CommunicationFault, sub_type: , message: Infy[0xFF]: communication fault detected
+2025-12-16T18:59:31.416328+0100 chargesom manager[870955]: [INFO] powersupply_dc:  :: Infy: Removed 1 expired modules. Active modules remaining: 0
+2025-12-16T18:59:31.416328+0100 chargesom manager[870955]: [INFO] powersupply_dc:  :: Infy: No telemetries received, setting default capabilities
+2025-12-16T19:02:45.819613+0100 chargesom systemd[1]: Stopping EVerest...
+2025-12-16T19:02:45.848395+0100 chargesom systemd[1]: everest.service: Deactivated successfully.
+2025-12-16T19:02:45.850954+0100 chargesom systemd[1]: Stopped EVerest.
+2025-12-16T19:02:45.874926+0100 chargesom systemd[1]: Starting EVerest...
+2025-12-16T19:02:45.878774+0100 chargesom sh[874404]: Starting to migrate EVerest configurations
+2025-12-16T19:02:45.896470+0100 chargesom sh[874404]: EVerest configurations migrated successfully
+2025-12-16T19:02:45.899783+0100 chargesom systemd[1]: Started EVerest.
+2025-12-16T19:02:45.926736+0100 chargesom manager[874409]: [INFO] manager          ::   ________      __                _
+2025-12-16T19:02:45.926736+0100 chargesom manager[874409]: [INFO] manager          ::  |  ____\ \    / /               | |
+2025-12-16T19:02:45.926736+0100 chargesom manager[874409]: [INFO] manager          ::  | |__   \ \  / /__ _ __ ___  ___| |_
+2025-12-16T19:02:45.926736+0100 chargesom manager[874409]: [INFO] manager          ::  |  __|   \ \/ / _ \ '__/ _ \/ __| __|
+2025-12-16T19:02:45.926736+0100 chargesom manager[874409]: [INFO] manager          ::  | |____   \  /  __/ | |  __/\__ \ |_
+2025-12-16T19:02:45.926736+0100 chargesom manager[874409]: [INFO] manager          ::  |______|   \/ \___|_|  \___||___/\__|
+2025-12-16T19:02:45.926736+0100 chargesom manager[874409]: [INFO] manager          ::
+2025-12-16T19:02:45.932724+0100 chargesom manager[874409]: [INFO] manager          :: everest-framework 0.23.0 main@v0.23.0
+2025-12-16T19:02:45.932724+0100 chargesom manager[874409]: [INFO] manager          :: everest-core 2025.8.0 feature/json-rpc-api-2025.8.0@2025.8.0-351-g14709eef-dirty
+2025-12-16T19:02:45.932724+0100 chargesom manager[874409]: [INFO] manager          ::
+2025-12-16T19:02:45.932724+0100 chargesom manager[874409]: [INFO] manager          :: Using MQTT broker localhost:1883
+2025-12-16T19:02:45.942394+0100 chargesom manager[874410]: [INFO] everest_ctrl     :: Launching controller service on port 8849
+2025-12-16T19:02:45.959601+0100 chargesom manager[874409]: [INFO] manager          :: Boot mode is set to YamlFile, loading module configs from YAML file
+2025-12-16T19:02:45.959956+0100 chargesom manager[874409]: [INFO] manager          :: Loading config file at: /etc/everest/config.yaml
+2025-12-16T19:02:46.076785+0100 chargesom manager[874409]: [INFO] manager          :: Config loading completed in 147ms
+2025-12-16T19:02:46.080717+0100 chargesom manager[874409]: [INFO] manager          :: Starting 14 modules
+2025-12-16T19:02:47.819441+0100 chargesom manager[874431]: [INFO] bsp:CbChargeSOM  :: chargebyte's Charge SOM EVerest module (version: 0.24.0)
+2025-12-16T19:02:47.844271+0100 chargesom manager[874430]: [INFO] auth:Auth        :: Module auth initialized [1699ms]
+2025-12-16T19:02:47.875942+0100 chargesom manager[874429]: [WARN] api:API          :: No evse energy sink configured for evse_id: 1. API module does therefore not allow control of amps or power limits for this EVSE
+2025-12-16T19:02:47.877733+0100 chargesom manager[874429]: [INFO] api:API          :: Module api initialized [1757ms]
+2025-12-16T19:02:47.904669+0100 chargesom manager[874435]: [INFO] error_history:E  :: Using database at "/tmp/error_history.db"
+2025-12-16T19:02:47.904669+0100 chargesom manager[874435]: [INFO] error_history:E  :: Checking database
+2025-12-16T19:02:47.914498+0100 chargesom manager[874433]: [INFO] energy_manager:  :: Module energy_manager initialized [1734ms]
+2025-12-16T19:02:47.922925+0100 chargesom manager[874435]: [INFO] error_history:E  :: Module error_history initialized [1755ms]
+2025-12-16T19:02:47.923346+0100 chargesom manager[874456]: [INFO] imd:IMDSimulato  :: Module imd initialized [1691ms]
+2025-12-16T19:02:47.960760+0100 chargesom manager[874446]: [INFO] grid_connection  :: Module grid_connection_point initialized [1700ms]
+2025-12-16T19:02:47.967222+0100 chargesom manager[874457]: [INFO] iso15118_charge  :: Module iso15118_charger initialized [1678ms]
+2025-12-16T19:02:47.969959+0100 chargesom manager[874442]: [INFO] evse_slac:EvseS  :: Module evse_slac initialized [1753ms]
+2025-12-16T19:02:47.977078+0100 chargesom manager[874439]: [INFO] evse_security:E  :: Module evse_security initialized [1761ms]
+2025-12-16T19:02:47.994136+0100 chargesom manager[874432]: [INFO] connector:EvseM  :: Module connector initialized [1807ms]
+2025-12-16T19:02:48.016256+0100 chargesom manager[874475]: [INFO] token_validator  :: Module token_validator initialized [1712ms]
+2025-12-16T19:02:48.021804+0100 chargesom manager[874462]: [INFO] powersupply_dc:  :: Infy: Setting config values: CAN device: can0
+2025-12-16T19:02:48.022858+0100 chargesom manager[874462]: [INFO] powersupply_dc:  :: Infy: Operating with controller address: 0xf0
+2025-12-16T19:02:48.022858+0100 chargesom manager[874462]: [INFO] powersupply_dc:  :: Infy: Operating in FIXED_ADDRESS mode with 1 addresses: 0
+2025-12-16T19:02:48.022858+0100 chargesom manager[874462]: [INFO] powersupply_dc:  :: Infy: module communication timeout: 15s
+2025-12-16T19:02:48.022858+0100 chargesom manager[874462]: [INFO] powersupply_dc:  :: Infy: Operating in FIXED_ADDRESS mode. No need to ping.
+2025-12-16T19:02:48.022858+0100 chargesom manager[874462]: [INFO] powersupply_dc:  :: Infy: switch_on_off(false) - active modules: 1
+2025-12-16T19:02:48.023619+0100 chargesom manager[874462]: [INFO] powersupply_dc:  :: Starting CAN RX thread
+2025-12-16T19:02:48.023619+0100 chargesom manager[874462]: [INFO] powersupply_dc:  :: CAN error cleared: Success
+2025-12-16T19:02:48.023619+0100 chargesom manager[874462]: [INFO] powersupply_dc:  :: Module powersupply_dc initialized [1749ms]
+2025-12-16T19:02:48.054204+0100 chargesom manager[874468]: [INFO] token_provider:  :: Module token_provider initialized [1753ms]
+2025-12-16T19:02:48.172604+0100 chargesom manager[874431]: [INFO] bsp:CbChargeSOM  :: Safety Controller Firmware: 0.2.5 (gde7345017c7932bc, Charge SOM, firmware)
+2025-12-16T19:02:48.172604+0100 chargesom manager[874431]: [INFO] bsp:CbChargeSOM  :: Module bsp initialized [2036ms]
+2025-12-16T19:02:48.182681+0100 chargesom manager[874409]: [INFO] manager          :: Clearing retained topics published by manager during startup
+2025-12-16T19:02:48.182681+0100 chargesom manager[874409]: [INFO] manager          :: 🚙🚙🚙 All modules are initialized. EVerest up and running [2253ms] 🚙🚙🚙
+2025-12-16T19:02:48.186007+0100 chargesom manager[874457]: [INFO] iso15118_charge  :: TCP server on eth1 is listening on port [fe80::201:87ff:fe00:3035%3]:61341
+2025-12-16T19:02:48.186007+0100 chargesom manager[874457]: [INFO] iso15118_charge  :: SDP socket setup succeeded
+2025-12-16T19:02:48.201117+0100 chargesom manager[874442]: [INFO] evse_slac:EvseS  :: Starting the SLAC state machine
+2025-12-16T19:02:48.358038+0100 chargesom manager[874430]: [WARN] auth:Auth        :: Can not load reservations because no storage was configured.
+2025-12-16T19:02:48.401498+0100 chargesom manager[874442]: [INFO] evse_slac:EvseS  :: Entered Reset state
+2025-12-16T19:02:48.401908+0100 chargesom manager[874442]: [INFO] evse_slac:EvseS  :: New NMK key: 31:30:38:57:57:43:54:53:45:54:4B:46:36:4E:32:4C
+2025-12-16T19:02:48.403069+0100 chargesom manager[874442]: [INFO] evse_slac:EvseS  :: Received CM_SET_KEY_CNF
+2025-12-16T19:02:48.403644+0100 chargesom manager[874442]: [INFO] evse_slac:EvseS  :: Entered Idle state
+2025-12-16T19:02:49.032897+0100 chargesom manager[874462]: [INFO] powersupply_dc:  :: Infy[0x00]: capabilities: 1000V / 50V, 102A, power 30000W
+2025-12-16T19:02:49.034157+0100 chargesom manager[874462]: [INFO] powersupply_dc:  :: Infy: Capabilities updated: 1000V / 50V, 102A, power 30000W
+2025-12-16T19:02:49.034157+0100 chargesom manager[874462]: [INFO] powersupply_dc:  :: Infy: Hot plug detected - module count increased from 0 to 1 modules, redistributing 0A from 0 to 1 modules
+2025-12-16T19:02:49.034157+0100 chargesom manager[874462]: [INFO] powersupply_dc:  :: Infy: Restoring last settings: voltage=0V, current=0A, mode=Off, phase=CableCheck
+2025-12-16T19:02:49.034157+0100 chargesom manager[874462]: [INFO] powersupply_dc:  :: Infy: Updating voltage/current via CAN: 50V / 1A total → 1A per module - active modules: 1
+2025-12-16T19:02:49.034157+0100 chargesom manager[874462]: [INFO] powersupply_dc:  :: Infy: set_voltage_current(50V, 1A) - active modules: 1
+2025-12-16T19:02:49.034157+0100 chargesom manager[874462]: [INFO] powersupply_dc:  :: Set mode via CAN: Off with phase CableCheck
+2025-12-16T19:02:49.034157+0100 chargesom manager[874462]: [INFO] powersupply_dc:  :: Infy: switch_on_off(false) - active modules: 1
+2025-12-16T19:02:49.035213+0100 chargesom manager[874462]: [INFO] powersupply_dc:  :: Infy[0x00]: serial number: SN_2818a396c70776_V
+2025-12-16T19:02:49.126438+0100 chargesom manager[874457]: [WARN] iso15118_charge  :: Physical value out of scope. Ignore value
+2025-12-16T19:02:53.861038+0100 chargesom manager[874432]: [INFO] connector:EvseM  :: Cleaning up any other transaction on start up
+2025-12-16T19:02:53.964144+0100 chargesom manager[874432]: [INFO] connector:EvseM  :: 🌀🌀🌀 Ready to start charging 🌀🌀🌀
+2025-12-16T19:02:53.964144+0100 chargesom manager[874432]: [WARN] connector:EvseM void module::EvseManager::ready_to_start_charging() :: No powermeter value received yet!
+2025-12-16T19:02:54.271392+0100 chargesom manager[874431]: [INFO] bsp:CbChargeSOM  :: handle_enable: Setting new duty cycle of 100.0%
+2025-12-16T19:02:54.395755+0100 chargesom manager[874431]: [INFO] bsp:CbChargeSOM  :: CP state change from PowerOn to A, PWM: 100.0%
+2025-12-16T19:02:54.437112+0100 chargesom manager[874431]: [INFO] bsp:CbChargeSOM  :: handle_pwm_off: Setting new duty cycle of 100.0%
+2025-12-16T19:02:54.505157+0100 chargesom manager[874431]: [INFO] bsp:CbChargeSOM  :: handle_allow_power_on: request to OPEN the contactor
+2025-12-16T19:02:54.549252+0100 chargesom manager[874431]: [INFO] bsp:CbChargeSOM  :: handle_pwm_off: Setting new duty cycle of 100.0%
+2025-12-16T19:02:54.589451+0100 chargesom manager[874432]: [INFO] connector:EvseM  :: All errors cleared
+2025-12-16T19:03:07.061227+0100 chargesom manager[874431]: [INFO] bsp:CbChargeSOM  :: CP state change from A to B, PWM: 100.0%
+2025-12-16T19:03:07.105782+0100 chargesom manager[874442]: [INFO] evse_slac:EvseS  :: Entered Matching state, waiting for CM_SLAC_PARM_REQ
+2025-12-16T19:03:07.194248+0100 chargesom manager[874431]: [INFO] bsp:CbChargeSOM  :: handle_allow_power_on: request to OPEN the contactor
+2025-12-16T19:03:07.326664+0100 chargesom manager[874432]: [INFO] connector:EvseM  :: SYS  Session logging started.
+2025-12-16T19:03:07.328987+0100 chargesom manager[874432]: [INFO] connector:EvseM  :: EVSE IEC Session Started: EVConnected
+2025-12-16T19:03:07.331887+0100 chargesom manager[874468]: [INFO] token_provider:  :: Publishing new dummy token: {
+2025-12-16T19:03:07.331887+0100 chargesom manager[874468]:     "authorization_type": "RFID",
+2025-12-16T19:03:07.331887+0100 chargesom manager[874468]:     "id_token": {
+2025-12-16T19:03:07.331887+0100 chargesom manager[874468]:         "type": "ISO14443",
+2025-12-16T19:03:07.331887+0100 chargesom manager[874468]:         "value": "[redacted] hash: 29F2679CA504908"
+2025-12-16T19:03:07.331887+0100 chargesom manager[874468]:     },
+2025-12-16T19:03:07.331887+0100 chargesom manager[874468]:     "parent_id_token": {
+2025-12-16T19:03:07.331887+0100 chargesom manager[874468]:         "type": "ISO14443",
+2025-12-16T19:03:07.331887+0100 chargesom manager[874468]:         "value": "[redacted] hash: 29F2679CA504908"
+2025-12-16T19:03:07.331887+0100 chargesom manager[874468]:     }
+2025-12-16T19:03:07.331887+0100 chargesom manager[874468]: }
+2025-12-16T19:03:07.333948+0100 chargesom manager[874430]: [INFO] auth:Auth        :: Plug In event for evse#1, starting auth
+2025-12-16T19:03:07.339346+0100 chargesom manager[874430]: [INFO] auth:Auth        :: Received new token: {
+2025-12-16T19:03:07.339346+0100 chargesom manager[874430]:     "authorization_type": "RFID",
+2025-12-16T19:03:07.339346+0100 chargesom manager[874430]:     "id_token": {
+2025-12-16T19:03:07.339346+0100 chargesom manager[874430]:         "type": "ISO14443",
+2025-12-16T19:03:07.339346+0100 chargesom manager[874430]:         "value": "[redacted] hash: 29F2679CA504908"
+2025-12-16T19:03:07.339346+0100 chargesom manager[874430]:     },
+2025-12-16T19:03:07.339346+0100 chargesom manager[874430]:     "parent_id_token": {
+2025-12-16T19:03:07.339346+0100 chargesom manager[874430]:         "type": "ISO14443",
+2025-12-16T19:03:07.339346+0100 chargesom manager[874430]:         "value": "[redacted] hash: 29F2679CA504908"
+2025-12-16T19:03:07.339346+0100 chargesom manager[874430]:     }
+2025-12-16T19:03:07.339346+0100 chargesom manager[874430]: }
+2025-12-16T19:03:07.381849+0100 chargesom manager[874475]: [INFO] token_validator  :: Got validation request for token: [redacted] hash: 29F2679CA504908
+2025-12-16T19:03:07.632243+0100 chargesom manager[874475]: [INFO] token_validator  :: Returning validation status: Accepted
+2025-12-16T19:03:07.635151+0100 chargesom manager[874430]: [INFO] auth:Auth        :: Providing authorization to evse#1
+2025-12-16T19:03:07.830775+0100 chargesom manager[874432]: [INFO] connector:EvseM  :: EVSE IEC Set PWM On (5.0%) took 0 ms
+2025-12-16T19:03:07.873726+0100 chargesom manager[874431]: [INFO] bsp:CbChargeSOM  :: handle_pwm_on: Setting new duty cycle of 5.0%
+2025-12-16T19:03:07.977169+0100 chargesom manager[874430]: [INFO] auth:Auth        :: Result for token: [redacted] hash: 29F2679CA504908: ACCEPTED
+2025-12-16T19:03:08.031758+0100 chargesom manager[874432]: [INFO] connector:EvseM  :: EVSE IEC EIM Authorization received
+2025-12-16T19:03:08.032487+0100 chargesom manager[874432]: [INFO] connector:EvseM  :: EVSE IEC Transaction Started (0 kWh)
+2025-12-16T19:03:08.034127+0100 chargesom manager[874432]: [INFO] connector:EvseM  :: EVSE IEC DC mode. We are in 5percent mode so we can continue without further action.
+2025-12-16T19:03:08.034542+0100 chargesom manager[874432]: [INFO] connector:EvseM  :: EVSE IEC Charger state: Wait for Auth->PrepareCharging
+2025-12-16T19:03:13.905056+0100 chargesom manager[874442]: [INFO] evse_slac:EvseS  :: Session (run_id=00A4267DBEB5A441, ev_mac=F0:7F:0C:11:12:F1): initialized, waiting for CM_START_ATTEN_CHAR_IND
+2025-12-16T19:03:14.142884+0100 chargesom manager[874442]: [INFO] evse_slac:EvseS  :: Session (run_id=00A4267DBEB5A441, ev_mac=F0:7F:0C:11:12:F1): received CM_START_ATTEN_CHAR_IND, going to substate SOUNDING
+2025-12-16T19:03:14.183193+0100 chargesom manager[874442]: [INFO] evse_slac:EvseS  :: Session (run_id=00A4267DBEB5A441, ev_mac=F0:7F:0C:11:12:F1): needs to be in state WAIT_FOR_START_ATTEN_CHAR for CM_START_ATTEN_CHAR_IND
+2025-12-16T19:03:14.222946+0100 chargesom manager[874442]: [INFO] evse_slac:EvseS  :: Session (run_id=00A4267DBEB5A441, ev_mac=F0:7F:0C:11:12:F1): needs to be in state WAIT_FOR_START_ATTEN_CHAR for CM_START_ATTEN_CHAR_IND
+2025-12-16T19:03:14.262882+0100 chargesom manager[874442]: [INFO] evse_slac:EvseS  :: Session (run_id=00A4267DBEB5A441, ev_mac=F0:7F:0C:11:12:F1): received CM_MNBC_SOUND_IND
+2025-12-16T19:03:14.270414+0100 chargesom manager[874442]: [INFO] evse_slac:EvseS  :: Session (run_id=00A4267DBEB5A441, ev_mac=F0:7F:0C:11:12:F1): received CM_ATTEN_PROFILE_IND
+2025-12-16T19:03:14.302965+0100 chargesom manager[874442]: [INFO] evse_slac:EvseS  :: Session (run_id=00A4267DBEB5A441, ev_mac=F0:7F:0C:11:12:F1): received CM_MNBC_SOUND_IND
+2025-12-16T19:03:14.310563+0100 chargesom manager[874442]: [INFO] evse_slac:EvseS  :: Session (run_id=00A4267DBEB5A441, ev_mac=F0:7F:0C:11:12:F1): received CM_ATTEN_PROFILE_IND
+2025-12-16T19:03:14.342854+0100 chargesom manager[874442]: [INFO] evse_slac:EvseS  :: Session (run_id=00A4267DBEB5A441, ev_mac=F0:7F:0C:11:12:F1): received CM_MNBC_SOUND_IND
+2025-12-16T19:03:14.350507+0100 chargesom manager[874442]: [INFO] evse_slac:EvseS  :: Session (run_id=00A4267DBEB5A441, ev_mac=F0:7F:0C:11:12:F1): received CM_ATTEN_PROFILE_IND
+2025-12-16T19:03:14.383010+0100 chargesom manager[874442]: [INFO] evse_slac:EvseS  :: Session (run_id=00A4267DBEB5A441, ev_mac=F0:7F:0C:11:12:F1): received CM_MNBC_SOUND_IND
+2025-12-16T19:03:14.390705+0100 chargesom manager[874442]: [INFO] evse_slac:EvseS  :: Session (run_id=00A4267DBEB5A441, ev_mac=F0:7F:0C:11:12:F1): received CM_ATTEN_PROFILE_IND
+2025-12-16T19:03:14.422942+0100 chargesom manager[874442]: [INFO] evse_slac:EvseS  :: Session (run_id=00A4267DBEB5A441, ev_mac=F0:7F:0C:11:12:F1): received CM_MNBC_SOUND_IND
+2025-12-16T19:03:14.430497+0100 chargesom manager[874442]: [INFO] evse_slac:EvseS  :: Session (run_id=00A4267DBEB5A441, ev_mac=F0:7F:0C:11:12:F1): received CM_ATTEN_PROFILE_IND
+2025-12-16T19:03:14.463006+0100 chargesom manager[874442]: [INFO] evse_slac:EvseS  :: Session (run_id=00A4267DBEB5A441, ev_mac=F0:7F:0C:11:12:F1): received CM_MNBC_SOUND_IND
+2025-12-16T19:03:14.470616+0100 chargesom manager[874442]: [INFO] evse_slac:EvseS  :: Session (run_id=00A4267DBEB5A441, ev_mac=F0:7F:0C:11:12:F1): received CM_ATTEN_PROFILE_IND
+2025-12-16T19:03:14.503023+0100 chargesom manager[874442]: [INFO] evse_slac:EvseS  :: Session (run_id=00A4267DBEB5A441, ev_mac=F0:7F:0C:11:12:F1): received CM_MNBC_SOUND_IND
+2025-12-16T19:03:14.510597+0100 chargesom manager[874442]: [INFO] evse_slac:EvseS  :: Session (run_id=00A4267DBEB5A441, ev_mac=F0:7F:0C:11:12:F1): received CM_ATTEN_PROFILE_IND
+2025-12-16T19:03:14.542849+0100 chargesom manager[874442]: [INFO] evse_slac:EvseS  :: Session (run_id=00A4267DBEB5A441, ev_mac=F0:7F:0C:11:12:F1): received CM_MNBC_SOUND_IND
+2025-12-16T19:03:14.550569+0100 chargesom manager[874442]: [INFO] evse_slac:EvseS  :: Session (run_id=00A4267DBEB5A441, ev_mac=F0:7F:0C:11:12:F1): received CM_ATTEN_PROFILE_IND
+2025-12-16T19:03:14.582835+0100 chargesom manager[874442]: [INFO] evse_slac:EvseS  :: Session (run_id=00A4267DBEB5A441, ev_mac=F0:7F:0C:11:12:F1): received CM_MNBC_SOUND_IND
+2025-12-16T19:03:14.590523+0100 chargesom manager[874442]: [INFO] evse_slac:EvseS  :: Session (run_id=00A4267DBEB5A441, ev_mac=F0:7F:0C:11:12:F1): received CM_ATTEN_PROFILE_IND
+2025-12-16T19:03:14.622796+0100 chargesom manager[874442]: [INFO] evse_slac:EvseS  :: Session (run_id=00A4267DBEB5A441, ev_mac=F0:7F:0C:11:12:F1): received CM_MNBC_SOUND_IND
+2025-12-16T19:03:14.630356+0100 chargesom manager[874442]: [INFO] evse_slac:EvseS  :: Session (run_id=00A4267DBEB5A441, ev_mac=F0:7F:0C:11:12:F1): received CM_ATTEN_PROFILE_IND
+2025-12-16T19:03:14.630731+0100 chargesom manager[874442]: [INFO] evse_slac:EvseS  :: Session (run_id=00A4267DBEB5A441, ev_mac=F0:7F:0C:11:12:F1): received all sounds, going to substate FINALIZE_SOUNDING
+2025-12-16T19:03:14.674699+0100 chargesom manager[874442]: [INFO] evse_slac:EvseS  :: Session (run_id=00A4267DBEB5A441, ev_mac=F0:7F:0C:11:12:F1): Finalize sounding, sending CM_ATTEN_CHAR_IND
+2025-12-16T19:03:14.680904+0100 chargesom manager[874442]: [INFO] evse_slac:EvseS  :: Session (run_id=00A4267DBEB5A441, ev_mac=F0:7F:0C:11:12:F1): received CM_ATTEN_CHAR_RSP, going to substate WAIT_FOR_SLAC_MATCH
+2025-12-16T19:03:15.352933+0100 chargesom manager[874442]: [INFO] evse_slac:EvseS  :: Session (run_id=00A4267DBEB5A441, ev_mac=F0:7F:0C:11:12:F1): Received CM_SLAC_MATCH_REQ, sending CM_SLAC_MATCH_CNF -> session complete
+2025-12-16T19:03:15.354166+0100 chargesom manager[874442]: [INFO] evse_slac:EvseS  :: Entered Matched state
+2025-12-16T19:03:15.355372+0100 chargesom manager[874432]: [INFO] connector:EvseM  :: EVSE ISO SLAC MATCHED
+2025-12-16T19:03:15.397318+0100 chargesom manager[874432]: [INFO] connector:EvseM  :: EVSE ISO D-LINK_READY (true)
+2025-12-16T19:03:17.942837+0100 chargesom manager[874457]: [INFO] iso15118_charge  :: Received packet from [fe80::f27f:cff:fe11:12f1]:49152 with security 0x10 and protocol 0x00
+2025-12-16T19:03:17.942837+0100 chargesom manager[874457]: [INFO] iso15118_charge  :: SDP requested NO-TLS, announcing NO-TLS
+2025-12-16T19:03:17.942837+0100 chargesom manager[874457]: [INFO] iso15118_charge  :: sendto([fe80::f27f:cff:fe11:12f1]:49152) succeeded
+2025-12-16T19:03:18.012923+0100 chargesom manager[874457]: [INFO] iso15118_charge  :: Incoming connection on eth1 from [a00:c000:0:0:fe80::]:49152
+2025-12-16T19:03:18.013440+0100 chargesom manager[874457]: [INFO] iso15118_charge  :: Started new TCP connection thread
+2025-12-16T19:03:18.043572+0100 chargesom manager[874457]: [INFO] iso15118_charge  :: Handling SupportedAppProtocolReq
+2025-12-16T19:03:18.044730+0100 chargesom manager[874457]: [INFO] iso15118_charge  :: Protocol negotiation was successful. Selected protocol is ISO15118
+2025-12-16T19:03:18.065522+0100 chargesom manager[874432]: [INFO] connector:EvseM  ::                                     CAR ISO V2G SupportedAppProtocolReq
+2025-12-16T19:03:18.083162+0100 chargesom manager[874457]: [INFO] iso15118_charge  :: SessionSetupReq.EVCCID: F0:7F:0C:11:12:F1
+2025-12-16T19:03:18.083451+0100 chargesom manager[874457]: [INFO] iso15118_charge  :: No session_id found or not equal to the id from the preceding v2g session. Generating random session id.
+2025-12-16T19:03:18.083451+0100 chargesom manager[874457]: [INFO] iso15118_charge  :: Created new session with id 0x17757125689053119042
+2025-12-16T19:03:18.090223+0100 chargesom manager[874432]: [INFO] connector:EvseM  :: EVSE ISO V2G SupportedAppProtocolRes
+2025-12-16T19:03:18.134100+0100 chargesom manager[874432]: [INFO] connector:EvseM  ::                                     CAR ISO V2G SessionSetupReq
+2025-12-16T19:03:18.221715+0100 chargesom manager[874432]: [INFO] connector:EvseM  :: EVSE ISO V2G SessionSetupRes
+2025-12-16T19:03:18.224215+0100 chargesom manager[874457]: [WARN] iso15118_charge  :: PnC is not allowed without TLS-communication. Correcting value to '1' (ExternalPayment)
+2025-12-16T19:03:18.227527+0100 chargesom manager[874432]: [INFO] connector:EvseM  ::                                     CAR ISO V2G ServiceDiscoveryReq
+2025-12-16T19:03:18.324066+0100 chargesom manager[874432]: [INFO] connector:EvseM  :: EVSE ISO V2G ServiceDiscoveryRes
+2025-12-16T19:03:18.363171+0100 chargesom manager[874457]: [INFO] iso15118_charge  :: SelectedPaymentOption: ExternalPayment
+2025-12-16T19:03:18.364728+0100 chargesom manager[874432]: [INFO] connector:EvseM  ::                                     CAR ISO V2G PaymentServiceSelectionReq
+2025-12-16T19:03:18.461892+0100 chargesom manager[874432]: [INFO] connector:EvseM  :: EVSE ISO V2G PaymentServiceSelectionRes
+2025-12-16T19:03:18.558968+0100 chargesom manager[874432]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T19:03:18.612739+0100 chargesom manager[874432]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T19:03:18.733768+0100 chargesom manager[874432]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T19:03:18.832436+0100 chargesom manager[874432]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T19:03:18.873189+0100 chargesom manager[874457]: [INFO] iso15118_charge  :: Parameter-phase started
+2025-12-16T19:03:18.873946+0100 chargesom manager[874457]: [INFO] iso15118_charge  :: Selected energy transfer mode: DC_extended
+2025-12-16T19:03:18.929899+0100 chargesom manager[874432]: [INFO] connector:EvseM  :: Received EV maximum limits: {
+2025-12-16T19:03:18.929899+0100 chargesom manager[874432]:     "dc_ev_maximum_current_limit": 350.0,
+2025-12-16T19:03:18.929899+0100 chargesom manager[874432]:     "dc_ev_maximum_voltage_limit": 464.0
+2025-12-16T19:03:18.929899+0100 chargesom manager[874432]: }
+2025-12-16T19:03:19.017214+0100 chargesom manager[874432]: [INFO] connector:EvseM  ::                                     CAR ISO V2G ChargeParameterDiscoveryReq
+2025-12-16T19:03:19.017887+0100 chargesom manager[874432]: [INFO] connector:EvseM  :: EVSE ISO V2G ChargeParameterDiscoveryRes
+2025-12-16T19:03:20.323895+0100 chargesom manager[874432]: [INFO] connector:EvseM  ::                                     CAR ISO V2G SessionStopReq
+2025-12-16T19:03:20.423361+0100 chargesom manager[874457]: [INFO] iso15118_charge  :: Closing TCP connection
+2025-12-16T19:03:20.424380+0100 chargesom manager[874432]: [INFO] connector:EvseM  :: EVSE ISO V2G SessionStopRes
+2025-12-16T19:03:25.424109+0100 chargesom manager[874457]: [INFO] iso15118_charge  :: TCP connection closed gracefully
+2025-12-16T19:03:25.425071+0100 chargesom manager[874432]: [INFO] connector:EvseM  :: EVSE ISO D-LINK_TERMINATE.req
+2025-12-16T19:03:25.426056+0100 chargesom manager[874432]: [INFO] connector:EvseM  :: EVSE IEC Set PWM Off
+2025-12-16T19:03:25.469657+0100 chargesom manager[874431]: [INFO] bsp:CbChargeSOM  :: handle_pwm_off: Setting new duty cycle of 100.0%
+2025-12-16T19:03:25.514047+0100 chargesom manager[874432]: [INFO] connector:EvseM  :: EVSE IEC Set PWM On (5.0%) took 0 ms
+2025-12-16T19:03:25.515829+0100 chargesom manager[874442]: [INFO] evse_slac:EvseS  :: D-LINK_TERMINATE.request received, leaving network.
+2025-12-16T19:03:25.515829+0100 chargesom manager[874442]: [INFO] evse_slac:EvseS  :: Entered Reset state
+2025-12-16T19:03:25.517640+0100 chargesom manager[874442]: [INFO] evse_slac:EvseS  :: New NMK key: 34:30:36:48:43:57:59:48:52:4D:41:5A:5A:56:33:5A
+2025-12-16T19:03:25.518547+0100 chargesom manager[874442]: [INFO] evse_slac:EvseS  :: Received CM_SET_KEY_CNF
+2025-12-16T19:03:25.518547+0100 chargesom manager[874442]: [INFO] evse_slac:EvseS  :: Entered Idle state
+2025-12-16T19:03:25.519284+0100 chargesom manager[874432]: [INFO] connector:EvseM  :: EVSE ISO D-LINK_READY (false)
+2025-12-16T19:03:25.523737+0100 chargesom manager[874432]: [INFO] connector:EvseM  :: EVSE ISO SLAC UNMATCHED
+2025-12-16T19:03:25.553171+0100 chargesom manager[874431]: [INFO] bsp:CbChargeSOM  :: handle_pwm_on: Setting new duty cycle of 5.0%
+2025-12-16T19:04:22.942106+0100 chargesom manager[874431]: [INFO] bsp:CbChargeSOM  :: CP state change from B to A, PWM: 5.0%
+2025-12-16T19:04:22.985123+0100 chargesom manager[874431]: [INFO] bsp:CbChargeSOM  :: handle_pwm_off: Setting new duty cycle of 100.0%
+2025-12-16T19:04:23.085215+0100 chargesom manager[874431]: [INFO] bsp:CbChargeSOM  :: handle_allow_power_on: request to OPEN the contactor
+2025-12-16T19:04:23.133843+0100 chargesom manager[874432]: [INFO] connector:EvseM  ::                                     CAR IEC Event CarUnplugged
+2025-12-16T19:04:23.134920+0100 chargesom manager[874432]: [INFO] connector:EvseM  :: EVSE IEC Charger state: PrepareCharging->Finished
+2025-12-16T19:04:23.137543+0100 chargesom manager[874432]: [INFO] connector:EvseM  :: EVSE IEC Transaction Finished: EVDisconnected (0 kWh)
+2025-12-16T19:04:23.271063+0100 chargesom manager[874432]: [INFO] connector:EvseM  :: EVSE IEC Session Finished
+2025-12-16T19:04:23.273116+0100 chargesom manager[874432]: [INFO] connector:EvseM  :: SYS  Session logging stopped.
+2025-12-16T19:04:23.363931+0100 chargesom manager[874431]: [INFO] bsp:CbChargeSOM  :: handle_pwm_off: Setting new duty cycle of 100.0%
+2025-12-16T19:04:23.406120+0100 chargesom manager[874432]: [INFO] connector:EvseM  :: All errors cleared
+2025-12-16T19:04:25.778881+0100 chargesom manager[874431]: [INFO] bsp:CbChargeSOM  :: CP state change from A to B, PWM: 100.0%
+2025-12-16T19:04:25.866111+0100 chargesom manager[874442]: [INFO] evse_slac:EvseS  :: Entered Matching state, waiting for CM_SLAC_PARM_REQ
+2025-12-16T19:04:25.871597+0100 chargesom manager[874431]: [INFO] bsp:CbChargeSOM  :: handle_allow_power_on: request to OPEN the contactor
+2025-12-16T19:04:25.923130+0100 chargesom manager[874432]: [INFO] connector:EvseM  :: SYS  Session logging started.
+2025-12-16T19:04:25.924484+0100 chargesom manager[874432]: [INFO] connector:EvseM  :: EVSE IEC Session Started: EVConnected
+2025-12-16T19:04:25.929191+0100 chargesom manager[874430]: [INFO] auth:Auth        :: Plug In event for evse#1, starting auth
+2025-12-16T19:04:25.930264+0100 chargesom manager[874468]: [INFO] token_provider:  :: Publishing new dummy token: {
+2025-12-16T19:04:25.930264+0100 chargesom manager[874468]:     "authorization_type": "RFID",
+2025-12-16T19:04:25.930264+0100 chargesom manager[874468]:     "id_token": {
+2025-12-16T19:04:25.930264+0100 chargesom manager[874468]:         "type": "ISO14443",
+2025-12-16T19:04:25.930264+0100 chargesom manager[874468]:         "value": "[redacted] hash: 29F2679CA504908"
+2025-12-16T19:04:25.930264+0100 chargesom manager[874468]:     },
+2025-12-16T19:04:25.930264+0100 chargesom manager[874468]:     "parent_id_token": {
+2025-12-16T19:04:25.930264+0100 chargesom manager[874468]:         "type": "ISO14443",
+2025-12-16T19:04:25.930264+0100 chargesom manager[874468]:         "value": "[redacted] hash: 29F2679CA504908"
+2025-12-16T19:04:25.930264+0100 chargesom manager[874468]:     }
+2025-12-16T19:04:25.930264+0100 chargesom manager[874468]: }
+2025-12-16T19:04:25.933052+0100 chargesom manager[874430]: [INFO] auth:Auth        :: Received new token: {
+2025-12-16T19:04:25.933052+0100 chargesom manager[874430]:     "authorization_type": "RFID",
+2025-12-16T19:04:25.933052+0100 chargesom manager[874430]:     "id_token": {
+2025-12-16T19:04:25.933052+0100 chargesom manager[874430]:         "type": "ISO14443",
+2025-12-16T19:04:25.933052+0100 chargesom manager[874430]:         "value": "[redacted] hash: 29F2679CA504908"
+2025-12-16T19:04:25.933052+0100 chargesom manager[874430]:     },
+2025-12-16T19:04:25.933052+0100 chargesom manager[874430]:     "parent_id_token": {
+2025-12-16T19:04:25.933052+0100 chargesom manager[874430]:         "type": "ISO14443",
+2025-12-16T19:04:25.933052+0100 chargesom manager[874430]:         "value": "[redacted] hash: 29F2679CA504908"
+2025-12-16T19:04:25.933052+0100 chargesom manager[874430]:     }
+2025-12-16T19:04:25.933052+0100 chargesom manager[874430]: }
+2025-12-16T19:04:25.934898+0100 chargesom manager[874475]: [INFO] token_validator  :: Got validation request for token: [redacted] hash: 29F2679CA504908
+2025-12-16T19:04:26.184966+0100 chargesom manager[874475]: [INFO] token_validator  :: Returning validation status: Accepted
+2025-12-16T19:04:26.186826+0100 chargesom manager[874430]: [INFO] auth:Auth        :: Providing authorization to evse#1
+2025-12-16T19:04:26.427276+0100 chargesom manager[874432]: [INFO] connector:EvseM  :: EVSE IEC Set PWM On (5.0%) took 0 ms
+2025-12-16T19:04:26.469778+0100 chargesom manager[874431]: [INFO] bsp:CbChargeSOM  :: handle_pwm_on: Setting new duty cycle of 5.0%
+2025-12-16T19:04:26.587979+0100 chargesom manager[874430]: [INFO] auth:Auth        :: Result for token: [redacted] hash: 29F2679CA504908: ACCEPTED
+2025-12-16T19:04:26.639771+0100 chargesom manager[874432]: [INFO] connector:EvseM  :: EVSE IEC EIM Authorization received
+2025-12-16T19:04:26.640210+0100 chargesom manager[874432]: [INFO] connector:EvseM  :: EVSE IEC Transaction Started (0 kWh)
+2025-12-16T19:04:26.640511+0100 chargesom manager[874432]: [INFO] connector:EvseM  :: EVSE IEC DC mode. We are in 5percent mode so we can continue without further action.
+2025-12-16T19:04:26.640874+0100 chargesom manager[874432]: [INFO] connector:EvseM  :: EVSE IEC Charger state: Wait for Auth->PrepareCharging
+2025-12-16T19:04:33.440204+0100 chargesom manager[874442]: [INFO] evse_slac:EvseS  :: Session (run_id=984E4E13CAEDE253, ev_mac=F0:7F:0C:11:12:F1): initialized, waiting for CM_START_ATTEN_CHAR_IND
+2025-12-16T19:04:33.677926+0100 chargesom manager[874442]: [INFO] evse_slac:EvseS  :: Session (run_id=984E4E13CAEDE253, ev_mac=F0:7F:0C:11:12:F1): received CM_START_ATTEN_CHAR_IND, going to substate SOUNDING
+2025-12-16T19:04:33.718207+0100 chargesom manager[874442]: [INFO] evse_slac:EvseS  :: Session (run_id=984E4E13CAEDE253, ev_mac=F0:7F:0C:11:12:F1): needs to be in state WAIT_FOR_START_ATTEN_CHAR for CM_START_ATTEN_CHAR_IND
+2025-12-16T19:04:33.758013+0100 chargesom manager[874442]: [INFO] evse_slac:EvseS  :: Session (run_id=984E4E13CAEDE253, ev_mac=F0:7F:0C:11:12:F1): needs to be in state WAIT_FOR_START_ATTEN_CHAR for CM_START_ATTEN_CHAR_IND
+2025-12-16T19:04:33.798045+0100 chargesom manager[874442]: [INFO] evse_slac:EvseS  :: Session (run_id=984E4E13CAEDE253, ev_mac=F0:7F:0C:11:12:F1): received CM_MNBC_SOUND_IND
+2025-12-16T19:04:33.805413+0100 chargesom manager[874442]: [INFO] evse_slac:EvseS  :: Session (run_id=984E4E13CAEDE253, ev_mac=F0:7F:0C:11:12:F1): received CM_ATTEN_PROFILE_IND
+2025-12-16T19:04:33.837951+0100 chargesom manager[874442]: [INFO] evse_slac:EvseS  :: Session (run_id=984E4E13CAEDE253, ev_mac=F0:7F:0C:11:12:F1): received CM_MNBC_SOUND_IND
+2025-12-16T19:04:33.845284+0100 chargesom manager[874442]: [INFO] evse_slac:EvseS  :: Session (run_id=984E4E13CAEDE253, ev_mac=F0:7F:0C:11:12:F1): received CM_ATTEN_PROFILE_IND
+2025-12-16T19:04:33.877979+0100 chargesom manager[874442]: [INFO] evse_slac:EvseS  :: Session (run_id=984E4E13CAEDE253, ev_mac=F0:7F:0C:11:12:F1): received CM_MNBC_SOUND_IND
+2025-12-16T19:04:33.885389+0100 chargesom manager[874442]: [INFO] evse_slac:EvseS  :: Session (run_id=984E4E13CAEDE253, ev_mac=F0:7F:0C:11:12:F1): received CM_ATTEN_PROFILE_IND
+2025-12-16T19:04:33.918058+0100 chargesom manager[874442]: [INFO] evse_slac:EvseS  :: Session (run_id=984E4E13CAEDE253, ev_mac=F0:7F:0C:11:12:F1): received CM_MNBC_SOUND_IND
+2025-12-16T19:04:33.925398+0100 chargesom manager[874442]: [INFO] evse_slac:EvseS  :: Session (run_id=984E4E13CAEDE253, ev_mac=F0:7F:0C:11:12:F1): received CM_ATTEN_PROFILE_IND
+2025-12-16T19:04:33.957997+0100 chargesom manager[874442]: [INFO] evse_slac:EvseS  :: Session (run_id=984E4E13CAEDE253, ev_mac=F0:7F:0C:11:12:F1): received CM_MNBC_SOUND_IND
+2025-12-16T19:04:33.965385+0100 chargesom manager[874442]: [INFO] evse_slac:EvseS  :: Session (run_id=984E4E13CAEDE253, ev_mac=F0:7F:0C:11:12:F1): received CM_ATTEN_PROFILE_IND
+2025-12-16T19:04:33.998158+0100 chargesom manager[874442]: [INFO] evse_slac:EvseS  :: Session (run_id=984E4E13CAEDE253, ev_mac=F0:7F:0C:11:12:F1): received CM_MNBC_SOUND_IND
+2025-12-16T19:04:34.005450+0100 chargesom manager[874442]: [INFO] evse_slac:EvseS  :: Session (run_id=984E4E13CAEDE253, ev_mac=F0:7F:0C:11:12:F1): received CM_ATTEN_PROFILE_IND
+2025-12-16T19:04:34.037961+0100 chargesom manager[874442]: [INFO] evse_slac:EvseS  :: Session (run_id=984E4E13CAEDE253, ev_mac=F0:7F:0C:11:12:F1): received CM_MNBC_SOUND_IND
+2025-12-16T19:04:34.045543+0100 chargesom manager[874442]: [INFO] evse_slac:EvseS  :: Session (run_id=984E4E13CAEDE253, ev_mac=F0:7F:0C:11:12:F1): received CM_ATTEN_PROFILE_IND
+2025-12-16T19:04:34.077916+0100 chargesom manager[874442]: [INFO] evse_slac:EvseS  :: Session (run_id=984E4E13CAEDE253, ev_mac=F0:7F:0C:11:12:F1): received CM_MNBC_SOUND_IND
+2025-12-16T19:04:34.085364+0100 chargesom manager[874442]: [INFO] evse_slac:EvseS  :: Session (run_id=984E4E13CAEDE253, ev_mac=F0:7F:0C:11:12:F1): received CM_ATTEN_PROFILE_IND
+2025-12-16T19:04:34.117933+0100 chargesom manager[874442]: [INFO] evse_slac:EvseS  :: Session (run_id=984E4E13CAEDE253, ev_mac=F0:7F:0C:11:12:F1): received CM_MNBC_SOUND_IND
+2025-12-16T19:04:34.125414+0100 chargesom manager[874442]: [INFO] evse_slac:EvseS  :: Session (run_id=984E4E13CAEDE253, ev_mac=F0:7F:0C:11:12:F1): received CM_ATTEN_PROFILE_IND
+2025-12-16T19:04:34.157957+0100 chargesom manager[874442]: [INFO] evse_slac:EvseS  :: Session (run_id=984E4E13CAEDE253, ev_mac=F0:7F:0C:11:12:F1): received CM_MNBC_SOUND_IND
+2025-12-16T19:04:34.165321+0100 chargesom manager[874442]: [INFO] evse_slac:EvseS  :: Session (run_id=984E4E13CAEDE253, ev_mac=F0:7F:0C:11:12:F1): received CM_ATTEN_PROFILE_IND
+2025-12-16T19:04:34.165603+0100 chargesom manager[874442]: [INFO] evse_slac:EvseS  :: Session (run_id=984E4E13CAEDE253, ev_mac=F0:7F:0C:11:12:F1): received all sounds, going to substate FINALIZE_SOUNDING
+2025-12-16T19:04:34.209702+0100 chargesom manager[874442]: [INFO] evse_slac:EvseS  :: Session (run_id=984E4E13CAEDE253, ev_mac=F0:7F:0C:11:12:F1): Finalize sounding, sending CM_ATTEN_CHAR_IND
+2025-12-16T19:04:34.215948+0100 chargesom manager[874442]: [INFO] evse_slac:EvseS  :: Session (run_id=984E4E13CAEDE253, ev_mac=F0:7F:0C:11:12:F1): received CM_ATTEN_CHAR_RSP, going to substate WAIT_FOR_SLAC_MATCH
+2025-12-16T19:04:34.888005+0100 chargesom manager[874442]: [INFO] evse_slac:EvseS  :: Session (run_id=984E4E13CAEDE253, ev_mac=F0:7F:0C:11:12:F1): Received CM_SLAC_MATCH_REQ, sending CM_SLAC_MATCH_CNF -> session complete
+2025-12-16T19:04:34.889320+0100 chargesom manager[874442]: [INFO] evse_slac:EvseS  :: Entered Matched state
+2025-12-16T19:04:34.890510+0100 chargesom manager[874432]: [INFO] connector:EvseM  :: EVSE ISO SLAC MATCHED
+2025-12-16T19:04:34.933265+0100 chargesom manager[874432]: [INFO] connector:EvseM  :: EVSE ISO D-LINK_READY (true)
+2025-12-16T19:04:36.677872+0100 chargesom manager[874457]: [INFO] iso15118_charge  :: Received packet from [fe80::f27f:cff:fe11:12f1]:49152 with security 0x10 and protocol 0x00
+2025-12-16T19:04:36.677872+0100 chargesom manager[874457]: [INFO] iso15118_charge  :: SDP requested NO-TLS, announcing NO-TLS
+2025-12-16T19:04:36.677872+0100 chargesom manager[874457]: [INFO] iso15118_charge  :: sendto([fe80::f27f:cff:fe11:12f1]:49152) succeeded
+2025-12-16T19:04:37.698591+0100 chargesom manager[874457]: [INFO] iso15118_charge  :: Incoming connection on eth1 from [a00:c000:0:0:fe80::]:49152
+2025-12-16T19:04:37.698591+0100 chargesom manager[874457]: [INFO] iso15118_charge  :: Started new TCP connection thread
+2025-12-16T19:04:37.728401+0100 chargesom manager[874457]: [INFO] iso15118_charge  :: Handling SupportedAppProtocolReq
+2025-12-16T19:04:37.729512+0100 chargesom manager[874457]: [INFO] iso15118_charge  :: Protocol negotiation was successful. Selected protocol is ISO15118
+2025-12-16T19:04:37.731100+0100 chargesom manager[874432]: [INFO] connector:EvseM  ::                                     CAR ISO V2G SupportedAppProtocolReq
+2025-12-16T19:04:37.768064+0100 chargesom manager[874457]: [INFO] iso15118_charge  :: SessionSetupReq.EVCCID: F0:7F:0C:11:12:F1
+2025-12-16T19:04:37.768391+0100 chargesom manager[874457]: [INFO] iso15118_charge  :: No session_id found or not equal to the id from the preceding v2g session. Generating random session id.
+2025-12-16T19:04:37.768391+0100 chargesom manager[874457]: [INFO] iso15118_charge  :: Created new session with id 0x8500542418939002323
+2025-12-16T19:04:37.773929+0100 chargesom manager[874432]: [INFO] connector:EvseM  :: EVSE ISO V2G SupportedAppProtocolRes
+2025-12-16T19:04:37.818507+0100 chargesom manager[874432]: [INFO] connector:EvseM  ::                                     CAR ISO V2G SessionSetupReq
+2025-12-16T19:04:37.867661+0100 chargesom manager[874432]: [INFO] connector:EvseM  :: EVSE ISO V2G SessionSetupRes
+2025-12-16T19:04:37.908185+0100 chargesom manager[874457]: [WARN] iso15118_charge  :: PnC is not allowed without TLS-communication. Correcting value to '1' (ExternalPayment)
+2025-12-16T19:04:37.909483+0100 chargesom manager[874432]: [INFO] connector:EvseM  ::                                     CAR ISO V2G ServiceDiscoveryReq
+2025-12-16T19:04:38.007936+0100 chargesom manager[874432]: [INFO] connector:EvseM  :: EVSE ISO V2G ServiceDiscoveryRes
+2025-12-16T19:04:38.048237+0100 chargesom manager[874457]: [INFO] iso15118_charge  :: SelectedPaymentOption: ExternalPayment
+2025-12-16T19:04:38.057698+0100 chargesom manager[874432]: [INFO] connector:EvseM  ::                                     CAR ISO V2G PaymentServiceSelectionReq
+2025-12-16T19:04:38.181822+0100 chargesom manager[874432]: [INFO] connector:EvseM  :: EVSE ISO V2G PaymentServiceSelectionRes
+2025-12-16T19:04:38.246958+0100 chargesom manager[874432]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T19:04:38.297987+0100 chargesom manager[874432]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T19:04:38.418846+0100 chargesom manager[874432]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T19:04:38.517428+0100 chargesom manager[874432]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T19:04:38.558200+0100 chargesom manager[874457]: [INFO] iso15118_charge  :: Parameter-phase started
+2025-12-16T19:04:38.558643+0100 chargesom manager[874457]: [INFO] iso15118_charge  :: Selected energy transfer mode: DC_extended
+2025-12-16T19:04:38.606335+0100 chargesom manager[874432]: [INFO] connector:EvseM  :: Received EV maximum limits: {
+2025-12-16T19:04:38.606335+0100 chargesom manager[874432]:     "dc_ev_maximum_current_limit": 350.0,
+2025-12-16T19:04:38.606335+0100 chargesom manager[874432]:     "dc_ev_maximum_voltage_limit": 464.0
+2025-12-16T19:04:38.606335+0100 chargesom manager[874432]: }
+2025-12-16T19:04:38.697149+0100 chargesom manager[874432]: [INFO] connector:EvseM  ::                                     CAR ISO V2G ChargeParameterDiscoveryReq
+2025-12-16T19:04:38.697667+0100 chargesom manager[874432]: [INFO] connector:EvseM  :: EVSE ISO V2G ChargeParameterDiscoveryRes
+2025-12-16T19:04:40.028937+0100 chargesom manager[874432]: [INFO] connector:EvseM  ::                                     CAR ISO V2G SessionStopReq
+2025-12-16T19:04:40.126679+0100 chargesom manager[874457]: [INFO] iso15118_charge  :: Closing TCP connection
+2025-12-16T19:04:40.127720+0100 chargesom manager[874432]: [INFO] connector:EvseM  :: EVSE ISO V2G SessionStopRes
+2025-12-16T19:04:45.127856+0100 chargesom manager[874457]: [INFO] iso15118_charge  :: TCP connection closed gracefully
+2025-12-16T19:04:45.129003+0100 chargesom manager[874432]: [INFO] connector:EvseM  :: EVSE ISO D-LINK_TERMINATE.req
+2025-12-16T19:04:45.130019+0100 chargesom manager[874432]: [INFO] connector:EvseM  :: EVSE IEC Set PWM Off
+2025-12-16T19:04:45.173499+0100 chargesom manager[874431]: [INFO] bsp:CbChargeSOM  :: handle_pwm_off: Setting new duty cycle of 100.0%
+2025-12-16T19:04:45.217735+0100 chargesom manager[874432]: [INFO] connector:EvseM  :: EVSE IEC Set PWM On (5.0%) took 0 ms
+2025-12-16T19:04:45.261568+0100 chargesom manager[874442]: [INFO] evse_slac:EvseS  :: D-LINK_TERMINATE.request received, leaving network.
+2025-12-16T19:04:45.262551+0100 chargesom manager[874442]: [INFO] evse_slac:EvseS  :: Entered Reset state
+2025-12-16T19:04:45.262551+0100 chargesom manager[874442]: [INFO] evse_slac:EvseS  :: New NMK key: 32:32:35:37:47:39:30:53:42:4C:33:55:54:59:41:41
+2025-12-16T19:04:45.264146+0100 chargesom manager[874432]: [INFO] connector:EvseM  :: EVSE ISO D-LINK_READY (false)
+2025-12-16T19:04:45.265498+0100 chargesom manager[874442]: [INFO] evse_slac:EvseS  :: Received CM_SET_KEY_CNF
+2025-12-16T19:04:45.265498+0100 chargesom manager[874442]: [INFO] evse_slac:EvseS  :: Entered Idle state
+2025-12-16T19:04:45.281107+0100 chargesom manager[874431]: [INFO] bsp:CbChargeSOM  :: handle_pwm_on: Setting new duty cycle of 5.0%
+2025-12-16T19:04:45.311062+0100 chargesom manager[874432]: [INFO] connector:EvseM  :: EVSE ISO SLAC UNMATCHED
+2025-12-16T19:05:32.363418+0100 chargesom manager[874431]: [INFO] bsp:CbChargeSOM  :: CP state change from B to A, PWM: 5.0%
+2025-12-16T19:05:32.409704+0100 chargesom manager[874431]: [INFO] bsp:CbChargeSOM  :: handle_pwm_off: Setting new duty cycle of 100.0%
+2025-12-16T19:05:32.517487+0100 chargesom manager[874431]: [INFO] bsp:CbChargeSOM  :: handle_allow_power_on: request to OPEN the contactor
+2025-12-16T19:05:32.605542+0100 chargesom manager[874432]: [INFO] connector:EvseM  ::                                     CAR IEC Event CarUnplugged
+2025-12-16T19:05:32.606611+0100 chargesom manager[874432]: [INFO] connector:EvseM  :: EVSE IEC Charger state: PrepareCharging->Finished
+2025-12-16T19:05:32.606611+0100 chargesom manager[874432]: [INFO] connector:EvseM  :: EVSE IEC Transaction Finished: EVDisconnected (0 kWh)
+2025-12-16T19:05:32.742602+0100 chargesom manager[874432]: [INFO] connector:EvseM  :: EVSE IEC Session Finished
+2025-12-16T19:05:32.743026+0100 chargesom manager[874432]: [INFO] connector:EvseM  :: SYS  Session logging stopped.
+2025-12-16T19:05:32.841632+0100 chargesom manager[874431]: [INFO] bsp:CbChargeSOM  :: handle_pwm_off: Setting new duty cycle of 100.0%
+2025-12-16T19:05:32.889767+0100 chargesom manager[874432]: [INFO] connector:EvseM  :: All errors cleared
+2025-12-16T19:05:35.209940+0100 chargesom manager[874431]: [INFO] bsp:CbChargeSOM  :: CP state change from A to B, PWM: 100.0%
+2025-12-16T19:05:35.253913+0100 chargesom manager[874442]: [INFO] evse_slac:EvseS  :: Entered Matching state, waiting for CM_SLAC_PARM_REQ
+2025-12-16T19:05:35.293087+0100 chargesom manager[874431]: [INFO] bsp:CbChargeSOM  :: handle_allow_power_on: request to OPEN the contactor
+2025-12-16T19:05:35.349994+0100 chargesom manager[874432]: [INFO] connector:EvseM  :: SYS  Session logging started.
+2025-12-16T19:05:35.350931+0100 chargesom manager[874432]: [INFO] connector:EvseM  :: EVSE IEC Session Started: EVConnected
+2025-12-16T19:05:35.353247+0100 chargesom manager[874468]: [INFO] token_provider:  :: Publishing new dummy token: {
+2025-12-16T19:05:35.353247+0100 chargesom manager[874468]:     "authorization_type": "RFID",
+2025-12-16T19:05:35.353247+0100 chargesom manager[874468]:     "id_token": {
+2025-12-16T19:05:35.353247+0100 chargesom manager[874468]:         "type": "ISO14443",
+2025-12-16T19:05:35.353247+0100 chargesom manager[874468]:         "value": "[redacted] hash: 29F2679CA504908"
+2025-12-16T19:05:35.353247+0100 chargesom manager[874468]:     },
+2025-12-16T19:05:35.353247+0100 chargesom manager[874468]:     "parent_id_token": {
+2025-12-16T19:05:35.353247+0100 chargesom manager[874468]:         "type": "ISO14443",
+2025-12-16T19:05:35.353247+0100 chargesom manager[874468]:         "value": "[redacted] hash: 29F2679CA504908"
+2025-12-16T19:05:35.353247+0100 chargesom manager[874468]:     }
+2025-12-16T19:05:35.357390+0100 chargesom manager[874468]: }
+2025-12-16T19:05:35.357585+0100 chargesom manager[874430]: [INFO] auth:Auth        :: Plug In event for evse#1, starting auth
+2025-12-16T19:05:35.357585+0100 chargesom manager[874430]: [INFO] auth:Auth        :: Received new token: {
+2025-12-16T19:05:35.357585+0100 chargesom manager[874430]:     "authorization_type": "RFID",
+2025-12-16T19:05:35.357585+0100 chargesom manager[874430]:     "id_token": {
+2025-12-16T19:05:35.357585+0100 chargesom manager[874430]:         "type": "ISO14443",
+2025-12-16T19:05:35.357585+0100 chargesom manager[874430]:         "value": "[redacted] hash: 29F2679CA504908"
+2025-12-16T19:05:35.357585+0100 chargesom manager[874430]:     },
+2025-12-16T19:05:35.357585+0100 chargesom manager[874430]:     "parent_id_token": {
+2025-12-16T19:05:35.357585+0100 chargesom manager[874430]:         "type": "ISO14443",
+2025-12-16T19:05:35.357585+0100 chargesom manager[874430]:         "value": "[redacted] hash: 29F2679CA504908"
+2025-12-16T19:05:35.357585+0100 chargesom manager[874430]:     }
+2025-12-16T19:05:35.357585+0100 chargesom manager[874430]: }
+2025-12-16T19:05:35.401668+0100 chargesom manager[874475]: [INFO] token_validator  :: Got validation request for token: [redacted] hash: 29F2679CA504908
+2025-12-16T19:05:35.652068+0100 chargesom manager[874475]: [INFO] token_validator  :: Returning validation status: Accepted
+2025-12-16T19:05:35.655124+0100 chargesom manager[874430]: [INFO] auth:Auth        :: Providing authorization to evse#1
+2025-12-16T19:05:35.851112+0100 chargesom manager[874432]: [INFO] connector:EvseM  :: EVSE IEC Set PWM On (5.0%) took 0 ms
+2025-12-16T19:05:35.894624+0100 chargesom manager[874431]: [INFO] bsp:CbChargeSOM  :: handle_pwm_on: Setting new duty cycle of 5.0%
+2025-12-16T19:05:36.058210+0100 chargesom manager[874430]: [INFO] auth:Auth        :: Result for token: [redacted] hash: 29F2679CA504908: ACCEPTED
+2025-12-16T19:05:36.070992+0100 chargesom manager[874432]: [INFO] connector:EvseM  :: EVSE IEC EIM Authorization received
+2025-12-16T19:05:36.071407+0100 chargesom manager[874432]: [INFO] connector:EvseM  :: EVSE IEC Transaction Started (0 kWh)
+2025-12-16T19:05:36.072235+0100 chargesom manager[874432]: [INFO] connector:EvseM  :: EVSE IEC DC mode. We are in 5percent mode so we can continue without further action.
+2025-12-16T19:05:36.073174+0100 chargesom manager[874432]: [INFO] connector:EvseM  :: EVSE IEC Charger state: Wait for Auth->PrepareCharging
+2025-12-16T19:05:42.915797+0100 chargesom manager[874442]: [INFO] evse_slac:EvseS  :: Session (run_id=F078BC37018D683C, ev_mac=F0:7F:0C:11:12:F1): initialized, waiting for CM_START_ATTEN_CHAR_IND
+2025-12-16T19:05:43.153628+0100 chargesom manager[874442]: [INFO] evse_slac:EvseS  :: Session (run_id=F078BC37018D683C, ev_mac=F0:7F:0C:11:12:F1): received CM_START_ATTEN_CHAR_IND, going to substate SOUNDING
+2025-12-16T19:05:43.193656+0100 chargesom manager[874442]: [INFO] evse_slac:EvseS  :: Session (run_id=F078BC37018D683C, ev_mac=F0:7F:0C:11:12:F1): needs to be in state WAIT_FOR_START_ATTEN_CHAR for CM_START_ATTEN_CHAR_IND
+2025-12-16T19:05:43.233636+0100 chargesom manager[874442]: [INFO] evse_slac:EvseS  :: Session (run_id=F078BC37018D683C, ev_mac=F0:7F:0C:11:12:F1): needs to be in state WAIT_FOR_START_ATTEN_CHAR for CM_START_ATTEN_CHAR_IND
+2025-12-16T19:05:43.273672+0100 chargesom manager[874442]: [INFO] evse_slac:EvseS  :: Session (run_id=F078BC37018D683C, ev_mac=F0:7F:0C:11:12:F1): received CM_MNBC_SOUND_IND
+2025-12-16T19:05:43.281058+0100 chargesom manager[874442]: [INFO] evse_slac:EvseS  :: Session (run_id=F078BC37018D683C, ev_mac=F0:7F:0C:11:12:F1): received CM_ATTEN_PROFILE_IND
+2025-12-16T19:05:43.313828+0100 chargesom manager[874442]: [INFO] evse_slac:EvseS  :: Session (run_id=F078BC37018D683C, ev_mac=F0:7F:0C:11:12:F1): received CM_MNBC_SOUND_IND
+2025-12-16T19:05:43.321319+0100 chargesom manager[874442]: [INFO] evse_slac:EvseS  :: Session (run_id=F078BC37018D683C, ev_mac=F0:7F:0C:11:12:F1): received CM_ATTEN_PROFILE_IND
+2025-12-16T19:05:43.353681+0100 chargesom manager[874442]: [INFO] evse_slac:EvseS  :: Session (run_id=F078BC37018D683C, ev_mac=F0:7F:0C:11:12:F1): received CM_MNBC_SOUND_IND
+2025-12-16T19:05:43.361038+0100 chargesom manager[874442]: [INFO] evse_slac:EvseS  :: Session (run_id=F078BC37018D683C, ev_mac=F0:7F:0C:11:12:F1): received CM_ATTEN_PROFILE_IND
+2025-12-16T19:05:43.393591+0100 chargesom manager[874442]: [INFO] evse_slac:EvseS  :: Session (run_id=F078BC37018D683C, ev_mac=F0:7F:0C:11:12:F1): received CM_MNBC_SOUND_IND
+2025-12-16T19:05:43.401056+0100 chargesom manager[874442]: [INFO] evse_slac:EvseS  :: Session (run_id=F078BC37018D683C, ev_mac=F0:7F:0C:11:12:F1): received CM_ATTEN_PROFILE_IND
+2025-12-16T19:05:43.433658+0100 chargesom manager[874442]: [INFO] evse_slac:EvseS  :: Session (run_id=F078BC37018D683C, ev_mac=F0:7F:0C:11:12:F1): received CM_MNBC_SOUND_IND
+2025-12-16T19:05:43.441193+0100 chargesom manager[874442]: [INFO] evse_slac:EvseS  :: Session (run_id=F078BC37018D683C, ev_mac=F0:7F:0C:11:12:F1): received CM_ATTEN_PROFILE_IND
+2025-12-16T19:05:43.473980+0100 chargesom manager[874442]: [INFO] evse_slac:EvseS  :: Session (run_id=F078BC37018D683C, ev_mac=F0:7F:0C:11:12:F1): received CM_MNBC_SOUND_IND
+2025-12-16T19:05:43.481455+0100 chargesom manager[874442]: [INFO] evse_slac:EvseS  :: Session (run_id=F078BC37018D683C, ev_mac=F0:7F:0C:11:12:F1): received CM_ATTEN_PROFILE_IND
+2025-12-16T19:05:43.513650+0100 chargesom manager[874442]: [INFO] evse_slac:EvseS  :: Session (run_id=F078BC37018D683C, ev_mac=F0:7F:0C:11:12:F1): received CM_MNBC_SOUND_IND
+2025-12-16T19:05:43.521158+0100 chargesom manager[874442]: [INFO] evse_slac:EvseS  :: Session (run_id=F078BC37018D683C, ev_mac=F0:7F:0C:11:12:F1): received CM_ATTEN_PROFILE_IND
+2025-12-16T19:05:43.553608+0100 chargesom manager[874442]: [INFO] evse_slac:EvseS  :: Session (run_id=F078BC37018D683C, ev_mac=F0:7F:0C:11:12:F1): received CM_MNBC_SOUND_IND
+2025-12-16T19:05:43.560964+0100 chargesom manager[874442]: [INFO] evse_slac:EvseS  :: Session (run_id=F078BC37018D683C, ev_mac=F0:7F:0C:11:12:F1): received CM_ATTEN_PROFILE_IND
+2025-12-16T19:05:43.593663+0100 chargesom manager[874442]: [INFO] evse_slac:EvseS  :: Session (run_id=F078BC37018D683C, ev_mac=F0:7F:0C:11:12:F1): received CM_MNBC_SOUND_IND
+2025-12-16T19:05:43.601224+0100 chargesom manager[874442]: [INFO] evse_slac:EvseS  :: Session (run_id=F078BC37018D683C, ev_mac=F0:7F:0C:11:12:F1): received CM_ATTEN_PROFILE_IND
+2025-12-16T19:05:43.633590+0100 chargesom manager[874442]: [INFO] evse_slac:EvseS  :: Session (run_id=F078BC37018D683C, ev_mac=F0:7F:0C:11:12:F1): received CM_MNBC_SOUND_IND
+2025-12-16T19:05:43.641022+0100 chargesom manager[874442]: [INFO] evse_slac:EvseS  :: Session (run_id=F078BC37018D683C, ev_mac=F0:7F:0C:11:12:F1): received CM_ATTEN_PROFILE_IND
+2025-12-16T19:05:43.641320+0100 chargesom manager[874442]: [INFO] evse_slac:EvseS  :: Session (run_id=F078BC37018D683C, ev_mac=F0:7F:0C:11:12:F1): received all sounds, going to substate FINALIZE_SOUNDING
+2025-12-16T19:05:43.685350+0100 chargesom manager[874442]: [INFO] evse_slac:EvseS  :: Session (run_id=F078BC37018D683C, ev_mac=F0:7F:0C:11:12:F1): Finalize sounding, sending CM_ATTEN_CHAR_IND
+2025-12-16T19:05:43.691906+0100 chargesom manager[874442]: [INFO] evse_slac:EvseS  :: Session (run_id=F078BC37018D683C, ev_mac=F0:7F:0C:11:12:F1): received CM_ATTEN_CHAR_RSP, going to substate WAIT_FOR_SLAC_MATCH
+2025-12-16T19:05:44.363698+0100 chargesom manager[874442]: [INFO] evse_slac:EvseS  :: Session (run_id=F078BC37018D683C, ev_mac=F0:7F:0C:11:12:F1): Received CM_SLAC_MATCH_REQ, sending CM_SLAC_MATCH_CNF -> session complete
+2025-12-16T19:05:44.365017+0100 chargesom manager[874442]: [INFO] evse_slac:EvseS  :: Entered Matched state
+2025-12-16T19:05:44.366138+0100 chargesom manager[874432]: [INFO] connector:EvseM  :: EVSE ISO SLAC MATCHED
+2025-12-16T19:05:44.409405+0100 chargesom manager[874432]: [INFO] connector:EvseM  :: EVSE ISO D-LINK_READY (true)
+2025-12-16T19:05:46.153549+0100 chargesom manager[874457]: [INFO] iso15118_charge  :: Received packet from [fe80::f27f:cff:fe11:12f1]:49152 with security 0x10 and protocol 0x00
+2025-12-16T19:05:46.153549+0100 chargesom manager[874457]: [INFO] iso15118_charge  :: SDP requested NO-TLS, announcing NO-TLS
+2025-12-16T19:05:46.153549+0100 chargesom manager[874457]: [INFO] iso15118_charge  :: sendto([fe80::f27f:cff:fe11:12f1]:49152) succeeded
+2025-12-16T19:05:47.174259+0100 chargesom manager[874457]: [INFO] iso15118_charge  :: Incoming connection on eth1 from [a00:c000:0:0:fe80::]:49152
+2025-12-16T19:05:47.174259+0100 chargesom manager[874457]: [INFO] iso15118_charge  :: Started new TCP connection thread
+2025-12-16T19:05:47.204149+0100 chargesom manager[874457]: [INFO] iso15118_charge  :: Handling SupportedAppProtocolReq
+2025-12-16T19:05:47.205057+0100 chargesom manager[874457]: [INFO] iso15118_charge  :: Protocol negotiation was successful. Selected protocol is ISO15118
+2025-12-16T19:05:47.206905+0100 chargesom manager[874432]: [INFO] connector:EvseM  ::                                     CAR ISO V2G SupportedAppProtocolReq
+2025-12-16T19:05:47.243797+0100 chargesom manager[874457]: [INFO] iso15118_charge  :: SessionSetupReq.EVCCID: F0:7F:0C:11:12:F1
+2025-12-16T19:05:47.244103+0100 chargesom manager[874457]: [INFO] iso15118_charge  :: No session_id found or not equal to the id from the preceding v2g session. Generating random session id.
+2025-12-16T19:05:47.244103+0100 chargesom manager[874457]: [INFO] iso15118_charge  :: Created new session with id 0x12377826914181006723
+2025-12-16T19:05:47.250157+0100 chargesom manager[874432]: [INFO] connector:EvseM  :: EVSE ISO V2G SupportedAppProtocolRes
+2025-12-16T19:05:47.294448+0100 chargesom manager[874432]: [INFO] connector:EvseM  ::                                     CAR ISO V2G SessionSetupReq
+2025-12-16T19:05:47.342602+0100 chargesom manager[874432]: [INFO] connector:EvseM  :: EVSE ISO V2G SessionSetupRes
+2025-12-16T19:05:47.383951+0100 chargesom manager[874457]: [WARN] iso15118_charge  :: PnC is not allowed without TLS-communication. Correcting value to '1' (ExternalPayment)
+2025-12-16T19:05:47.385445+0100 chargesom manager[874432]: [INFO] connector:EvseM  ::                                     CAR ISO V2G ServiceDiscoveryReq
+2025-12-16T19:05:47.483807+0100 chargesom manager[874432]: [INFO] connector:EvseM  :: EVSE ISO V2G ServiceDiscoveryRes
+2025-12-16T19:05:47.524143+0100 chargesom manager[874457]: [INFO] iso15118_charge  :: SelectedPaymentOption: ExternalPayment
+2025-12-16T19:05:47.525997+0100 chargesom manager[874432]: [INFO] connector:EvseM  ::                                     CAR ISO V2G PaymentServiceSelectionReq
+2025-12-16T19:05:47.649439+0100 chargesom manager[874432]: [INFO] connector:EvseM  :: EVSE ISO V2G PaymentServiceSelectionRes
+2025-12-16T19:05:47.738456+0100 chargesom manager[874432]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T19:05:47.772423+0100 chargesom manager[874432]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T19:05:47.894814+0100 chargesom manager[874432]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T19:05:47.992434+0100 chargesom manager[874432]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T19:05:48.033736+0100 chargesom manager[874457]: [INFO] iso15118_charge  :: Parameter-phase started
+2025-12-16T19:05:48.034374+0100 chargesom manager[874457]: [INFO] iso15118_charge  :: Selected energy transfer mode: DC_extended
+2025-12-16T19:05:48.093821+0100 chargesom manager[874432]: [INFO] connector:EvseM  :: Received EV maximum limits: {
+2025-12-16T19:05:48.093821+0100 chargesom manager[874432]:     "dc_ev_maximum_current_limit": 350.0,
+2025-12-16T19:05:48.093821+0100 chargesom manager[874432]:     "dc_ev_maximum_voltage_limit": 464.0
+2025-12-16T19:05:48.093821+0100 chargesom manager[874432]: }
+2025-12-16T19:05:48.185433+0100 chargesom manager[874432]: [INFO] connector:EvseM  ::                                     CAR ISO V2G ChargeParameterDiscoveryReq
+2025-12-16T19:05:48.186367+0100 chargesom manager[874432]: [INFO] connector:EvseM  :: EVSE ISO V2G ChargeParameterDiscoveryRes
+2025-12-16T19:05:49.424806+0100 chargesom manager[874432]: [INFO] connector:EvseM  ::                                     CAR ISO V2G SessionStopReq
+2025-12-16T19:05:49.521386+0100 chargesom manager[874457]: [INFO] iso15118_charge  :: Closing TCP connection
+2025-12-16T19:05:49.522910+0100 chargesom manager[874432]: [INFO] connector:EvseM  :: EVSE ISO V2G SessionStopRes
+2025-12-16T19:05:54.522361+0100 chargesom manager[874457]: [INFO] iso15118_charge  :: TCP connection closed gracefully
+2025-12-16T19:05:54.553429+0100 chargesom manager[874432]: [INFO] connector:EvseM  :: EVSE ISO D-LINK_TERMINATE.req
+2025-12-16T19:05:54.554415+0100 chargesom manager[874432]: [INFO] connector:EvseM  :: EVSE IEC Set PWM Off
+2025-12-16T19:05:54.597607+0100 chargesom manager[874431]: [INFO] bsp:CbChargeSOM  :: handle_pwm_off: Setting new duty cycle of 100.0%
+2025-12-16T19:05:54.642535+0100 chargesom manager[874432]: [INFO] connector:EvseM  :: EVSE IEC Set PWM On (5.0%) took 0 ms
+2025-12-16T19:05:54.644118+0100 chargesom manager[874442]: [INFO] evse_slac:EvseS  :: D-LINK_TERMINATE.request received, leaving network.
+2025-12-16T19:05:54.645714+0100 chargesom manager[874442]: [INFO] evse_slac:EvseS  :: Entered Reset state
+2025-12-16T19:05:54.645714+0100 chargesom manager[874442]: [INFO] evse_slac:EvseS  :: New NMK key: 32:4D:55:31:36:31:4D:50:58:4C:4A:38:4A:4A:42:37
+2025-12-16T19:05:54.647574+0100 chargesom manager[874442]: [INFO] evse_slac:EvseS  :: Received CM_SET_KEY_CNF
+2025-12-16T19:05:54.648176+0100 chargesom manager[874442]: [INFO] evse_slac:EvseS  :: Entered Idle state
+2025-12-16T19:05:54.681143+0100 chargesom manager[874431]: [INFO] bsp:CbChargeSOM  :: handle_pwm_on: Setting new duty cycle of 5.0%
+2025-12-16T19:05:54.689228+0100 chargesom manager[874432]: [INFO] connector:EvseM  :: EVSE ISO D-LINK_READY (false)
+2025-12-16T19:05:54.779691+0100 chargesom manager[874432]: [INFO] connector:EvseM  :: EVSE ISO SLAC UNMATCHED
+2025-12-16T19:09:09.720331+0100 chargesom manager[874431]: [INFO] bsp:CbChargeSOM  :: CP state change from B to A, PWM: 5.0%
+2025-12-16T19:09:09.769609+0100 chargesom manager[874431]: [INFO] bsp:CbChargeSOM  :: handle_pwm_off: Setting new duty cycle of 100.0%
+2025-12-16T19:09:09.873246+0100 chargesom manager[874431]: [INFO] bsp:CbChargeSOM  :: handle_allow_power_on: request to OPEN the contactor
+2025-12-16T19:09:09.961716+0100 chargesom manager[874432]: [INFO] connector:EvseM  ::                                     CAR IEC Event CarUnplugged
+2025-12-16T19:09:09.962806+0100 chargesom manager[874432]: [INFO] connector:EvseM  :: EVSE IEC Charger state: PrepareCharging->Finished
+2025-12-16T19:09:09.962806+0100 chargesom manager[874432]: [INFO] connector:EvseM  :: EVSE IEC Transaction Finished: EVDisconnected (0 kWh)
+2025-12-16T19:09:10.054236+0100 chargesom manager[874432]: [INFO] connector:EvseM  :: EVSE IEC Session Finished
+2025-12-16T19:09:10.054236+0100 chargesom manager[874432]: [INFO] connector:EvseM  :: SYS  Session logging stopped.
+2025-12-16T19:09:10.148480+0100 chargesom manager[874431]: [INFO] bsp:CbChargeSOM  :: handle_pwm_off: Setting new duty cycle of 100.0%
+2025-12-16T19:09:10.205516+0100 chargesom manager[874432]: [INFO] connector:EvseM  :: All errors cleared
+2025-12-16T19:09:13.215971+0100 chargesom manager[874431]: [INFO] bsp:CbChargeSOM  :: CP state change from A to B, PWM: 100.0%
+2025-12-16T19:09:13.219112+0100 chargesom manager[874442]: [INFO] evse_slac:EvseS  :: Entered Matching state, waiting for CM_SLAC_PARM_REQ
+2025-12-16T19:09:13.333114+0100 chargesom manager[874431]: [INFO] bsp:CbChargeSOM  :: handle_allow_power_on: request to OPEN the contactor
+2025-12-16T19:09:13.398224+0100 chargesom manager[874432]: [INFO] connector:EvseM  :: SYS  Session logging started.
+2025-12-16T19:09:13.399185+0100 chargesom manager[874432]: [INFO] connector:EvseM  :: EVSE IEC Session Started: EVConnected
+2025-12-16T19:09:13.401819+0100 chargesom manager[874468]: [INFO] token_provider:  :: Publishing new dummy token: {
+2025-12-16T19:09:13.401819+0100 chargesom manager[874468]:     "authorization_type": "RFID",
+2025-12-16T19:09:13.401819+0100 chargesom manager[874468]:     "id_token": {
+2025-12-16T19:09:13.401819+0100 chargesom manager[874468]:         "type": "ISO14443",
+2025-12-16T19:09:13.401819+0100 chargesom manager[874468]:         "value": "[redacted] hash: 29F2679CA504908"
+2025-12-16T19:09:13.401819+0100 chargesom manager[874468]:     },
+2025-12-16T19:09:13.401819+0100 chargesom manager[874468]:     "parent_id_token": {
+2025-12-16T19:09:13.401819+0100 chargesom manager[874468]:         "type": "ISO14443",
+2025-12-16T19:09:13.401819+0100 chargesom manager[874468]:         "value": "[redacted] hash: 29F2679CA504908"
+2025-12-16T19:09:13.401819+0100 chargesom manager[874468]:     }
+2025-12-16T19:09:13.401819+0100 chargesom manager[874468]: }
+2025-12-16T19:09:13.406221+0100 chargesom manager[874430]: [INFO] auth:Auth        :: Plug In event for evse#1, starting auth
+2025-12-16T19:09:13.406221+0100 chargesom manager[874430]: [INFO] auth:Auth        :: Received new token: {
+2025-12-16T19:09:13.406221+0100 chargesom manager[874430]:     "authorization_type": "RFID",
+2025-12-16T19:09:13.406221+0100 chargesom manager[874430]:     "id_token": {
+2025-12-16T19:09:13.406221+0100 chargesom manager[874430]:         "type": "ISO14443",
+2025-12-16T19:09:13.406221+0100 chargesom manager[874430]:         "value": "[redacted] hash: 29F2679CA504908"
+2025-12-16T19:09:13.406221+0100 chargesom manager[874430]:     },
+2025-12-16T19:09:13.406221+0100 chargesom manager[874430]:     "parent_id_token": {
+2025-12-16T19:09:13.406221+0100 chargesom manager[874430]:         "type": "ISO14443",
+2025-12-16T19:09:13.406221+0100 chargesom manager[874430]:         "value": "[redacted] hash: 29F2679CA504908"
+2025-12-16T19:09:13.406221+0100 chargesom manager[874430]:     }
+2025-12-16T19:09:13.406221+0100 chargesom manager[874430]: }
+2025-12-16T19:09:13.409278+0100 chargesom manager[874475]: [INFO] token_validator  :: Got validation request for token: [redacted] hash: 29F2679CA504908
+2025-12-16T19:09:13.658544+0100 chargesom manager[874475]: [INFO] token_validator  :: Returning validation status: Accepted
+2025-12-16T19:09:13.661627+0100 chargesom manager[874430]: [INFO] auth:Auth        :: Providing authorization to evse#1
+2025-12-16T19:09:13.899626+0100 chargesom manager[874432]: [INFO] connector:EvseM  :: EVSE IEC Set PWM On (5.0%) took 0 ms
+2025-12-16T19:09:13.945639+0100 chargesom manager[874431]: [INFO] bsp:CbChargeSOM  :: handle_pwm_on: Setting new duty cycle of 5.0%
+2025-12-16T19:09:14.079447+0100 chargesom manager[874430]: [INFO] auth:Auth        :: Result for token: [redacted] hash: 29F2679CA504908: ACCEPTED
+2025-12-16T19:09:14.090039+0100 chargesom manager[874432]: [INFO] connector:EvseM  :: EVSE IEC EIM Authorization received
+2025-12-16T19:09:14.090848+0100 chargesom manager[874432]: [INFO] connector:EvseM  :: EVSE IEC Transaction Started (0 kWh)
+2025-12-16T19:09:14.092249+0100 chargesom manager[874432]: [INFO] connector:EvseM  :: EVSE IEC DC mode. We are in 5percent mode so we can continue without further action.
+2025-12-16T19:09:14.092249+0100 chargesom manager[874432]: [INFO] connector:EvseM  :: EVSE IEC Charger state: Wait for Auth->PrepareCharging
+2025-12-16T19:09:20.229780+0100 chargesom manager[874442]: [INFO] evse_slac:EvseS  :: Session (run_id=9DF5F213DEFAAC91, ev_mac=F0:7F:0C:11:12:F1): initialized, waiting for CM_START_ATTEN_CHAR_IND
+2025-12-16T19:09:20.467754+0100 chargesom manager[874442]: [INFO] evse_slac:EvseS  :: Session (run_id=9DF5F213DEFAAC91, ev_mac=F0:7F:0C:11:12:F1): received CM_START_ATTEN_CHAR_IND, going to substate SOUNDING
+2025-12-16T19:09:20.507675+0100 chargesom manager[874442]: [INFO] evse_slac:EvseS  :: Session (run_id=9DF5F213DEFAAC91, ev_mac=F0:7F:0C:11:12:F1): needs to be in state WAIT_FOR_START_ATTEN_CHAR for CM_START_ATTEN_CHAR_IND
+2025-12-16T19:09:20.547610+0100 chargesom manager[874442]: [INFO] evse_slac:EvseS  :: Session (run_id=9DF5F213DEFAAC91, ev_mac=F0:7F:0C:11:12:F1): needs to be in state WAIT_FOR_START_ATTEN_CHAR for CM_START_ATTEN_CHAR_IND
+2025-12-16T19:09:20.587716+0100 chargesom manager[874442]: [INFO] evse_slac:EvseS  :: Session (run_id=9DF5F213DEFAAC91, ev_mac=F0:7F:0C:11:12:F1): received CM_MNBC_SOUND_IND
+2025-12-16T19:09:20.595168+0100 chargesom manager[874442]: [INFO] evse_slac:EvseS  :: Session (run_id=9DF5F213DEFAAC91, ev_mac=F0:7F:0C:11:12:F1): received CM_ATTEN_PROFILE_IND
+2025-12-16T19:09:20.627559+0100 chargesom manager[874442]: [INFO] evse_slac:EvseS  :: Session (run_id=9DF5F213DEFAAC91, ev_mac=F0:7F:0C:11:12:F1): received CM_MNBC_SOUND_IND
+2025-12-16T19:09:20.634911+0100 chargesom manager[874442]: [INFO] evse_slac:EvseS  :: Session (run_id=9DF5F213DEFAAC91, ev_mac=F0:7F:0C:11:12:F1): received CM_ATTEN_PROFILE_IND
+2025-12-16T19:09:20.667584+0100 chargesom manager[874442]: [INFO] evse_slac:EvseS  :: Session (run_id=9DF5F213DEFAAC91, ev_mac=F0:7F:0C:11:12:F1): received CM_MNBC_SOUND_IND
+2025-12-16T19:09:20.674916+0100 chargesom manager[874442]: [INFO] evse_slac:EvseS  :: Session (run_id=9DF5F213DEFAAC91, ev_mac=F0:7F:0C:11:12:F1): received CM_ATTEN_PROFILE_IND
+2025-12-16T19:09:20.707672+0100 chargesom manager[874442]: [INFO] evse_slac:EvseS  :: Session (run_id=9DF5F213DEFAAC91, ev_mac=F0:7F:0C:11:12:F1): received CM_MNBC_SOUND_IND
+2025-12-16T19:09:20.715046+0100 chargesom manager[874442]: [INFO] evse_slac:EvseS  :: Session (run_id=9DF5F213DEFAAC91, ev_mac=F0:7F:0C:11:12:F1): received CM_ATTEN_PROFILE_IND
+2025-12-16T19:09:20.747676+0100 chargesom manager[874442]: [INFO] evse_slac:EvseS  :: Session (run_id=9DF5F213DEFAAC91, ev_mac=F0:7F:0C:11:12:F1): received CM_MNBC_SOUND_IND
+2025-12-16T19:09:20.755237+0100 chargesom manager[874442]: [INFO] evse_slac:EvseS  :: Session (run_id=9DF5F213DEFAAC91, ev_mac=F0:7F:0C:11:12:F1): received CM_ATTEN_PROFILE_IND
+2025-12-16T19:09:20.787879+0100 chargesom manager[874442]: [INFO] evse_slac:EvseS  :: Session (run_id=9DF5F213DEFAAC91, ev_mac=F0:7F:0C:11:12:F1): received CM_MNBC_SOUND_IND
+2025-12-16T19:09:20.795217+0100 chargesom manager[874442]: [INFO] evse_slac:EvseS  :: Session (run_id=9DF5F213DEFAAC91, ev_mac=F0:7F:0C:11:12:F1): received CM_ATTEN_PROFILE_IND
+2025-12-16T19:09:20.827678+0100 chargesom manager[874442]: [INFO] evse_slac:EvseS  :: Session (run_id=9DF5F213DEFAAC91, ev_mac=F0:7F:0C:11:12:F1): received CM_MNBC_SOUND_IND
+2025-12-16T19:09:20.835070+0100 chargesom manager[874442]: [INFO] evse_slac:EvseS  :: Session (run_id=9DF5F213DEFAAC91, ev_mac=F0:7F:0C:11:12:F1): received CM_ATTEN_PROFILE_IND
+2025-12-16T19:09:20.867525+0100 chargesom manager[874442]: [INFO] evse_slac:EvseS  :: Session (run_id=9DF5F213DEFAAC91, ev_mac=F0:7F:0C:11:12:F1): received CM_MNBC_SOUND_IND
+2025-12-16T19:09:20.874987+0100 chargesom manager[874442]: [INFO] evse_slac:EvseS  :: Session (run_id=9DF5F213DEFAAC91, ev_mac=F0:7F:0C:11:12:F1): received CM_ATTEN_PROFILE_IND
+2025-12-16T19:09:20.907594+0100 chargesom manager[874442]: [INFO] evse_slac:EvseS  :: Session (run_id=9DF5F213DEFAAC91, ev_mac=F0:7F:0C:11:12:F1): received CM_MNBC_SOUND_IND
+2025-12-16T19:09:20.914906+0100 chargesom manager[874442]: [INFO] evse_slac:EvseS  :: Session (run_id=9DF5F213DEFAAC91, ev_mac=F0:7F:0C:11:12:F1): received CM_ATTEN_PROFILE_IND
+2025-12-16T19:09:20.947641+0100 chargesom manager[874442]: [INFO] evse_slac:EvseS  :: Session (run_id=9DF5F213DEFAAC91, ev_mac=F0:7F:0C:11:12:F1): received CM_MNBC_SOUND_IND
+2025-12-16T19:09:20.955116+0100 chargesom manager[874442]: [INFO] evse_slac:EvseS  :: Session (run_id=9DF5F213DEFAAC91, ev_mac=F0:7F:0C:11:12:F1): received CM_ATTEN_PROFILE_IND
+2025-12-16T19:09:20.955418+0100 chargesom manager[874442]: [INFO] evse_slac:EvseS  :: Session (run_id=9DF5F213DEFAAC91, ev_mac=F0:7F:0C:11:12:F1): received all sounds, going to substate FINALIZE_SOUNDING
+2025-12-16T19:09:20.999413+0100 chargesom manager[874442]: [INFO] evse_slac:EvseS  :: Session (run_id=9DF5F213DEFAAC91, ev_mac=F0:7F:0C:11:12:F1): Finalize sounding, sending CM_ATTEN_CHAR_IND
+2025-12-16T19:09:21.006547+0100 chargesom manager[874442]: [INFO] evse_slac:EvseS  :: Session (run_id=9DF5F213DEFAAC91, ev_mac=F0:7F:0C:11:12:F1): received CM_ATTEN_CHAR_RSP, going to substate WAIT_FOR_SLAC_MATCH
+2025-12-16T19:09:21.677725+0100 chargesom manager[874442]: [INFO] evse_slac:EvseS  :: Session (run_id=9DF5F213DEFAAC91, ev_mac=F0:7F:0C:11:12:F1): Received CM_SLAC_MATCH_REQ, sending CM_SLAC_MATCH_CNF -> session complete
+2025-12-16T19:09:21.678968+0100 chargesom manager[874442]: [INFO] evse_slac:EvseS  :: Entered Matched state
+2025-12-16T19:09:21.680326+0100 chargesom manager[874432]: [INFO] connector:EvseM  :: EVSE ISO SLAC MATCHED
+2025-12-16T19:09:21.721402+0100 chargesom manager[874432]: [INFO] connector:EvseM  :: EVSE ISO D-LINK_READY (true)
+2025-12-16T19:09:23.467641+0100 chargesom manager[874457]: [INFO] iso15118_charge  :: Received packet from [fe80::f27f:cff:fe11:12f1]:49152 with security 0x10 and protocol 0x00
+2025-12-16T19:09:23.467641+0100 chargesom manager[874457]: [INFO] iso15118_charge  :: SDP requested NO-TLS, announcing NO-TLS
+2025-12-16T19:09:23.467641+0100 chargesom manager[874457]: [INFO] iso15118_charge  :: sendto([fe80::f27f:cff:fe11:12f1]:49152) succeeded
+2025-12-16T19:09:24.488160+0100 chargesom manager[874457]: [INFO] iso15118_charge  :: Incoming connection on eth1 from [a00:c000:0:0:fe80::]:49152
+2025-12-16T19:09:24.488160+0100 chargesom manager[874457]: [INFO] iso15118_charge  :: Started new TCP connection thread
+2025-12-16T19:09:24.518068+0100 chargesom manager[874457]: [INFO] iso15118_charge  :: Handling SupportedAppProtocolReq
+2025-12-16T19:09:24.519651+0100 chargesom manager[874457]: [INFO] iso15118_charge  :: Protocol negotiation was successful. Selected protocol is ISO15118
+2025-12-16T19:09:24.534566+0100 chargesom manager[874432]: [INFO] connector:EvseM  ::                                     CAR ISO V2G SupportedAppProtocolReq
+2025-12-16T19:09:24.534566+0100 chargesom manager[874432]: [INFO] connector:EvseM  :: EVSE ISO V2G SupportedAppProtocolRes
+2025-12-16T19:09:24.558047+0100 chargesom manager[874457]: [INFO] iso15118_charge  :: SessionSetupReq.EVCCID: F0:7F:0C:11:12:F1
+2025-12-16T19:09:24.558047+0100 chargesom manager[874457]: [INFO] iso15118_charge  :: No session_id found or not equal to the id from the preceding v2g session. Generating random session id.
+2025-12-16T19:09:24.558047+0100 chargesom manager[874457]: [INFO] iso15118_charge  :: Created new session with id 0x18358923672602526121
+2025-12-16T19:09:24.602832+0100 chargesom manager[874432]: [INFO] connector:EvseM  ::                                     CAR ISO V2G SessionSetupReq
+2025-12-16T19:09:24.656866+0100 chargesom manager[874432]: [INFO] connector:EvseM  :: EVSE ISO V2G SessionSetupRes
+2025-12-16T19:09:24.697811+0100 chargesom manager[874457]: [WARN] iso15118_charge  :: PnC is not allowed without TLS-communication. Correcting value to '1' (ExternalPayment)
+2025-12-16T19:09:24.699442+0100 chargesom manager[874432]: [INFO] connector:EvseM  ::                                     CAR ISO V2G ServiceDiscoveryReq
+2025-12-16T19:09:24.798715+0100 chargesom manager[874432]: [INFO] connector:EvseM  :: EVSE ISO V2G ServiceDiscoveryRes
+2025-12-16T19:09:24.837925+0100 chargesom manager[874457]: [INFO] iso15118_charge  :: SelectedPaymentOption: ExternalPayment
+2025-12-16T19:09:24.839952+0100 chargesom manager[874432]: [INFO] connector:EvseM  ::                                     CAR ISO V2G PaymentServiceSelectionReq
+2025-12-16T19:09:24.936929+0100 chargesom manager[874432]: [INFO] connector:EvseM  :: EVSE ISO V2G PaymentServiceSelectionRes
+2025-12-16T19:09:25.037650+0100 chargesom manager[874432]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T19:09:25.086515+0100 chargesom manager[874432]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T19:09:25.217193+0100 chargesom manager[874432]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-16T19:09:25.307055+0100 chargesom manager[874432]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-16T19:09:25.347830+0100 chargesom manager[874457]: [INFO] iso15118_charge  :: Parameter-phase started
+2025-12-16T19:09:25.349302+0100 chargesom manager[874457]: [INFO] iso15118_charge  :: Selected energy transfer mode: DC_extended
+2025-12-16T19:09:25.355293+0100 chargesom manager[874432]: [INFO] connector:EvseM  :: Received EV maximum limits: {
+2025-12-16T19:09:25.355293+0100 chargesom manager[874432]:     "dc_ev_maximum_current_limit": 350.0,
+2025-12-16T19:09:25.355293+0100 chargesom manager[874432]:     "dc_ev_maximum_voltage_limit": 464.0
+2025-12-16T19:09:25.355293+0100 chargesom manager[874432]: }
+2025-12-16T19:09:25.358910+0100 chargesom manager[874432]: [INFO] connector:EvseM  ::                                     CAR ISO V2G ChargeParameterDiscoveryReq
+2025-12-16T19:09:25.446691+0100 chargesom manager[874432]: [INFO] connector:EvseM  :: EVSE ISO V2G ChargeParameterDiscoveryRes
+2025-12-16T19:09:26.777972+0100 chargesom manager[874432]: [INFO] connector:EvseM  ::                                     CAR ISO V2G SessionStopReq
+2025-12-16T19:09:26.837213+0100 chargesom manager[874457]: [INFO] iso15118_charge  :: Closing TCP connection
+2025-12-16T19:09:26.837565+0100 chargesom manager[874432]: [INFO] connector:EvseM  :: EVSE ISO V2G SessionStopRes
+2025-12-16T19:09:31.836922+0100 chargesom manager[874457]: [INFO] iso15118_charge  :: TCP connection closed gracefully
+2025-12-16T19:09:31.838331+0100 chargesom manager[874432]: [INFO] connector:EvseM  :: EVSE ISO D-LINK_TERMINATE.req
+2025-12-16T19:09:31.839256+0100 chargesom manager[874432]: [INFO] connector:EvseM  :: EVSE IEC Set PWM Off
+2025-12-16T19:09:31.881592+0100 chargesom manager[874431]: [INFO] bsp:CbChargeSOM  :: handle_pwm_off: Setting new duty cycle of 100.0%
+2025-12-16T19:09:31.997322+0100 chargesom manager[874432]: [INFO] connector:EvseM  :: EVSE IEC Set PWM On (5.0%) took 0 ms
+2025-12-16T19:09:31.999003+0100 chargesom manager[874442]: [INFO] evse_slac:EvseS  :: D-LINK_TERMINATE.request received, leaving network.
+2025-12-16T19:09:31.999984+0100 chargesom manager[874442]: [INFO] evse_slac:EvseS  :: Entered Reset state
+2025-12-16T19:09:32.000226+0100 chargesom manager[874442]: [INFO] evse_slac:EvseS  :: New NMK key: 5A:32:59:42:54:43:50:4E:5A:57:53:4E:46:4F:4F:4A
+2025-12-16T19:09:32.003234+0100 chargesom manager[874442]: [INFO] evse_slac:EvseS  :: Received CM_SET_KEY_CNF
+2025-12-16T19:09:32.003234+0100 chargesom manager[874442]: [INFO] evse_slac:EvseS  :: Entered Idle state
+2025-12-16T19:09:32.003896+0100 chargesom manager[874432]: [INFO] connector:EvseM  :: EVSE ISO D-LINK_READY (false)
+2025-12-16T19:09:32.007983+0100 chargesom manager[874432]: [INFO] connector:EvseM  :: EVSE ISO SLAC UNMATCHED
+2025-12-16T19:09:32.037179+0100 chargesom manager[874431]: [INFO] bsp:CbChargeSOM  :: handle_pwm_on: Setting new duty cycle of 5.0%
+2025-12-16T19:11:33.295700+0100 chargesom manager[874431]: [INFO] bsp:CbChargeSOM  :: CP state change from B to A, PWM: 5.0%
+2025-12-16T19:11:33.365657+0100 chargesom manager[874431]: [INFO] bsp:CbChargeSOM  :: handle_pwm_off: Setting new duty cycle of 100.0%
+2025-12-16T19:11:33.449255+0100 chargesom manager[874431]: [INFO] bsp:CbChargeSOM  :: handle_allow_power_on: request to OPEN the contactor
+2025-12-16T19:11:33.497706+0100 chargesom manager[874432]: [INFO] connector:EvseM  ::                                     CAR IEC Event CarUnplugged
+2025-12-16T19:11:33.498790+0100 chargesom manager[874432]: [INFO] connector:EvseM  :: EVSE IEC Charger state: PrepareCharging->Finished
+2025-12-16T19:11:33.499093+0100 chargesom manager[874432]: [INFO] connector:EvseM  :: EVSE IEC Transaction Finished: EVDisconnected (0 kWh)
+2025-12-16T19:11:33.638040+0100 chargesom manager[874432]: [INFO] connector:EvseM  :: EVSE IEC Session Finished
+2025-12-16T19:11:33.638433+0100 chargesom manager[874432]: [INFO] connector:EvseM  :: SYS  Session logging stopped.
+2025-12-16T19:11:33.727707+0100 chargesom manager[874431]: [INFO] bsp:CbChargeSOM  :: handle_pwm_off: Setting new duty cycle of 100.0%
+2025-12-16T19:11:33.769819+0100 chargesom manager[874432]: [INFO] connector:EvseM  :: All errors cleared

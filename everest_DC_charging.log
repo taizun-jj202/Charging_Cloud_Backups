@@ -1,0 +1,466 @@
+2025-12-14T01:43:14.394318+0100 chargesom manager[4372]: [INFO] powersupply_dc:  :: Infy[0x00]: serial number: SN_2818a396c70776_V
+2025-12-14T01:43:19.181070+0100 chargesom manager[4351]: [INFO] connector:EvseM  :: Cleaning up any other transaction on start up
+2025-12-14T01:43:19.366752+0100 chargesom manager[4351]: [INFO] connector:EvseM  :: 🌀🌀🌀 Ready to start charging 🌀🌀🌀
+2025-12-14T01:43:19.367179+0100 chargesom manager[4351]: [WARN] connector:EvseM void module::EvseManager::ready_to_start_charging() :: No powermeter value received yet!
+2025-12-14T01:43:19.713443+0100 chargesom manager[4350]: [INFO] bsp:CbChargeSOM  :: handle_enable: Setting new duty cycle of 100.0%
+2025-12-14T01:43:19.829619+0100 chargesom manager[4350]: [INFO] bsp:CbChargeSOM  :: CP state change from PowerOn to A, PWM: 100.0%
+2025-12-14T01:43:19.917120+0100 chargesom manager[4350]: [INFO] bsp:CbChargeSOM  :: handle_pwm_off: Setting new duty cycle of 100.0%
+2025-12-14T01:43:19.973816+0100 chargesom manager[4350]: [INFO] bsp:CbChargeSOM  :: handle_allow_power_on: request to OPEN the contactor
+2025-12-14T01:43:20.017095+0100 chargesom manager[4350]: [INFO] bsp:CbChargeSOM  :: handle_pwm_off: Setting new duty cycle of 100.0%
+2025-12-14T01:43:20.030442+0100 chargesom manager[4351]: [INFO] connector:EvseM  :: All errors cleared
+2025-12-14T01:46:36.094473+0100 chargesom systemd[1]: Stopping EVerest...
+2025-12-14T01:46:36.134127+0100 chargesom systemd[1]: everest.service: Deactivated successfully.
+2025-12-14T01:46:36.134991+0100 chargesom systemd[1]: Stopped EVerest.
+2025-12-14T01:46:36.151752+0100 chargesom systemd[1]: Starting EVerest...
+2025-12-14T01:46:36.155523+0100 chargesom sh[5866]: Starting to migrate EVerest configurations
+2025-12-14T01:46:36.172660+0100 chargesom sh[5866]: EVerest configurations migrated successfully
+2025-12-14T01:46:36.176202+0100 chargesom systemd[1]: Started EVerest.
+2025-12-14T01:46:36.200811+0100 chargesom manager[5870]: [INFO] manager          ::   ________      __                _
+2025-12-14T01:46:36.200811+0100 chargesom manager[5870]: [INFO] manager          ::  |  ____\ \    / /               | |
+2025-12-14T01:46:36.202099+0100 chargesom manager[5870]: [INFO] manager          ::  | |__   \ \  / /__ _ __ ___  ___| |_
+2025-12-14T01:46:36.202099+0100 chargesom manager[5870]: [INFO] manager          ::  |  __|   \ \/ / _ \ '__/ _ \/ __| __|
+2025-12-14T01:46:36.202099+0100 chargesom manager[5870]: [INFO] manager          ::  | |____   \  /  __/ | |  __/\__ \ |_
+2025-12-14T01:46:36.202099+0100 chargesom manager[5870]: [INFO] manager          ::  |______|   \/ \___|_|  \___||___/\__|
+2025-12-14T01:46:36.202099+0100 chargesom manager[5870]: [INFO] manager          ::
+2025-12-14T01:46:36.202099+0100 chargesom manager[5870]: [INFO] manager          :: everest-framework 0.23.0 main@v0.23.0
+2025-12-14T01:46:36.202099+0100 chargesom manager[5870]: [INFO] manager          :: everest-core 2025.8.0 feature/json-rpc-api-2025.8.0@2025.8.0-351-g14709eef-dirty
+2025-12-14T01:46:36.202099+0100 chargesom manager[5870]: [INFO] manager          ::
+2025-12-14T01:46:36.202099+0100 chargesom manager[5870]: [INFO] manager          :: Using MQTT broker localhost:1883
+2025-12-14T01:46:36.218581+0100 chargesom manager[5871]: [INFO] everest_ctrl     :: Launching controller service on port 8849
+2025-12-14T01:46:36.233325+0100 chargesom manager[5870]: [INFO] manager          :: Boot mode is set to YamlFile, loading module configs from YAML file
+2025-12-14T01:46:36.233977+0100 chargesom manager[5870]: [INFO] manager          :: Loading config file at: /etc/everest/config.yaml
+2025-12-14T01:46:36.354363+0100 chargesom manager[5870]: [INFO] manager          :: Config loading completed in 149ms
+2025-12-14T01:46:36.359385+0100 chargesom manager[5870]: [INFO] manager          :: Starting 14 modules
+2025-12-14T01:46:38.177512+0100 chargesom manager[5890]: [WARN] api:API          :: No evse energy sink configured for evse_id: 1. API module does therefore not allow control of amps or power limits for this EVSE
+2025-12-14T01:46:38.179565+0100 chargesom manager[5890]: [INFO] api:API          :: Module api initialized [1778ms]
+2025-12-14T01:46:38.194523+0100 chargesom manager[5892]: [INFO] bsp:CbChargeSOM  :: chargebyte's Charge SOM EVerest module (version: 0.24.0)
+2025-12-14T01:46:38.241692+0100 chargesom manager[5893]: [INFO] connector:EvseM  :: Module connector initialized [1794ms]
+2025-12-14T01:46:38.248368+0100 chargesom manager[5894]: [INFO] energy_manager:  :: Module energy_manager initialized [1767ms]
+2025-12-14T01:46:38.259469+0100 chargesom manager[5891]: [INFO] auth:Auth        :: Module auth initialized [1827ms]
+2025-12-14T01:46:38.261011+0100 chargesom manager[5902]: [INFO] evse_security:E  :: Module evse_security initialized [1789ms]
+2025-12-14T01:46:38.268808+0100 chargesom manager[5910]: [INFO] grid_connection  :: Module grid_connection_point initialized [1767ms]
+2025-12-14T01:46:38.273837+0100 chargesom manager[5911]: [INFO] imd:IMDSimulato  :: Module imd initialized [1737ms]
+2025-12-14T01:46:38.288651+0100 chargesom manager[5898]: [INFO] error_history:E  :: Using database at "/tmp/error_history.db"
+2025-12-14T01:46:38.288651+0100 chargesom manager[5898]: [INFO] error_history:E  :: Checking database
+2025-12-14T01:46:38.293772+0100 chargesom manager[5898]: [INFO] error_history:E  :: Module error_history initialized [1799ms]
+2025-12-14T01:46:38.307719+0100 chargesom manager[5913]: [INFO] iso15118_charge  :: Module iso15118_charger initialized [1736ms]
+2025-12-14T01:46:38.312698+0100 chargesom manager[5921]: [INFO] powersupply_dc:  :: Infy: Setting config values: CAN device: can0
+2025-12-14T01:46:38.315564+0100 chargesom manager[5921]: [INFO] powersupply_dc:  :: Starting CAN RX thread
+2025-12-14T01:46:38.315564+0100 chargesom manager[5921]: [INFO] powersupply_dc:  :: CAN error cleared: Success
+2025-12-14T01:46:38.315564+0100 chargesom manager[5921]: [INFO] powersupply_dc:  :: Infy: Operating with controller address: 0xf0
+2025-12-14T01:46:38.315564+0100 chargesom manager[5921]: [INFO] powersupply_dc:  :: Infy: Operating in FIXED_ADDRESS mode with 1 addresses: 0
+2025-12-14T01:46:38.315564+0100 chargesom manager[5921]: [INFO] powersupply_dc:  :: Infy: module communication timeout: 15s
+2025-12-14T01:46:38.315564+0100 chargesom manager[5921]: [INFO] powersupply_dc:  :: Infy: Operating in FIXED_ADDRESS mode. No need to ping.
+2025-12-14T01:46:38.315564+0100 chargesom manager[5921]: [INFO] powersupply_dc:  :: Infy: switch_on_off(false) - active modules: 1
+2025-12-14T01:46:38.317466+0100 chargesom manager[5921]: [INFO] powersupply_dc:  :: Module powersupply_dc initialized [1757ms]
+2025-12-14T01:46:38.322418+0100 chargesom manager[5927]: [INFO] token_provider:  :: Module token_provider initialized [1750ms]
+2025-12-14T01:46:38.323543+0100 chargesom manager[5904]: [INFO] evse_slac:EvseS  :: Module evse_slac initialized [1804ms]
+2025-12-14T01:46:38.336804+0100 chargesom manager[5930]: [INFO] token_validator  :: Module token_validator initialized [1754ms]
+2025-12-14T01:46:38.561366+0100 chargesom manager[5892]: [INFO] bsp:CbChargeSOM  :: Safety Controller Firmware: 0.2.5 (gde7345017c7932bc, Charge SOM, firmware)
+2025-12-14T01:46:38.561784+0100 chargesom manager[5892]: [INFO] bsp:CbChargeSOM  :: Module bsp initialized [2145ms]
+2025-12-14T01:46:38.563757+0100 chargesom manager[5870]: [INFO] manager          :: Clearing retained topics published by manager during startup
+2025-12-14T01:46:38.563757+0100 chargesom manager[5870]: [INFO] manager          :: 🚙🚙🚙 All modules are initialized. EVerest up and running [2367ms] 🚙🚙🚙
+2025-12-14T01:46:38.569382+0100 chargesom manager[5913]: [INFO] iso15118_charge  :: TCP server on eth1 is listening on port [fe80::201:87ff:fe00:3035%3]:61341
+2025-12-14T01:46:38.569382+0100 chargesom manager[5913]: [INFO] iso15118_charge  :: SDP socket setup succeeded
+2025-12-14T01:46:38.593271+0100 chargesom manager[5904]: [INFO] evse_slac:EvseS  :: Starting the SLAC state machine
+2025-12-14T01:46:38.710179+0100 chargesom manager[5891]: [WARN] auth:Auth        :: Can not load reservations because no storage was configured.
+2025-12-14T01:46:38.793613+0100 chargesom manager[5904]: [INFO] evse_slac:EvseS  :: Entered Reset state
+2025-12-14T01:46:38.794075+0100 chargesom manager[5904]: [INFO] evse_slac:EvseS  :: New NMK key: 56:57:43:36:4D:37:50:33:47:33:34:39:57:42:52:44
+2025-12-14T01:46:38.795206+0100 chargesom manager[5904]: [INFO] evse_slac:EvseS  :: Received CM_SET_KEY_CNF
+2025-12-14T01:46:38.795507+0100 chargesom manager[5904]: [INFO] evse_slac:EvseS  :: Entered Idle state
+2025-12-14T01:46:39.323054+0100 chargesom manager[5921]: [INFO] powersupply_dc:  :: Infy[0x00]: capabilities: 1000V / 50V, 102A, power 30000W
+2025-12-14T01:46:39.324075+0100 chargesom manager[5921]: [INFO] powersupply_dc:  :: Infy: Capabilities updated: 1000V / 50V, 102A, power 30000W
+2025-12-14T01:46:39.324075+0100 chargesom manager[5921]: [INFO] powersupply_dc:  :: Infy: Hot plug detected - module count increased from 0 to 1 modules, redistributing 0A from 0 to 1 modules
+2025-12-14T01:46:39.324075+0100 chargesom manager[5921]: [INFO] powersupply_dc:  :: Infy: Restoring last settings: voltage=0V, current=0A, mode=Off, phase=CableCheck
+2025-12-14T01:46:39.324075+0100 chargesom manager[5921]: [INFO] powersupply_dc:  :: Infy: Updating voltage/current via CAN: 50V / 1A total → 1A per module - active modules: 1
+2025-12-14T01:46:39.324075+0100 chargesom manager[5921]: [INFO] powersupply_dc:  :: Infy: set_voltage_current(50V, 1A) - active modules: 1
+2025-12-14T01:46:39.324075+0100 chargesom manager[5921]: [INFO] powersupply_dc:  :: Set mode via CAN: Off with phase CableCheck
+2025-12-14T01:46:39.324075+0100 chargesom manager[5921]: [INFO] powersupply_dc:  :: Infy: switch_on_off(false) - active modules: 1
+2025-12-14T01:46:39.325181+0100 chargesom manager[5921]: [INFO] powersupply_dc:  :: Infy[0x00]: serial number: SN_2818a396c70776_V
+2025-12-14T01:46:44.135068+0100 chargesom manager[5893]: [INFO] connector:EvseM  :: Cleaning up any other transaction on start up
+2025-12-14T01:46:44.197426+0100 chargesom manager[5893]: [INFO] connector:EvseM  :: 🌀🌀🌀 Ready to start charging 🌀🌀🌀
+2025-12-14T01:46:44.197426+0100 chargesom manager[5893]: [WARN] connector:EvseM void module::EvseManager::ready_to_start_charging() :: No powermeter value received yet!
+2025-12-14T01:46:44.498859+0100 chargesom manager[5892]: [INFO] bsp:CbChargeSOM  :: handle_enable: Setting new duty cycle of 100.0%
+2025-12-14T01:46:44.622914+0100 chargesom manager[5892]: [INFO] bsp:CbChargeSOM  :: CP state change from PowerOn to A, PWM: 100.0%
+2025-12-14T01:46:44.670425+0100 chargesom manager[5892]: [INFO] bsp:CbChargeSOM  :: handle_pwm_off: Setting new duty cycle of 100.0%
+2025-12-14T01:46:44.725142+0100 chargesom manager[5892]: [INFO] bsp:CbChargeSOM  :: handle_allow_power_on: request to OPEN the contactor
+2025-12-14T01:46:44.816710+0100 chargesom manager[5892]: [INFO] bsp:CbChargeSOM  :: handle_pwm_off: Setting new duty cycle of 100.0%
+2025-12-14T01:46:44.857685+0100 chargesom manager[5893]: [INFO] connector:EvseM  :: All errors cleared
+2025-12-14T01:47:06.669198+0100 chargesom manager[5892]: [INFO] bsp:CbChargeSOM  :: CP state change from A to B, PWM: 100.0%
+2025-12-14T01:47:06.713781+0100 chargesom manager[5904]: [INFO] evse_slac:EvseS  :: Entered Matching state, waiting for CM_SLAC_PARM_REQ
+2025-12-14T01:47:06.761631+0100 chargesom manager[5892]: [INFO] bsp:CbChargeSOM  :: handle_allow_power_on: request to OPEN the contactor
+2025-12-14T01:47:06.850242+0100 chargesom manager[5893]: [INFO] connector:EvseM  :: SYS  Session logging started.
+2025-12-14T01:47:06.851283+0100 chargesom manager[5893]: [INFO] connector:EvseM  :: EVSE IEC Session Started: EVConnected
+2025-12-14T01:47:06.855000+0100 chargesom manager[5891]: [INFO] auth:Auth        :: Plug In event for evse#1, starting auth
+2025-12-14T01:47:06.856671+0100 chargesom manager[5927]: [INFO] token_provider:  :: Publishing new dummy token: {
+2025-12-14T01:47:06.856671+0100 chargesom manager[5927]:     "authorization_type": "RFID",
+2025-12-14T01:47:06.856671+0100 chargesom manager[5927]:     "id_token": {
+2025-12-14T01:47:06.856671+0100 chargesom manager[5927]:         "type": "ISO14443",
+2025-12-14T01:47:06.856671+0100 chargesom manager[5927]:         "value": "[redacted] hash: 29F2679CA504908"
+2025-12-14T01:47:06.856671+0100 chargesom manager[5927]:     },
+2025-12-14T01:47:06.856671+0100 chargesom manager[5927]:     "parent_id_token": {
+2025-12-14T01:47:06.856671+0100 chargesom manager[5927]:         "type": "ISO14443",
+2025-12-14T01:47:06.856671+0100 chargesom manager[5927]:         "value": "[redacted] hash: 29F2679CA504908"
+2025-12-14T01:47:06.856671+0100 chargesom manager[5927]:     }
+2025-12-14T01:47:06.856671+0100 chargesom manager[5927]: }
+2025-12-14T01:47:06.864062+0100 chargesom manager[5891]: [INFO] auth:Auth        :: Received new token: {
+2025-12-14T01:47:06.864062+0100 chargesom manager[5891]:     "authorization_type": "RFID",
+2025-12-14T01:47:06.864062+0100 chargesom manager[5891]:     "id_token": {
+2025-12-14T01:47:06.864062+0100 chargesom manager[5891]:         "type": "ISO14443",
+2025-12-14T01:47:06.864062+0100 chargesom manager[5891]:         "value": "[redacted] hash: 29F2679CA504908"
+2025-12-14T01:47:06.864062+0100 chargesom manager[5891]:     },
+2025-12-14T01:47:06.864062+0100 chargesom manager[5891]:     "parent_id_token": {
+2025-12-14T01:47:06.864062+0100 chargesom manager[5891]:         "type": "ISO14443",
+2025-12-14T01:47:06.864062+0100 chargesom manager[5891]:         "value": "[redacted] hash: 29F2679CA504908"
+2025-12-14T01:47:06.864062+0100 chargesom manager[5891]:     }
+2025-12-14T01:47:06.864062+0100 chargesom manager[5891]: }
+2025-12-14T01:47:06.867093+0100 chargesom manager[5930]: [INFO] token_validator  :: Got validation request for token: [redacted] hash: 29F2679CA504908
+2025-12-14T01:47:07.117342+0100 chargesom manager[5930]: [INFO] token_validator  :: Returning validation status: Accepted
+2025-12-14T01:47:07.119865+0100 chargesom manager[5891]: [INFO] auth:Auth        :: Providing authorization to evse#1
+2025-12-14T01:47:07.351253+0100 chargesom manager[5893]: [INFO] connector:EvseM  :: EVSE IEC Set PWM On (5.0%) took 0 ms
+2025-12-14T01:47:07.353721+0100 chargesom manager[5892]: [INFO] bsp:CbChargeSOM  :: handle_pwm_on: Setting new duty cycle of 5.0%
+2025-12-14T01:47:07.519947+0100 chargesom manager[5891]: [INFO] auth:Auth        :: Result for token: [redacted] hash: 29F2679CA504908: ACCEPTED
+2025-12-14T01:47:07.530038+0100 chargesom manager[5893]: [INFO] connector:EvseM  :: EVSE IEC EIM Authorization received
+2025-12-14T01:47:07.530896+0100 chargesom manager[5893]: [INFO] connector:EvseM  :: EVSE IEC Transaction Started (0 kWh)
+2025-12-14T01:47:07.531316+0100 chargesom manager[5893]: [INFO] connector:EvseM  :: EVSE IEC DC mode. We are in 5percent mode so we can continue without further action.
+2025-12-14T01:47:07.531655+0100 chargesom manager[5893]: [INFO] connector:EvseM  :: EVSE IEC Charger state: Wait for Auth->PrepareCharging
+2025-12-14T01:47:13.458900+0100 chargesom manager[5904]: [INFO] evse_slac:EvseS  :: Session (run_id=A8B81C1323846E37, ev_mac=F0:7F:0C:11:12:F1): initialized, waiting for CM_START_ATTEN_CHAR_IND
+2025-12-14T01:47:13.697589+0100 chargesom manager[5904]: [INFO] evse_slac:EvseS  :: Session (run_id=A8B81C1323846E37, ev_mac=F0:7F:0C:11:12:F1): received CM_START_ATTEN_CHAR_IND, going to substate SOUNDING
+2025-12-14T01:47:13.737579+0100 chargesom manager[5904]: [INFO] evse_slac:EvseS  :: Session (run_id=A8B81C1323846E37, ev_mac=F0:7F:0C:11:12:F1): needs to be in state WAIT_FOR_START_ATTEN_CHAR for CM_START_ATTEN_CHAR_IND
+2025-12-14T01:47:13.777507+0100 chargesom manager[5904]: [INFO] evse_slac:EvseS  :: Session (run_id=A8B81C1323846E37, ev_mac=F0:7F:0C:11:12:F1): needs to be in state WAIT_FOR_START_ATTEN_CHAR for CM_START_ATTEN_CHAR_IND
+2025-12-14T01:47:13.817556+0100 chargesom manager[5904]: [INFO] evse_slac:EvseS  :: Session (run_id=A8B81C1323846E37, ev_mac=F0:7F:0C:11:12:F1): received CM_MNBC_SOUND_IND
+2025-12-14T01:47:13.825107+0100 chargesom manager[5904]: [INFO] evse_slac:EvseS  :: Session (run_id=A8B81C1323846E37, ev_mac=F0:7F:0C:11:12:F1): received CM_ATTEN_PROFILE_IND
+2025-12-14T01:47:13.857605+0100 chargesom manager[5904]: [INFO] evse_slac:EvseS  :: Session (run_id=A8B81C1323846E37, ev_mac=F0:7F:0C:11:12:F1): received CM_MNBC_SOUND_IND
+2025-12-14T01:47:13.865070+0100 chargesom manager[5904]: [INFO] evse_slac:EvseS  :: Session (run_id=A8B81C1323846E37, ev_mac=F0:7F:0C:11:12:F1): received CM_ATTEN_PROFILE_IND
+2025-12-14T01:47:13.897456+0100 chargesom manager[5904]: [INFO] evse_slac:EvseS  :: Session (run_id=A8B81C1323846E37, ev_mac=F0:7F:0C:11:12:F1): received CM_MNBC_SOUND_IND
+2025-12-14T01:47:13.904835+0100 chargesom manager[5904]: [INFO] evse_slac:EvseS  :: Session (run_id=A8B81C1323846E37, ev_mac=F0:7F:0C:11:12:F1): received CM_ATTEN_PROFILE_IND
+2025-12-14T01:47:13.937422+0100 chargesom manager[5904]: [INFO] evse_slac:EvseS  :: Session (run_id=A8B81C1323846E37, ev_mac=F0:7F:0C:11:12:F1): received CM_MNBC_SOUND_IND
+2025-12-14T01:47:13.945244+0100 chargesom manager[5904]: [INFO] evse_slac:EvseS  :: Session (run_id=A8B81C1323846E37, ev_mac=F0:7F:0C:11:12:F1): received CM_ATTEN_PROFILE_IND
+2025-12-14T01:47:13.977452+0100 chargesom manager[5904]: [INFO] evse_slac:EvseS  :: Session (run_id=A8B81C1323846E37, ev_mac=F0:7F:0C:11:12:F1): received CM_MNBC_SOUND_IND
+2025-12-14T01:47:13.985050+0100 chargesom manager[5904]: [INFO] evse_slac:EvseS  :: Session (run_id=A8B81C1323846E37, ev_mac=F0:7F:0C:11:12:F1): received CM_ATTEN_PROFILE_IND
+2025-12-14T01:47:14.017725+0100 chargesom manager[5904]: [INFO] evse_slac:EvseS  :: Session (run_id=A8B81C1323846E37, ev_mac=F0:7F:0C:11:12:F1): received CM_MNBC_SOUND_IND
+2025-12-14T01:47:14.025079+0100 chargesom manager[5904]: [INFO] evse_slac:EvseS  :: Session (run_id=A8B81C1323846E37, ev_mac=F0:7F:0C:11:12:F1): received CM_ATTEN_PROFILE_IND
+2025-12-14T01:47:14.057487+0100 chargesom manager[5904]: [INFO] evse_slac:EvseS  :: Session (run_id=A8B81C1323846E37, ev_mac=F0:7F:0C:11:12:F1): received CM_MNBC_SOUND_IND
+2025-12-14T01:47:14.065226+0100 chargesom manager[5904]: [INFO] evse_slac:EvseS  :: Session (run_id=A8B81C1323846E37, ev_mac=F0:7F:0C:11:12:F1): received CM_ATTEN_PROFILE_IND
+2025-12-14T01:47:14.097391+0100 chargesom manager[5904]: [INFO] evse_slac:EvseS  :: Session (run_id=A8B81C1323846E37, ev_mac=F0:7F:0C:11:12:F1): received CM_MNBC_SOUND_IND
+2025-12-14T01:47:14.104804+0100 chargesom manager[5904]: [INFO] evse_slac:EvseS  :: Session (run_id=A8B81C1323846E37, ev_mac=F0:7F:0C:11:12:F1): received CM_ATTEN_PROFILE_IND
+2025-12-14T01:47:14.137408+0100 chargesom manager[5904]: [INFO] evse_slac:EvseS  :: Session (run_id=A8B81C1323846E37, ev_mac=F0:7F:0C:11:12:F1): received CM_MNBC_SOUND_IND
+2025-12-14T01:47:14.144877+0100 chargesom manager[5904]: [INFO] evse_slac:EvseS  :: Session (run_id=A8B81C1323846E37, ev_mac=F0:7F:0C:11:12:F1): received CM_ATTEN_PROFILE_IND
+2025-12-14T01:47:14.177495+0100 chargesom manager[5904]: [INFO] evse_slac:EvseS  :: Session (run_id=A8B81C1323846E37, ev_mac=F0:7F:0C:11:12:F1): received CM_MNBC_SOUND_IND
+2025-12-14T01:47:14.185039+0100 chargesom manager[5904]: [INFO] evse_slac:EvseS  :: Session (run_id=A8B81C1323846E37, ev_mac=F0:7F:0C:11:12:F1): received CM_ATTEN_PROFILE_IND
+2025-12-14T01:47:14.185400+0100 chargesom manager[5904]: [INFO] evse_slac:EvseS  :: Session (run_id=A8B81C1323846E37, ev_mac=F0:7F:0C:11:12:F1): received all sounds, going to substate FINALIZE_SOUNDING
+2025-12-14T01:47:14.229388+0100 chargesom manager[5904]: [INFO] evse_slac:EvseS  :: Session (run_id=A8B81C1323846E37, ev_mac=F0:7F:0C:11:12:F1): Finalize sounding, sending CM_ATTEN_CHAR_IND
+2025-12-14T01:47:14.235572+0100 chargesom manager[5904]: [INFO] evse_slac:EvseS  :: Session (run_id=A8B81C1323846E37, ev_mac=F0:7F:0C:11:12:F1): received CM_ATTEN_CHAR_RSP, going to substate WAIT_FOR_SLAC_MATCH
+2025-12-14T01:47:14.907605+0100 chargesom manager[5904]: [INFO] evse_slac:EvseS  :: Session (run_id=A8B81C1323846E37, ev_mac=F0:7F:0C:11:12:F1): Received CM_SLAC_MATCH_REQ, sending CM_SLAC_MATCH_CNF -> session complete
+2025-12-14T01:47:14.909008+0100 chargesom manager[5904]: [INFO] evse_slac:EvseS  :: Entered Matched state
+2025-12-14T01:47:14.910537+0100 chargesom manager[5893]: [INFO] connector:EvseM  :: EVSE ISO SLAC MATCHED
+2025-12-14T01:47:14.954012+0100 chargesom manager[5893]: [INFO] connector:EvseM  :: EVSE ISO D-LINK_READY (true)
+2025-12-14T01:47:16.687408+0100 chargesom manager[5913]: [INFO] iso15118_charge  :: Received packet from [fe80::f27f:cff:fe11:12f1]:49152 with security 0x10 and protocol 0x00
+2025-12-14T01:47:16.687408+0100 chargesom manager[5913]: [INFO] iso15118_charge  :: SDP requested NO-TLS, announcing NO-TLS
+2025-12-14T01:47:16.687408+0100 chargesom manager[5913]: [INFO] iso15118_charge  :: sendto([fe80::f27f:cff:fe11:12f1]:49152) succeeded
+2025-12-14T01:47:16.757565+0100 chargesom manager[5913]: [INFO] iso15118_charge  :: Incoming connection on eth1 from [a00:c000:0:0:fe80::]:49152
+2025-12-14T01:47:16.758604+0100 chargesom manager[5913]: [INFO] iso15118_charge  :: Started new TCP connection thread
+2025-12-14T01:47:16.788176+0100 chargesom manager[5913]: [INFO] iso15118_charge  :: Handling SupportedAppProtocolReq
+2025-12-14T01:47:16.789120+0100 chargesom manager[5913]: [INFO] iso15118_charge  :: Protocol negotiation was successful. Selected protocol is ISO15118
+2025-12-14T01:47:16.827625+0100 chargesom manager[5913]: [INFO] iso15118_charge  :: SessionSetupReq.EVCCID: F0:7F:0C:11:12:F1
+2025-12-14T01:47:16.827986+0100 chargesom manager[5913]: [INFO] iso15118_charge  :: No session_id found or not equal to the id from the preceding v2g session. Generating random session id.
+2025-12-14T01:47:16.827986+0100 chargesom manager[5913]: [INFO] iso15118_charge  :: Created new session with id 0x11307335602094283860
+2025-12-14T01:47:16.873515+0100 chargesom manager[5893]: [INFO] connector:EvseM  ::                                     CAR ISO V2G SupportedAppProtocolReq
+2025-12-14T01:47:16.877977+0100 chargesom manager[5893]: [INFO] connector:EvseM  :: EVSE ISO V2G SupportedAppProtocolRes
+2025-12-14T01:47:16.921706+0100 chargesom manager[5893]: [INFO] connector:EvseM  ::                                     CAR ISO V2G SessionSetupReq
+2025-12-14T01:47:16.967697+0100 chargesom manager[5913]: [WARN] iso15118_charge  :: PnC is not allowed without TLS-communication. Correcting value to '1' (ExternalPayment)
+2025-12-14T01:47:16.971512+0100 chargesom manager[5893]: [INFO] connector:EvseM  :: EVSE ISO V2G SessionSetupRes
+2025-12-14T01:47:16.971512+0100 chargesom manager[5893]: [INFO] connector:EvseM  ::                                     CAR ISO V2G ServiceDiscoveryReq
+2025-12-14T01:47:17.066423+0100 chargesom manager[5893]: [INFO] connector:EvseM  :: EVSE ISO V2G ServiceDiscoveryRes
+2025-12-14T01:47:17.107701+0100 chargesom manager[5913]: [INFO] iso15118_charge  :: SelectedPaymentOption: ExternalPayment
+2025-12-14T01:47:17.109581+0100 chargesom manager[5893]: [INFO] connector:EvseM  ::                                     CAR ISO V2G PaymentServiceSelectionReq
+2025-12-14T01:47:17.206494+0100 chargesom manager[5893]: [INFO] connector:EvseM  :: EVSE ISO V2G PaymentServiceSelectionRes
+2025-12-14T01:47:17.346010+0100 chargesom manager[5893]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-14T01:47:17.356307+0100 chargesom manager[5893]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-14T01:47:17.478891+0100 chargesom manager[5893]: [INFO] connector:EvseM  ::                                     CAR ISO V2G AuthorizationReq
+2025-12-14T01:47:17.577482+0100 chargesom manager[5893]: [INFO] connector:EvseM  :: EVSE ISO V2G AuthorizationRes
+2025-12-14T01:47:17.618263+0100 chargesom manager[5913]: [INFO] iso15118_charge  :: Parameter-phase started
+2025-12-14T01:47:17.619500+0100 chargesom manager[5913]: [INFO] iso15118_charge  :: Selected energy transfer mode: DC_extended
+2025-12-14T01:47:17.666051+0100 chargesom manager[5893]: [INFO] connector:EvseM  :: Received EV maximum limits: {
+2025-12-14T01:47:17.666051+0100 chargesom manager[5893]:     "dc_ev_maximum_current_limit": 350.0,
+2025-12-14T01:47:17.666051+0100 chargesom manager[5893]:     "dc_ev_maximum_voltage_limit": 464.0
+2025-12-14T01:47:17.666051+0100 chargesom manager[5893]: }
+2025-12-14T01:47:17.753450+0100 chargesom manager[5893]: [INFO] connector:EvseM  ::                                     CAR ISO V2G ChargeParameterDiscoveryReq
+2025-12-14T01:47:17.754230+0100 chargesom manager[5893]: [INFO] connector:EvseM  :: EVSE ISO V2G ChargeParameterDiscoveryRes
+2025-12-14T01:47:19.001301+0100 chargesom manager[5892]: [INFO] bsp:CbChargeSOM  :: CP state change from B to C, PWM: 5.0%
+2025-12-14T01:47:19.003247+0100 chargesom manager[5893]: [INFO] connector:EvseM  ::                                     CAR IEC Event CarRequestedPower
+2025-12-14T01:47:19.009474+0100 chargesom manager[5893]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CableCheckReq
+2025-12-14T01:47:19.014827+0100 chargesom manager[5893]: [INFO] connector:EvseM  :: EVSE ISO Start cable check...
+2025-12-14T01:47:19.014827+0100 chargesom manager[5893]: [INFO] connector:EvseM  ::                                     CAR ISO DC HLC Close contactor (in CableCheck)
+2025-12-14T01:47:19.045151+0100 chargesom manager[5892]: [INFO] bsp:CbChargeSOM  :: handle_allow_power_on: request to CLOSE the contactor
+2025-12-14T01:47:19.111104+0100 chargesom manager[5892]: [INFO] bsp:CbChargeSOM  :: Contactor 1 state change detected: now Closed
+2025-12-14T01:47:19.111587+0100 chargesom manager[5892]: [INFO] bsp:CbChargeSOM  :: Contactor 2 state change detected: now Closed
+2025-12-14T01:47:19.129260+0100 chargesom manager[5893]: [INFO] connector:EvseM  :: EVSE ISO V2G CableCheckRes
+2025-12-14T01:47:19.129860+0100 chargesom manager[5893]: [INFO] connector:EvseM  :: EVSE IEC Event PowerOn
+2025-12-14T01:47:19.210897+0100 chargesom manager[5893]: [INFO] connector:EvseM  :: EV reports 464 V as maximum voltage
+2025-12-14T01:47:19.211322+0100 chargesom manager[5893]: [INFO] connector:EvseM  :: EVSE IEC DC power supply set: 500.00V/2.00A, requested was 500.00V/2.00A.
+2025-12-14T01:47:19.258348+0100 chargesom manager[5893]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CableCheckReq
+2025-12-14T01:47:19.258348+0100 chargesom manager[5921]: [INFO] powersupply_dc:  :: Infy: Updating voltage/current via CAN: 500V / 2A total → 2A per module - active modules: 1
+2025-12-14T01:47:19.258348+0100 chargesom manager[5921]: [INFO] powersupply_dc:  :: Infy: set_voltage_current(500V, 2A) - active modules: 1
+2025-12-14T01:47:19.266154+0100 chargesom manager[5893]: [INFO] connector:EvseM  :: CableCheck: Using 500 V
+2025-12-14T01:47:19.266551+0100 chargesom manager[5893]: [INFO] connector:EvseM  :: EVSE IEC DC power supply: switch ON called, ChargingPhase: CableCheck
+2025-12-14T01:47:19.309723+0100 chargesom manager[5921]: [INFO] powersupply_dc:  :: Set mode via CAN: Export with phase CableCheck
+2025-12-14T01:47:19.309723+0100 chargesom manager[5921]: [INFO] powersupply_dc:  :: Infy: switch_on_off(true) - active modules: 1
+2025-12-14T01:47:19.353848+0100 chargesom manager[5893]: [INFO] connector:EvseM  :: EVSE ISO V2G CableCheckRes
+2025-12-14T01:47:19.448695+0100 chargesom manager[5893]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CableCheckReq
+2025-12-14T01:47:19.547288+0100 chargesom manager[5893]: [INFO] connector:EvseM  :: EVSE ISO V2G CableCheckRes
+2025-12-14T01:47:19.668702+0100 chargesom manager[5893]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CableCheckReq
+2025-12-14T01:47:19.767183+0100 chargesom manager[5893]: [INFO] connector:EvseM  :: EVSE ISO V2G CableCheckRes
+2025-12-14T01:47:19.888908+0100 chargesom manager[5893]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CableCheckReq
+2025-12-14T01:47:19.986191+0100 chargesom manager[5893]: [INFO] connector:EvseM  :: EVSE ISO V2G CableCheckRes
+2025-12-14T01:47:20.108655+0100 chargesom manager[5893]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CableCheckReq
+2025-12-14T01:47:20.209346+0100 chargesom manager[5893]: [INFO] connector:EvseM  :: EVSE ISO V2G CableCheckRes
+2025-12-14T01:47:20.331995+0100 chargesom manager[5893]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CableCheckReq
+2025-12-14T01:47:20.427687+0100 chargesom manager[5893]: [INFO] connector:EvseM  :: EVSE ISO V2G CableCheckRes
+2025-12-14T01:47:20.548732+0100 chargesom manager[5893]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CableCheckReq
+2025-12-14T01:47:20.646338+0100 chargesom manager[5893]: [INFO] connector:EvseM  :: EVSE ISO V2G CableCheckRes
+2025-12-14T01:47:20.768785+0100 chargesom manager[5893]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CableCheckReq
+2025-12-14T01:47:20.867221+0100 chargesom manager[5893]: [INFO] connector:EvseM  :: EVSE ISO V2G CableCheckRes
+2025-12-14T01:47:20.988484+0100 chargesom manager[5893]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CableCheckReq
+2025-12-14T01:47:21.086706+0100 chargesom manager[5893]: [INFO] connector:EvseM  :: EVSE ISO V2G CableCheckRes
+2025-12-14T01:47:21.209270+0100 chargesom manager[5893]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CableCheckReq
+2025-12-14T01:47:21.307959+0100 chargesom manager[5893]: [INFO] connector:EvseM  :: EVSE ISO V2G CableCheckRes
+2025-12-14T01:47:21.453828+0100 chargesom manager[5893]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CableCheckReq
+2025-12-14T01:47:21.472129+0100 chargesom manager[5893]: [INFO] connector:EvseM  :: EVSE ISO Change HLC Limits: 30000W/102A, target_voltage 0, actual_voltage 46, hack_bpt false
+2025-12-14T01:47:21.561900+0100 chargesom manager[5893]: [INFO] connector:EvseM  :: EVSE ISO V2G CableCheckRes
+2025-12-14T01:47:21.648880+0100 chargesom manager[5893]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CableCheckReq
+2025-12-14T01:47:21.747260+0100 chargesom manager[5893]: [INFO] connector:EvseM  :: EVSE ISO V2G CableCheckRes
+2025-12-14T01:47:21.868594+0100 chargesom manager[5893]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CableCheckReq
+2025-12-14T01:47:21.967097+0100 chargesom manager[5893]: [INFO] connector:EvseM  :: EVSE ISO V2G CableCheckRes
+2025-12-14T01:47:22.088774+0100 chargesom manager[5893]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CableCheckReq
+2025-12-14T01:47:22.209187+0100 chargesom manager[5893]: [INFO] connector:EvseM  :: EVSE ISO V2G CableCheckRes
+2025-12-14T01:47:22.308320+0100 chargesom manager[5893]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CableCheckReq
+2025-12-14T01:47:22.407068+0100 chargesom manager[5893]: [INFO] connector:EvseM  :: EVSE ISO V2G CableCheckRes
+2025-12-14T01:47:22.528816+0100 chargesom manager[5893]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CableCheckReq
+2025-12-14T01:47:22.665672+0100 chargesom manager[5893]: [INFO] connector:EvseM  :: EVSE ISO V2G CableCheckRes
+2025-12-14T01:47:22.753234+0100 chargesom manager[5893]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CableCheckReq
+2025-12-14T01:47:22.847048+0100 chargesom manager[5893]: [INFO] connector:EvseM  :: EVSE ISO V2G CableCheckRes
+2025-12-14T01:47:22.968742+0100 chargesom manager[5893]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CableCheckReq
+2025-12-14T01:47:23.066895+0100 chargesom manager[5893]: [INFO] connector:EvseM  :: EVSE ISO V2G CableCheckRes
+2025-12-14T01:47:23.209300+0100 chargesom manager[5893]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CableCheckReq
+2025-12-14T01:47:23.287448+0100 chargesom manager[5893]: [INFO] connector:EvseM  :: EVSE ISO V2G CableCheckRes
+2025-12-14T01:47:23.408463+0100 chargesom manager[5893]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CableCheckReq
+2025-12-14T01:47:23.506693+0100 chargesom manager[5893]: [INFO] connector:EvseM  :: EVSE ISO V2G CableCheckRes
+2025-12-14T01:47:23.628673+0100 chargesom manager[5893]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CableCheckReq
+2025-12-14T01:47:23.726908+0100 chargesom manager[5893]: [INFO] connector:EvseM  :: EVSE ISO V2G CableCheckRes
+2025-12-14T01:47:23.849334+0100 chargesom manager[5893]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CableCheckReq
+2025-12-14T01:47:23.946929+0100 chargesom manager[5893]: [INFO] connector:EvseM  :: EVSE ISO V2G CableCheckRes
+2025-12-14T01:47:24.068340+0100 chargesom manager[5893]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CableCheckReq
+2025-12-14T01:47:24.166792+0100 chargesom manager[5893]: [INFO] connector:EvseM  :: EVSE ISO V2G CableCheckRes
+2025-12-14T01:47:24.288718+0100 chargesom manager[5893]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CableCheckReq
+2025-12-14T01:47:24.361924+0100 chargesom manager[5893]: [INFO] connector:EvseM  :: CableCheck: IMD self test started.
+2025-12-14T01:47:24.405709+0100 chargesom manager[5893]: [INFO] connector:EvseM  :: EVSE ISO V2G CableCheckRes
+2025-12-14T01:47:24.508460+0100 chargesom manager[5893]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CableCheckReq
+2025-12-14T01:47:24.607615+0100 chargesom manager[5893]: [INFO] connector:EvseM  :: EVSE ISO V2G CableCheckRes
+2025-12-14T01:47:24.728361+0100 chargesom manager[5893]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CableCheckReq
+2025-12-14T01:47:24.826731+0100 chargesom manager[5893]: [INFO] connector:EvseM  :: EVSE ISO V2G CableCheckRes
+2025-12-14T01:47:24.949927+0100 chargesom manager[5893]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CableCheckReq
+2025-12-14T01:47:24.991872+0100 chargesom manager[5893]: [INFO] connector:EvseM  :: EVSE ISO Change HLC Limits: 30000W/102A, target_voltage 0, actual_voltage 502, hack_bpt false
+2025-12-14T01:47:25.081435+0100 chargesom manager[5893]: [INFO] connector:EvseM  :: EVSE ISO V2G CableCheckRes
+2025-12-14T01:47:25.168783+0100 chargesom manager[5893]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CableCheckReq
+2025-12-14T01:47:25.267006+0100 chargesom manager[5893]: [INFO] connector:EvseM  :: EVSE ISO V2G CableCheckRes
+2025-12-14T01:47:25.388306+0100 chargesom manager[5893]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CableCheckReq
+2025-12-14T01:47:25.486657+0100 chargesom manager[5893]: [INFO] connector:EvseM  :: EVSE ISO V2G CableCheckRes
+2025-12-14T01:47:25.608473+0100 chargesom manager[5893]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CableCheckReq
+2025-12-14T01:47:25.706639+0100 chargesom manager[5893]: [INFO] connector:EvseM  :: EVSE ISO V2G CableCheckRes
+2025-12-14T01:47:25.828584+0100 chargesom manager[5893]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CableCheckReq
+2025-12-14T01:47:25.926781+0100 chargesom manager[5893]: [INFO] connector:EvseM  :: EVSE ISO V2G CableCheckRes
+2025-12-14T01:47:26.048062+0100 chargesom manager[5893]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CableCheckReq
+2025-12-14T01:47:26.186379+0100 chargesom manager[5893]: [INFO] connector:EvseM  :: EVSE ISO V2G CableCheckRes
+2025-12-14T01:47:26.277584+0100 chargesom manager[5893]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CableCheckReq
+2025-12-14T01:47:26.409749+0100 chargesom manager[5893]: [INFO] connector:EvseM  :: EVSE ISO V2G CableCheckRes
+2025-12-14T01:47:26.488616+0100 chargesom manager[5893]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CableCheckReq
+2025-12-14T01:47:26.586479+0100 chargesom manager[5893]: [INFO] connector:EvseM  :: EVSE ISO V2G CableCheckRes
+2025-12-14T01:47:26.708117+0100 chargesom manager[5893]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CableCheckReq
+2025-12-14T01:47:26.807171+0100 chargesom manager[5893]: [INFO] connector:EvseM  :: EVSE ISO V2G CableCheckRes
+2025-12-14T01:47:26.928269+0100 chargesom manager[5893]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CableCheckReq
+2025-12-14T01:47:27.026817+0100 chargesom manager[5893]: [INFO] connector:EvseM  :: EVSE ISO V2G CableCheckRes
+2025-12-14T01:47:27.148312+0100 chargesom manager[5893]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CableCheckReq
+2025-12-14T01:47:27.246749+0100 chargesom manager[5893]: [INFO] connector:EvseM  :: EVSE ISO V2G CableCheckRes
+2025-12-14T01:47:27.338494+0100 chargesom manager[5893]: [INFO] connector:EvseM  :: EVSE IEC Isolation monitor self test result: true
+2025-12-14T01:47:27.365135+0100 chargesom manager[5911]: [INFO] imd:IMDSimulato  :: Started simulated isolation monitoring with 1000 ms interval
+2025-12-14T01:47:27.386246+0100 chargesom manager[5893]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CableCheckReq
+2025-12-14T01:47:27.387745+0100 chargesom manager[5893]: [INFO] connector:EvseM  :: CableCheck: Waiting for 1 isolation measurement sample(s)
+2025-12-14T01:47:27.389288+0100 chargesom manager[5893]: [INFO] connector:EvseM  :: EVSE IEC Isolation measurement Ok R_F 900000.
+2025-12-14T01:47:27.478037+0100 chargesom manager[5893]: [INFO] connector:EvseM  :: EVSE ISO V2G CableCheckRes
+2025-12-14T01:47:27.478037+0100 chargesom manager[5893]: [INFO] connector:EvseM  :: EVSE IEC DC power supply OFF
+2025-12-14T01:47:27.521958+0100 chargesom manager[5921]: [INFO] powersupply_dc:  :: Set mode via CAN: Off with phase CableCheck
+2025-12-14T01:47:27.521958+0100 chargesom manager[5921]: [INFO] powersupply_dc:  :: Infy: switch_on_off(false) - active modules: 1
+2025-12-14T01:47:27.609176+0100 chargesom manager[5893]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CableCheckReq
+2025-12-14T01:47:27.686590+0100 chargesom manager[5893]: [INFO] connector:EvseM  :: EVSE ISO V2G CableCheckRes
+2025-12-14T01:47:27.809234+0100 chargesom manager[5893]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CableCheckReq
+2025-12-14T01:47:27.906881+0100 chargesom manager[5893]: [INFO] connector:EvseM  :: EVSE ISO V2G CableCheckRes
+2025-12-14T01:47:28.028125+0100 chargesom manager[5893]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CableCheckReq
+2025-12-14T01:47:28.126650+0100 chargesom manager[5893]: [INFO] connector:EvseM  :: EVSE ISO V2G CableCheckRes
+2025-12-14T01:47:28.248120+0100 chargesom manager[5893]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CableCheckReq
+2025-12-14T01:47:28.346496+0100 chargesom manager[5893]: [INFO] connector:EvseM  :: EVSE ISO V2G CableCheckRes
+2025-12-14T01:47:28.490146+0100 chargesom manager[5893]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CableCheckReq
+2025-12-14T01:47:28.577722+0100 chargesom manager[5893]: [INFO] connector:EvseM  :: EVSE ISO V2G CableCheckRes
+2025-12-14T01:47:28.688150+0100 chargesom manager[5893]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CableCheckReq
+2025-12-14T01:47:28.787069+0100 chargesom manager[5893]: [INFO] connector:EvseM  :: EVSE ISO V2G CableCheckRes
+2025-12-14T01:47:28.908100+0100 chargesom manager[5893]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CableCheckReq
+2025-12-14T01:47:29.006294+0100 chargesom manager[5893]: [INFO] connector:EvseM  :: EVSE ISO V2G CableCheckRes
+2025-12-14T01:47:29.128344+0100 chargesom manager[5893]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CableCheckReq
+2025-12-14T01:47:29.226722+0100 chargesom manager[5893]: [INFO] connector:EvseM  :: EVSE ISO V2G CableCheckRes
+2025-12-14T01:47:29.317847+0100 chargesom manager[5893]: [INFO] connector:EvseM  :: CableCheck done, output is below 60V
+2025-12-14T01:47:29.361415+0100 chargesom manager[5893]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CableCheckReq
+2025-12-14T01:47:29.446373+0100 chargesom manager[5893]: [INFO] connector:EvseM  :: EVSE ISO V2G CableCheckRes
+2025-12-14T01:47:29.568196+0100 chargesom manager[5893]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CableCheckReq
+2025-12-14T01:47:29.677373+0100 chargesom manager[5893]: [INFO] connector:EvseM  :: EVSE ISO V2G CableCheckRes
+2025-12-14T01:47:29.679343+0100 chargesom manager[5893]: [INFO] connector:EvseM  :: EVSE ISO Change HLC Limits: 30000W/102A, target_voltage 0, actual_voltage 0, hack_bpt false
+2025-12-14T01:47:29.857832+0100 chargesom manager[5913]: [INFO] iso15118_charge  :: Precharge-phase started
+2025-12-14T01:47:29.861108+0100 chargesom manager[5893]: [INFO] connector:EvseM  :: EVSE IEC DC power supply set: 428.00V/1.00A, requested was 428.00V/1.00A.
+2025-12-14T01:47:29.906158+0100 chargesom manager[5921]: [INFO] powersupply_dc:  :: Infy: Updating voltage/current via CAN: 428V / 1A total → 1A per module - active modules: 1
+2025-12-14T01:47:29.907120+0100 chargesom manager[5921]: [INFO] powersupply_dc:  :: Infy: set_voltage_current(428V, 1A) - active modules: 1
+2025-12-14T01:47:29.908667+0100 chargesom manager[5893]: [INFO] connector:EvseM  :: EVSE IEC DC power supply: switch ON called, ChargingPhase: PreCharge
+2025-12-14T01:47:29.953865+0100 chargesom manager[5921]: [INFO] powersupply_dc:  :: Set mode via CAN: Export with phase PreCharge
+2025-12-14T01:47:29.953865+0100 chargesom manager[5921]: [INFO] powersupply_dc:  :: Infy: switch_on_off(true) - active modules: 1
+2025-12-14T01:47:29.998276+0100 chargesom manager[5893]: [INFO] connector:EvseM  ::                                     CAR ISO V2G PreChargeReq
+2025-12-14T01:47:29.999687+0100 chargesom manager[5893]: [INFO] connector:EvseM  :: EVSE ISO V2G PreChargeRes
+2025-12-14T01:47:30.078174+0100 chargesom manager[5893]: [INFO] connector:EvseM  ::                                     CAR ISO V2G PreChargeReq
+2025-12-14T01:47:30.217244+0100 chargesom manager[5893]: [INFO] connector:EvseM  :: EVSE ISO V2G PreChargeRes
+2025-12-14T01:47:30.298243+0100 chargesom manager[5893]: [INFO] connector:EvseM  ::                                     CAR ISO V2G PreChargeReq
+2025-12-14T01:47:30.396921+0100 chargesom manager[5893]: [INFO] connector:EvseM  :: EVSE ISO V2G PreChargeRes
+2025-12-14T01:47:30.519101+0100 chargesom manager[5893]: [INFO] connector:EvseM  ::                                     CAR ISO V2G PreChargeReq
+2025-12-14T01:47:30.617076+0100 chargesom manager[5893]: [INFO] connector:EvseM  :: EVSE ISO V2G PreChargeRes
+2025-12-14T01:47:30.738149+0100 chargesom manager[5893]: [INFO] connector:EvseM  ::                                     CAR ISO V2G PreChargeReq
+2025-12-14T01:47:30.865665+0100 chargesom manager[5893]: [INFO] connector:EvseM  :: EVSE ISO V2G PreChargeRes
+2025-12-14T01:47:30.879941+0100 chargesom manager[5893]: [INFO] connector:EvseM  :: EVSE ISO Change HLC Limits: 30000W/70.09346A, target_voltage 428, actual_voltage 0, hack_bpt false
+2025-12-14T01:47:30.970365+0100 chargesom manager[5893]: [INFO] connector:EvseM  ::                                     CAR ISO V2G PreChargeReq
+2025-12-14T01:47:30.970365+0100 chargesom manager[5893]: [INFO] connector:EvseM  :: EVSE IEC DC power supply set: 428.00V/1.00A, requested was 428.00V/1.00A.
+2025-12-14T01:47:31.014109+0100 chargesom manager[5921]: [INFO] powersupply_dc:  :: Infy: Updating voltage/current via CAN: 428V / 1A total → 1A per module - active modules: 1
+2025-12-14T01:47:31.015074+0100 chargesom manager[5921]: [INFO] powersupply_dc:  :: Infy: set_voltage_current(428V, 1A) - active modules: 1
+2025-12-14T01:47:31.057864+0100 chargesom manager[5893]: [INFO] connector:EvseM  :: EVSE ISO V2G PreChargeRes
+2025-12-14T01:47:31.221447+0100 chargesom manager[5893]: [INFO] connector:EvseM  ::                                     CAR ISO V2G PreChargeReq
+2025-12-14T01:47:31.276570+0100 chargesom manager[5893]: [INFO] connector:EvseM  :: EVSE ISO V2G PreChargeRes
+2025-12-14T01:47:31.409630+0100 chargesom manager[5893]: [INFO] connector:EvseM  ::                                     CAR ISO V2G PreChargeReq
+2025-12-14T01:47:31.496747+0100 chargesom manager[5893]: [INFO] connector:EvseM  :: EVSE ISO V2G PreChargeRes
+2025-12-14T01:47:31.619203+0100 chargesom manager[5893]: [INFO] connector:EvseM  ::                                     CAR ISO V2G PreChargeReq
+2025-12-14T01:47:31.716855+0100 chargesom manager[5893]: [INFO] connector:EvseM  :: EVSE ISO V2G PreChargeRes
+2025-12-14T01:47:31.838314+0100 chargesom manager[5893]: [INFO] connector:EvseM  ::                                     CAR ISO V2G PreChargeReq
+2025-12-14T01:47:31.935785+0100 chargesom manager[5893]: [INFO] connector:EvseM  :: EVSE ISO V2G PreChargeRes
+2025-12-14T01:47:32.058035+0100 chargesom manager[5893]: [INFO] connector:EvseM  ::                                     CAR ISO V2G PreChargeReq
+2025-12-14T01:47:32.161526+0100 chargesom manager[5893]: [INFO] connector:EvseM  :: EVSE ISO V2G PreChargeRes
+2025-12-14T01:47:32.164133+0100 chargesom manager[5893]: [INFO] connector:EvseM  :: EVSE ISO Change HLC Limits: 30000W/70.09346A, target_voltage 428, actual_voltage 3.5, hack_bpt false
+2025-12-14T01:47:32.253609+0100 chargesom manager[5893]: [INFO] connector:EvseM  :: EVSE IEC DC power supply set: 428.00V/1.00A, requested was 428.00V/1.00A.
+2025-12-14T01:47:32.297519+0100 chargesom manager[5893]: [INFO] connector:EvseM  ::                                     CAR ISO V2G PreChargeReq
+2025-12-14T01:47:32.298908+0100 chargesom manager[5921]: [INFO] powersupply_dc:  :: Infy: Updating voltage/current via CAN: 428V / 1A total → 1A per module - active modules: 1
+2025-12-14T01:47:32.298908+0100 chargesom manager[5921]: [INFO] powersupply_dc:  :: Infy: set_voltage_current(428V, 1A) - active modules: 1
+2025-12-14T01:47:32.376514+0100 chargesom manager[5893]: [INFO] connector:EvseM  :: EVSE ISO V2G PreChargeRes
+2025-12-14T01:47:32.497937+0100 chargesom manager[5893]: [INFO] connector:EvseM  ::                                     CAR ISO V2G PreChargeReq
+2025-12-14T01:47:32.595519+0100 chargesom manager[5893]: [INFO] connector:EvseM  :: EVSE ISO V2G PreChargeRes
+2025-12-14T01:47:32.718084+0100 chargesom manager[5893]: [INFO] connector:EvseM  ::                                     CAR ISO V2G PreChargeReq
+2025-12-14T01:47:32.816939+0100 chargesom manager[5893]: [INFO] connector:EvseM  :: EVSE ISO V2G PreChargeRes
+2025-12-14T01:47:32.937808+0100 chargesom manager[5893]: [INFO] connector:EvseM  ::                                     CAR ISO V2G PreChargeReq
+2025-12-14T01:47:33.035437+0100 chargesom manager[5893]: [INFO] connector:EvseM  :: EVSE ISO V2G PreChargeRes
+2025-12-14T01:47:33.158340+0100 chargesom manager[5893]: [INFO] connector:EvseM  ::                                     CAR ISO V2G PreChargeReq
+2025-12-14T01:47:33.256441+0100 chargesom manager[5893]: [INFO] connector:EvseM  :: EVSE ISO V2G PreChargeRes
+2025-12-14T01:47:33.405755+0100 chargesom manager[5893]: [INFO] connector:EvseM  ::                                     CAR ISO V2G PreChargeReq
+2025-12-14T01:47:33.497481+0100 chargesom manager[5893]: [INFO] connector:EvseM  :: EVSE ISO V2G PreChargeRes
+2025-12-14T01:47:33.597827+0100 chargesom manager[5893]: [INFO] connector:EvseM  ::                                     CAR ISO V2G PreChargeReq
+2025-12-14T01:47:33.695330+0100 chargesom manager[5893]: [INFO] connector:EvseM  :: EVSE ISO V2G PreChargeRes
+2025-12-14T01:47:33.817957+0100 chargesom manager[5893]: [INFO] connector:EvseM  ::                                     CAR ISO V2G PreChargeReq
+2025-12-14T01:47:33.915209+0100 chargesom manager[5893]: [INFO] connector:EvseM  :: EVSE ISO V2G PreChargeRes
+2025-12-14T01:47:33.989587+0100 chargesom manager[5893]: [INFO] connector:EvseM  ::                                     CAR ISO V2G PowerDeliveryReq
+2025-12-14T01:47:34.046514+0100 chargesom manager[5893]: [INFO] connector:EvseM  :: EVSE ISO V2G PowerDeliveryRes
+2025-12-14T01:47:34.088507+0100 chargesom manager[5893]: [INFO] connector:EvseM  :: EVSE IEC DC power supply: switch ON in export mode
+2025-12-14T01:47:34.134406+0100 chargesom manager[5921]: [INFO] powersupply_dc:  :: Set mode via CAN: Export with phase Charging
+2025-12-14T01:47:34.134406+0100 chargesom manager[5921]: [INFO] powersupply_dc:  :: Infy: switch_on_off(true) - active modules: 1
+2025-12-14T01:47:34.137351+0100 chargesom manager[5893]: [INFO] connector:EvseM  :: EVSE IEC DC power supply set: 428.00V/1.00A, requested was 428.00V/1.00A.
+2025-12-14T01:47:34.182411+0100 chargesom manager[5921]: [INFO] powersupply_dc:  :: Infy: Updating voltage/current via CAN: 428V / 1A total → 1A per module - active modules: 1
+2025-12-14T01:47:34.184172+0100 chargesom manager[5921]: [INFO] powersupply_dc:  :: Infy: set_voltage_current(428V, 1A) - active modules: 1
+2025-12-14T01:47:34.228392+0100 chargesom manager[5893]: [INFO] connector:EvseM  :: EVSE IEC DC power supply set: 459.00V/1.00A, requested was 459.00V/0.00A.
+2025-12-14T01:47:34.274295+0100 chargesom manager[5921]: [INFO] powersupply_dc:  :: Infy: Updating voltage/current via CAN: 459V / 1A total → 1A per module - active modules: 1
+2025-12-14T01:47:34.274295+0100 chargesom manager[5921]: [INFO] powersupply_dc:  :: Infy: set_voltage_current(459V, 1A) - active modules: 1
+2025-12-14T01:47:34.275436+0100 chargesom manager[5893]: [INFO] connector:EvseM  :: EVSE IEC Charger state: PrepareCharging->Charging
+2025-12-14T01:47:34.275896+0100 chargesom manager[5893]: [INFO] connector:EvseM  :: Timing statistics (Plugin to CurrentDemand)
+2025-12-14T01:47:34.275896+0100 chargesom manager[5893]: [INFO] connector:EvseM  :: -------------------------------------------
+2025-12-14T01:47:34.275896+0100 chargesom manager[5893]: [INFO] connector:EvseM  :: ConnSetup | HLC_PWM_5%_ON: 671 ms | D-LINK_READY: 7612 ms | Auth EIM Done: 2303 ms | Total: 12252 ms
+2025-12-14T01:47:34.277056+0100 chargesom manager[5893]: [INFO] connector:EvseM  :: CableCheck | <60V: 0 ms | Relay On: 200 ms | EVInfo: 0 ms | VRampUp: 5105 ms | Self test: 3021 ms | Measure: 50 ms | VRampDown: 1929 ms | Total: 10381 ms
+2025-12-14T01:47:34.277056+0100 chargesom manager[5893]: [INFO] connector:EvseM  :: PrepareCharging | Charging started: 4884 ms | Total: 4884 ms
+2025-12-14T01:47:34.277056+0100 chargesom manager[5893]: [INFO] connector:EvseM  :: Total duration all phases: 27517 ms
+2025-12-14T01:47:34.281738+0100 chargesom manager[5893]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CurrentDemandReq
+2025-12-14T01:47:34.283262+0100 chargesom manager[5893]: [INFO] connector:EvseM  :: EVSE ISO V2G CurrentDemandRes
+2025-12-14T01:47:34.308270+0100 chargesom manager[5893]: [INFO] connector:EvseM  :: EVSE IEC DC power supply set: 459.00V/18.30A, requested was 459.00V/18.30A.
+2025-12-14T01:47:34.316764+0100 chargesom manager[5921]: [INFO] powersupply_dc:  :: Infy: Updating voltage/current via CAN: 459V / 18.3A total → 18.3A per module - active modules: 1
+2025-12-14T01:47:34.317155+0100 chargesom manager[5921]: [INFO] powersupply_dc:  :: Infy: set_voltage_current(459V, 18.3A) - active modules: 1
+2025-12-14T01:47:34.355237+0100 chargesom manager[5893]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CurrentDemandReq
+2025-12-14T01:47:34.401468+0100 chargesom manager[5893]: [INFO] connector:EvseM  :: EVSE IEC Isolation measurement Ok R_F 900000.
+2025-12-14T01:47:34.445399+0100 chargesom manager[5893]: [INFO] connector:EvseM  :: EVSE ISO V2G CurrentDemandRes
+2025-12-14T01:47:34.534036+0100 chargesom manager[5893]: [INFO] connector:EvseM  :: EVSE IEC DC power supply set: 459.00V/35.90A, requested was 459.00V/35.90A.
+2025-12-14T01:47:34.579581+0100 chargesom manager[5921]: [INFO] powersupply_dc:  :: Infy: Updating voltage/current via CAN: 459V / 35.9A total → 35.9A per module - active modules: 1
+2025-12-14T01:47:34.579581+0100 chargesom manager[5921]: [INFO] powersupply_dc:  :: Infy: set_voltage_current(459V, 35.9A) - active modules: 1
+2025-12-14T01:47:34.582197+0100 chargesom manager[5893]: [INFO] connector:EvseM  :: EVSE ISO Change HLC Limits: 30000W/72.56894A, target_voltage 459, actual_voltage 413.4, hack_bpt false
+2025-12-14T01:47:34.588314+0100 chargesom manager[5893]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CurrentDemandReq
+2025-12-14T01:47:34.615612+0100 chargesom manager[5893]: [INFO] connector:EvseM  :: EVSE IEC DC power supply set: 459.00V/35.90A, requested was 459.00V/35.90A.
+2025-12-14T01:47:34.625891+0100 chargesom manager[5921]: [INFO] powersupply_dc:  :: Infy: Updating voltage/current via CAN: 459V / 35.9A total → 35.9A per module - active modules: 1
+2025-12-14T01:47:34.626524+0100 chargesom manager[5921]: [INFO] powersupply_dc:  :: Infy: set_voltage_current(459V, 35.9A) - active modules: 1
+2025-12-14T01:47:34.661674+0100 chargesom manager[5893]: [INFO] connector:EvseM  :: EVSE ISO V2G CurrentDemandRes
+2025-12-14T01:47:34.748396+0100 chargesom manager[5893]: [INFO] connector:EvseM  :: EVSE IEC DC power supply set: 459.00V/53.50A, requested was 459.00V/53.50A.
+2025-12-14T01:47:34.793601+0100 chargesom manager[5921]: [INFO] powersupply_dc:  :: Infy: Updating voltage/current via CAN: 459V / 53.5A total → 53.5A per module - active modules: 1
+2025-12-14T01:47:34.793601+0100 chargesom manager[5921]: [INFO] powersupply_dc:  :: Infy: set_voltage_current(459V, 53.5A) - active modules: 1
+2025-12-14T01:47:34.838427+0100 chargesom manager[5893]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CurrentDemandReq
+2025-12-14T01:47:34.881492+0100 chargesom manager[5893]: [INFO] connector:EvseM  :: EVSE ISO V2G CurrentDemandRes
+2025-12-14T01:47:34.968091+0100 chargesom manager[5893]: [INFO] connector:EvseM  :: EVSE IEC DC power supply set: 459.00V/70.00A, requested was 459.00V/70.00A.
+2025-12-14T01:47:35.013934+0100 chargesom manager[5921]: [INFO] powersupply_dc:  :: Infy: Updating voltage/current via CAN: 459V / 70A total → 70A per module - active modules: 1
+2025-12-14T01:47:35.013934+0100 chargesom manager[5921]: [INFO] powersupply_dc:  :: Infy: set_voltage_current(459V, 70A) - active modules: 1
+2025-12-14T01:47:35.058300+0100 chargesom manager[5893]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CurrentDemandReq
+2025-12-14T01:47:35.101918+0100 chargesom manager[5893]: [INFO] connector:EvseM  :: EVSE ISO V2G CurrentDemandRes
+2025-12-14T01:47:35.221401+0100 chargesom manager[5893]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CurrentDemandReq
+2025-12-14T01:47:35.286759+0100 chargesom manager[5893]: [INFO] connector:EvseM  :: EVSE ISO V2G CurrentDemandRes
+2025-12-14T01:47:35.388200+0100 chargesom manager[5893]: [INFO] connector:EvseM  :: EVSE IEC Isolation measurement Ok R_F 900000.
+2025-12-14T01:47:35.434114+0100 chargesom manager[5893]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CurrentDemandReq
+2025-12-14T01:47:35.505604+0100 chargesom manager[5893]: [INFO] connector:EvseM  :: EVSE ISO V2G CurrentDemandRes
+2025-12-14T01:47:35.628485+0100 chargesom manager[5893]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CurrentDemandReq
+2025-12-14T01:47:35.765701+0100 chargesom manager[5893]: [INFO] connector:EvseM  :: EVSE ISO V2G CurrentDemandRes
+2025-12-14T01:47:35.847895+0100 chargesom manager[5893]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CurrentDemandReq
+2025-12-14T01:47:35.945277+0100 chargesom manager[5893]: [INFO] connector:EvseM  :: EVSE ISO V2G CurrentDemandRes
+2025-12-14T01:47:36.068419+0100 chargesom manager[5893]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CurrentDemandReq
+2025-12-14T01:47:36.165343+0100 chargesom manager[5893]: [INFO] connector:EvseM  :: EVSE ISO V2G CurrentDemandRes
+2025-12-14T01:47:36.288873+0100 chargesom manager[5893]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CurrentDemandReq
+2025-12-14T01:47:36.320811+0100 chargesom manager[5921]: [ERRO] powersupply_dc: module::main::power_supply_DCImpl::init()::<lambda(uint8_t, InfyCanDevice::Error, bool)> :: Infy[0x0]: undervoltage fault detected
+2025-12-14T01:47:36.331504+0100 chargesom manager[5921]: [ERRO] powersupply_dc:  :: Error raised, type: power_supply_DC/UnderVoltageDC, sub_type: , message: Infy[0x0]: undervoltage fault detected
+2025-12-14T01:47:36.332288+0100 chargesom manager[5921]: [ERRO] powersupply_dc: module::main::power_supply_DCImpl::init()::<lambda(uint8_t, InfyCanDevice::Error, bool)> :: Infy[0x0]: internal fault detected
+2025-12-14T01:47:36.334916+0100 chargesom manager[5921]: [ERRO] powersupply_dc:  :: Error raised, type: power_supply_DC/HardwareFault, sub_type: , message: Infy[0x0]: internal fault detected
+2025-12-14T01:47:36.418170+0100 chargesom manager[5893]: [INFO] connector:EvseM  :: EVSE IEC Isolation measurement Ok R_F 900000.
+2025-12-14T01:47:36.419242+0100 chargesom manager[5893]: [ERRO] connector:EvseM  :: Error raised, type: evse_manager/Inoperative, sub_type: , message: power_supply_DC/UnderVoltageDC
+2025-12-14T01:47:36.420740+0100 chargesom manager[5893]: [INFO] connector:EvseM  :: EVSE ISO V2G CurrentDemandRes
+2025-12-14T01:47:36.478350+0100 chargesom manager[5893]: [INFO] connector:EvseM  :: EVSE IEC Charger state: Charging->Charging
+2025-12-14T01:47:36.478786+0100 chargesom manager[5893]: [INFO] connector:EvseM  :: Timing statistics (Plugin to CurrentDemand)
+2025-12-14T01:47:36.479054+0100 chargesom manager[5893]: [INFO] connector:EvseM  :: -------------------------------------------
+2025-12-14T01:47:36.479054+0100 chargesom manager[5893]: [INFO] connector:EvseM  :: ConnSetup | HLC_PWM_5%_ON: 671 ms | D-LINK_READY: 7612 ms | Auth EIM Done: 2303 ms | Total: 12252 ms
+2025-12-14T01:47:36.479054+0100 chargesom manager[5893]: [INFO] connector:EvseM  :: CableCheck | <60V: 0 ms | Relay On: 200 ms | EVInfo: 0 ms | VRampUp: 5105 ms | Self test: 3021 ms | Measure: 50 ms | VRampDown: 1929 ms | Total: 10381 ms
+2025-12-14T01:47:36.479054+0100 chargesom manager[5893]: [INFO] connector:EvseM  :: PrepareCharging | Charging started: 4884 ms | Total: 4884 ms
+2025-12-14T01:47:36.479054+0100 chargesom manager[5893]: [INFO] connector:EvseM  :: Total duration all phases: 27517 ms
+2025-12-14T01:47:36.479054+0100 chargesom manager[5893]: [INFO] connector:EvseM  :: PrepareCharging | Charging started: 4884 ms | Total: 4884 ms | Charging started: 2202 ms | Total: 7086 ms
+2025-12-14T01:47:36.479054+0100 chargesom manager[5893]: [INFO] connector:EvseM  :: Total duration all phases: 29720 ms
+2025-12-14T01:47:36.479054+0100 chargesom manager[5893]: [INFO] connector:EvseM  :: EVSE IEC Set PWM Off
+2025-12-14T01:47:36.482362+0100 chargesom manager[5892]: [INFO] bsp:CbChargeSOM  :: handle_pwm_off: Setting new duty cycle of 100.0%
+2025-12-14T01:47:36.507285+0100 chargesom manager[5913]: [ERRO] iso15118_charge  :: Failed response code detected for message "Current Demand", error: Response FAILED
+2025-12-14T01:47:36.525628+0100 chargesom manager[5893]: [INFO] connector:EvseM  ::                                     CAR ISO V2G CurrentDemandReq
+2025-12-14T01:47:36.579517+0100 chargesom manager[5893]: [INFO] connector:EvseM  :: EVSE IEC DC power supply OFF
+2025-12-14T01:47:36.625828+0100 chargesom manager[5921]: [INFO] powersupply_dc:  :: Set mode via CAN: Off with phase Charging
+2025-12-14T01:47:36.625828+0100 chargesom manager[5921]: [INFO] powersupply_dc:  :: Infy: switch_on_off(false) - active modules: 1
+2025-12-14T01:47:36.627097+0100 chargesom manager[5893]: [INFO] connector:EvseM  :: EVSE ISO V2G CurrentDemandRes
+2025-12-14T01:47:36.631419+0100 chargesom manager[5911]: [INFO] imd:IMDSimulato  :: Stopped simulated isolation monitoring
+2025-12-14T01:47:36.667640+0100 chargesom manager[5913]: [ERRO] iso15118_charge  :: Failed response code detected for message "Power Delivery", error: Response FAILED
+2025-12-14T01:47:36.676333+0100 chargesom manager[5892]: [INFO] bsp:CbChargeSOM  :: handle_allow_power_on: request to OPEN the contactor
+2025-12-14T01:47:36.685036+0100 chargesom manager[5892]: [INFO] bsp:CbChargeSOM  :: Contactor 1 state change detected: now Open
+2025-12-14T01:47:36.685382+0100 chargesom manager[5892]: [INFO] bsp:CbChargeSOM  :: Contactor 2 state change detected: now Open
+2025-12-14T01:47:36.685382+0100 chargesom manager[5892]: [INFO] bsp:CbChargeSOM  :: CP state change from C to B, PWM: 100.0%
+2025-12-14T01:47:36.717942+0100 chargesom manager[5893]: [INFO] connector:EvseM  :: EVSE IEC Event PowerOff
+2025-12-14T01:47:36.723579+0100 chargesom manager[5893]: [INFO] connector:EvseM  ::                                     CAR ISO V2G PowerDeliveryReq
+2025-12-14T01:47:36.766516+0100 chargesom manager[5893]: [INFO] connector:EvseM  :: EVSE ISO V2G PowerDeliveryRes
+2025-12-14T01:47:36.773115+0100 chargesom manager[5892]: [INFO] bsp:CbChargeSOM  :: handle_allow_power_on: request to OPEN the contactor
+2025-12-14T01:47:36.947107+0100 chargesom manager[5893]: [INFO] connector:EvseM  :: EVSE ISO Change HLC Limits: 30000W/70.17544A, target_voltage 459, actual_voltage 427.5, hack_bpt false
+2025-12-14T01:47:37.081252+0100 chargesom manager[5893]: [INFO] connector:EvseM  ::                                     CAR IEC Event CarRequestedStopPower
+2025-12-14T01:47:37.125788+0100 chargesom manager[5893]: [INFO] connector:EvseM  :: EVSE IEC CP state transition C->B at this stage violates ISO15118-2
+2025-12-14T01:47:37.126162+0100 chargesom manager[5893]: [INFO] connector:EvseM  :: EVSE IEC Charger state: Charging->Car Paused
+2025-12-14T01:47:37.129014+0100 chargesom manager[5892]: [INFO] bsp:CbChargeSOM  :: handle_allow_power_on: request to OPEN the contactor
+2025-12-14T01:47:40.479178+0100 chargesom manager[5893]: [INFO] connector:EvseM  :: EVSE ISO Change HLC Limits: 30000W/65.359474A, target_voltage 459, actual_voltage 0.1, hack_bpt false
+2025-12-14T01:47:41.718872+0100 chargesom manager[5893]: [INFO] connector:EvseM  :: EVSE ISO Change HLC Limits: 30000W/65.359474A, target_voltage 459, actual_voltage 1.7, hack_bpt false

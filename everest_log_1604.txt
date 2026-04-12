@@ -1,0 +1,128 @@
+2025-12-11T00:04:27.071303+0100 chargesom manager[2267399]: [WARN] SerialCommHub0:  :: Modbus call WRITE_MULTIPLE_HOLDING_REGISTERS(0x10) for device id 3 addr 3018(0x0bca) failed: Packet receive timeout
+2025-12-11T00:04:27.073212+0100 chargesom manager[2267398]: [ERRO] Bender_isoCHA42  :: ModBus Command failed: 3018 Value: 1
+2025-12-11T00:04:28.651623+0100 chargesom manager[2267399]: [WARN] SerialCommHub0:  :: Modbus call WRITE_MULTIPLE_HOLDING_REGISTERS(0x10) for device id 3 addr 3019(0x0bcb) failed: Packet receive timeout
+2025-12-11T00:04:28.654548+0100 chargesom manager[2267398]: [ERRO] Bender_isoCHA42  :: ModBus Command failed: 3019 Value: 5
+2025-12-11T00:04:30.231655+0100 chargesom manager[2267399]: [WARN] SerialCommHub0:  :: Modbus call WRITE_MULTIPLE_HOLDING_REGISTERS(0x10) for device id 3 addr 3020(0x0bcc) failed: Packet receive timeout
+2025-12-11T00:04:30.233594+0100 chargesom manager[2267398]: [ERRO] Bender_isoCHA42  :: ModBus Command failed: 3020 Value: 5
+2025-12-11T00:04:31.811636+0100 chargesom manager[2267399]: [WARN] SerialCommHub0:  :: Modbus call WRITE_MULTIPLE_HOLDING_REGISTERS(0x10) for device id 3 addr 3023(0x0bcf) failed: Packet receive timeout
+2025-12-11T00:04:31.813597+0100 chargesom manager[2267398]: [ERRO] Bender_isoCHA42  :: ModBus Command failed: 3023 Value: 0
+2025-12-11T00:04:33.391640+0100 chargesom manager[2267399]: [WARN] SerialCommHub0:  :: Modbus call WRITE_MULTIPLE_HOLDING_REGISTERS(0x10) for device id 3 addr 3024(0x0bd0) failed: Packet receive timeout
+2025-12-11T00:04:33.393652+0100 chargesom manager[2267398]: [ERRO] Bender_isoCHA42  :: ModBus Command failed: 3024 Value: 0
+2025-12-11T00:04:34.971662+0100 chargesom manager[2267399]: [WARN] SerialCommHub0:  :: Modbus call WRITE_MULTIPLE_HOLDING_REGISTERS(0x10) for device id 3 addr 3025(0x0bd1) failed: Packet receive timeout
+2025-12-11T00:04:34.973657+0100 chargesom manager[2267398]: [ERRO] Bender_isoCHA42  :: ModBus Command failed: 3025 Value: 1
+2025-12-11T00:04:35.649568+0100 chargesom systemd[1]: Stopping EVerest...
+2025-12-11T00:04:35.680874+0100 chargesom systemd[1]: everest.service: Deactivated successfully.
+2025-12-11T00:04:35.681726+0100 chargesom systemd[1]: Stopped EVerest.
+2025-12-11T00:04:35.692813+0100 chargesom systemd[1]: Starting EVerest...
+2025-12-11T00:04:35.698306+0100 chargesom sh[2268437]: Starting to migrate EVerest configurations
+2025-12-11T00:04:35.715868+0100 chargesom sh[2268437]: EVerest configurations migrated successfully
+2025-12-11T00:04:35.719173+0100 chargesom systemd[1]: Started EVerest.
+2025-12-11T00:04:35.743277+0100 chargesom manager[2268441]: [INFO] manager          ::   ________      __                _
+2025-12-11T00:04:35.743277+0100 chargesom manager[2268441]: [INFO] manager          ::  |  ____\ \    / /               | |
+2025-12-11T00:04:35.744586+0100 chargesom manager[2268441]: [INFO] manager          ::  | |__   \ \  / /__ _ __ ___  ___| |_
+2025-12-11T00:04:35.744586+0100 chargesom manager[2268441]: [INFO] manager          ::  |  __|   \ \/ / _ \ '__/ _ \/ __| __|
+2025-12-11T00:04:35.744586+0100 chargesom manager[2268441]: [INFO] manager          ::  | |____   \  /  __/ | |  __/\__ \ |_
+2025-12-11T00:04:35.744586+0100 chargesom manager[2268441]: [INFO] manager          ::  |______|   \/ \___|_|  \___||___/\__|
+2025-12-11T00:04:35.744586+0100 chargesom manager[2268441]: [INFO] manager          ::
+2025-12-11T00:04:35.744586+0100 chargesom manager[2268441]: [INFO] manager          :: everest-framework 0.23.0 main@v0.23.0
+2025-12-11T00:04:35.744586+0100 chargesom manager[2268441]: [INFO] manager          :: everest-core 2025.8.0 feature/json-rpc-api-2025.8.0@2025.8.0-351-g14709eef-dirty
+2025-12-11T00:04:35.744586+0100 chargesom manager[2268441]: [INFO] manager          ::
+2025-12-11T00:04:35.744586+0100 chargesom manager[2268441]: [INFO] manager          :: Using MQTT broker localhost:1883
+2025-12-11T00:04:35.760857+0100 chargesom manager[2268442]: [INFO] everest_ctrl     :: Launching controller service on port 8849
+2025-12-11T00:04:35.775220+0100 chargesom manager[2268441]: [INFO] manager          :: Boot mode is set to YamlFile, loading module configs from YAML file
+2025-12-11T00:04:35.775668+0100 chargesom manager[2268441]: [INFO] manager          :: Loading config file at: /etc/everest/config.yaml
+2025-12-11T00:04:35.909768+0100 chargesom manager[2268441]: [INFO] manager          :: Config loading completed in 163ms
+2025-12-11T00:04:35.913811+0100 chargesom manager[2268441]: [INFO] manager          :: Starting 15 modules
+2025-12-11T00:04:37.732464+0100 chargesom manager[2268475]: [INFO] energy_manager:  :: Module energy_manager initialized [1711ms]
+2025-12-11T00:04:37.773901+0100 chargesom manager[2268463]: [INFO] SerialCommHub0:  :: Module SerialCommHub0 initialized [1793ms]
+2025-12-11T00:04:37.818501+0100 chargesom manager[2268462]: [INFO] Bender_isoCHA42  :: Module Bender_isoCHA425HV0 initialized [1872ms]
+2025-12-11T00:04:37.826476+0100 chargesom manager[2268464]: [WARN] api:API          :: No evse energy sink configured for evse_id: 1. API module does therefore not allow control of amps or power limits for this EVSE
+2025-12-11T00:04:37.829270+0100 chargesom manager[2268464]: [INFO] api:API          :: Module api initialized [1837ms]
+2025-12-11T00:04:37.837286+0100 chargesom manager[2268465]: [INFO] auth:Auth        :: Module auth initialized [1864ms]
+2025-12-11T00:04:37.865904+0100 chargesom manager[2268478]: [INFO] error_history:E  :: Using database at "/tmp/error_history.db"
+2025-12-11T00:04:37.867089+0100 chargesom manager[2268478]: [INFO] error_history:E  :: Checking database
+2025-12-11T00:04:37.882902+0100 chargesom manager[2268478]: [INFO] error_history:E  :: Module error_history initialized [1829ms]
+2025-12-11T00:04:37.905885+0100 chargesom manager[2268467]: [INFO] bsp:CbChargeSOM  :: chargebyte's Charge SOM EVerest module (version: 0.24.0)
+2025-12-11T00:04:37.946084+0100 chargesom manager[2268484]: [INFO] evse_slac:EvseS  :: Module evse_slac initialized [1830ms]
+2025-12-11T00:04:37.948042+0100 chargesom manager[2268470]: [INFO] connector:EvseM  :: Module connector initialized [1886ms]
+2025-12-11T00:04:37.965633+0100 chargesom manager[2268482]: [INFO] evse_security:E  :: Module evse_security initialized [1920ms]
+2025-12-11T00:04:37.967496+0100 chargesom manager[2268498]: [INFO] iso15118_charge  :: Module iso15118_charger initialized [1853ms]
+2025-12-11T00:04:37.969123+0100 chargesom manager[2268489]: [INFO] grid_connection  :: Module grid_connection_point initialized [1848ms]
+2025-12-11T00:04:37.983129+0100 chargesom manager[2268501]: [INFO] powersupply_dc:  :: Infy: Setting config values: CAN device: can0
+2025-12-11T00:04:37.983129+0100 chargesom manager[2268501]: [INFO] powersupply_dc:  :: Infy: Operating with controller address: 0xf0
+2025-12-11T00:04:37.983129+0100 chargesom manager[2268501]: [ERRO] powersupply_dc: std::vector<unsigned char> parse_module_addresses(const string&) :: Infy: Invalid module address 'zero': stoi
+2025-12-11T00:04:37.983129+0100 chargesom manager[2268501]: [INFO] powersupply_dc:  :: Infy: Operating in FIXED_ADDRESS mode with 0 addresses: zero
+2025-12-11T00:04:37.983129+0100 chargesom manager[2268501]: [INFO] powersupply_dc:  :: Infy: module communication timeout: 15s
+2025-12-11T00:04:37.983129+0100 chargesom manager[2268501]: [INFO] powersupply_dc:  :: Infy: Operating in FIXED_ADDRESS mode. No need to ping.
+2025-12-11T00:04:37.983129+0100 chargesom manager[2268501]: [INFO] powersupply_dc:  :: Infy: switch_on_off(false) - active modules: 0
+2025-12-11T00:04:37.983129+0100 chargesom manager[2268501]: [WARN] powersupply_dc: bool InfyCanDevice::switch_on_off(bool) :: Infy: No active modules to send switch_on_off command to.
+2025-12-11T00:04:37.984966+0100 chargesom manager[2268501]: [INFO] powersupply_dc:  :: Starting CAN RX thread
+2025-12-11T00:04:37.984966+0100 chargesom manager[2268501]: [INFO] powersupply_dc:  :: CAN error cleared: Success
+2025-12-11T00:04:37.985279+0100 chargesom manager[2268501]: [INFO] powersupply_dc:  :: Module powersupply_dc initialized [1856ms]
+2025-12-11T00:04:37.998277+0100 chargesom manager[2268506]: [INFO] token_provider:  :: Module token_provider initialized [1854ms]
+2025-12-11T00:04:38.001125+0100 chargesom manager[2268508]: [INFO] token_validator  :: Module token_validator initialized [1843ms]
+2025-12-11T00:04:38.270154+0100 chargesom manager[2268467]: [INFO] bsp:CbChargeSOM  :: Safety Controller Firmware: 0.2.5 (gde7345017c7932bc, Charge SOM, firmware)
+2025-12-11T00:04:38.270593+0100 chargesom manager[2268467]: [INFO] bsp:CbChargeSOM  :: Module bsp initialized [2244ms]
+2025-12-11T00:04:38.271715+0100 chargesom manager[2268441]: [INFO] manager          :: Clearing retained topics published by manager during startup
+2025-12-11T00:04:38.271715+0100 chargesom manager[2268441]: [INFO] manager          :: 🚙🚙🚙 All modules are initialized. EVerest up and running [2533ms] 🚙🚙🚙
+2025-12-11T00:04:38.282931+0100 chargesom manager[2268498]: [INFO] iso15118_charge  :: TCP server on eth1 is listening on port [fe80::201:87ff:fe00:3035%3]:61341
+2025-12-11T00:04:38.282931+0100 chargesom manager[2268498]: [INFO] iso15118_charge  :: TLS server on eth1 is listening on port [fe80::201:87ff:fe00:3035%3]:64109
+2025-12-11T00:04:38.292051+0100 chargesom manager[2268484]: [INFO] evse_slac:EvseS  :: Starting the SLAC state machine
+2025-12-11T00:04:38.293166+0100 chargesom manager[2268482]: [INFO] evse_security:E  :: Requesting leaf certificate info: V2G
+2025-12-11T00:04:38.294302+0100 chargesom manager[2268482]: [WARN] evse_security:E  :: Could not find any V2G leaf certificate key pair at path: "/etc/everest/certs/client/cso"
+2025-12-11T00:04:38.337265+0100 chargesom manager[2268498]: [ERRO] iso15118_charge  :: Failed to read cert_info! Not Accepted
+2025-12-11T00:04:38.338418+0100 chargesom manager[2268498]: [WARN] iso15118_charge  :: trusted_ca_keys support disabled
+2025-12-11T00:04:38.338729+0100 chargesom manager[2268498]: [INFO] iso15118_charge  :: SDP socket setup succeeded
+2025-12-11T00:04:38.420451+0100 chargesom manager[2268465]: [WARN] auth:Auth        :: Can not load reservations because no storage was configured.
+2025-12-11T00:04:38.492518+0100 chargesom manager[2268484]: [INFO] evse_slac:EvseS  :: Entered Reset state
+2025-12-11T00:04:38.492902+0100 chargesom manager[2268484]: [INFO] evse_slac:EvseS  :: New NMK key: 49:54:45:42:37:5A:59:36:42:45:4C:57:49:4E:59:43
+2025-12-11T00:04:38.494114+0100 chargesom manager[2268484]: [INFO] evse_slac:EvseS  :: Received CM_SET_KEY_CNF
+2025-12-11T00:04:38.494684+0100 chargesom manager[2268484]: [INFO] evse_slac:EvseS  :: Entered Idle state
+2025-12-11T00:04:39.827808+0100 chargesom manager[2268463]: [WARN] SerialCommHub0:  :: Modbus call WRITE_MULTIPLE_HOLDING_REGISTERS(0x10) for device id 3 addr 3005(0x0bbd) failed: Packet receive timeout
+2025-12-11T00:04:39.835020+0100 chargesom manager[2268462]: [ERRO] Bender_isoCHA42  :: ModBus Command failed: 3005 Value: 250
+2025-12-11T00:04:39.839914+0100 chargesom manager[2268462]: [ERRO] Bender_isoCHA42  :: Error raised, type: isolation_monitor/DeviceFault, sub_type: , message: Failed to write registers
+2025-12-11T00:04:39.886677+0100 chargesom manager[2268470]: [ERRO] connector:EvseM  :: Error raised, type: evse_manager/Inoperative, sub_type: , message: isolation_monitor/DeviceFault
+2025-12-11T00:04:41.411840+0100 chargesom manager[2268463]: [WARN] SerialCommHub0:  :: Modbus call WRITE_MULTIPLE_HOLDING_REGISTERS(0x10) for device id 3 addr 3007(0x0bbf) failed: Packet receive timeout
+2025-12-11T00:04:41.414913+0100 chargesom manager[2268462]: [ERRO] Bender_isoCHA42  :: ModBus Command failed: 3007 Value: 100
+2025-12-11T00:04:42.996215+0100 chargesom manager[2268463]: [WARN] SerialCommHub0:  :: Modbus call WRITE_MULTIPLE_HOLDING_REGISTERS(0x10) for device id 3 addr 3008(0x0bc0) failed: Packet receive timeout
+2025-12-11T00:04:43.014978+0100 chargesom manager[2268462]: [ERRO] Bender_isoCHA42  :: ModBus Command failed: 3008 Value: 0
+2025-12-11T00:04:43.878625+0100 chargesom manager[2268470]: [INFO] connector:EvseM  :: Cleaning up any other transaction on start up
+2025-12-11T00:04:43.890438+0100 chargesom manager[2268470]: [INFO] connector:EvseM  :: 🌀🌀🌀 Ready to start charging 🌀🌀🌀
+2025-12-11T00:04:43.890438+0100 chargesom manager[2268470]: [WARN] connector:EvseM  :: No powermeter value received yet!
+2025-12-11T00:04:44.244690+0100 chargesom manager[2268467]: [INFO] bsp:CbChargeSOM  :: handle_enable: Setting new duty cycle of 100.0%
+2025-12-11T00:04:44.367741+0100 chargesom manager[2268467]: [INFO] bsp:CbChargeSOM  :: CP state change from PowerOn to A, PWM: 100.0%
+2025-12-11T00:04:44.412142+0100 chargesom manager[2268467]: [INFO] bsp:CbChargeSOM  :: handle_pwm_off: Setting new duty cycle of 100.0%
+2025-12-11T00:04:44.499995+0100 chargesom manager[2268467]: [INFO] bsp:CbChargeSOM  :: handle_allow_power_on: request to OPEN the contactor
+2025-12-11T00:04:44.575650+0100 chargesom manager[2268463]: [WARN] SerialCommHub0:  :: Modbus call WRITE_MULTIPLE_HOLDING_REGISTERS(0x10) for device id 3 addr 3009(0x0bc1) failed: Packet receive timeout
+2025-12-11T00:04:44.577591+0100 chargesom manager[2268462]: [ERRO] Bender_isoCHA42  :: ModBus Command failed: 3009 Value: 30
+2025-12-11T00:04:44.599723+0100 chargesom manager[2268467]: [INFO] bsp:CbChargeSOM  :: handle_pwm_off: Setting new duty cycle of 100.0%
+2025-12-11T00:04:46.155651+0100 chargesom manager[2268463]: [WARN] SerialCommHub0:  :: Modbus call WRITE_MULTIPLE_HOLDING_REGISTERS(0x10) for device id 3 addr 3010(0x0bc2) failed: Packet receive timeout
+2025-12-11T00:04:46.157694+0100 chargesom manager[2268462]: [ERRO] Bender_isoCHA42  :: ModBus Command failed: 3010 Value: 0
+2025-12-11T00:04:47.735668+0100 chargesom manager[2268463]: [WARN] SerialCommHub0:  :: Modbus call WRITE_MULTIPLE_HOLDING_REGISTERS(0x10) for device id 3 addr 3011(0x0bc3) failed: Packet receive timeout
+2025-12-11T00:04:47.737431+0100 chargesom manager[2268462]: [ERRO] Bender_isoCHA42  :: ModBus Command failed: 3011 Value: 1050
+2025-12-11T00:04:49.315650+0100 chargesom manager[2268463]: [WARN] SerialCommHub0:  :: Modbus call WRITE_MULTIPLE_HOLDING_REGISTERS(0x10) for device id 3 addr 3012(0x0bc4) failed: Packet receive timeout
+2025-12-11T00:04:49.317635+0100 chargesom manager[2268462]: [ERRO] Bender_isoCHA42  :: ModBus Command failed: 3012 Value: 0
+2025-12-11T00:04:50.895684+0100 chargesom manager[2268463]: [WARN] SerialCommHub0:  :: Modbus call WRITE_MULTIPLE_HOLDING_REGISTERS(0x10) for device id 3 addr 3013(0x0bc5) failed: Packet receive timeout
+2025-12-11T00:04:50.897763+0100 chargesom manager[2268462]: [ERRO] Bender_isoCHA42  :: ModBus Command failed: 3013 Value: 0
+2025-12-11T00:04:52.479658+0100 chargesom manager[2268463]: [WARN] SerialCommHub0:  :: Modbus call WRITE_MULTIPLE_HOLDING_REGISTERS(0x10) for device id 3 addr 3014(0x0bc6) failed: Packet receive timeout
+2025-12-11T00:04:52.481738+0100 chargesom manager[2268462]: [ERRO] Bender_isoCHA42  :: ModBus Command failed: 3014 Value: 0
+2025-12-11T00:04:54.059656+0100 chargesom manager[2268463]: [WARN] SerialCommHub0:  :: Modbus call WRITE_MULTIPLE_HOLDING_REGISTERS(0x10) for device id 3 addr 3018(0x0bca) failed: Packet receive timeout
+2025-12-11T00:04:54.061469+0100 chargesom manager[2268462]: [ERRO] Bender_isoCHA42  :: ModBus Command failed: 3018 Value: 1
+2025-12-11T00:04:55.639656+0100 chargesom manager[2268463]: [WARN] SerialCommHub0:  :: Modbus call WRITE_MULTIPLE_HOLDING_REGISTERS(0x10) for device id 3 addr 3019(0x0bcb) failed: Packet receive timeout
+2025-12-11T00:04:55.641656+0100 chargesom manager[2268462]: [ERRO] Bender_isoCHA42  :: ModBus Command failed: 3019 Value: 5
+2025-12-11T00:04:57.219663+0100 chargesom manager[2268463]: [WARN] SerialCommHub0:  :: Modbus call WRITE_MULTIPLE_HOLDING_REGISTERS(0x10) for device id 3 addr 3020(0x0bcc) failed: Packet receive timeout
+2025-12-11T00:04:57.221660+0100 chargesom manager[2268462]: [ERRO] Bender_isoCHA42  :: ModBus Command failed: 3020 Value: 5
+2025-12-11T00:04:58.799664+0100 chargesom manager[2268463]: [WARN] SerialCommHub0:  :: Modbus call WRITE_MULTIPLE_HOLDING_REGISTERS(0x10) for device id 3 addr 3023(0x0bcf) failed: Packet receive timeout
+2025-12-11T00:04:58.801509+0100 chargesom manager[2268462]: [ERRO] Bender_isoCHA42  :: ModBus Command failed: 3023 Value: 0
+2025-12-11T00:05:00.379678+0100 chargesom manager[2268463]: [WARN] SerialCommHub0:  :: Modbus call WRITE_MULTIPLE_HOLDING_REGISTERS(0x10) for device id 3 addr 3024(0x0bd0) failed: Packet receive timeout
+2025-12-11T00:05:00.381682+0100 chargesom manager[2268462]: [ERRO] Bender_isoCHA42  :: ModBus Command failed: 3024 Value: 0
+2025-12-11T00:05:01.963681+0100 chargesom manager[2268463]: [WARN] SerialCommHub0:  :: Modbus call WRITE_MULTIPLE_HOLDING_REGISTERS(0x10) for device id 3 addr 3025(0x0bd1) failed: Packet receive timeout
+2025-12-11T00:05:01.965692+0100 chargesom manager[2268462]: [ERRO] Bender_isoCHA42  :: ModBus Command failed: 3025 Value: 1
+2025-12-11T00:05:03.543653+0100 chargesom manager[2268463]: [WARN] SerialCommHub0:  :: Modbus call WRITE_MULTIPLE_HOLDING_REGISTERS(0x10) for device id 3 addr 3026(0x0bd2) failed: Packet receive timeout
+2025-12-11T00:05:03.545582+0100 chargesom manager[2268462]: [ERRO] Bender_isoCHA42  :: ModBus Command failed: 3026 Value: 1
+2025-12-11T00:05:15.083681+0100 chargesom manager[2268463]: [WARN] SerialCommHub0:  :: Modbus call WRITE_MULTIPLE_HOLDING_REGISTERS(0x10) for device id 3 addr 3005(0x0bbd) failed: Packet receive timeout
+2025-12-11T00:05:15.085849+0100 chargesom manager[2268462]: [ERRO] Bender_isoCHA42  :: ModBus Command failed: 3005 Value: 250
+2025-12-11T00:05:16.667665+0100 chargesom manager[2268463]: [WARN] SerialCommHub0:  :: Modbus call WRITE_MULTIPLE_HOLDING_REGISTERS(0x10) for device id 3 addr 3007(0x0bbf) failed: Packet receive timeout
+2025-12-11T00:05:16.669585+0100 chargesom manager[2268462]: [ERRO] Bender_isoCHA42  :: ModBus Command failed: 3007 Value: 100
+2025-12-11T00:05:18.251659+0100 chargesom manager[2268463]: [WARN] SerialCommHub0:  :: Modbus call WRITE_MULTIPLE_HOLDING_REGISTERS(0x10) for device id 3 addr 3008(0x0bc0) failed: Packet receive timeout
+2025-12-11T00:05:18.253725+0100 chargesom manager[2268462]: [ERRO] Bender_isoCHA42  :: ModBus Command failed: 3008 Value: 0

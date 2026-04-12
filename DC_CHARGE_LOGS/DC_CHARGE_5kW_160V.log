@@ -1,0 +1,337 @@
+2025-12-16T18:29:41.541837+0100 chargesom manager[859697]: [INFO] evse_slac:EvseS  :: Received CM_SET_KEY_CNF
+2025-12-16T18:29:41.542454+0100 chargesom manager[859697]: [INFO] evse_slac:EvseS  :: Entered Idle state
+2025-12-16T18:29:41.566349+0100 chargesom manager[859688]: [INFO] connector:EvseM  :: EVSE ISO D-LINK_READY (false)
+2025-12-16T18:29:41.566349+0100 chargesom manager[859688]: [INFO] connector:EvseM  ::                                     CAR IEC Event CarUnplugged
+2025-12-16T18:29:41.566349+0100 chargesom manager[859688]: [INFO] connector:EvseM  :: EVSE IEC Charger state: Car Paused->Finished
+2025-12-16T18:29:41.569228+0100 chargesom manager[859688]: [INFO] connector:EvseM  :: EVSE IEC Transaction Finished: EVDisconnected (0 kWh)
+2025-12-16T18:29:41.619921+0100 chargesom manager[859688]: [INFO] connector:EvseM  :: EVSE ISO SLAC UNMATCHED
+2025-12-16T18:29:41.659574+0100 chargesom manager[859688]: [INFO] connector:EvseM  :: EVSE IEC Session Finished
+2025-12-16T18:29:41.659949+0100 chargesom manager[859688]: [INFO] connector:EvseM  :: SYS  Session logging stopped.
+2025-12-16T18:29:41.753744+0100 chargesom manager[859687]: [INFO] bsp:CbChargeSOM  :: handle_pwm_off: Setting new duty cycle of 100.0%
+2025-12-16T18:29:55.918239+0100 chargesom systemd[1]: Stopping EVerest...
+2025-12-16T18:29:55.949654+0100 chargesom systemd[1]: everest.service: Deactivated successfully.
+2025-12-16T18:29:55.950573+0100 chargesom systemd[1]: Stopped EVerest.
+2025-12-16T18:29:55.966128+0100 chargesom systemd[1]: Starting EVerest...
+2025-12-16T18:29:55.971993+0100 chargesom sh[861323]: Starting to migrate EVerest configurations
+2025-12-16T18:29:55.990475+0100 chargesom sh[861323]: EVerest configurations migrated successfully
+2025-12-16T18:29:56.013182+0100 chargesom systemd[1]: Started EVerest.
+2025-12-16T18:29:56.037854+0100 chargesom manager[861327]: [INFO] manager          ::   ________      __                _
+2025-12-16T18:29:56.038945+0100 chargesom manager[861327]: [INFO] manager          ::  |  ____\ \    / /               | |
+2025-12-16T18:29:56.038945+0100 chargesom manager[861327]: [INFO] manager          ::  | |__   \ \  / /__ _ __ ___  ___| |_
+2025-12-16T18:29:56.038945+0100 chargesom manager[861327]: [INFO] manager          ::  |  __|   \ \/ / _ \ '__/ _ \/ __| __|
+2025-12-16T18:29:56.038945+0100 chargesom manager[861327]: [INFO] manager          ::  | |____   \  /  __/ | |  __/\__ \ |_
+2025-12-16T18:29:56.038945+0100 chargesom manager[861327]: [INFO] manager          ::  |______|   \/ \___|_|  \___||___/\__|
+2025-12-16T18:29:56.038945+0100 chargesom manager[861327]: [INFO] manager          ::
+2025-12-16T18:29:56.038945+0100 chargesom manager[861327]: [INFO] manager          :: everest-framework 0.23.0 main@v0.23.0
+2025-12-16T18:29:56.040001+0100 chargesom manager[861327]: [INFO] manager          :: everest-core 2025.8.0 feature/json-rpc-api-2025.8.0@2025.8.0-351-g14709eef-dirty
+2025-12-16T18:29:56.040001+0100 chargesom manager[861327]: [INFO] manager          ::
+2025-12-16T18:29:56.040001+0100 chargesom manager[861327]: [INFO] manager          :: Using MQTT broker localhost:1883
+2025-12-16T18:29:56.054981+0100 chargesom manager[861328]: [INFO] everest_ctrl     :: Launching controller service on port 8849
+2025-12-16T18:29:56.070359+0100 chargesom manager[861327]: [INFO] manager          :: Boot mode is set to YamlFile, loading module configs from YAML file
+2025-12-16T18:29:56.070762+0100 chargesom manager[861327]: [INFO] manager          :: Loading config file at: /etc/everest/config.yaml
+2025-12-16T18:29:56.187482+0100 chargesom manager[861327]: [INFO] manager          :: Config loading completed in 146ms
+2025-12-16T18:29:56.190927+0100 chargesom manager[861327]: [INFO] manager          :: Starting 14 modules
+2025-12-16T18:29:57.938699+0100 chargesom manager[861348]: [INFO] auth:Auth        :: Module auth initialized [1697ms]
+2025-12-16T18:29:58.000673+0100 chargesom manager[861349]: [INFO] bsp:CbChargeSOM  :: chargebyte's Charge SOM EVerest module (version: 0.24.0)
+2025-12-16T18:29:58.010008+0100 chargesom manager[861347]: [WARN] api:API          :: No evse energy sink configured for evse_id: 1. API module does therefore not allow control of amps or power limits for this EVSE
+2025-12-16T18:29:58.011188+0100 chargesom manager[861347]: [INFO] api:API          :: Module api initialized [1788ms]
+2025-12-16T18:29:58.029380+0100 chargesom manager[861361]: [INFO] evse_slac:EvseS  :: Module evse_slac initialized [1717ms]
+2025-12-16T18:29:58.043175+0100 chargesom manager[861359]: [INFO] evse_security:E  :: Module evse_security initialized [1716ms]
+2025-12-16T18:29:58.054682+0100 chargesom manager[861352]: [INFO] energy_manager:  :: Module energy_manager initialized [1763ms]
+2025-12-16T18:29:58.077092+0100 chargesom manager[861358]: [INFO] error_history:E  :: Using database at "/tmp/error_history.db"
+2025-12-16T18:29:58.078181+0100 chargesom manager[861358]: [INFO] error_history:E  :: Checking database
+2025-12-16T18:29:58.093235+0100 chargesom manager[861358]: [INFO] error_history:E  :: Module error_history initialized [1815ms]
+2025-12-16T18:29:58.118339+0100 chargesom manager[861381]: [INFO] iso15118_charge  :: Module iso15118_charger initialized [1715ms]
+2025-12-16T18:29:58.155035+0100 chargesom manager[861367]: [INFO] grid_connection  :: Module grid_connection_point initialized [1764ms]
+2025-12-16T18:29:58.156121+0100 chargesom manager[861350]: [INFO] connector:EvseM  :: Module connector initialized [1839ms]
+2025-12-16T18:29:58.170778+0100 chargesom manager[861371]: [INFO] imd:IMDSimulato  :: Module imd initialized [1751ms]
+2025-12-16T18:29:58.174947+0100 chargesom manager[861384]: [INFO] token_provider:  :: Module token_provider initialized [1741ms]
+2025-12-16T18:29:58.174947+0100 chargesom manager[861382]: [INFO] powersupply_dc:  :: Infy: Setting config values: CAN device: can0
+2025-12-16T18:29:58.177765+0100 chargesom manager[861382]: [INFO] powersupply_dc:  :: Infy: Operating with controller address: 0xf0
+2025-12-16T18:29:58.177765+0100 chargesom manager[861382]: [INFO] powersupply_dc:  :: Infy: Operating in FIXED_ADDRESS mode with 1 addresses: 0
+2025-12-16T18:29:58.177765+0100 chargesom manager[861382]: [INFO] powersupply_dc:  :: Infy: module communication timeout: 15s
+2025-12-16T18:29:58.177765+0100 chargesom manager[861382]: [INFO] powersupply_dc:  :: Infy: Operating in FIXED_ADDRESS mode. No need to ping.
+2025-12-16T18:29:58.177765+0100 chargesom manager[861382]: [INFO] powersupply_dc:  :: Infy: switch_on_off(false) - active modules: 1
+2025-12-16T18:29:58.177765+0100 chargesom manager[861382]: [INFO] powersupply_dc:  :: Starting CAN RX thread
+2025-12-16T18:29:58.177765+0100 chargesom manager[861382]: [INFO] powersupply_dc:  :: CAN error cleared: Success
+2025-12-16T18:29:58.177765+0100 chargesom manager[861382]: [INFO] powersupply_dc:  :: Module powersupply_dc initialized [1764ms]
+2025-12-16T18:29:58.201412+0100 chargesom manager[861386]: [INFO] token_validator  :: Module token_validator initialized [1753ms]
+2025-12-16T18:29:58.362207+0100 chargesom manager[861349]: [INFO] bsp:CbChargeSOM  :: Safety Controller Firmware: 0.2.5 (gde7345017c7932bc, Charge SOM, firmware)
+2025-12-16T18:29:58.362640+0100 chargesom manager[861349]: [INFO] bsp:CbChargeSOM  :: Module bsp initialized [2098ms]
+2025-12-16T18:29:58.363424+0100 chargesom manager[861327]: [INFO] manager          :: Clearing retained topics published by manager during startup
+2025-12-16T18:29:58.364280+0100 chargesom manager[861327]: [INFO] manager          :: 🚙🚙🚙 All modules are initialized. EVerest up and running [2330ms] 🚙🚙🚙
+2025-12-16T18:29:58.370527+0100 chargesom manager[861381]: [INFO] iso15118_charge  :: TCP server on eth1 is listening on port [fe80::201:87ff:fe00:3035%3]:61341
+2025-12-16T18:29:58.370527+0100 chargesom manager[861381]: [INFO] iso15118_charge  :: SDP socket setup succeeded
+2025-12-16T18:29:58.389335+0100 chargesom manager[861361]: [INFO] evse_slac:EvseS  :: Starting the SLAC state machine
+2025-12-16T18:29:58.554990+0100 chargesom manager[861348]: [WARN] auth:Auth        :: Can not load reservations because no storage was configured.
+2025-12-16T18:29:58.589532+0100 chargesom manager[861361]: [INFO] evse_slac:EvseS  :: Entered Reset state
+2025-12-16T18:29:58.589996+0100 chargesom manager[861361]: [INFO] evse_slac:EvseS  :: New NMK key: 51:32:4C:53:58:55:4B:39:41:4F:5A:59:43:59:38:59
+2025-12-16T18:29:58.591149+0100 chargesom manager[861361]: [INFO] evse_slac:EvseS  :: Received CM_SET_KEY_CNF
+2025-12-16T18:29:58.591845+0100 chargesom manager[861361]: [INFO] evse_slac:EvseS  :: Entered Idle state
+2025-12-16T18:30:03.963786+0100 chargesom manager[861350]: [INFO] connector:EvseM  :: Cleaning up any other transaction on start up
+2025-12-16T18:30:03.976645+0100 chargesom manager[861350]: [INFO] connector:EvseM  :: 🌀🌀🌀 Ready to start charging 🌀🌀🌀
+2025-12-16T18:30:03.976645+0100 chargesom manager[861350]: [WARN] connector:EvseM void module::EvseManager::ready_to_start_charging() :: No powermeter value received yet!
+2025-12-16T18:30:04.367646+0100 chargesom manager[861349]: [INFO] bsp:CbChargeSOM  :: handle_enable: Setting new duty cycle of 100.0%
+2025-12-16T18:30:04.484104+0100 chargesom manager[861349]: [INFO] bsp:CbChargeSOM  :: CP state change from PowerOn to A, PWM: 100.0%
+2025-12-16T18:30:04.529749+0100 chargesom manager[861349]: [INFO] bsp:CbChargeSOM  :: handle_pwm_off: Setting new duty cycle of 100.0%
+2025-12-16T18:30:04.617532+0100 chargesom manager[861349]: [INFO] bsp:CbChargeSOM  :: handle_allow_power_on: request to OPEN the contactor
+2025-12-16T18:30:04.673476+0100 chargesom manager[861349]: [INFO] bsp:CbChargeSOM  :: handle_pwm_off: Setting new duty cycle of 100.0%
+2025-12-16T18:30:04.721899+0100 chargesom manager[861350]: [INFO] connector:EvseM  :: All errors cleared
+2025-12-16T18:31:13.232179+0100 chargesom manager[861382]: [INFO] powersupply_dc:  :: Infy[0x00]: capabilities: 1000V / 50V, 102A, power 30000W
+2025-12-16T18:31:13.233742+0100 chargesom manager[861382]: [INFO] powersupply_dc:  :: Infy: Capabilities updated: 1000V / 50V, 102A, power 30000W
+2025-12-16T18:31:13.233742+0100 chargesom manager[861382]: [INFO] powersupply_dc:  :: Infy: Hot plug detected - module count increased from 0 to 1 modules, redistributing 0A from 0 to 1 modules
+2025-12-16T18:31:13.233742+0100 chargesom manager[861382]: [INFO] powersupply_dc:  :: Infy: Restoring last settings: voltage=0V, current=0A, mode=Off, phase=CableCheck
+2025-12-16T18:31:13.233742+0100 chargesom manager[861382]: [INFO] powersupply_dc:  :: Infy: Updating voltage/current via CAN: 50V / 1A total → 1A per module - active modules: 1
+2025-12-16T18:31:13.233742+0100 chargesom manager[861382]: [INFO] powersupply_dc:  :: Infy: set_voltage_current(50V, 1A) - active modules: 1
+2025-12-16T18:31:13.233742+0100 chargesom manager[861382]: [INFO] powersupply_dc:  :: Set mode via CAN: Off with phase CableCheck
+2025-12-16T18:31:13.233742+0100 chargesom manager[861382]: [INFO] powersupply_dc:  :: Infy: switch_on_off(false) - active modules: 1
+2025-12-16T18:31:13.234774+0100 chargesom manager[861382]: [INFO] powersupply_dc:  :: Infy[0x00]: serial number: SN_2818a396c70776_V
+2025-12-16T18:31:13.236722+0100 chargesom manager[861382]: [INFO] powersupply_dc:  :: Infy[0x00]: capabilities: 1000V / 50V, 102A, power 30000W
+2025-12-16T18:31:13.237025+0100 chargesom manager[861382]: [INFO] powersupply_dc:  :: Infy: Capabilities updated: 1000V / 50V, 102A, power 30000W
+2025-12-16T18:31:13.246025+0100 chargesom manager[861382]: [INFO] powersupply_dc:  :: Infy[0x00]: serial number: SN_2818a396c70776_V
+2025-12-16T18:31:13.248328+0100 chargesom manager[861382]: [INFO] powersupply_dc:  :: Infy[0x00]: capabilities: 1000V / 50V, 102A, power 30000W
+2025-12-16T18:31:13.248662+0100 chargesom manager[861382]: [INFO] powersupply_dc:  :: Infy: Capabilities updated: 1000V / 50V, 102A, power 30000W
+2025-12-16T18:31:13.255390+0100 chargesom manager[861382]: [INFO] powersupply_dc:  :: Infy[0x00]: capabilities: 1000V / 50V, 102A, power 30000W
+2025-12-16T18:31:13.255727+0100 chargesom manager[861382]: [INFO] powersupply_dc:  :: Infy: Capabilities updated: 1000V / 50V, 102A, power 30000W
+2025-12-16T18:31:13.257703+0100 chargesom manager[861382]: [INFO] powersupply_dc:  :: Infy[0x00]: serial number: SN_2818a396c70776_V
+2025-12-16T18:31:13.269341+0100 chargesom manager[861382]: [INFO] powersupply_dc:  :: Infy[0x00]: serial number: SN_2818a396c70776_V
+2025-12-16T18:31:13.271614+0100 chargesom manager[861382]: [INFO] powersupply_dc:  :: Infy[0x00]: capabilities: 1000V / 50V, 102A, power 30000W
+2025-12-16T18:31:13.271904+0100 chargesom manager[861382]: [INFO] powersupply_dc:  :: Infy: Capabilities updated: 1000V / 50V, 102A, power 30000W
+2025-12-16T18:31:13.281048+0100 chargesom manager[861382]: [INFO] powersupply_dc:  :: Infy[0x00]: capabilities: 1000V / 50V, 102A, power 30000W
+2025-12-16T18:31:13.281407+0100 chargesom manager[861382]: [INFO] powersupply_dc:  :: Infy: Capabilities updated: 1000V / 50V, 102A, power 30000W
+2025-12-16T18:31:13.283301+0100 chargesom manager[861382]: [INFO] powersupply_dc:  :: Infy[0x00]: serial number: SN_2818a396c70776_V
+2025-12-16T18:31:13.290340+0100 chargesom manager[861382]: [INFO] powersupply_dc:  :: Infy[0x00]: capabilities: 1000V / 50V, 102A, power 30000W
+2025-12-16T18:31:13.290679+0100 chargesom manager[861382]: [INFO] powersupply_dc:  :: Infy: Capabilities updated: 1000V / 50V, 102A, power 30000W
+2025-12-16T18:31:13.292651+0100 chargesom manager[861382]: [INFO] powersupply_dc:  :: Infy[0x00]: serial number: SN_2818a396c70776_V
+2025-12-16T18:31:13.304214+0100 chargesom manager[861382]: [INFO] powersupply_dc:  :: Infy[0x00]: serial number: SN_2818a396c70776_V
+2025-12-16T18:31:13.306567+0100 chargesom manager[861382]: [INFO] powersupply_dc:  :: Infy[0x00]: capabilities: 1000V / 50V, 102A, power 30000W
+2025-12-16T18:31:13.306899+0100 chargesom manager[861382]: [INFO] powersupply_dc:  :: Infy: Capabilities updated: 1000V / 50V, 102A, power 30000W
+2025-12-16T18:31:13.315955+0100 chargesom manager[861382]: [INFO] powersupply_dc:  :: Infy[0x00]: capabilities: 1000V / 50V, 102A, power 30000W
+2025-12-16T18:31:13.316315+0100 chargesom manager[861382]: [INFO] powersupply_dc:  :: Infy: Capabilities updated: 1000V / 50V, 102A, power 30000W
+2025-12-16T18:31:13.318277+0100 chargesom manager[861381]: [WARN] iso15118_charge  :: Physical value out of scope. Ignore value
+2025-12-16T18:31:13.318946+0100 chargesom manager[861382]: [INFO] powersupply_dc:  :: Infy[0x00]: serial number: SN_2818a396c70776_V
+2025-12-16T18:31:13.325249+0100 chargesom manager[861382]: [INFO] powersupply_dc:  :: Infy[0x00]: capabilities: 1000V / 50V, 102A, power 30000W
+2025-12-16T18:31:13.325634+0100 chargesom manager[861382]: [INFO] powersupply_dc:  :: Infy: Capabilities updated: 1000V / 50V, 102A, power 30000W
+2025-12-16T18:31:13.329853+0100 chargesom manager[861382]: [INFO] powersupply_dc:  :: Infy[0x00]: serial number: SN_2818a396c70776_V
+2025-12-16T18:31:13.336808+0100 chargesom manager[861382]: [INFO] powersupply_dc:  :: Infy[0x00]: capabilities: 1000V / 50V, 102A, power 30000W
+2025-12-16T18:31:13.337145+0100 chargesom manager[861382]: [INFO] powersupply_dc:  :: Infy: Capabilities updated: 1000V / 50V, 102A, power 30000W
+2025-12-16T18:31:13.341473+0100 chargesom manager[861382]: [INFO] powersupply_dc:  :: Infy[0x00]: serial number: SN_2818a396c70776_V
+2025-12-16T18:31:13.348475+0100 chargesom manager[861382]: [INFO] powersupply_dc:  :: Infy[0x00]: capabilities: 1000V / 50V, 102A, power 30000W
+2025-12-16T18:31:13.348821+0100 chargesom manager[861382]: [INFO] powersupply_dc:  :: Infy: Capabilities updated: 1000V / 50V, 102A, power 30000W
+2025-12-16T18:31:13.355507+0100 chargesom manager[861382]: [INFO] powersupply_dc:  :: Infy[0x00]: serial number: SN_2818a396c70776_V
+2025-12-16T18:31:13.362464+0100 chargesom manager[861382]: [INFO] powersupply_dc:  :: Infy[0x00]: serial number: SN_2818a396c70776_V
+2025-12-16T18:31:13.365270+0100 chargesom manager[861382]: [INFO] powersupply_dc:  :: Infy[0x00]: capabilities: 1000V / 50V, 102A, power 30000W
+2025-12-16T18:31:13.365270+0100 chargesom manager[861382]: [INFO] powersupply_dc:  :: Infy: Capabilities updated: 1000V / 50V, 102A, power 30000W
+2025-12-16T18:31:13.374577+0100 chargesom manager[861382]: [INFO] powersupply_dc:  :: Infy[0x00]: serial number: SN_2818a396c70776_V
+2025-12-16T18:31:13.376503+0100 chargesom manager[861382]: [INFO] powersupply_dc:  :: Infy[0x00]: capabilities: 1000V / 50V, 102A, power 30000W
+2025-12-16T18:31:13.376980+0100 chargesom manager[861382]: [INFO] powersupply_dc:  :: Infy: Capabilities updated: 1000V / 50V, 102A, power 30000W
+2025-12-16T18:31:13.385794+0100 chargesom manager[861382]: [INFO] powersupply_dc:  :: Infy[0x00]: capabilities: 1000V / 50V, 102A, power 30000W
+2025-12-16T18:31:13.386167+0100 chargesom manager[861382]: [INFO] powersupply_dc:  :: Infy: Capabilities updated: 1000V / 50V, 102A, power 30000W
+2025-12-16T18:31:13.388074+0100 chargesom manager[861382]: [INFO] powersupply_dc:  :: Infy[0x00]: serial number: SN_2818a396c70776_V
+2025-12-16T18:31:13.395064+0100 chargesom manager[861382]: [INFO] powersupply_dc:  :: Infy[0x00]: capabilities: 1000V / 50V, 102A, power 30000W
+2025-12-16T18:31:13.395361+0100 chargesom manager[861382]: [INFO] powersupply_dc:  :: Infy: Capabilities updated: 1000V / 50V, 102A, power 30000W
+2025-12-16T18:31:13.399699+0100 chargesom manager[861382]: [INFO] powersupply_dc:  :: Infy[0x00]: serial number: SN_2818a396c70776_V
+2025-12-16T18:31:13.406669+0100 chargesom manager[861382]: [INFO] powersupply_dc:  :: Infy[0x00]: capabilities: 1000V / 50V, 102A, power 30000W
+2025-12-16T18:31:13.407047+0100 chargesom manager[861382]: [INFO] powersupply_dc:  :: Infy: Capabilities updated: 1000V / 50V, 102A, power 30000W
+2025-12-16T18:31:13.411331+0100 chargesom manager[861382]: [INFO] powersupply_dc:  :: Infy[0x00]: serial number: SN_2818a396c70776_V
+2025-12-16T18:31:13.414556+0100 chargesom manager[861381]: [WARN] iso15118_charge  :: Physical value out of scope. Ignore value
+2025-12-16T18:31:13.420738+0100 chargesom manager[861382]: [INFO] powersupply_dc:  :: Infy[0x00]: capabilities: 1000V / 50V, 102A, power 30000W
+2025-12-16T18:31:13.421195+0100 chargesom manager[861382]: [INFO] powersupply_dc:  :: Infy: Capabilities updated: 1000V / 50V, 102A, power 30000W
+2025-12-16T18:31:13.422994+0100 chargesom manager[861382]: [INFO] powersupply_dc:  :: Infy[0x00]: serial number: SN_2818a396c70776_V
+2025-12-16T18:31:13.429943+0100 chargesom manager[861382]: [INFO] powersupply_dc:  :: Infy[0x00]: capabilities: 1000V / 50V, 102A, power 30000W
+2025-12-16T18:31:13.430283+0100 chargesom manager[861382]: [INFO] powersupply_dc:  :: Infy: Capabilities updated: 1000V / 50V, 102A, power 30000W
+2025-12-16T18:31:13.436966+0100 chargesom manager[861382]: [INFO] powersupply_dc:  :: Infy[0x00]: serial number: SN_2818a396c70776_V
+2025-12-16T18:31:13.443875+0100 chargesom manager[861382]: [INFO] powersupply_dc:  :: Infy[0x00]: serial number: SN_2818a396c70776_V
+2025-12-16T18:31:13.446179+0100 chargesom manager[861382]: [INFO] powersupply_dc:  :: Infy[0x00]: capabilities: 1000V / 50V, 102A, power 30000W
+2025-12-16T18:31:13.446469+0100 chargesom manager[861382]: [INFO] powersupply_dc:  :: Infy: Capabilities updated: 1000V / 50V, 102A, power 30000W
+2025-12-16T18:31:13.455582+0100 chargesom manager[861382]: [INFO] powersupply_dc:  :: Infy[0x00]: capabilities: 1000V / 50V, 102A, power 30000W
+2025-12-16T18:31:13.455925+0100 chargesom manager[861382]: [INFO] powersupply_dc:  :: Infy: Capabilities updated: 1000V / 50V, 102A, power 30000W
+2025-12-16T18:31:13.460256+0100 chargesom manager[861382]: [INFO] powersupply_dc:  :: Infy[0x00]: serial number: SN_2818a396c70776_V
+2025-12-16T18:31:13.467248+0100 chargesom manager[861382]: [INFO] powersupply_dc:  :: Infy[0x00]: capabilities: 1000V / 50V, 102A, power 30000W
+2025-12-16T18:31:13.467692+0100 chargesom manager[861382]: [INFO] powersupply_dc:  :: Infy: Capabilities updated: 1000V / 50V, 102A, power 30000W
+2025-12-16T18:31:13.469511+0100 chargesom manager[861382]: [INFO] powersupply_dc:  :: Infy[0x00]: serial number: SN_2818a396c70776_V
+2025-12-16T18:31:13.478844+0100 chargesom manager[861382]: [INFO] powersupply_dc:  :: Infy[0x00]: capabilities: 1000V / 50V, 102A, power 30000W
+2025-12-16T18:31:13.479240+0100 chargesom manager[861382]: [INFO] powersupply_dc:  :: Infy: Capabilities updated: 1000V / 50V, 102A, power 30000W
+2025-12-16T18:31:13.483644+0100 chargesom manager[861382]: [INFO] powersupply_dc:  :: Infy[0x00]: serial number: SN_2818a396c70776_V
+2025-12-16T18:31:13.490518+0100 chargesom manager[861382]: [INFO] powersupply_dc:  :: Infy[0x00]: capabilities: 1000V / 50V, 102A, power 30000W
+2025-12-16T18:31:13.491012+0100 chargesom manager[861382]: [INFO] powersupply_dc:  :: Infy: Capabilities updated: 1000V / 50V, 102A, power 30000W
+2025-12-16T18:31:13.492782+0100 chargesom manager[861382]: [INFO] powersupply_dc:  :: Infy[0x00]: serial number: SN_2818a396c70776_V
+2025-12-16T18:31:13.499752+0100 chargesom manager[861382]: [INFO] powersupply_dc:  :: Infy[0x00]: capabilities: 1000V / 50V, 102A, power 30000W
+2025-12-16T18:31:13.500185+0100 chargesom manager[861382]: [INFO] powersupply_dc:  :: Infy: Capabilities updated: 1000V / 50V, 102A, power 30000W
+2025-12-16T18:31:13.506460+0100 chargesom manager[861381]: [WARN] iso15118_charge  :: Physical value out of scope. Ignore value
+2025-12-16T18:31:13.506890+0100 chargesom manager[861382]: [INFO] powersupply_dc:  :: Infy[0x00]: serial number: SN_2818a396c70776_V
+2025-12-16T18:31:13.513673+0100 chargesom manager[861382]: [INFO] powersupply_dc:  :: Infy[0x00]: serial number: SN_2818a396c70776_V
+2025-12-16T18:31:13.515943+0100 chargesom manager[861382]: [INFO] powersupply_dc:  :: Infy[0x00]: capabilities: 1000V / 50V, 102A, power 30000W
+2025-12-16T18:31:13.516226+0100 chargesom manager[861382]: [INFO] powersupply_dc:  :: Infy: Capabilities updated: 1000V / 50V, 102A, power 30000W
+2025-12-16T18:31:13.525302+0100 chargesom manager[861382]: [INFO] powersupply_dc:  :: Infy[0x00]: serial number: SN_2818a396c70776_V
+2025-12-16T18:31:13.529958+0100 chargesom manager[861382]: [INFO] powersupply_dc:  :: Infy[0x00]: capabilities: 1000V / 50V, 102A, power 30000W
+2025-12-16T18:31:13.530308+0100 chargesom manager[861382]: [INFO] powersupply_dc:  :: Infy: Capabilities updated: 1000V / 50V, 102A, power 30000W
+2025-12-16T18:31:13.536921+0100 chargesom manager[861382]: [INFO] powersupply_dc:  :: Infy[0x00]: serial number: SN_2818a396c70776_V
+2025-12-16T18:31:13.541584+0100 chargesom manager[861382]: [INFO] powersupply_dc:  :: Infy[0x00]: capabilities: 1000V / 50V, 102A, power 30000W
+2025-12-16T18:31:13.541919+0100 chargesom manager[861382]: [INFO] powersupply_dc:  :: Infy: Capabilities updated: 1000V / 50V, 102A, power 30000W
+2025-12-16T18:31:13.546240+0100 chargesom manager[861382]: [INFO] powersupply_dc:  :: Infy[0x00]: capabilities: 1000V / 50V, 102A, power 30000W
+2025-12-16T18:31:13.546570+0100 chargesom manager[861382]: [INFO] powersupply_dc:  :: Infy: Capabilities updated: 1000V / 50V, 102A, power 30000W
+2025-12-16T18:31:13.553394+0100 chargesom manager[861382]: [INFO] powersupply_dc:  :: Infy[0x00]: serial number: SN_2818a396c70776_V
+2025-12-16T18:31:13.560182+0100 chargesom manager[861382]: [INFO] powersupply_dc:  :: Infy[0x00]: serial number: SN_2818a396c70776_V
+2025-12-16T18:31:13.562472+0100 chargesom manager[861382]: [INFO] powersupply_dc:  :: Infy[0x00]: capabilities: 1000V / 50V, 102A, power 30000W
+2025-12-16T18:31:13.562774+0100 chargesom manager[861382]: [INFO] powersupply_dc:  :: Infy: Capabilities updated: 1000V / 50V, 102A, power 30000W
+2025-12-16T18:31:13.571868+0100 chargesom manager[861382]: [INFO] powersupply_dc:  :: Infy[0x00]: capabilities: 1000V / 50V, 102A, power 30000W
+2025-12-16T18:31:13.572219+0100 chargesom manager[861382]: [INFO] powersupply_dc:  :: Infy: Capabilities updated: 1000V / 50V, 102A, power 30000W
+2025-12-16T18:31:13.574138+0100 chargesom manager[861382]: [INFO] powersupply_dc:  :: Infy[0x00]: serial number: SN_2818a396c70776_V
+2025-12-16T18:31:13.581107+0100 chargesom manager[861382]: [INFO] powersupply_dc:  :: Infy[0x00]: capabilities: 1000V / 50V, 102A, power 30000W
+2025-12-16T18:31:13.581482+0100 chargesom manager[861382]: [INFO] powersupply_dc:  :: Infy: Capabilities updated: 1000V / 50V, 102A, power 30000W
+2025-12-16T18:31:13.585762+0100 chargesom manager[861382]: [INFO] powersupply_dc:  :: Infy[0x00]: serial number: SN_2818a396c70776_V
+2025-12-16T18:31:13.595078+0100 chargesom manager[861382]: [INFO] powersupply_dc:  :: Infy[0x00]: capabilities: 1000V / 50V, 102A, power 30000W
+2025-12-16T18:31:13.595409+0100 chargesom manager[861382]: [INFO] powersupply_dc:  :: Infy: Capabilities updated: 1000V / 50V, 102A, power 30000W
+2025-12-16T18:31:13.597286+0100 chargesom manager[861381]: [WARN] iso15118_charge  :: Physical value out of scope. Ignore value
+2025-12-16T18:31:13.597743+0100 chargesom manager[861382]: [INFO] powersupply_dc:  :: Infy[0x00]: serial number: SN_2818a396c70776_V
+2025-12-16T18:31:13.606718+0100 chargesom manager[861382]: [INFO] powersupply_dc:  :: Infy[0x00]: capabilities: 1000V / 50V, 102A, power 30000W
+2025-12-16T18:31:13.607074+0100 chargesom manager[861382]: [INFO] powersupply_dc:  :: Infy: Capabilities updated: 1000V / 50V, 102A, power 30000W
+2025-12-16T18:31:13.608987+0100 chargesom manager[861382]: [INFO] powersupply_dc:  :: Infy[0x00]: serial number: SN_2818a396c70776_V
+2025-12-16T18:31:13.618318+0100 chargesom manager[861382]: [INFO] powersupply_dc:  :: Infy[0x00]: capabilities: 1000V / 50V, 102A, power 30000W
+2025-12-16T18:31:13.618742+0100 chargesom manager[861382]: [INFO] powersupply_dc:  :: Infy: Capabilities updated: 1000V / 50V, 102A, power 30000W
+2025-12-16T18:31:13.620659+0100 chargesom manager[861382]: [INFO] powersupply_dc:  :: Infy[0x00]: serial number: SN_2818a396c70776_V
+2025-12-16T18:31:13.627560+0100 chargesom manager[861382]: [INFO] powersupply_dc:  :: Infy[0x00]: capabilities: 1000V / 50V, 102A, power 30000W
+2025-12-16T18:31:13.627864+0100 chargesom manager[861382]: [INFO] powersupply_dc:  :: Infy: Capabilities updated: 1000V / 50V, 102A, power 30000W
+2025-12-16T18:31:13.634573+0100 chargesom manager[861382]: [INFO] powersupply_dc:  :: Infy[0x00]: serial number: SN_2818a396c70776_V
+2025-12-16T18:31:13.641590+0100 chargesom manager[861382]: [INFO] powersupply_dc:  :: Infy[0x00]: serial number: SN_2818a396c70776_V
+2025-12-16T18:31:13.643873+0100 chargesom manager[861382]: [INFO] powersupply_dc:  :: Infy[0x00]: capabilities: 1000V / 50V, 102A, power 30000W
+2025-12-16T18:31:13.644221+0100 chargesom manager[861382]: [INFO] powersupply_dc:  :: Infy: Capabilities updated: 1000V / 50V, 102A, power 30000W
+2025-12-16T18:31:13.650889+0100 chargesom manager[861382]: [INFO] powersupply_dc:  :: Infy[0x00]: capabilities: 1000V / 50V, 102A, power 30000W
+2025-12-16T18:31:13.651252+0100 chargesom manager[861382]: [INFO] powersupply_dc:  :: Infy: Capabilities updated: 1000V / 50V, 102A, power 30000W
+2025-12-16T18:31:13.657869+0100 chargesom manager[861382]: [INFO] powersupply_dc:  :: Infy[0x00]: serial number: SN_2818a396c70776_V
+2025-12-16T18:31:13.664865+0100 chargesom manager[861382]: [INFO] powersupply_dc:  :: Infy[0x00]: serial number: SN_2818a396c70776_V
+2025-12-16T18:31:13.667153+0100 chargesom manager[861382]: [INFO] powersupply_dc:  :: Infy[0x00]: capabilities: 1000V / 50V, 102A, power 30000W
+2025-12-16T18:31:13.667499+0100 chargesom manager[861382]: [INFO] powersupply_dc:  :: Infy: Capabilities updated: 1000V / 50V, 102A, power 30000W
+2025-12-16T18:31:13.674120+0100 chargesom manager[861382]: [INFO] powersupply_dc:  :: Infy[0x00]: capabilities: 1000V / 50V, 102A, power 30000W
+2025-12-16T18:31:13.674458+0100 chargesom manager[861382]: [INFO] powersupply_dc:  :: Infy: Capabilities updated: 1000V / 50V, 102A, power 30000W
+2025-12-16T18:31:13.681073+0100 chargesom manager[861382]: [INFO] powersupply_dc:  :: Infy[0x00]: serial number: SN_2818a396c70776_V
+2025-12-16T18:31:13.688045+0100 chargesom manager[861382]: [INFO] powersupply_dc:  :: Infy[0x00]: serial number: SN_2818a396c70776_V
+2025-12-16T18:31:13.690488+0100 chargesom manager[861382]: [INFO] powersupply_dc:  :: Infy[0x00]: capabilities: 1000V / 50V, 102A, power 30000W
+2025-12-16T18:31:13.690870+0100 chargesom manager[861382]: [INFO] powersupply_dc:  :: Infy: Capabilities updated: 1000V / 50V, 102A, power 30000W
+2025-12-16T18:31:13.697341+0100 chargesom manager[861382]: [INFO] powersupply_dc:  :: Infy[0x00]: capabilities: 1000V / 50V, 102A, power 30000W
+2025-12-16T18:31:13.697677+0100 chargesom manager[861382]: [INFO] powersupply_dc:  :: Infy: Capabilities updated: 1000V / 50V, 102A, power 30000W
+2025-12-16T18:31:13.704319+0100 chargesom manager[861382]: [INFO] powersupply_dc:  :: Infy[0x00]: serial number: SN_2818a396c70776_V
+2025-12-16T18:31:13.711346+0100 chargesom manager[861382]: [INFO] powersupply_dc:  :: Infy[0x00]: serial number: SN_2818a396c70776_V
+2025-12-16T18:31:13.713572+0100 chargesom manager[861382]: [INFO] powersupply_dc:  :: Infy[0x00]: capabilities: 1000V / 50V, 102A, power 30000W
+2025-12-16T18:31:13.713880+0100 chargesom manager[861382]: [INFO] powersupply_dc:  :: Infy: Capabilities updated: 1000V / 50V, 102A, power 30000W
+2025-12-16T18:31:13.720608+0100 chargesom manager[861382]: [INFO] powersupply_dc:  :: Infy[0x00]: capabilities: 1000V / 50V, 102A, power 30000W
+2025-12-16T18:31:13.721031+0100 chargesom manager[861382]: [INFO] powersupply_dc:  :: Infy: Capabilities updated: 1000V / 50V, 102A, power 30000W
+2025-12-16T18:31:13.727563+0100 chargesom manager[861382]: [INFO] powersupply_dc:  :: Infy[0x00]: serial number: SN_2818a396c70776_V
+2025-12-16T18:31:13.734912+0100 chargesom manager[861382]: [INFO] powersupply_dc:  :: Infy[0x00]: capabilities: 1000V / 50V, 102A, power 30000W
+2025-12-16T18:31:13.734912+0100 chargesom manager[861382]: [INFO] powersupply_dc:  :: Infy: Capabilities updated: 1000V / 50V, 102A, power 30000W
+2025-12-16T18:31:13.736005+0100 chargesom manager[861381]: [WARN] iso15118_charge  :: Physical value out of scope. Ignore value
+2025-12-16T18:31:13.737428+0100 chargesom manager[861382]: [INFO] powersupply_dc:  :: Infy[0x00]: serial number: SN_2818a396c70776_V
+2025-12-16T18:31:13.746150+0100 chargesom manager[861382]: [INFO] powersupply_dc:  :: Infy[0x00]: serial number: SN_2818a396c70776_V
+2025-12-16T18:31:13.748446+0100 chargesom manager[861382]: [INFO] powersupply_dc:  :: Infy[0x00]: capabilities: 1000V / 50V, 102A, power 30000W
+2025-12-16T18:31:13.748802+0100 chargesom manager[861382]: [INFO] powersupply_dc:  :: Infy: Capabilities updated: 1000V / 50V, 102A, power 30000W
+2025-12-16T18:31:13.757804+0100 chargesom manager[861382]: [INFO] powersupply_dc:  :: Infy[0x00]: capabilities: 1000V / 50V, 102A, power 30000W
+2025-12-16T18:31:13.758251+0100 chargesom manager[861382]: [INFO] powersupply_dc:  :: Infy: Capabilities updated: 1000V / 50V, 102A, power 30000W
+2025-12-16T18:31:13.762407+0100 chargesom manager[861382]: [INFO] powersupply_dc:  :: Infy[0x00]: serial number: SN_2818a396c70776_V
+2025-12-16T18:31:13.769354+0100 chargesom manager[861382]: [INFO] powersupply_dc:  :: Infy[0x00]: serial number: SN_2818a396c70776_V
+2025-12-16T18:31:13.771657+0100 chargesom manager[861382]: [INFO] powersupply_dc:  :: Infy[0x00]: capabilities: 1000V / 50V, 102A, power 30000W
+2025-12-16T18:31:13.771962+0100 chargesom manager[861382]: [INFO] powersupply_dc:  :: Infy: Capabilities updated: 1000V / 50V, 102A, power 30000W
+2025-12-16T18:31:13.778673+0100 chargesom manager[861382]: [INFO] powersupply_dc:  :: Infy[0x00]: capabilities: 1000V / 50V, 102A, power 30000W
+2025-12-16T18:31:13.779005+0100 chargesom manager[861382]: [INFO] powersupply_dc:  :: Infy: Capabilities updated: 1000V / 50V, 102A, power 30000W
+2025-12-16T18:31:13.787536+0100 chargesom manager[861382]: [INFO] powersupply_dc:  :: Infy[0x00]: serial number: SN_2818a396c70776_V
+2025-12-16T18:31:13.792704+0100 chargesom manager[861382]: [INFO] powersupply_dc:  :: Infy[0x00]: serial number: SN_2818a396c70776_V
+2025-12-16T18:31:13.794881+0100 chargesom manager[861382]: [INFO] powersupply_dc:  :: Infy[0x00]: capabilities: 1000V / 50V, 102A, power 30000W
+2025-12-16T18:31:13.795172+0100 chargesom manager[861382]: [INFO] powersupply_dc:  :: Infy: Capabilities updated: 1000V / 50V, 102A, power 30000W
+2025-12-16T18:31:13.804302+0100 chargesom manager[861382]: [INFO] powersupply_dc:  :: Infy[0x00]: capabilities: 1000V / 50V, 102A, power 30000W
+2025-12-16T18:31:13.804746+0100 chargesom manager[861382]: [INFO] powersupply_dc:  :: Infy: Capabilities updated: 1000V / 50V, 102A, power 30000W
+2025-12-16T18:31:13.806558+0100 chargesom manager[861382]: [INFO] powersupply_dc:  :: Infy[0x00]: serial number: SN_2818a396c70776_V
+2025-12-16T18:31:13.815929+0100 chargesom manager[861382]: [INFO] powersupply_dc:  :: Infy[0x00]: capabilities: 1000V / 50V, 102A, power 30000W
+2025-12-16T18:31:13.816272+0100 chargesom manager[861382]: [INFO] powersupply_dc:  :: Infy: Capabilities updated: 1000V / 50V, 102A, power 30000W
+2025-12-16T18:31:13.820590+0100 chargesom manager[861382]: [INFO] powersupply_dc:  :: Infy[0x00]: serial number: SN_2818a396c70776_V
+2025-12-16T18:31:13.825161+0100 chargesom manager[861382]: [INFO] powersupply_dc:  :: Infy[0x00]: capabilities: 1000V / 50V, 102A, power 30000W
+2025-12-16T18:31:13.825463+0100 chargesom manager[861382]: [INFO] powersupply_dc:  :: Infy: Capabilities updated: 1000V / 50V, 102A, power 30000W
+2025-12-16T18:31:13.829820+0100 chargesom manager[861382]: [INFO] powersupply_dc:  :: Infy[0x00]: serial number: SN_2818a396c70776_V
+2025-12-16T18:31:13.834463+0100 chargesom manager[861381]: [WARN] iso15118_charge  :: Physical value out of scope. Ignore value
+2025-12-16T18:31:13.839237+0100 chargesom manager[861382]: [INFO] powersupply_dc:  :: Infy[0x00]: capabilities: 1000V / 50V, 102A, power 30000W
+2025-12-16T18:31:13.839690+0100 chargesom manager[861382]: [INFO] powersupply_dc:  :: Infy: Capabilities updated: 1000V / 50V, 102A, power 30000W
+2025-12-16T18:31:13.841482+0100 chargesom manager[861382]: [INFO] powersupply_dc:  :: Infy[0x00]: serial number: SN_2818a396c70776_V
+2025-12-16T18:31:13.848496+0100 chargesom manager[861382]: [INFO] powersupply_dc:  :: Infy[0x00]: capabilities: 1000V / 50V, 102A, power 30000W
+2025-12-16T18:31:13.848950+0100 chargesom manager[861382]: [INFO] powersupply_dc:  :: Infy: Capabilities updated: 1000V / 50V, 102A, power 30000W
+2025-12-16T18:31:13.853107+0100 chargesom manager[861382]: [INFO] powersupply_dc:  :: Infy[0x00]: serial number: SN_2818a396c70776_V
+2025-12-16T18:31:13.860084+0100 chargesom manager[861382]: [INFO] powersupply_dc:  :: Infy[0x00]: capabilities: 1000V / 50V, 102A, power 30000W
+2025-12-16T18:31:13.860398+0100 chargesom manager[861382]: [INFO] powersupply_dc:  :: Infy: Capabilities updated: 1000V / 50V, 102A, power 30000W
+2025-12-16T18:31:13.864805+0100 chargesom manager[861382]: [INFO] powersupply_dc:  :: Infy[0x00]: serial number: SN_2818a396c70776_V
+2025-12-16T18:31:13.874142+0100 chargesom manager[861382]: [INFO] powersupply_dc:  :: Infy[0x00]: capabilities: 1000V / 50V, 102A, power 30000W
+2025-12-16T18:31:13.874485+0100 chargesom manager[861382]: [INFO] powersupply_dc:  :: Infy: Capabilities updated: 1000V / 50V, 102A, power 30000W
+2025-12-16T18:31:13.876403+0100 chargesom manager[861382]: [INFO] powersupply_dc:  :: Infy[0x00]: serial number: SN_2818a396c70776_V
+2025-12-16T18:31:13.884498+0100 chargesom manager[861382]: [INFO] powersupply_dc:  :: Infy[0x00]: capabilities: 1000V / 50V, 102A, power 30000W
+2025-12-16T18:31:13.884498+0100 chargesom manager[861382]: [INFO] powersupply_dc:  :: Infy: Capabilities updated: 1000V / 50V, 102A, power 30000W
+2025-12-16T18:31:13.890431+0100 chargesom manager[861382]: [INFO] powersupply_dc:  :: Infy[0x00]: serial number: SN_2818a396c70776_V
+2025-12-16T18:31:13.897362+0100 chargesom manager[861382]: [INFO] powersupply_dc:  :: Infy[0x00]: serial number: SN_2818a396c70776_V
+2025-12-16T18:31:13.899647+0100 chargesom manager[861382]: [INFO] powersupply_dc:  :: Infy[0x00]: capabilities: 1000V / 50V, 102A, power 30000W
+2025-12-16T18:31:13.899925+0100 chargesom manager[861382]: [INFO] powersupply_dc:  :: Infy: Capabilities updated: 1000V / 50V, 102A, power 30000W
+2025-12-16T18:31:13.909069+0100 chargesom manager[861382]: [INFO] powersupply_dc:  :: Infy[0x00]: capabilities: 1000V / 50V, 102A, power 30000W
+2025-12-16T18:31:13.909405+0100 chargesom manager[861382]: [INFO] powersupply_dc:  :: Infy: Capabilities updated: 1000V / 50V, 102A, power 30000W
+2025-12-16T18:31:13.911353+0100 chargesom manager[861382]: [INFO] powersupply_dc:  :: Infy[0x00]: serial number: SN_2818a396c70776_V
+2025-12-16T18:31:13.920779+0100 chargesom manager[861382]: [INFO] powersupply_dc:  :: Infy[0x00]: capabilities: 1000V / 50V, 102A, power 30000W
+2025-12-16T18:31:13.921191+0100 chargesom manager[861382]: [INFO] powersupply_dc:  :: Infy: Capabilities updated: 1000V / 50V, 102A, power 30000W
+2025-12-16T18:31:13.923008+0100 chargesom manager[861382]: [INFO] powersupply_dc:  :: Infy[0x00]: serial number: SN_2818a396c70776_V
+2025-12-16T18:31:13.932396+0100 chargesom manager[861382]: [INFO] powersupply_dc:  :: Infy[0x00]: serial number: SN_2818a396c70776_V
+2025-12-16T18:31:13.934607+0100 chargesom manager[861382]: [INFO] powersupply_dc:  :: Infy[0x00]: capabilities: 1000V / 50V, 102A, power 30000W
+2025-12-16T18:31:13.934908+0100 chargesom manager[861382]: [INFO] powersupply_dc:  :: Infy: Capabilities updated: 1000V / 50V, 102A, power 30000W
+2025-12-16T18:31:13.941641+0100 chargesom manager[861382]: [INFO] powersupply_dc:  :: Infy[0x00]: capabilities: 1000V / 50V, 102A, power 30000W
+2025-12-16T18:31:13.941972+0100 chargesom manager[861382]: [INFO] powersupply_dc:  :: Infy: Capabilities updated: 1000V / 50V, 102A, power 30000W
+2025-12-16T18:31:13.946192+0100 chargesom manager[861382]: [INFO] powersupply_dc:  :: Infy[0x00]: serial number: SN_2818a396c70776_V
+2025-12-16T18:31:13.949584+0100 chargesom manager[861382]: [INFO] powersupply_dc:  :: Infy[0x00]: serial number: SN_2818a396c70776_V
+2025-12-16T18:31:14.018183+0100 chargesom manager[861381]: [WARN] iso15118_charge  :: Physical value out of scope. Ignore value
+2025-12-16T18:31:14.197609+0100 chargesom manager[861381]: [WARN] iso15118_charge  :: Physical value out of scope. Ignore value
+2025-12-16T18:31:14.291529+0100 chargesom manager[861381]: [WARN] iso15118_charge  :: Physical value out of scope. Ignore value
+2025-12-16T18:31:14.511329+0100 chargesom manager[861381]: [WARN] iso15118_charge  :: Physical value out of scope. Ignore value
+2025-12-16T18:31:14.601365+0100 chargesom manager[861381]: [WARN] iso15118_charge  :: Physical value out of scope. Ignore value
+2025-12-16T18:31:14.689369+0100 chargesom manager[861381]: [WARN] iso15118_charge  :: Physical value out of scope. Ignore value
+2025-12-16T18:31:14.863508+0100 chargesom manager[861381]: [WARN] iso15118_charge  :: Physical value out of scope. Ignore value
+2025-12-16T18:31:14.953798+0100 chargesom manager[861381]: [WARN] iso15118_charge  :: Physical value out of scope. Ignore value
+2025-12-16T18:31:15.097734+0100 chargesom manager[861381]: [WARN] iso15118_charge  :: Physical value out of scope. Ignore value
+2025-12-16T18:31:15.233893+0100 chargesom manager[861381]: [WARN] iso15118_charge  :: Physical value out of scope. Ignore value
+2025-12-16T18:31:15.369900+0100 chargesom manager[861381]: [WARN] iso15118_charge  :: Physical value out of scope. Ignore value
+2025-12-16T18:31:15.595349+0100 chargesom manager[861381]: [WARN] iso15118_charge  :: Physical value out of scope. Ignore value
+2025-12-16T18:31:15.685295+0100 chargesom manager[861381]: [WARN] iso15118_charge  :: Physical value out of scope. Ignore value
+2025-12-16T18:31:15.817345+0100 chargesom manager[861381]: [WARN] iso15118_charge  :: Physical value out of scope. Ignore value
+2025-12-16T18:31:15.905420+0100 chargesom manager[861381]: [WARN] iso15118_charge  :: Physical value out of scope. Ignore value
+2025-12-16T18:31:16.037344+0100 chargesom manager[861381]: [WARN] iso15118_charge  :: Physical value out of scope. Ignore value
+2025-12-16T18:31:16.125295+0100 chargesom manager[861381]: [WARN] iso15118_charge  :: Physical value out of scope. Ignore value
+2025-12-16T18:31:16.253439+0100 chargesom manager[861381]: [WARN] iso15118_charge  :: Physical value out of scope. Ignore value
+2025-12-16T18:31:16.389616+0100 chargesom manager[861381]: [WARN] iso15118_charge  :: Physical value out of scope. Ignore value
+2025-12-16T18:31:16.523659+0100 chargesom manager[861381]: [WARN] iso15118_charge  :: Physical value out of scope. Ignore value
+2025-12-16T18:31:16.699522+0100 chargesom manager[861381]: [WARN] iso15118_charge  :: Physical value out of scope. Ignore value
+2025-12-16T18:31:16.787650+0100 chargesom manager[861381]: [WARN] iso15118_charge  :: Physical value out of scope. Ignore value
+2025-12-16T18:31:16.875696+0100 chargesom manager[861381]: [WARN] iso15118_charge  :: Physical value out of scope. Ignore value
+2025-12-16T18:31:17.051644+0100 chargesom manager[861381]: [WARN] iso15118_charge  :: Physical value out of scope. Ignore value
+2025-12-16T18:31:17.141345+0100 chargesom manager[861381]: [WARN] iso15118_charge  :: Physical value out of scope. Ignore value
+2025-12-16T18:31:17.229491+0100 chargesom manager[861381]: [WARN] iso15118_charge  :: Physical value out of scope. Ignore value
+2025-12-16T18:31:17.402714+0100 chargesom manager[861381]: [WARN] iso15118_charge  :: Physical value out of scope. Ignore value
+2025-12-16T18:31:17.493357+0100 chargesom manager[861381]: [WARN] iso15118_charge  :: Physical value out of scope. Ignore value
+2025-12-16T18:31:17.712260+0100 chargesom manager[861381]: [WARN] iso15118_charge  :: Physical value out of scope. Ignore value
+2025-12-16T18:31:17.842000+0100 chargesom manager[861381]: [WARN] iso15118_charge  :: Physical value out of scope. Ignore value
+2025-12-16T18:31:17.975720+0100 chargesom manager[861381]: [WARN] iso15118_charge  :: Physical value out of scope. Ignore value
+2025-12-16T18:31:18.065381+0100 chargesom manager[861381]: [WARN] iso15118_charge  :: Physical value out of scope. Ignore value
+2025-12-16T18:31:18.153353+0100 chargesom manager[861381]: [WARN] iso15118_charge  :: Physical value out of scope. Ignore value
+2025-12-16T18:31:18.327684+0100 chargesom manager[861381]: [WARN] iso15118_charge  :: Physical value out of scope. Ignore value
+2025-12-16T18:31:18.457530+0100 chargesom manager[861381]: [WARN] iso15118_charge  :: Physical value out of scope. Ignore value
+2025-12-16T18:31:18.557404+0100 chargesom manager[861381]: [WARN] iso15118_charge  :: Physical value out of scope. Ignore value
+2025-12-16T18:31:18.689419+0100 chargesom manager[861381]: [WARN] iso15118_charge  :: Physical value out of scope. Ignore value
+2025-12-16T18:31:18.778061+0100 chargesom manager[861381]: [WARN] iso15118_charge  :: Physical value out of scope. Ignore value
+2025-12-16T18:31:18.909301+0100 chargesom manager[861381]: [WARN] iso15118_charge  :: Physical value out of scope. Ignore value
+2025-12-16T18:31:18.997399+0100 chargesom manager[861381]: [WARN] iso15118_charge  :: Physical value out of scope. Ignore value
+2025-12-16T18:31:19.129379+0100 chargesom manager[861381]: [WARN] iso15118_charge  :: Physical value out of scope. Ignore value
+2025-12-16T18:31:19.237769+0100 chargesom manager[861381]: [WARN] iso15118_charge  :: Physical value out of scope. Ignore value
+2025-12-16T18:31:19.372389+0100 chargesom manager[861381]: [WARN] iso15118_charge  :: Physical value out of scope. Ignore value
+2025-12-16T18:31:19.549574+0100 chargesom manager[861381]: [WARN] iso15118_charge  :: Physical value out of scope. Ignore value
+2025-12-16T18:31:19.679006+0100 chargesom manager[861381]: [WARN] iso15118_charge  :: Physical value out of scope. Ignore value
+2025-12-16T18:31:19.900980+0100 chargesom manager[861381]: [WARN] iso15118_charge  :: Physical value out of scope. Ignore value
+2025-12-16T18:31:20.031838+0100 chargesom manager[861381]: [WARN] iso15118_charge  :: Physical value out of scope. Ignore value
+2025-12-16T18:31:20.121357+0100 chargesom manager[861381]: [WARN] iso15118_charge  :: Physical value out of scope. Ignore value
+2025-12-16T18:31:20.253551+0100 chargesom manager[861381]: [WARN] iso15118_charge  :: Physical value out of scope. Ignore value
+2025-12-16T18:31:20.341449+0100 chargesom manager[861381]: [WARN] iso15118_charge  :: Physical value out of scope. Ignore value
+2025-12-16T18:31:20.561874+0100 chargesom manager[861381]: [WARN] iso15118_charge  :: Physical value out of scope. Ignore value
+2025-12-16T18:31:20.651979+0100 chargesom manager[861381]: [WARN] iso15118_charge  :: Physical value out of scope. Ignore value
+2025-12-16T18:31:20.782071+0100 chargesom manager[861381]: [WARN] iso15118_charge  :: Physical value out of scope. Ignore value
+2025-12-16T18:31:20.967607+0100 chargesom manager[861381]: [WARN] iso15118_charge  :: Physical value out of scope. Ignore value
+2025-12-16T18:31:21.100086+0100 chargesom manager[861381]: [WARN] iso15118_charge  :: Physical value out of scope. Ignore value
+2025-12-16T18:31:21.276406+0100 chargesom manager[861381]: [WARN] iso15118_charge  :: Physical value out of scope. Ignore value
+2025-12-16T18:31:21.365348+0100 chargesom manager[861381]: [WARN] iso15118_charge  :: Physical value out of scope. Ignore value

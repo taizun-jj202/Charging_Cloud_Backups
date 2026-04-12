@@ -1,0 +1,208 @@
+2025-12-06T00:28:32.035384+0100 chargesom manager[464323]: [INFO] bsp:CbChargeSOM  :: CP state change from F to B, PWM: 100.0%
+2025-12-06T00:28:32.079781+0100 chargesom manager[464323]: [INFO] bsp:CbChargeSOM  :: handle_allow_power_on: request to OPEN the contactor
+2025-12-06T00:28:32.518638+0100 chargesom manager[464324]: [INFO] connector:EvseM  ::                                     CAR IEC Event CarRequestedStopPower
+2025-12-06T00:28:32.564025+0100 chargesom manager[464337]: [INFO] evse_slac:EvseS  :: Entered Matching state, waiting for CM_SLAC_PARM_REQ
+2025-12-06T00:28:32.608377+0100 chargesom manager[464324]: [INFO] connector:EvseM  :: EVSE ISO SLAC MATCHING
+2025-12-06T00:28:32.608377+0100 chargesom manager[464324]: [INFO] connector:EvseM  ::                                     CAR IEC Event EFtoBCD
+2025-12-06T00:28:32.608377+0100 chargesom manager[464324]: [INFO] connector:EvseM  :: EVSE IEC Exit T_step_EF
+2025-12-06T00:28:32.608377+0100 chargesom manager[464324]: [INFO] connector:EvseM  :: EVSE IEC Set PWM On (5.0%) took 0 ms
+2025-12-06T00:28:32.651973+0100 chargesom manager[464323]: [INFO] bsp:CbChargeSOM  :: handle_pwm_on: Setting new duty cycle of 5.0%
+2025-12-06T00:28:32.776363+0100 chargesom manager[464324]: [INFO] connector:EvseM  :: EVSE IEC Charger state: T_step_EF->PrepareCharging
+2025-12-06T00:29:03.904002+0100 chargesom manager[464323]: [INFO] bsp:CbChargeSOM  :: CP state change from B to A, PWM: 5.0%
+2025-12-06T00:29:03.948131+0100 chargesom manager[464323]: [INFO] bsp:CbChargeSOM  :: handle_pwm_off: Setting new duty cycle of 100.0%
+2025-12-06T00:29:04.027599+0100 chargesom manager[464323]: [INFO] bsp:CbChargeSOM  :: handle_allow_power_on: request to OPEN the contactor
+2025-12-06T00:29:04.081435+0100 chargesom manager[464337]: [INFO] evse_slac:EvseS  :: Entered Reset state
+2025-12-06T00:29:04.083077+0100 chargesom manager[464337]: [INFO] evse_slac:EvseS  :: New NMK key: 43:42:54:59:49:4C:49:38:51:33:53:4A:44:35:57:54
+2025-12-06T00:29:04.084469+0100 chargesom manager[464337]: [INFO] evse_slac:EvseS  :: Received CM_SET_KEY_CNF
+2025-12-06T00:29:04.084802+0100 chargesom manager[464337]: [INFO] evse_slac:EvseS  :: Entered Idle state
+2025-12-06T00:29:04.125100+0100 chargesom manager[464324]: [INFO] connector:EvseM  :: EVSE ISO SLAC UNMATCHED
+2025-12-06T00:29:04.125100+0100 chargesom manager[464324]: [INFO] connector:EvseM  ::                                     CAR IEC Event CarUnplugged
+2025-12-06T00:29:04.125100+0100 chargesom manager[464324]: [INFO] connector:EvseM  :: EVSE IEC Charger state: PrepareCharging->Finished
+2025-12-06T00:29:04.127973+0100 chargesom manager[464324]: [INFO] connector:EvseM  :: EVSE IEC Transaction Finished: EVDisconnected (0 kWh)
+2025-12-06T00:29:04.223491+0100 chargesom manager[464324]: [INFO] connector:EvseM  :: EVSE IEC Session Finished
+2025-12-06T00:29:04.223491+0100 chargesom manager[464324]: [INFO] connector:EvseM  :: SYS  Session logging stopped.
+2025-12-06T00:29:04.274165+0100 chargesom manager[464323]: [INFO] bsp:CbChargeSOM  :: handle_pwm_off: Setting new duty cycle of 100.0%
+2025-12-06T00:29:04.316057+0100 chargesom manager[464324]: [INFO] connector:EvseM  :: All errors cleared
+2025-12-06T00:31:01.661114+0100 chargesom manager[464323]: [INFO] bsp:CbChargeSOM  :: CP state change from A to B, PWM: 100.0%
+2025-12-06T00:31:01.664173+0100 chargesom manager[464337]: [INFO] evse_slac:EvseS  :: Entered Matching state, waiting for CM_SLAC_PARM_REQ
+2025-12-06T00:31:01.756093+0100 chargesom manager[464323]: [INFO] bsp:CbChargeSOM  :: handle_allow_power_on: request to OPEN the contactor
+2025-12-06T00:31:01.849421+0100 chargesom manager[464324]: [INFO] connector:EvseM  :: SYS  Session logging started.
+2025-12-06T00:31:01.850737+0100 chargesom manager[464324]: [INFO] connector:EvseM  :: EVSE IEC Session Started: EVConnected
+2025-12-06T00:31:01.852887+0100 chargesom manager[464361]: [INFO] token_provider:  :: Publishing new dummy token: {
+2025-12-06T00:31:01.852887+0100 chargesom manager[464361]:     "authorization_type": "RFID",
+2025-12-06T00:31:01.852887+0100 chargesom manager[464361]:     "id_token": {
+2025-12-06T00:31:01.852887+0100 chargesom manager[464361]:         "type": "ISO14443",
+2025-12-06T00:31:01.852887+0100 chargesom manager[464361]:         "value": "[redacted] hash: 29F2679CA504908"
+2025-12-06T00:31:01.852887+0100 chargesom manager[464361]:     },
+2025-12-06T00:31:01.852887+0100 chargesom manager[464361]:     "parent_id_token": {
+2025-12-06T00:31:01.852887+0100 chargesom manager[464361]:         "type": "ISO14443",
+2025-12-06T00:31:01.852887+0100 chargesom manager[464361]:         "value": "[redacted] hash: 29F2679CA504908"
+2025-12-06T00:31:01.852887+0100 chargesom manager[464361]:     }
+2025-12-06T00:31:01.852887+0100 chargesom manager[464361]: }
+2025-12-06T00:31:01.857634+0100 chargesom manager[464322]: [INFO] auth:Auth        :: Plug In event for evse#1, starting auth
+2025-12-06T00:31:01.857634+0100 chargesom manager[464322]: [INFO] auth:Auth        :: Received new token: {
+2025-12-06T00:31:01.857634+0100 chargesom manager[464322]:     "authorization_type": "RFID",
+2025-12-06T00:31:01.857634+0100 chargesom manager[464322]:     "id_token": {
+2025-12-06T00:31:01.857634+0100 chargesom manager[464322]:         "type": "ISO14443",
+2025-12-06T00:31:01.857634+0100 chargesom manager[464322]:         "value": "[redacted] hash: 29F2679CA504908"
+2025-12-06T00:31:01.857634+0100 chargesom manager[464322]:     },
+2025-12-06T00:31:01.857634+0100 chargesom manager[464322]:     "parent_id_token": {
+2025-12-06T00:31:01.857634+0100 chargesom manager[464322]:         "type": "ISO14443",
+2025-12-06T00:31:01.857634+0100 chargesom manager[464322]:         "value": "[redacted] hash: 29F2679CA504908"
+2025-12-06T00:31:01.857634+0100 chargesom manager[464322]:     }
+2025-12-06T00:31:01.857634+0100 chargesom manager[464322]: }
+2025-12-06T00:31:01.860890+0100 chargesom manager[464367]: [INFO] token_validator  :: Got validation request for token: [redacted] hash: 29F2679CA504908
+2025-12-06T00:31:02.109505+0100 chargesom manager[464367]: [INFO] token_validator  :: Returning validation status: Accepted
+2025-12-06T00:31:02.111766+0100 chargesom manager[464322]: [INFO] auth:Auth        :: Providing authorization to evse#1
+2025-12-06T00:31:02.350505+0100 chargesom manager[464324]: [INFO] connector:EvseM  :: EVSE IEC Set PWM On (5.0%) took 0 ms
+2025-12-06T00:31:02.397079+0100 chargesom manager[464323]: [INFO] bsp:CbChargeSOM  :: handle_pwm_on: Setting new duty cycle of 5.0%
+2025-12-06T00:31:02.568629+0100 chargesom manager[464322]: [INFO] auth:Auth        :: Result for token: [redacted] hash: 29F2679CA504908: ACCEPTED
+2025-12-06T00:31:02.622087+0100 chargesom manager[464324]: [INFO] connector:EvseM  :: EVSE IEC EIM Authorization received
+2025-12-06T00:31:02.622480+0100 chargesom manager[464324]: [INFO] connector:EvseM  :: EVSE IEC Transaction Started (0 kWh)
+2025-12-06T00:31:02.622722+0100 chargesom manager[464324]: [INFO] connector:EvseM  :: EVSE IEC DC mode. We are in 5percent mode so we can continue without further action.
+2025-12-06T00:31:02.623102+0100 chargesom manager[464324]: [INFO] connector:EvseM  :: EVSE IEC Charger state: Wait for Auth->PrepareCharging
+2025-12-06T00:31:41.664357+0100 chargesom manager[464337]: [INFO] evse_slac:EvseS  :: CM_SLAC_PARM_REQ timed out -> FAILED
+2025-12-06T00:31:41.664357+0100 chargesom manager[464337]: [INFO] evse_slac:EvseS  :: Resetting MatchingState. Waiting for the next CM_SLAC_PARAM.REQ message.
+2025-12-06T00:32:21.664561+0100 chargesom manager[464337]: [INFO] evse_slac:EvseS  :: CM_SLAC_PARM_REQ timed out -> FAILED
+2025-12-06T00:32:21.686674+0100 chargesom manager[464337]: [INFO] evse_slac:EvseS  :: Entered Failed state
+2025-12-06T00:32:21.687064+0100 chargesom manager[464324]: [INFO] connector:EvseM  :: Received request error routine from SLAC in evsemanager
+2025-12-06T00:32:21.707961+0100 chargesom manager[464337]: [INFO] evse_slac:EvseS  :: Entered Reset state
+2025-12-06T00:32:21.708404+0100 chargesom manager[464337]: [INFO] evse_slac:EvseS  :: New NMK key: 49:4B:34:32:47:56:59:41:45:4B:49:55:33:57:37:31
+2025-12-06T00:32:21.709994+0100 chargesom manager[464337]: [INFO] evse_slac:EvseS  :: Received CM_SET_KEY_CNF
+2025-12-06T00:32:21.710412+0100 chargesom manager[464337]: [INFO] evse_slac:EvseS  :: Entered Idle state
+2025-12-06T00:32:21.752045+0100 chargesom manager[464324]: [INFO] connector:EvseM  :: EVSE IEC Charger state: PrepareCharging->T_step_EF
+2025-12-06T00:32:21.752738+0100 chargesom manager[464324]: [INFO] connector:EvseM  :: EVSE ISO SLAC UNMATCHED
+2025-12-06T00:32:21.752738+0100 chargesom manager[464324]: [INFO] connector:EvseM  :: EVSE IEC Enter T_step_EF
+2025-12-06T00:32:21.752738+0100 chargesom manager[464324]: [INFO] connector:EvseM  :: EVSE IEC Set PWM F
+2025-12-06T00:32:21.796055+0100 chargesom manager[464323]: [INFO] bsp:CbChargeSOM  :: handle_pwm_F: Generating CP state F
+2025-12-06T00:32:21.872728+0100 chargesom manager[464323]: [INFO] bsp:CbChargeSOM  :: CP state change from B to F, PWM: 0.0%
+2025-12-06T00:32:21.916070+0100 chargesom manager[464323]: [INFO] bsp:CbChargeSOM  :: handle_allow_power_on: request to OPEN the contactor
+2025-12-06T00:32:21.923618+0100 chargesom manager[464324]: [INFO] connector:EvseM  ::                                     CAR IEC Event BCDtoEF
+2025-12-06T00:32:21.959568+0100 chargesom manager[464323]: [INFO] bsp:CbChargeSOM  :: handle_allow_power_on: request to OPEN the contactor
+2025-12-06T00:32:25.778307+0100 chargesom manager[464324]: [INFO] connector:EvseM  :: EVSE IEC Pause in X1 for EV READY regulations
+2025-12-06T00:32:25.779434+0100 chargesom manager[464324]: [INFO] connector:EvseM  :: EVSE IEC Set PWM Off
+2025-12-06T00:32:25.824202+0100 chargesom manager[464323]: [INFO] bsp:CbChargeSOM  :: handle_pwm_off: Setting new duty cycle of 100.0%
+2025-12-06T00:32:25.906913+0100 chargesom manager[464323]: [INFO] bsp:CbChargeSOM  :: CP state change from F to B, PWM: 100.0%
+2025-12-06T00:32:25.951701+0100 chargesom manager[464323]: [INFO] bsp:CbChargeSOM  :: handle_allow_power_on: request to OPEN the contactor
+2025-12-06T00:32:26.420967+0100 chargesom manager[464324]: [INFO] connector:EvseM  ::                                     CAR IEC Event CarRequestedStopPower
+2025-12-06T00:32:26.423137+0100 chargesom manager[464337]: [INFO] evse_slac:EvseS  :: Entered Matching state, waiting for CM_SLAC_PARM_REQ
+2025-12-06T00:32:26.464182+0100 chargesom manager[464324]: [INFO] connector:EvseM  :: EVSE ISO SLAC MATCHING
+2025-12-06T00:32:26.464182+0100 chargesom manager[464324]: [INFO] connector:EvseM  ::                                     CAR IEC Event EFtoBCD
+2025-12-06T00:32:26.510017+0100 chargesom manager[464324]: [INFO] connector:EvseM  :: EVSE IEC Exit T_step_EF
+2025-12-06T00:32:26.510496+0100 chargesom manager[464324]: [INFO] connector:EvseM  :: EVSE IEC Set PWM On (5.0%) took 0 ms
+2025-12-06T00:32:26.556060+0100 chargesom manager[464323]: [INFO] bsp:CbChargeSOM  :: handle_pwm_on: Setting new duty cycle of 5.0%
+2025-12-06T00:32:26.678369+0100 chargesom manager[464324]: [INFO] connector:EvseM  :: EVSE IEC Charger state: T_step_EF->PrepareCharging
+2025-12-06T00:32:47.084387+0100 chargesom manager[464323]: [INFO] bsp:CbChargeSOM  :: CP state change from B to A, PWM: 5.0%
+2025-12-06T00:32:47.127690+0100 chargesom manager[464323]: [INFO] bsp:CbChargeSOM  :: handle_pwm_off: Setting new duty cycle of 100.0%
+2025-12-06T00:32:47.307681+0100 chargesom manager[464323]: [INFO] bsp:CbChargeSOM  :: handle_allow_power_on: request to OPEN the contactor
+2025-12-06T00:32:47.358182+0100 chargesom manager[464337]: [INFO] evse_slac:EvseS  :: Entered Reset state
+2025-12-06T00:32:47.358182+0100 chargesom manager[464337]: [INFO] evse_slac:EvseS  :: New NMK key: 36:50:56:50:4B:4B:48:50:41:36:58:4E:50:4B:4A:39
+2025-12-06T00:32:47.360119+0100 chargesom manager[464337]: [INFO] evse_slac:EvseS  :: Received CM_SET_KEY_CNF
+2025-12-06T00:32:47.360689+0100 chargesom manager[464337]: [INFO] evse_slac:EvseS  :: Entered Idle state
+2025-12-06T00:32:47.399997+0100 chargesom manager[464324]: [INFO] connector:EvseM  :: EVSE ISO SLAC UNMATCHED
+2025-12-06T00:32:47.399997+0100 chargesom manager[464324]: [INFO] connector:EvseM  ::                                     CAR IEC Event CarUnplugged
+2025-12-06T00:32:47.399997+0100 chargesom manager[464324]: [INFO] connector:EvseM  :: EVSE IEC Charger state: PrepareCharging->Finished
+2025-12-06T00:32:47.403148+0100 chargesom manager[464324]: [INFO] connector:EvseM  :: EVSE IEC Transaction Finished: EVDisconnected (0 kWh)
+2025-12-06T00:32:47.494942+0100 chargesom manager[464324]: [INFO] connector:EvseM  :: EVSE IEC Session Finished
+2025-12-06T00:32:47.495384+0100 chargesom manager[464324]: [INFO] connector:EvseM  :: SYS  Session logging stopped.
+2025-12-06T00:32:47.627944+0100 chargesom manager[464323]: [INFO] bsp:CbChargeSOM  :: handle_pwm_off: Setting new duty cycle of 100.0%
+2025-12-06T00:32:47.671763+0100 chargesom manager[464324]: [INFO] connector:EvseM  :: All errors cleared
+2025-12-06T00:33:18.187604+0100 chargesom manager[464323]: [INFO] bsp:CbChargeSOM  :: CP state change from A to B, PWM: 100.0%
+2025-12-06T00:33:18.191129+0100 chargesom manager[464337]: [INFO] evse_slac:EvseS  :: Entered Matching state, waiting for CM_SLAC_PARM_REQ
+2025-12-06T00:33:18.315540+0100 chargesom manager[464323]: [INFO] bsp:CbChargeSOM  :: handle_allow_power_on: request to OPEN the contactor
+2025-12-06T00:33:18.408186+0100 chargesom manager[464324]: [INFO] connector:EvseM  :: SYS  Session logging started.
+2025-12-06T00:33:18.409596+0100 chargesom manager[464324]: [INFO] connector:EvseM  :: EVSE IEC Session Started: EVConnected
+2025-12-06T00:33:18.411715+0100 chargesom manager[464322]: [INFO] auth:Auth        :: Plug In event for evse#1, starting auth
+2025-12-06T00:33:18.413748+0100 chargesom manager[464361]: [INFO] token_provider:  :: Publishing new dummy token: {
+2025-12-06T00:33:18.413748+0100 chargesom manager[464361]:     "authorization_type": "RFID",
+2025-12-06T00:33:18.413748+0100 chargesom manager[464361]:     "id_token": {
+2025-12-06T00:33:18.413748+0100 chargesom manager[464361]:         "type": "ISO14443",
+2025-12-06T00:33:18.413748+0100 chargesom manager[464361]:         "value": "[redacted] hash: 29F2679CA504908"
+2025-12-06T00:33:18.413748+0100 chargesom manager[464361]:     },
+2025-12-06T00:33:18.413748+0100 chargesom manager[464361]:     "parent_id_token": {
+2025-12-06T00:33:18.413748+0100 chargesom manager[464361]:         "type": "ISO14443",
+2025-12-06T00:33:18.413748+0100 chargesom manager[464361]:         "value": "[redacted] hash: 29F2679CA504908"
+2025-12-06T00:33:18.413748+0100 chargesom manager[464361]:     }
+2025-12-06T00:33:18.413748+0100 chargesom manager[464361]: }
+2025-12-06T00:33:18.417355+0100 chargesom manager[464322]: [INFO] auth:Auth        :: Received new token: {
+2025-12-06T00:33:18.417355+0100 chargesom manager[464322]:     "authorization_type": "RFID",
+2025-12-06T00:33:18.417355+0100 chargesom manager[464322]:     "id_token": {
+2025-12-06T00:33:18.417355+0100 chargesom manager[464322]:         "type": "ISO14443",
+2025-12-06T00:33:18.417355+0100 chargesom manager[464322]:         "value": "[redacted] hash: 29F2679CA504908"
+2025-12-06T00:33:18.417355+0100 chargesom manager[464322]:     },
+2025-12-06T00:33:18.417355+0100 chargesom manager[464322]:     "parent_id_token": {
+2025-12-06T00:33:18.417355+0100 chargesom manager[464322]:         "type": "ISO14443",
+2025-12-06T00:33:18.417355+0100 chargesom manager[464322]:         "value": "[redacted] hash: 29F2679CA504908"
+2025-12-06T00:33:18.417355+0100 chargesom manager[464322]:     }
+2025-12-06T00:33:18.417355+0100 chargesom manager[464322]: }
+2025-12-06T00:33:18.419344+0100 chargesom manager[464367]: [INFO] token_validator  :: Got validation request for token: [redacted] hash: 29F2679CA504908
+2025-12-06T00:33:18.668344+0100 chargesom manager[464367]: [INFO] token_validator  :: Returning validation status: Accepted
+2025-12-06T00:33:18.670662+0100 chargesom manager[464322]: [INFO] auth:Auth        :: Providing authorization to evse#1
+2025-12-06T00:33:18.909155+0100 chargesom manager[464324]: [INFO] connector:EvseM  :: EVSE IEC Set PWM On (5.0%) took 0 ms
+2025-12-06T00:33:18.952155+0100 chargesom manager[464323]: [INFO] bsp:CbChargeSOM  :: handle_pwm_on: Setting new duty cycle of 5.0%
+2025-12-06T00:33:19.071349+0100 chargesom manager[464322]: [INFO] auth:Auth        :: Result for token: [redacted] hash: 29F2679CA504908: ACCEPTED
+2025-12-06T00:33:19.160286+0100 chargesom manager[464324]: [INFO] connector:EvseM  :: EVSE IEC EIM Authorization received
+2025-12-06T00:33:19.160749+0100 chargesom manager[464324]: [INFO] connector:EvseM  :: EVSE IEC Transaction Started (0 kWh)
+2025-12-06T00:33:19.161783+0100 chargesom manager[464324]: [INFO] connector:EvseM  :: EVSE IEC DC mode. We are in 5percent mode so we can continue without further action.
+2025-12-06T00:33:19.163395+0100 chargesom manager[464324]: [INFO] connector:EvseM  :: EVSE IEC Charger state: Wait for Auth->PrepareCharging
+2025-12-06T00:33:58.191301+0100 chargesom manager[464337]: [INFO] evse_slac:EvseS  :: CM_SLAC_PARM_REQ timed out -> FAILED
+2025-12-06T00:33:58.192581+0100 chargesom manager[464337]: [INFO] evse_slac:EvseS  :: Resetting MatchingState. Waiting for the next CM_SLAC_PARAM.REQ message.
+2025-12-06T00:34:38.191524+0100 chargesom manager[464337]: [INFO] evse_slac:EvseS  :: CM_SLAC_PARM_REQ timed out -> FAILED
+2025-12-06T00:34:38.193109+0100 chargesom manager[464337]: [INFO] evse_slac:EvseS  :: Entered Failed state
+2025-12-06T00:34:38.193425+0100 chargesom manager[464324]: [INFO] connector:EvseM  :: Received request error routine from SLAC in evsemanager
+2025-12-06T00:34:38.235790+0100 chargesom manager[464337]: [INFO] evse_slac:EvseS  :: Entered Reset state
+2025-12-06T00:34:38.236617+0100 chargesom manager[464337]: [INFO] evse_slac:EvseS  :: New NMK key: 41:54:50:31:34:49:56:45:46:33:37:41:48:51:49:47
+2025-12-06T00:34:38.237756+0100 chargesom manager[464337]: [INFO] evse_slac:EvseS  :: Received CM_SET_KEY_CNF
+2025-12-06T00:34:38.238080+0100 chargesom manager[464337]: [INFO] evse_slac:EvseS  :: Entered Idle state
+2025-12-06T00:34:38.279754+0100 chargesom manager[464324]: [INFO] connector:EvseM  :: EVSE ISO SLAC UNMATCHED
+2025-12-06T00:34:38.280199+0100 chargesom manager[464324]: [INFO] connector:EvseM  :: EVSE IEC Charger state: PrepareCharging->T_step_EF
+2025-12-06T00:34:38.280199+0100 chargesom manager[464324]: [INFO] connector:EvseM  :: EVSE IEC Enter T_step_EF
+2025-12-06T00:34:38.280199+0100 chargesom manager[464324]: [INFO] connector:EvseM  :: EVSE IEC Set PWM F
+2025-12-06T00:34:38.335491+0100 chargesom manager[464323]: [INFO] bsp:CbChargeSOM  :: handle_pwm_F: Generating CP state F
+2025-12-06T00:34:38.407235+0100 chargesom manager[464323]: [INFO] bsp:CbChargeSOM  :: CP state change from B to F, PWM: 0.0%
+2025-12-06T00:34:38.451709+0100 chargesom manager[464323]: [INFO] bsp:CbChargeSOM  :: handle_allow_power_on: request to OPEN the contactor
+2025-12-06T00:34:38.499711+0100 chargesom manager[464324]: [INFO] connector:EvseM  ::                                     CAR IEC Event BCDtoEF
+2025-12-06T00:34:42.311901+0100 chargesom manager[464324]: [INFO] connector:EvseM  :: EVSE IEC Pause in X1 for EV READY regulations
+2025-12-06T00:34:42.313035+0100 chargesom manager[464324]: [INFO] connector:EvseM  :: EVSE IEC Set PWM Off
+2025-12-06T00:34:42.335608+0100 chargesom manager[464323]: [INFO] bsp:CbChargeSOM  :: handle_pwm_off: Setting new duty cycle of 100.0%
+2025-12-06T00:34:42.441028+0100 chargesom manager[464323]: [INFO] bsp:CbChargeSOM  :: CP state change from F to B, PWM: 100.0%
+2025-12-06T00:34:42.488490+0100 chargesom manager[464323]: [INFO] bsp:CbChargeSOM  :: handle_allow_power_on: request to OPEN the contactor
+2025-12-06T00:34:42.955519+0100 chargesom manager[464324]: [INFO] connector:EvseM  ::                                     CAR IEC Event CarRequestedStopPower
+2025-12-06T00:34:42.957120+0100 chargesom manager[464337]: [INFO] evse_slac:EvseS  :: Entered Matching state, waiting for CM_SLAC_PARM_REQ
+2025-12-06T00:34:42.999981+0100 chargesom manager[464324]: [INFO] connector:EvseM  :: EVSE ISO SLAC MATCHING
+2025-12-06T00:34:43.000384+0100 chargesom manager[464324]: [INFO] connector:EvseM  ::                                     CAR IEC Event EFtoBCD
+2025-12-06T00:34:43.043417+0100 chargesom manager[464324]: [INFO] connector:EvseM  :: EVSE IEC Exit T_step_EF
+2025-12-06T00:34:43.043843+0100 chargesom manager[464324]: [INFO] connector:EvseM  :: EVSE IEC Set PWM On (5.0%) took 0 ms
+2025-12-06T00:34:43.087964+0100 chargesom manager[464323]: [INFO] bsp:CbChargeSOM  :: handle_pwm_on: Setting new duty cycle of 5.0%
+2025-12-06T00:34:43.212184+0100 chargesom manager[464324]: [INFO] connector:EvseM  :: EVSE IEC Charger state: T_step_EF->PrepareCharging
+2025-12-06T00:35:22.957286+0100 chargesom manager[464337]: [INFO] evse_slac:EvseS  :: CM_SLAC_PARM_REQ timed out -> FAILED
+2025-12-06T00:35:22.957286+0100 chargesom manager[464337]: [INFO] evse_slac:EvseS  :: Resetting MatchingState. Waiting for the next CM_SLAC_PARAM.REQ message.
+2025-12-06T00:36:02.957625+0100 chargesom manager[464337]: [INFO] evse_slac:EvseS  :: CM_SLAC_PARM_REQ timed out -> FAILED
+2025-12-06T00:36:02.959863+0100 chargesom manager[464337]: [INFO] evse_slac:EvseS  :: Entered Failed state
+2025-12-06T00:36:02.960497+0100 chargesom manager[464324]: [INFO] connector:EvseM  :: Received request error routine from SLAC in evsemanager
+2025-12-06T00:36:03.003755+0100 chargesom manager[464337]: [INFO] evse_slac:EvseS  :: Entered Reset state
+2025-12-06T00:36:03.004586+0100 chargesom manager[464337]: [INFO] evse_slac:EvseS  :: New NMK key: 5A:38:51:48:4E:4B:36:4A:41:58:30:58:33:55:59:4E
+2025-12-06T00:36:03.006141+0100 chargesom manager[464337]: [INFO] evse_slac:EvseS  :: Received CM_SET_KEY_CNF
+2025-12-06T00:36:03.006659+0100 chargesom manager[464337]: [INFO] evse_slac:EvseS  :: Entered Idle state
+2025-12-06T00:36:03.048150+0100 chargesom manager[464324]: [INFO] connector:EvseM  :: EVSE ISO SLAC UNMATCHED
+2025-12-06T00:36:03.048591+0100 chargesom manager[464324]: [INFO] connector:EvseM  :: EVSE IEC Charger state: PrepareCharging->T_step_EF
+2025-12-06T00:36:03.048591+0100 chargesom manager[464324]: [INFO] connector:EvseM  :: EVSE IEC Enter T_step_EF
+2025-12-06T00:36:03.049166+0100 chargesom manager[464324]: [INFO] connector:EvseM  :: EVSE IEC Set PWM F
+2025-12-06T00:36:03.092141+0100 chargesom manager[464323]: [INFO] bsp:CbChargeSOM  :: handle_pwm_F: Generating CP state F
+2025-12-06T00:36:03.315056+0100 chargesom manager[464323]: [INFO] bsp:CbChargeSOM  :: CP state change from B to F, PWM: 0.0%
+2025-12-06T00:36:03.359627+0100 chargesom manager[464323]: [INFO] bsp:CbChargeSOM  :: handle_allow_power_on: request to OPEN the contactor
+2025-12-06T00:36:03.453185+0100 chargesom manager[464323]: [INFO] bsp:CbChargeSOM  :: handle_allow_power_on: request to OPEN the contactor
+2025-12-06T00:36:03.455282+0100 chargesom manager[464324]: [INFO] connector:EvseM  ::                                     CAR IEC Event BCDtoEF
+2025-12-06T00:36:07.121004+0100 chargesom manager[464324]: [INFO] connector:EvseM  :: EVSE IEC Pause in X1 for EV READY regulations
+2025-12-06T00:36:07.122168+0100 chargesom manager[464324]: [INFO] connector:EvseM  :: EVSE IEC Set PWM Off
+2025-12-06T00:36:07.164437+0100 chargesom manager[464323]: [INFO] bsp:CbChargeSOM  :: handle_pwm_off: Setting new duty cycle of 100.0%
+2025-12-06T00:36:07.249487+0100 chargesom manager[464323]: [INFO] bsp:CbChargeSOM  :: CP state change from F to B, PWM: 100.0%
+2025-12-06T00:36:07.291558+0100 chargesom manager[464323]: [INFO] bsp:CbChargeSOM  :: handle_allow_power_on: request to OPEN the contactor
+2025-12-06T00:36:07.365639+0100 chargesom manager[464324]: [INFO] connector:EvseM  ::                                     CAR IEC Event CarRequestedStopPower
+2025-12-06T00:36:07.367466+0100 chargesom manager[464337]: [INFO] evse_slac:EvseS  :: Entered Matching state, waiting for CM_SLAC_PARM_REQ
+2025-12-06T00:36:07.412154+0100 chargesom manager[464324]: [INFO] connector:EvseM  :: EVSE ISO SLAC MATCHING
+2025-12-06T00:36:07.413621+0100 chargesom manager[464324]: [INFO] connector:EvseM  ::                                     CAR IEC Event EFtoBCD
+2025-12-06T00:36:07.856649+0100 chargesom manager[464324]: [INFO] connector:EvseM  :: EVSE IEC Exit T_step_EF
+2025-12-06T00:36:07.857566+0100 chargesom manager[464324]: [INFO] connector:EvseM  :: EVSE IEC Set PWM On (5.0%) took 0 ms
+2025-12-06T00:36:07.859979+0100 chargesom manager[464323]: [INFO] bsp:CbChargeSOM  :: handle_pwm_on: Setting new duty cycle of 5.0%
+2025-12-06T00:36:07.940500+0100 chargesom manager[464324]: [INFO] connector:EvseM  :: EVSE IEC Charger state: T_step_EF->PrepareCharging
